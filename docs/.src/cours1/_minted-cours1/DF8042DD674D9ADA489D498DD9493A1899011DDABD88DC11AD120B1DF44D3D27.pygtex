@@ -1,0 +1,14 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{24}\PYG{p}{]:} \PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} linspace(star, stop, Nombre de points)}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{24}\PYG{p}{]:}
+\PYG{n}{array}\PYG{p}{([} \PYG{l+m+mf}{0.}        \PYG{p}{,}  \PYG{l+m+mf}{0.52631579}\PYG{p}{,}  \PYG{l+m+mf}{1.05263158}\PYG{p}{,}  \PYG{l+m+mf}{1.57894737}\PYG{p}{,}  \PYG{l+m+mf}{2.10526316}\PYG{p}{,}
+        \PYG{l+m+mf}{2.63157895}\PYG{p}{,}  \PYG{l+m+mf}{3.15789474}\PYG{p}{,}  \PYG{l+m+mf}{3.68421053}\PYG{p}{,}  \PYG{l+m+mf}{4.21052632}\PYG{p}{,}  \PYG{l+m+mf}{4.73684211}\PYG{p}{,}
+        \PYG{l+m+mf}{5.26315789}\PYG{p}{,}  \PYG{l+m+mf}{5.78947368}\PYG{p}{,}  \PYG{l+m+mf}{6.31578947}\PYG{p}{,}  \PYG{l+m+mf}{6.84210526}\PYG{p}{,}  \PYG{l+m+mf}{7.36842105}\PYG{p}{,}
+        \PYG{l+m+mf}{7.89473684}\PYG{p}{,}  \PYG{l+m+mf}{8.42105263}\PYG{p}{,}  \PYG{l+m+mf}{8.94736842}\PYG{p}{,}  \PYG{l+m+mf}{9.47368421}\PYG{p}{,} \PYG{l+m+mf}{10.}        \PYG{p}{])}
+
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{25}\PYG{p}{]:} \PYG{n}{logspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{,} \PYG{n}{base}\PYG{o}{=}\PYG{n}{e}\PYG{p}{)}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{25}\PYG{p}{]:}
+\PYG{n}{array}\PYG{p}{([}\PYG{l+m+mf}{1.00000000e+00}\PYG{p}{,} \PYG{l+m+mf}{3.03773178e+00}\PYG{p}{,} \PYG{l+m+mf}{9.22781435e+00}\PYG{p}{,} \PYG{l+m+mf}{2.80316249e+01}\PYG{p}{,}
+       \PYG{l+m+mf}{8.51525577e+01}\PYG{p}{,} \PYG{l+m+mf}{2.58670631e+02}\PYG{p}{,} \PYG{l+m+mf}{7.85771994e+02}\PYG{p}{,} \PYG{l+m+mf}{2.38696456e+03}\PYG{p}{,}
+       \PYG{l+m+mf}{7.25095809e+03}\PYG{p}{,} \PYG{l+m+mf}{2.20264658e+04}\PYG{p}{])}
+\end{Verbatim}

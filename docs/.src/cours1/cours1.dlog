@@ -1,0 +1,3536 @@
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1_fonction.py (format: pypro)
+copy complete file scripts/ex2_2fonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+*** made directory latex_figs for admon figures
+output in cours1.tex
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+found info about 2 exercises
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus (6 points)
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/fourier:
+    can use imgs/fourier.pdf for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus (6 points)
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus (6 points)
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus (6 points)
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/fourier:
+    can use imgs/fourier.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/fourier:
+    can use imgs/fourier.pdf for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file imgs/fourier:
+    can use imgs/fourier.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/fourier:
+    can use imgs/fourier.pdf for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/fourier:
+    can use imgs/fourier.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/fourier:
+    can use imgs/fourier.pdf for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/fourier:
+    can use imgs/fourier.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Diffraction par un bord d'écran rectiligne
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 4 exercises
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/fourier:
+    can use imgs/fourier.pdf for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/bord:
+    can use imgs/bord.png for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Diffraction par un bord d'écran rectiligne
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 4 exercises
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/fourier:
+    can use imgs/fourier.pdf for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/bord:
+    can use imgs/bord.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Diffraction par un bord d'écran rectiligne
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 4 exercises
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/bord:
+    can use imgs/bord.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Diffraction par un bord d'écran rectiligne
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 4 exercises
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/bord:
+    can use imgs/bord.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Diffraction par un bord d'écran rectiligne
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 4 exercises
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+figure file imgs/fourier:
+    can use imgs/fourier.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/bord:
+    can use imgs/bord.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/fourier:
+    can use imgs/fourier.pdf for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/fourier:
+    can use imgs/fourier.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/fourier:
+    can use imgs/fourier.pdf for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.pdf for format pdflatex
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.pdf for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/fourier:
+    can use imgs/fourier.png for format html
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: found reference "Comme ref{exer:1fonc}" with unexpected word "Comme" in front
+
+    (expected Section/Chapter/Figure ref{exer:1fonc}, or could it be a reference to an equation, but missing parenthesis in (ref{exer:1fonc})?)
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+copy complete file scripts/ex1unefonction.py (format: pypro)
+copy complete file scripts/ex2deuxfonctions.py (format: pypro)
+
+*** Exercise: Tracer une fonction
+    label{exer:1fonc}
+    could be Problem (no refs beyond the exercise itself)
+
+*** Exercise: Approximer une fonction par une somme de sinus
+    label{None}
+    could be Problem (no refs beyond the exercise itself)
+found info about 3 exercises
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file scripts/fig_ex1:
+    can use scripts/fig_ex1.png for format ipynb
+figure file imgs/fourier:
+    can use imgs/fourier.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file scripts/fig_ex2:
+    can use scripts/fig_ex2.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb
+translating doconce text in cours1.do.txt to pdflatex
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format pdflatex
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format pdflatex
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format pdflatex
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format pdflatex
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format pdflatex
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.pdf for format pdflatex
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format pdflatex
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format pdflatex
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format pdflatex
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format pdflatex
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format pdflatex
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format pdflatex
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1.tex
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-solarized.html
+translating doconce text in cours1.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format html
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format html
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format html
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format html
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format html
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format html
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format html
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format html
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format html
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format html
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format html
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format html
+*** warning: !bc ipy used for IPython sessions, but
+    ipython is not supported for syntax highlighting!
+    install:
+    git clone https://hplbit@bitbucket.org/hplbit/pygments-ipython-console.git; cd pygments-ipython-console; sudo python setup.py install
+no lexer for alias 'ipy' found
+output in cours1-bs.html
+translating doconce text in cours1.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Écriture de données__
+__Lecture de données__
+__Guide de Démarrage__
+__Vues en grille __
+__Commandes de texte de base__
+__Styles de lignes et de marqueurs__
+__Colormap: Tracés contour, Imshow et 33D__
+__Fonctions de Bessel__
+__Intégrales de Fresnel__
+copy complete file scripts/BasicPlot1.py (format: pypro)
+copy complete file scripts/subplots.py (format: pypro)
+copy complete file scripts/BasicText.py (format: pypro)
+copy complete file scripts/LineandMarkerStyles.py (format: pypro)
+copy complete file scripts/ContourPlot.py (format: pypro)
+copy complete file scripts/Imshow.py (format: pypro)
+copy complete file scripts/Plot3D.py (format: pypro)
+copy complete file scripts/Bessel.py (format: pypro)
+copy complete file scripts/Fresnel.py (format: pypro)
+figure file imgs/Imshow:
+    can use imgs/Imshow.png for format ipynb
+figure file imgs/fonct_trig4:
+    can use imgs/fonct_trig4.png for format ipynb
+figure file imgs/BasicPlot1:
+    can use imgs/BasicPlot1.png for format ipynb
+figure file imgs/Bessel:
+    can use imgs/Bessel.png for format ipynb
+figure file imgs/AnacondaNavigator:
+    can use imgs/AnacondaNavigator.png for format ipynb
+figure file imgs/subplot2:
+    can use imgs/subplot2.png for format ipynb
+figure file imgs/BasicText:
+    can use imgs/BasicText.png for format ipynb
+figure file imgs/subplot1:
+    can use imgs/subplot1.png for format ipynb
+figure file imgs/ContourPlot:
+    can use imgs/ContourPlot.png for format ipynb
+figure file imgs/Plot3D:
+    can use imgs/Plot3D.png for format ipynb
+figure file imgs/LineandMarkerStyles:
+    can use imgs/LineandMarkerStyles.png for format ipynb
+figure file imgs/Fresnel:
+    can use imgs/Fresnel.png for format ipynb
+collected all required additional files in ipynb-cours1-src.tar.gz which must be distributed with the notebook
+output in cours1.ipynb

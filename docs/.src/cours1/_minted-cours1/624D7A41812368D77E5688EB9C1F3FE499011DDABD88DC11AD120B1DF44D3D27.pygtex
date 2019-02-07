@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}Créer un tableau à deux dimensions de}
+\PYG{l+s+sd}{[x, cos (x)] dans chaque ligne\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k+kn}{as} \PYG{n+nn}{np}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{o}{*}\PYG{n}{np}\PYG{o}{.}\PYG{n}{pi}\PYG{p}{,} \PYG{l+m+mi}{200}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} 200 valeurs de x}
+\PYG{c+c1}{\PYGZsh{} un tableau 2 colonnes 200 lignes}
+\PYG{n}{data} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{array}\PYG{p}{([}\PYG{n}{x}\PYG{p}{,} \PYG{n}{np}\PYG{o}{.}\PYG{n}{cos}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)])}\PYG{o}{.}\PYG{n}{transpose}\PYG{p}{()}
+
+\PYG{c+c1}{\PYGZsh{} Écrire un tableau de données dans un fichier sous forme de tableau}
+\PYG{n}{np}\PYG{o}{.}\PYG{n}{savetxt}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}cosinus.dat\PYGZsq{}}\PYG{p}{,} \PYG{n}{data}\PYG{p}{,} \PYG{n}{fmt}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZpc{}.2f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+si}{\PYGZpc{}.4f}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{],}
+           \PYG{n}{header}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}x   cos(x)\PYGZsq{}}\PYG{p}{,} \PYG{n}{comments}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZsh{}\PYGZsq{}}\PYG{p}{)}
+\end{Verbatim}

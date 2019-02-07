@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{4}\PYG{p}{]:} \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Le type de v est: \PYGZdq{}}\PYG{p}{,} \PYG{n+nb}{type}\PYG{p}{(}\PYG{n}{v}\PYG{p}{))}
+\PYG{n}{Le} \PYG{n+nb}{type} \PYG{n}{de} \PYG{n}{v} \PYG{n}{est}\PYG{p}{:} \PYG{o}{\PYGZlt{}}\PYG{k}{class} \PYG{err}{\PYGZsq{}}\PYG{n+nc}{numpy}\PYG{o}{.}\PYG{n}{ndarray}\PYG{l+s+s1}{\PYGZsq{}\PYGZgt{}}
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{5}\PYG{p}{]:} \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Le type de M est: \PYGZdq{}}\PYG{p}{,} \PYG{n+nb}{type}\PYG{p}{(}\PYG{n}{M}\PYG{p}{))}
+\PYG{n}{Le} \PYG{n+nb}{type} \PYG{n}{de} \PYG{n}{M} \PYG{n}{est}\PYG{p}{:}  \PYG{o}{\PYGZlt{}}\PYG{k}{class} \PYG{err}{\PYGZsq{}}\PYG{n+nc}{numpy}\PYG{o}{.}\PYG{n}{ndarray}\PYG{l+s+s1}{\PYGZsq{}\PYGZgt{}}
+\end{Verbatim}

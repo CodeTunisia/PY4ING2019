@@ -1,0 +1,8 @@
+TITLE: Travaux Pratiques: Python pour les ingénieurs
+AUTHOR: Ahmed Ammar {copyright|CC BY} Email:ahmed.ammar@fst.utm.tn at Université de Tunis El Manar.
+AUTHOR: Ahmed Ammar {copyright|CC BY} Email:ahmed.ammar@fst.utm.tn at Université de Tunis El Manar.
+
+DATE: today
+
+!split
+======= Introduction =======

@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{51}\PYG{p}{]:} \PYG{n}{data} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{loadtxt}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}cosinus.dat\PYGZsq{}}\PYG{p}{,} \PYG{n}{comments}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}\PYGZsh{}\PYGZsq{}}\PYG{p}{)}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n}{data}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{51}\PYG{p}{]:}
+\PYG{n}{array}\PYG{p}{([[} \PYG{l+m+mf}{0.}    \PYG{p}{,}  \PYG{l+m+mf}{1.}    \PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{0.03}  \PYG{p}{,}  \PYG{l+m+mf}{0.9995}\PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{0.06}  \PYG{p}{,}  \PYG{l+m+mf}{0.998} \PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{0.09}  \PYG{p}{,}  \PYG{l+m+mf}{0.9955}\PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{0.13}  \PYG{p}{,}  \PYG{l+m+mf}{0.992} \PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{0.16}  \PYG{p}{,}  \PYG{l+m+mf}{0.9876}\PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{0.19}  \PYG{p}{,}  \PYG{l+m+mf}{0.9821}\PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{0.22}  \PYG{p}{,}  \PYG{l+m+mf}{0.9757}\PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{0.25}  \PYG{p}{,}  \PYG{l+m+mf}{0.9683}\PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{0.28}  \PYG{p}{,}  \PYG{l+m+mf}{0.9599}\PYG{p}{],}
+       \PYG{o}{..................}
+       \PYG{o}{..................}
+       \PYG{o}{..................}
+       \PYG{p}{[} \PYG{l+m+mf}{6.22}  \PYG{p}{,}  \PYG{l+m+mf}{0.998} \PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{6.25}  \PYG{p}{,}  \PYG{l+m+mf}{0.9995}\PYG{p}{],}
+       \PYG{p}{[} \PYG{l+m+mf}{6.28}  \PYG{p}{,}  \PYG{l+m+mf}{1.}    \PYG{p}{]])}
+\end{Verbatim}

@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{c+c1}{\PYGZsh{} NOM DU FICHIER: ex1\PYGZus{}fonction.py}
+\PYG{c+c1}{\PYGZsh{} Importer tout de matplotlib et numpy}
+\PYG{k+kn}{from} \PYG{n+nn}{pylab} \PYG{k+kn}{import} \PYG{o}{*}
+\PYG{k}{def} \PYG{n+nf}{g}\PYG{p}{(}\PYG{n}{y}\PYG{p}{):}
+    \PYG{k}{return} \PYG{n}{exp}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{n}{y}\PYG{p}{)}\PYG{o}{*}\PYG{n}{sin}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{o}{*}\PYG{n}{y}\PYG{p}{)}
+\PYG{n}{y} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{501}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} définir un nouveau graphique}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} tracer la fonction g(y) avec ligne solide rouge}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{y}\PYG{p}{,} \PYG{n}{g}\PYG{p}{(}\PYG{n}{y}\PYG{p}{),} \PYG{l+s+s1}{\PYGZsq{}r\PYGZhy{}\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}y\PYGZsq{}}\PYG{p}{);} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}g(y)\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Onde sinusoïdale atténuée\PYGZsq{}}\PYG{p}{)}
+ \PYG{c+c1}{\PYGZsh{} sauvgarder le grahique (format PNG et PDF)}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}fig\PYGZus{}ex1.png\PYGZdq{}}\PYG{p}{);} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{savefig}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}fig\PYGZus{}ex1.pdf\PYGZdq{}}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} Afficher le graphique}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\end{Verbatim}

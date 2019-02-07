@@ -1,0 +1,470 @@
+TITLE: Introduction à Python pour les ingénieurs
+AUTHOR: Ahmed Ammar {copyright|CC BY} Email:ahmed.ammar@fst.utm.tn at Faculté des Sciences de Tunis, Université de Tunis El Manar.
+DATE: today
+
+TOC: on
+
+!split
+======= Introduction =======
+
+Python (URL: "http://www.python.org/") est un langage de programmation moderne de haut niveau, orienté objet et d'usage général.
+
+_Caractéristiques générales de Python_ :
+
+* Langage simple:
+  * facile à lire et à apprendre avec une syntaxe minimaliste.
+* Langage concis et expressif:
+  * moins de lignes de code
+  * moins de bugs
+  * plus facile à maintenir.
+
+_Détails techniques_ :
+
+* Typé dynamiquement:
+  * Pas besoin de définir le type des variables, les arguments ou le type des fonctions.
+* La gestion automatique de la mémoire:
+  * Aucune nécessité d'allouer explicitement et désallouer la mémoire pour les variables et les tableaux de données. Aucun bug de fuite de mémoire.
+* Interprété:
+  * Pas besoin de compiler le code. L'interpréteur Python lit et exécute le code python directement.
+
+_Avantages_ :
+
+* Le principal avantage est la facilité de programmation, qui minimise le temps nécessaire pour développer, déboguer et maintenir le code.
+* Langage bien conçu qui encourage les bonnes pratiques de programmation:
+  * Modulaire et orientée objet, permet l'encapsulation  et la réutilisation de code. Il en résulte souvent un code plus transparent, plus facile à améliorer et sans bug.
+  * Documentation intégré avec le code.
+* De nombreuses bibliothèques standards, et de nombreux packages add-on.
+
+!split
+======= Avoir Python installé sur sa machine =======
+L’installation d’un environnement Python complet peut-être une vraie galère. Déjà, il faut télécharger Python et l’installer. Par la suite, télécharger un à un les packages dont on a besoin. Parfois, le nombre de ces librairies peut-être grand.
+
+Par ailleurs, il faut s’assurer L’installation d’un environnement Python complet peut-être une vraie galère. Déjà, il faut télécharger Python et l’installer. Par la suite, télécharger un à un les packages dont on a besoin. Parfois, le nombre de ces librairies peut-être grand.
+
+Par ailleurs, il faut s’assurer de la compatibilité entre les versions des différentes packages qu’on a à télécharger.
+
+Bref, ce n’est pas amusant!
+
+
+===== Distribution Anaconda =====
+Nous demandons à tous les étudiants de télécharger Anaconda. Pour cela, il faut télécharger un installeur à partir de URL: "https://www.anaconda.com/download/", correspondant à votre système d’exploitation (Windows, Mac OS X, Linux). Il faut choisir entre 32 bits ou 64 bits (pour la version *Python 3*) selon que votre système d’exploitation est 32 bits ou 64 bits.
+
+===== Comment démarrer le navigateur Anaconda? =====
+Lorsque vous installez _Anaconda_ sous Windows, Linux ou macOS, une icône est automatiquement ajoutée au menu de votre programme et/ou à votre bureau pour lancer _Anaconda Navigator_.
+Vous pouvez également lancer Anaconda Navigator à partir d'une invite de commande Windows ou d'un terminal ubuntu  à l'aide de la commande suivante:
+!bc shell
+$ anaconda-navigator
+!ec
+
+Différentes distributions Linux telles que *CentOS* ou *Ubuntu* ont de nombreux systèmes permettant d’ajouter des raccourcis aux menus et au bureau. Anaconda n’ajoute donc pas ces raccourcis automatiquement. À la place, vous pouvez utiliser votre système d'exploitation pour créer des raccourcis qui exécutent la commande `anaconda-navigator` sur le bureau ou dans le menu principal du système d'exploitation, ou les deux.
+
+FIGURE: [imgs/AnacondaNavigator, width=600 frac=0.7] Interface graphique du navigateur Anaconda sous Windows
+
+Anaconda installe plusieurs exécutables pour développer en Python dans le répertoire *anaconda/bin*, sans toujours créer des raccourcis sur le bureau ou dans un menu. Vous pouvez lancer _Spyder_ ou le notebook _Jupyter_ depuis le navigateur Anaconda.
+
+===== Spyder =====
+Pour le développement de programmes en langage Python, des applications spéciales appelées IDE (Integrated Development Environment) peuvent être utilisées. Les IDE les plus avancés ont des éditeurs, des consoles, des outils pour organiser des suites de programmes et de bibliothèques, un correcteur orthographique (spell-checking) et une complétion automatiques (auto-completion) pour les scripts partiellement écrits (ces outils connaissent la syntaxe du langage de programmation) et des outils de débogage.
+
+Utiliser un bon éditeur pour programmer en Python est bon. Utiliser un vrai IDE est encore plus confortable et puissant. _Spyder_ (Scientific PYthon Development EnviRonment) semble actuellement très répandu pour l’utilisation scientifique de Python.
+
+Spyder est un environnement de développement interactif gratuit inclus avec Anaconda. Il comprend des fonctionnalités d'édition, de test interactif, de débogage et d'introspection.
+
+Après avoir installé Anaconda, vous pouvez démarrer Spyder sur macOS, Linux ou Windows en ouvrant une fenêtre de terminal (Ubuntu/macOS) ou d'invite de commande (Windows) et en exécutant la commande `spyder`.
+
+FIGURE: [imgs/SpyderIDE.png, width=600 frac=0.7] Spyder sous Windows.
+
+!split
+======= Bibliothèques Python largement utilisées =======
+===== Bibliothèque numérique: `numpy` =====
+_numpy_ (URL: "http://www.numpy.org"): Tous les codes numériques Python actuels sont basés sur la bibliothèque `numpy`. La bibliothèque `numpy` fournit des structures de données permettant de représenter une grande variété de tableaux, ainsi que des méthodes et des fonctions permettant de fonctionner sur de tels tableaux. `numpy` fournit le *back-end* numérique pour presque toutes les bibliothèques scientifiques ou techniques de Python. C'est donc une partie très importante de l'écosystème scientifique Python.
+
+=== Création de tableaux numpy ===
+Il existe un certain nombre de façons d’initialiser de nouveaux tableaux numpy, par exemple à partir de:
+
+* liste ou tuple Python.
+* en utilisant des fonctions dédiées à la génération de tableaux numpy, tels que `arange`, `linspace`, etc.
+* lire des données à partir de fichiers.
+Par exemple, pour créer de nouveaux tableaux de vecteurs et matrices à partir de listes Python, nous pouvons utiliser la fonction `numpy.array`.
+
+!bc ipy
+In [1]: from numpy import array # importation
+In [2]: v = array([1,2,3,4]) # un vecteur: l'argument de la fonction array est une liste Python
+...: v
+Out[2]: array([1, 2, 3, 4])
+
+In [3]: M = array([[1, 2], [3, 4]])  # une matrice: l'argument de la fonction array est une liste Python imbriquée
+...: M
+Out[3]:
+array([[1, 2],
+      [3, 4]])
+!ec
+
+Les objets `v` et `M` sont, les deux, du type `ndarray` fourni par le module `numpy`.
+Nous pouvons vérifier ça par un simple code:
+
+!bc ipy
+In [4]: print("Le type de v est: ", type(v))
+Le type de v est: <class 'numpy.ndarray'>
+In [5]: print("Le type de M est: ", type(M))
+Le type de M est:  <class 'numpy.ndarray'>
+!ec
+
+La différence entre les tableaux `v` et `M` réside uniquement dans leurs formes. Nous pouvons obtenir des informations sur la _forme_ d'un tableau en utilisant la propriété `ndarray.shape`.
+!bc ipy
+In [6]: print("La forme de v est: ", v.shape)
+La forme de v est:  (4,)
+In [7]: print("La forme de M est: ", M.shape)
+La forme de M est:  (2, 2)
+!ec
+
+=== Utilisation de fonctions génératrices de tableaux ===
+Pour les tableaux de grande taille, il est pratique d'initialiser les données manuellement, en utilisant des listes pythons explicites. Au lieu de cela, nous pouvons utiliser l’une des nombreuses fonctions de `numpy` qui génère des tableaux de différentes formes.
+Certains des plus communs sont:
+
+* `arange()`
+* `linspace()` et `logspace()`
+* `mgrid()` et `meshgrid()`
+* `diag()`
+* `zeros()` et `ones()`
+* etc.
+
+__Fonction `arange()` :__
+
+!bc ipy
+In [19]: x = arange(0, 10, 1) # Arguments: start, stop, step
+    ...: x
+Out[19]: array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+
+In [23]: x = arange(-2, 2, 0.1)
+    ...: x
+Out[23]:
+array([-2.00000000e+00, -1.90000000e+00, -1.80000000e+00, -1.70000000e+00,
+       -1.60000000e+00, -1.50000000e+00, -1.40000000e+00, -1.30000000e+00,
+       -1.20000000e+00, -1.10000000e+00, -1.00000000e+00, -9.00000000e-01,
+       -8.00000000e-01, -7.00000000e-01, -6.00000000e-01, -5.00000000e-01,
+       -4.00000000e-01, -3.00000000e-01, -2.00000000e-01, -1.00000000e-01,
+        1.77635684e-15,  1.00000000e-01,  2.00000000e-01,  3.00000000e-01,
+        4.00000000e-01,  5.00000000e-01,  6.00000000e-01,  7.00000000e-01,
+        8.00000000e-01,  9.00000000e-01,  1.00000000e+00,  1.10000000e+00,
+        1.20000000e+00,  1.30000000e+00,  1.40000000e+00,  1.50000000e+00,
+        1.60000000e+00,  1.70000000e+00,  1.80000000e+00,  1.90000000e+00])
+!ec
+
+__Fonctions `linspace()` et `logspace()`:__
+
+En utilisant `linspace`, les deux points finaux sont inclus:
+!bc ipy
+In [24]: linspace(0, 10, 20) # linspace(star, stop, Nombre de points)
+Out[24]:
+array([ 0.        ,  0.52631579,  1.05263158,  1.57894737,  2.10526316,
+        2.63157895,  3.15789474,  3.68421053,  4.21052632,  4.73684211,
+        5.26315789,  5.78947368,  6.31578947,  6.84210526,  7.36842105,
+        7.89473684,  8.42105263,  8.94736842,  9.47368421, 10.        ])
+
+In [25]: logspace(0, 10, 10, base=e)
+Out[25]:
+array([1.00000000e+00, 3.03773178e+00, 9.22781435e+00, 2.80316249e+01,
+       8.51525577e+01, 2.58670631e+02, 7.85771994e+02, 2.38696456e+03,
+       7.25095809e+03, 2.20264658e+04])
+!ec
+
+__Fonctions `mgrid()` et `meshgrid()`:__
+
+!bc ipy
+In [26]: x, y = mgrid[0:5, 0:5] # Similaire à meshgrid dans MATLAB
+    ...: x
+Out[26]:
+array([[0, 0, 0, 0, 0],
+       [1, 1, 1, 1, 1],
+       [2, 2, 2, 2, 2],
+       [3, 3, 3, 3, 3],
+       [4, 4, 4, 4, 4]])
+
+In [27]: y
+Out[27]:
+array([[0, 1, 2, 3, 4],
+       [0, 1, 2, 3, 4],
+       [0, 1, 2, 3, 4],
+       [0, 1, 2, 3, 4],
+       [0, 1, 2, 3, 4]])
+
+In [31]: x, y = meshgrid(linspace(0,2,6),linspace(0,2,6))
+    ...: x
+Out[31]:
+array([[0. , 0.4, 0.8, 1.2, 1.6, 2. ],
+       [0. , 0.4, 0.8, 1.2, 1.6, 2. ],
+       [0. , 0.4, 0.8, 1.2, 1.6, 2. ],
+       [0. , 0.4, 0.8, 1.2, 1.6, 2. ],
+       [0. , 0.4, 0.8, 1.2, 1.6, 2. ],
+       [0. , 0.4, 0.8, 1.2, 1.6, 2. ]])
+
+In [32]: y
+Out[32]:
+array([[0. , 0. , 0. , 0. , 0. , 0. ],
+       [0.4, 0.4, 0.4, 0.4, 0.4, 0.4],
+       [0.8, 0.8, 0.8, 0.8, 0.8, 0.8],
+       [1.2, 1.2, 1.2, 1.2, 1.2, 1.2],
+       [1.6, 1.6, 1.6, 1.6, 1.6, 1.6],
+       [2. , 2. , 2. , 2. , 2. , 2. ]])
+!ec
+
+__Fonctions `rand()`, `randint()`:__
+
+Nombres aléatoires uniformes dans [0,1[ dans une matrice (3,2)
+!bc ipy
+In [37]: rand(3,2)
+Out[37]:
+array([[0.01900499, 0.10872428],
+       [0.78849226, 0.22114384],
+       [0.88739675, 0.94190273]])
+!ec
+
+Générer un tableau 2 x 4 d'entiers compris entre 0 et 4 inclus.
+!bc ipy
+In [39]: randint(5, size=(2, 4))
+Out[39]:
+array([[0, 1, 4, 4],
+       [4, 0, 0, 4]])
+!ec
+
+__Fonction `diag()`:__
+
+!bc ipy
+In [40]: # Une matrice diagonale
+    ...: diag([1,2,3])
+Out[40]:
+array([[1, 0, 0],
+       [0, 2, 0],
+       [0, 0, 3]])
+
+In [41]: # Diagonale avec décalage de la diagonale principale
+    ...: diag([1,2,3], k=3)
+Out[41]:
+array([[0, 0, 0, 1, 0, 0],
+       [0, 0, 0, 0, 2, 0],
+       [0, 0, 0, 0, 0, 3],
+       [0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0],
+       [0, 0, 0, 0, 0, 0]])
+!ec
+
+__Fonctions `zeros()` et `ones()`:__
+
+!bc ipy
+In [42]: zeros((3,3))
+Out[42]:
+array([[0., 0., 0.],
+       [0., 0., 0.],
+       [0., 0., 0.]])
+
+In [43]: ones((3,3))
+Out[43]:
+array([[1., 1., 1.],
+       [1., 1., 1.],
+       [1., 1., 1.]])
+!ec
+
+=== Lecture et écriture de données ===
+
+__Écriture de données__
+
+Le module `numpy` contient une fonction très pratique, `savetxt`, permettant d’enregistrer des données tabulaires. Les données doivent être stockées dans un tableau numpy à deux dimensions. La fonction `savetxt` permet de contrôler le format des nombres dans chaque colonne (`fmt`), un en-tête peut être ajouté (`header`) et les lignes d'en-tête commencent par un caractère de commentaire (`comment`).
+
+!bblock Exemple
+
+Pour stoker les valeurs de $cos(x)$ avec $x \in [0, 2 \pi]$ dans un fichier *cosinus.dat*, le code est comme ci-dessous:
+
+!bc pycod
+'''Créer un tableau à deux dimensions de
+[x, cos (x)] dans chaque ligne'''
+import numpy as np
+x = np.linspace(0, 2*np.pi, 200) # 200 valeurs de x
+# un tableau 2 colonnes 200 lignes
+data = np.array([x, np.cos(x)]).transpose()
+
+# Écrire un tableau de données dans un fichier sous forme de tableau
+np.savetxt('cosinus.dat', data, fmt=['%.2f', '%.4f'],
+           header='x   cos(x)', comments='#')
+!ec
+Le fichier *cosinus.dat* est créé dans le répertoire de travail:
+!bc
+# x   cos(x)
+0.00 1.0000
+0.03 0.9995
+0.06 0.9980
+0.09 0.9955
+0.13 0.9920
+0.16 0.9876
+0.19 0.9821
+0.22 0.9757
+0.25 0.9683
+...  ......
+...  ......
+!ec
+
+!eblock
+
+__Lecture de données__
+
+Les données du fichier *cosinus.dat* peuvent être lues dans un tableau `numpy` par la fonction `loadtxt` (vous pouvez utiliser la commande `help(loadtxt)` dans le notebook pour comprendre l'utilité des arguments entre les parenthèse):
+
+!bc ipy
+
+In [51]: data = np.loadtxt('cosinus.dat', comments='#')
+    ...: data
+Out[51]:
+array([[ 0.    ,  1.    ],
+       [ 0.03  ,  0.9995],
+       [ 0.06  ,  0.998 ],
+       [ 0.09  ,  0.9955],
+       [ 0.13  ,  0.992 ],
+       [ 0.16  ,  0.9876],
+       [ 0.19  ,  0.9821],
+       [ 0.22  ,  0.9757],
+       [ 0.25  ,  0.9683],
+       [ 0.28  ,  0.9599],
+       ..................
+       ..................
+       ..................
+       [ 6.22  ,  0.998 ],
+       [ 6.25  ,  0.9995],
+       [ 6.28  ,  1.    ]])
+!ec
+
+!bnotice
+Les lignes commençant par le caractère de commentaire sont ignorées lors de la lecture. L'objet `data` résultant est un tableau à deux dimensions: `data[i, j]` contient le numéro de ligne `i` et le numéro de colonne `j` dans la table, c'est-à-dire que `data[i, 0]` contiennent la valeur `x` et que `data[i, 1]` la valeur `cos(x)` dans la i-ème ligne.
+!enotice
+
+Nous pouvons utiliser le fichier *cosinus.dat* pour tracer la fonction $cos(x)$ comme indiqué dans le code suivant:
+
+!bc pycod
+import numpy as np
+import matplotlib.pyplot as plt
+# Charger les données du fichier 'cosinus.dat'
+X, C = np.loadtxt('cosinus.dat', comments='#', unpack=True)
+# Tracer C en fonction de X
+plt.figure(figsize=(8, 5), dpi=100)
+plt.plot(X,C)
+plt.savefig("fonct_trig4.png")
+plt.savefig("fonct_trig4.pdf")
+plt.show()
+!ec
+
+La sortie de ce code est la Figure ref{figout:trig4}.
+FIGURE:[imgs/fonct_trig4, width=500 frac=0.7] Fonction trigonométrique, $cos(x)$, générée à partir d'un fichier. label{figout:trig4}
+
+!split
+===== Bibliothèque Python de visualisation des données: `matplotlib` =====
+`matplotlib` (URL:"http://matplotlib.org/") est une excellente bibliothèque graphique 2D et 3D pour générer des graphiques scientifiques. Voici quelques-uns des nombreux avantages de cette bibliothèque:
+
+* Facile à utiliser
+* Prise en charge des étiquettes et des textes formatés LaTeX
+* Un excellent contrôle des éléments d'une figure, y compris la taille et la résolution (DPI).
+* Sortie de haute qualité dans de nombreux formats, y compris PNG, PDF, SVG, EPS, ...
+* GUI (Graphical User Interface) pour explorer interactivement les figures.
+
+=== Documentation en ligne et Galerie ===
+Vous trouverez plus d'informations, y compris une documentation complète avec une vaste galerie d'exemples, sur le site de `mtplotlib`.
+
+De nombreux utilisateurs de `matplotlib` sont souvent confrontés à la question:
+!bquote
+Je veux tracer les courbes de deux fonctions ($f$ te $g$) _ressemblant_ à une troisième ($h$)?
+!equote
+ Je souhaite bonne chance à ceux qui désirent obtenir rapidement une réponse, même avec l'aide de _google_!. C'est pourquoi la _galerie de matplotlib_ (URL: "http://matplotlib.org/gallery.html") est si utile, car elle montre la variété des possibilités. Ainsi, vous pouvez parcourir la galerie, cliquer sur n'importe quel graphique qui comporte les éléments que vous voulez reproduire et afficher le code qui a servi à le générer. Vous deviendrez rapidement autonome, vous allez mélanger et assortir différents composants pour produire votre propre chef-d’œuvre!
+
+__Guide de Démarrage__
+L'exemple ci-dessous montre comment, de manière très simple, représenter graphiquement la fonction $f(x) = y = x$.
+@@@CODE scripts/BasicPlot1.py
+
+FIGURE:[imgs/BasicPlot1, width=500 frac=0.7] Fenêtre de traçage de matplotlib. label{fig:BasicPlot1}
+
+Le graphique (`Figure`) est le conteneur de niveau supérieur dans cette hiérarchie. C'est la fenêtre/page globale sur laquelle tout est dessiné.
+Vous pouvez avoir plusieurs figures indépendantes et les graphiques peuvent contenir plusieurs `Axes`.
+
+La plupart des tracés ont lieu sur des `Axes`. C’est effectivement la zone sur laquelle nous traçons les données et les graduations/labels/etc. qui leur sont associés. Habituellement, nous configurons un `Axes` avec un appel à `Subplot` (qui place les `Axes` sur une grille régulière). Par conséquent, dans la plupart des cas, `Axes` et `Subplot` sont synonymes (figure). Chaque `Axes` ou `Subplot` a un axe X et un axe Y. Ceux-ci contiennent les graduations, les emplacements de graduations, etc.
+
+__Vues en grille __
+Nous avons déjà mentionné qu’une figure peut avoir plus d’un axe. Si vous voulez que vos axes soient sur un système de grille standard, il est alors plus simple d'utiliser `plt.subplot(...)` pour créer un graphique et y ajouter les axes automatiquement.
+@@@CODE scripts/subplots.py
+
+FIGURE:[imgs/subplot1, width=500 frac=0.7] Vue en grille, figure(1). label{fig:subplot1}
+
+FIGURE:[imgs/subplot2, width=500 frac=0.7] Graphique unique, figure(2). label{fig:subplot2}
+
+__Commandes de texte de base__
+Les commandes suivantes permettent de créer du texte dans l'interface `pyplot`:
+* `text()` - ajoute du texte à un emplacement quelconque sur les axes; `matplotlib.axes.Axes.text()`.
+* `xlabel()` - ajoute une étiquette à l'axe des x; `matplotlib.axes.Axes.set_xlabel()`
+* `ylabel()` - ajoute une étiquette à l'axe des y; `matplotlib.axes.Axes.set_ylabel()`
+* `title()` - ajoute un titre aux Axes; `matplotlib.axes.Axes.set_title()`
+* `figtext()` - ajoute du texte à un emplacement quelconque sur la figure; `matplotlib.figure.Figure.text()`
+* `suptitle()` - ajoute un titre à la figure; `matplotlib.figure.Figure.suptitle()`
+* `annotate()` - ajoute une annotation, avec une flèche optionnelle, aux axes; `matplotlib.axes.Axes.annotate()`
+
+Toutes ces fonctions créent et renvoient une instance `matplotlib.text.Text()`, qui peut être configurée avec diverses polices et autres propriétés. L'exemple ci-dessous montre toutes ces commandes en action.
+
+@@@CODE scripts/BasicText.py
+
+FIGURE:[imgs/BasicText, width=500 frac=0.7] Texte de base. label{fig:BasicText}
+
+__Styles de lignes et de marqueurs__
+Pour changer la largeur de ligne, nous pouvons utiliser l'argument de mot-clé `linewidth` ou `lw`, et le style de ligne peut être sélectionné à l'aide des arguments de mot-clé `linestyle` ou `ls`:
+
+@@@CODE scripts/LineandMarkerStyles.py
+
+FIGURE:[imgs/LineandMarkerStyles, width=500 frac=0.7] Styles de lignes et de marqueurs. label{fig:LineandMarkerStyles}
+
+__Colormap: Tracés contour, Imshow et 33D__
+
+
+Voir la documentation de matplotlib colormaps URL: "http://matplotlib.org/users/colormaps.html".
+
+*  _Tracés contour :_
+
+@@@CODE scripts/ContourPlot.py
+
+FIGURE:[imgs/ContourPlot, width=500 frac=0.7] Exemple de tracé de contour. label{fig:ContourPlot}
+
+* _Imshow (Image pixelisée) :_
+
+@@@CODE scripts/Imshow.py
+
+FIGURE:[imgs/Imshow, width=500 frac=0.7] Exemple d'image pixelisée. label{fig:CImshow}
+
+* _Tracé en 3D :_
+
+@@@CODE scripts/Plot3D.py
+
+FIGURE:[imgs/Plot3D, width=500 frac=0.7] Exemple de tracé en 3D. label{fig:3D}
+
+!split
+===== Bibliothèque scientifique python: `scipy` =====
+`scipy` (URL:"https://www.scipy.org/""): `scipy` peut être considéré comme une extension de `numpy` avec un grand nombre de modules optimisés pour des calculs scientifiques spécifiques. `scipy` est la plate-forme la plus importante de Python pour le calcul scientifique. La communauté de `scipy` est un groupe bien établi et en pleine croissance de scientifiques, d’ingénieurs et de chercheurs qui utilisent, développent et promeuvent l’utilisation de Python pour le calcul scientifique, la recherche et l’éducation.
+
+=== Fonctions spéciales ===
+Un grand nombre de fonctions mathématiques spéciales sont importantes pour de nombreux problèmes de physique informatique. SciPy fournit des implémentations d'un ensemble très complet de fonctions spéciales. Pour plus de détails, voir la liste des fonctions dans la documentation de référence à URL: "http://docs.scipy.org/doc/scipy/reference/special.html#module-scipy.special".
+
+__Fonctions de Bessel__
+
+Le module `scipy.special` inclut un grand nombre de fonctions de Bessel. Ici, nous allons utiliser les fonctions `jn` et `yn`, qui sont les fonctions de Bessel des premier et deuxième ordres de type et de valeurs réelles. Nous incluons également la fonction `jn_zeros` et `yn_zeros` qui donne les zéros des fonctions `jn` et `yn`.
+
+@@@CODE scripts/Bessel.py
+
+Ce code retournera:
+!bc
+J_0(0.000000) = 1.000000
+Y_0(1.000000) = 0.088257
+zeros of Bessel functions are:  [  2.40482556   5.52007811   8.65372791  11.79153444]
+!ec
+
+et le tracé:
+
+FIGURE:[imgs/Bessel, width=500 frac=0.7] Fonctions de Bessel. label{fig:Bessel}
+
+__Intégrales de Fresnel__
+
+La fonction `scipy.special.fresnel` renvoie les deux fonctions de Fresnel mais dans l'ordre (FS, FC), où FS représente l'intégrale de sinus de Fresnel et FC, l'intégrale de cosinus de Fresnel. Vous devriez faire attention à ce que vos tracés correspondent à la spirale de Cornu.
+
+@@@CODE scripts/Fresnel.py
+
+FIGURE:[imgs/Fresnel, width=500 frac=0.7] Intégrales de Fresnel. label{fig:Fresnel}

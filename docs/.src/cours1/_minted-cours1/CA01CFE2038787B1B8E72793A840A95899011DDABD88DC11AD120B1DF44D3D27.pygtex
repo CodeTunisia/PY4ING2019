@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{19}\PYG{p}{]:} \PYG{n}{x} \PYG{o}{=} \PYG{n}{arange}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} Arguments: start, stop, step}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n}{x}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{19}\PYG{p}{]:} \PYG{n}{array}\PYG{p}{([}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{l+m+mi}{6}\PYG{p}{,} \PYG{l+m+mi}{7}\PYG{p}{,} \PYG{l+m+mi}{8}\PYG{p}{,} \PYG{l+m+mi}{9}\PYG{p}{])}
+
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{23}\PYG{p}{]:} \PYG{n}{x} \PYG{o}{=} \PYG{n}{arange}\PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mf}{0.1}\PYG{p}{)}
+    \PYG{o}{...}\PYG{p}{:} \PYG{n}{x}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{23}\PYG{p}{]:}
+\PYG{n}{array}\PYG{p}{([}\PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{2.00000000e+00}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.90000000e+00}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.80000000e+00}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.70000000e+00}\PYG{p}{,}
+       \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.60000000e+00}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.50000000e+00}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.40000000e+00}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.30000000e+00}\PYG{p}{,}
+       \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.20000000e+00}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.10000000e+00}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.00000000e+00}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{9.00000000e\PYGZhy{}01}\PYG{p}{,}
+       \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{8.00000000e\PYGZhy{}01}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{7.00000000e\PYGZhy{}01}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{6.00000000e\PYGZhy{}01}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{5.00000000e\PYGZhy{}01}\PYG{p}{,}
+       \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{4.00000000e\PYGZhy{}01}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{3.00000000e\PYGZhy{}01}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{2.00000000e\PYGZhy{}01}\PYG{p}{,} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1.00000000e\PYGZhy{}01}\PYG{p}{,}
+        \PYG{l+m+mf}{1.77635684e\PYGZhy{}15}\PYG{p}{,}  \PYG{l+m+mf}{1.00000000e\PYGZhy{}01}\PYG{p}{,}  \PYG{l+m+mf}{2.00000000e\PYGZhy{}01}\PYG{p}{,}  \PYG{l+m+mf}{3.00000000e\PYGZhy{}01}\PYG{p}{,}
+        \PYG{l+m+mf}{4.00000000e\PYGZhy{}01}\PYG{p}{,}  \PYG{l+m+mf}{5.00000000e\PYGZhy{}01}\PYG{p}{,}  \PYG{l+m+mf}{6.00000000e\PYGZhy{}01}\PYG{p}{,}  \PYG{l+m+mf}{7.00000000e\PYGZhy{}01}\PYG{p}{,}
+        \PYG{l+m+mf}{8.00000000e\PYGZhy{}01}\PYG{p}{,}  \PYG{l+m+mf}{9.00000000e\PYGZhy{}01}\PYG{p}{,}  \PYG{l+m+mf}{1.00000000e+00}\PYG{p}{,}  \PYG{l+m+mf}{1.10000000e+00}\PYG{p}{,}
+        \PYG{l+m+mf}{1.20000000e+00}\PYG{p}{,}  \PYG{l+m+mf}{1.30000000e+00}\PYG{p}{,}  \PYG{l+m+mf}{1.40000000e+00}\PYG{p}{,}  \PYG{l+m+mf}{1.50000000e+00}\PYG{p}{,}
+        \PYG{l+m+mf}{1.60000000e+00}\PYG{p}{,}  \PYG{l+m+mf}{1.70000000e+00}\PYG{p}{,}  \PYG{l+m+mf}{1.80000000e+00}\PYG{p}{,}  \PYG{l+m+mf}{1.90000000e+00}\PYG{p}{])}
+\end{Verbatim}

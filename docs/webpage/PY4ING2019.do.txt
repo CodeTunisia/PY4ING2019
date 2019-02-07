@@ -1,0 +1,27 @@
+TITLE: Travaux Pratiques: Python pour les ingénieurs
+AUTHOR: Ahmed Ammar {copyright|CC BY} Email:ahmed.ammar@fst.utm.tn at Faculté des Sciences de Tunis, Université de Tunis El Manar.
+AUTHOR: Mohamed Slim Fayache Email: msfayache@gmail.com at Faculté des Sciences de Tunis, Université de Tunis El Manar.
+
+!bwarning
+Le matériel pédagogique est produit dans divers formats pour l’impression et la lecture à l’écran.
+Si vous constatez des erreurs signalez-les simplement aux auteurs:
+* Les fichiers PDF sont basés sur LaTeX et présentent rarement des problèmes techniques difficiles à corriger.
+* Les fichiers HTML, nommés "HTML" et "jupyter/ipython" ci-dessous, appliquent MathJax pour le rendu des formules LaTeX. Cette technologie donne parfois lieu à des échecs inattendus (par exemple, un rendu incorrect dans une page Web malgré la syntaxe correcte de LaTeX dans la formule).
+* Consultez les fichiers PDF correspondants si vous trouvez des formules manquantes ou mal rendues dans des fichiers HTML ou jupyter/ipython.
+!ewarning
+DATE: today
+
+!split
+======= Documents =======
+
+!split
+===== Introduction à Python pour les ingénieurs =====
+* Notebook:
+  * "jupyter/ipython (fichier _ipynb_)" : "https://codetunisia.github.io/PY4ING2019/cours1/cours1.ipynb"
+  * "Les images (Décompressez le fichier _tar.gz_ dans le même répertoire que le fichier _ipynb_)" : "https://codetunisia.github.io/PY4ING2019/cours1/ipynb-cours1-src.tar.gz"
+* PDF
+  * "pdf (LaTeX)" : "https://codetunisia.github.io/PY4ING2019/cours1/cours1.pdf"
+
+* HTML:
+  * "html simple" : "https://codetunisia.github.io/PY4ING2019/cours1/cours1-solarized.html"
+  * "Style Bootstrap, facile à lire sur les appareils mobiles" : "https://codetunisia.github.io/PY4ING2019/cours1/cours1-bs.html"

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+J\PYGZus{}0(0.000000) = 1.000000
+Y\PYGZus{}0(1.000000) = 0.088257
+zeros of Bessel functions are:  [  2.40482556   5.52007811   8.65372791  11.79153444]
+\end{Verbatim}

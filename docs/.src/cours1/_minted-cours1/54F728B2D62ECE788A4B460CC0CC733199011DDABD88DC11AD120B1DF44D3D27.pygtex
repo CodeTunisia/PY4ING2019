@@ -1,0 +1,33 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}*\PYGZhy{} coding: utf\PYGZhy{}8 \PYGZhy{}*\PYGZhy{}}
+\PYG{k+kn}{from} \PYG{n+nn}{scipy.special} \PYG{k+kn}{import} \PYG{n}{jn}\PYG{p}{,} \PYG{n}{yn}\PYG{p}{,} \PYG{n}{jn\PYGZus{}zeros}\PYG{p}{,} \PYG{n}{yn\PYGZus{}zeros}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k+kn}{as} \PYG{n+nn}{np}
+
+\PYG{n}{n} \PYG{o}{=} \PYG{l+m+mi}{0}    \PYG{c+c1}{\PYGZsh{} order}
+\PYG{n}{x} \PYG{o}{=} \PYG{l+m+mf}{0.0}
+
+\PYG{c+c1}{\PYGZsh{} Bessel function of first kind}
+\PYG{k}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}J\PYGZus{}}\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s2}{(}\PYG{l+s+si}{\PYGZpc{}f}\PYG{l+s+s2}{) = }\PYG{l+s+si}{\PYGZpc{}f}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{n}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{jn}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,} \PYG{n}{x}\PYG{p}{)))}
+
+\PYG{n}{x} \PYG{o}{=} \PYG{l+m+mf}{1.0}
+\PYG{c+c1}{\PYGZsh{} Bessel function of second kind}
+\PYG{k}{print} \PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}Y\PYGZus{}}\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s2}{(}\PYG{l+s+si}{\PYGZpc{}f}\PYG{l+s+s2}{) = }\PYG{l+s+si}{\PYGZpc{}f}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{n}\PYG{p}{,} \PYG{n}{x}\PYG{p}{,} \PYG{n}{yn}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,} \PYG{n}{x}\PYG{p}{)))}
+
+\PYG{c+c1}{\PYGZsh{} zeros of Bessel functions}
+\PYG{n}{n} \PYG{o}{=} \PYG{l+m+mi}{0} \PYG{c+c1}{\PYGZsh{} order}
+\PYG{n}{m} \PYG{o}{=} \PYG{l+m+mi}{4} \PYG{c+c1}{\PYGZsh{} number of roots to compute}
+\PYG{k}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}zeros of Bessel functions are: \PYGZdq{}}\PYG{p}{,} \PYG{n}{jn\PYGZus{}zeros}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,} \PYG{n}{m}\PYG{p}{))}
+
+\PYG{c+c1}{\PYGZsh{} Plot Bessel fonctions}
+\PYG{n}{x} \PYG{o}{=} \PYG{n}{np}\PYG{o}{.}\PYG{n}{linspace}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{50}\PYG{p}{)}
+
+\PYG{n}{markers}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}o\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}s\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}*\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}+\PYGZsq{}}\PYG{p}{]}
+\PYG{n}{lines}\PYG{o}{=}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}\PYGZhy{}\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}\PYGZhy{}\PYGZhy{}\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}\PYGZhy{}.\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}:\PYGZsq{}}\PYG{p}{]}
+
+\PYG{n}{fig}\PYG{p}{,} \PYG{n}{ax} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{subplots}\PYG{p}{()}
+\PYG{k}{for} \PYG{n}{n} \PYG{o+ow}{in} \PYG{n+nb}{range}\PYG{p}{(}\PYG{l+m+mi}{4}\PYG{p}{):}
+    \PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{jn}\PYG{p}{(}\PYG{n}{n}\PYG{p}{,} \PYG{n}{x}\PYG{p}{),}\PYG{n}{ls}\PYG{o}{=}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{lines}\PYG{p}{[}\PYG{n}{n}\PYG{p}{]),}\PYG{n}{marker}\PYG{o}{=}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n}{markers}\PYG{p}{[}\PYG{n}{n}\PYG{p}{]),} \PYG{n}{label}\PYG{o}{=}\PYG{l+s+sa}{r}\PYG{l+s+s2}{\PYGZdq{}\PYGZdl{}J\PYGZus{}}\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s2}{(x)\PYGZdl{}\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{n}{n}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{legend}\PYG{p}{()}
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\end{Verbatim}

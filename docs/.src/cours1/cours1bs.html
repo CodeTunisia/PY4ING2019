@@ -1,0 +1,209 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="description" content="Introduction à Python pour la simulation numérique">
+
+<title>Introduction à Python pour la simulation numérique</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px;line-height:1.5; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table des matières',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Introduction', 1, None, '___sec0'),
+              ('Avoir Python installé sur sa machine', 1, None, '___sec1'),
+              ('Distribution Anaconda', 2, None, '___sec2'),
+              ('Comment démarrer le navigateur Anaconda?', 2, None, '___sec3'),
+              ('Spyder', 2, None, '___sec4'),
+              ('Bibliothèques Python largement utilisées', 1, None, '___sec5'),
+              ('Bibliothèque numérique: `numpy`', 2, None, '___sec6'),
+              ('Création de tableaux numpy', 3, None, '___sec7'),
+              ('Utilisation de fonctions génératrices de tableaux',
+               3,
+               None,
+               '___sec8'),
+              ('Lecture et écriture de données', 3, None, '___sec9'),
+              ('Bibliothèque Python de visualisation des données: `matplotlib`',
+               2,
+               None,
+               '___sec10'),
+              ('Documentation en ligne et Galerie', 3, None, '___sec11'),
+              ('Bibliothèque scientifique python: `scipy`',
+               2,
+               None,
+               '___sec12'),
+              ('Fonctions spéciales', 3, None, '___sec13')]}
+end of tocinfo -->
+
+<body>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: {
+     equationNumbers: {  autoNumber: "none"  },
+     extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"]
+  }
+});
+</script>
+<script type="text/javascript" async
+ src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="cours1bs.html">Introduction à Python pour la simulation numérique</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contenu <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="#table_of_contents" style="font-size: 80%;"><b>Table des matières</b></a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs001.html#___sec0" style="font-size: 80%;"><b>Introduction</b></a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs002.html#___sec1" style="font-size: 80%;"><b>Avoir Python installé sur sa machine</b></a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs002.html#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Distribution Anaconda</a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs002.html#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Comment démarrer le navigateur Anaconda?</a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs002.html#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Spyder</a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs003.html#___sec5" style="font-size: 80%;"><b>Bibliothèques Python largement utilisées</b></a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs003.html#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Bibliothèque numérique: <code>numpy</code></a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs003.html#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Création de tableaux numpy</a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs003.html#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Utilisation de fonctions génératrices de tableaux</a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs003.html#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lecture et écriture de données</a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs004.html#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Bibliothèque Python de visualisation des données: <code>matplotlib</code></a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs004.html#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Documentation en ligne et Galerie</a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs005.html#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Bibliothèque scientifique python: <code>scipy</code></a></li>
+     <!-- navigation toc: --> <li><a href="._cours1bs005.html#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fonctions spéciales</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<a name="part0000"></a>
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<div class="jumbotron">
+<center><h1>Introduction &#224; Python pour la simulation num&#233;rique</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Ahmed Ammar -->
+
+<center>
+<b>Ahmed Ammar</b>  (<tt>ahmed.ammar at fst.utm.tn</tt>)
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>Universit&#233; de Tunis El Manar.</b></center>
+<br>
+<p>
+<center><h4>Jan 21, 2019</h4></center> <!-- date -->
+<br>
+<p>
+</div> <!-- end jumbotron -->
+
+<h1 id="table_of_contents">Table des matières</h2>
+
+<p>
+<a href="._cours1bs001.html#___sec0"> Introduction </a><br>
+<a href="._cours1bs002.html#___sec1"> Avoir Python install&#233; sur sa machine </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._cours1bs002.html#___sec2"> Distribution Anaconda </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._cours1bs002.html#___sec3"> Comment d&#233;marrer le navigateur Anaconda? </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._cours1bs002.html#___sec4"> Spyder </a><br>
+<a href="._cours1bs003.html#___sec5"> Biblioth&#232;ques Python largement utilis&#233;es </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._cours1bs003.html#___sec6"> Biblioth&#232;que num&#233;rique: <code>numpy</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._cours1bs004.html#___sec10"> Biblioth&#232;que Python de visualisation des donn&#233;es: <code>matplotlib</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="._cours1bs005.html#___sec12"> Biblioth&#232;que scientifique python: <code>scipy</code> </a><br>
+</p>
+<p>
+<p>
+<!-- navigation buttons at the bottom of the page -->
+<ul class="pagination">
+  <li class="active"><a href="._cours1bs000.html">1</a></li>
+  <li><a href="._cours1bs001.html">2</a></li>
+  <li><a href="._cours1bs002.html">3</a></li>
+  <li><a href="._cours1bs003.html">4</a></li>
+  <li><a href="._cours1bs004.html">5</a></li>
+  <li><a href="._cours1bs005.html">6</a></li>
+  <li><a href="._cours1bs001.html">&raquo;</a></li>
+</ul>
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+<center style="font-size:80%">
+<!-- copyright --> &copy; 2019, Ahmed Ammar. Released under CC Attribution 4.0 license
+</center>
+
+
+</body>
+</html>
+    
+

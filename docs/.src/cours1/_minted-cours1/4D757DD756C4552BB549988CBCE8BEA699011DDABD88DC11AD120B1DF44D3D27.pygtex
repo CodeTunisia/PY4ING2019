@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{]:} \PYG{k+kn}{from} \PYG{n+nn}{numpy} \PYG{k+kn}{import} \PYG{n}{array} \PYG{c+c1}{\PYGZsh{} importation}
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]:} \PYG{n}{v} \PYG{o}{=} \PYG{n}{array}\PYG{p}{([}\PYG{l+m+mi}{1}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{,}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{4}\PYG{p}{])} \PYG{c+c1}{\PYGZsh{} un vecteur: l\PYGZsq{}argument de la fonction array est une liste Python}
+\PYG{o}{...}\PYG{p}{:} \PYG{n}{v}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{2}\PYG{p}{]:} \PYG{n}{array}\PYG{p}{([}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{])}
+
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{]:} \PYG{n}{M} \PYG{o}{=} \PYG{n}{array}\PYG{p}{([[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{],} \PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{]])}  \PYG{c+c1}{\PYGZsh{} une matrice: l\PYGZsq{}argument de la fonction array est une liste Python imbriquée}
+\PYG{o}{...}\PYG{p}{:} \PYG{n}{M}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{]:}
+\PYG{n}{array}\PYG{p}{([[}\PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{],}
+      \PYG{p}{[}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{]])}
+\end{Verbatim}

@@ -1,0 +1,251 @@
+
+# Information about all exercises in the file cours1.do.txt.
+# The information can be loaded into a Python list of dicts by
+#
+# f = open('.cours1.exerinfo', 'r')
+# exer = eval(f.read())
+#
+[{'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': 'exer:1fonc',
+  'no': 1,
+  'solution': 'La programme qui trace la fonction $g(y)$ est:\n'
+              '\n'
+              '!bc pypro\n'
+              '# NOM DU FICHIER: ex1unefonction.py\n'
+              '# Importer tout de matplotlib et numpy\n'
+              'from pylab import *\n'
+              'def g(y):\n'
+              '    return exp(-y)*sin(4*y)\n'
+              'y = np.linspace(0, 4, 501)\n'
+              '# définir un nouveau graphique\n'
+              'plt.figure()\n'
+              '# tracer la fonction g(y) avec ligne solide rouge\n'
+              "plt.plot(y, g(y), 'r-')\n"
+              "plt.xlabel('y'); plt.ylabel('g(y)')\n"
+              "plt.title('Onde sinusoïdale atténuée')\n"
+              ' # sauvgarder le grahique (format PNG et PDF)\n'
+              'plt.savefig("fig_ex1.png"); plt.savefig("fig_ex1.pdf")\n'
+              '# Afficher le graphique\n'
+              'plt.show()\n'
+              '\n'
+              '!ec\n'
+              '\n'
+              'FIGURE:[scripts/fig_ex1, width=500 frac=0.7] Représentation '
+              "graphique d'une onde sinusoïdale atténuée $g(y)$ ; sortie du "
+              'programme *ex1unefonction.py*. label{fig:fig_ex1}',
+  'solution_file': None,
+  'subex': [],
+  'text': 'Ecrivez un programme qui trace la fonction $g(y) = e^{-y} sin(4y)$ '
+          'pour $y \\in [0, 4]$ en utilisant une ligne continue rouge. '
+          'Utilisez 500 intervalles pour évaluer les points dans [0,4]. '
+          'Stockez toutes les coordonnées et les valeurs dans des tableaux. '
+          'Placez le texte des graduations sur les axes et utilisez le titre '
+          '"Onde sinusoïdale atténuée".',
+  'title': 'Tracer une fonction',
+  'type': 'Exercise',
+  'type_visible': True},
+ {'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': 'exer:2fonc',
+  'no': 2,
+  'solution': 'La programme qui trace la fonction $g(y)$ avec une nouvelle '
+              'fonction $h(y)$ est:\n'
+              '!bc pypro\n'
+              '# NOM DU FICHIER: ex2deuxfonctions.py\n'
+              '# Importer tout de matplotlib et numpy\n'
+              'from pylab import *\n'
+              'def g(y):\n'
+              '    return exp(-y)*sin(4*y)\n'
+              'def h(y):\n'
+              '    return exp(-(3./2)*y)*sin(4*y)\n'
+              '\n'
+              'y = np.linspace(0, 4, 501)\n'
+              'plt.figure()\n'
+              "plt.plot(y, g(y), 'r-', y, h(y), 'k--')\n"
+              "plt.xlabel('y'); plt.ylabel('g(y)')\n"
+              "plt.title('Onde sinusoïdale atténuée')\n"
+              "plt.legend(['g', 'h'])\n"
+              'plt.savefig("fig_ex2.png"); plt.savefig("fig_ex2.pdf")\n'
+              'plt.show()\n'
+              '\n'
+              '!ec\n'
+              '\n'
+              'FIGURE:[scripts/fig_ex2, width=500 frac=0.7] Représentation '
+              'graphique de deux ondes sinusoïdales atténuées $g(y)$ et $h(y)$ '
+              '; sortie du programme *ex2deuxfonctions.py*. label{fig:fig_ex2}',
+  'solution_file': None,
+  'subex': [],
+  'text': 'Comme ref{exer:1fonc}, mais ajouter une courbe en pointillé noir '
+          'pour la fonction $h(y) = e^{-\\frac{3}{2}y} sin(4y)$. Inclure une '
+          'légende pour chaque courbe (avec les noms $g$ et $h$).',
+  'title': 'Tracer deux fonctions',
+  'type': 'Exercise',
+  'type_visible': True},
+ {'answer': '',
+  'chapter_exercise': None,
+  'chapter_no': None,
+  'chapter_title': None,
+  'chapter_type': None,
+  'closing_remarks': '',
+  'file': None,
+  'heading': '=====',
+  'hints': [],
+  'keywords': None,
+  'label': None,
+  'no': 3,
+  'solution': '',
+  'solution_file': None,
+  'subex': [{'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': 'La fonction Python `S(t, n, T)` est la suivante:\n'
+                         '!bc pycod\n'
+                         'from pylab import *\n'
+                         'def S(t, n, T):\n'
+                         '    s = 0\n'
+                         '    for i in range(1, n+1):\n'
+                         '        A = 1/(2*i - 1)\n'
+                         '        B = 2*(2*i - 1)* (pi * t)\n'
+                         '        s +=  A * sin(B/T)\n'
+                         '\n'
+                         '    return s*4/pi\n'
+                         '\n'
+                         '!ec',
+             'text': 'Ecrivez une fonction Python `S(t, n, T)` pour renvoyer '
+                     'la valeur de $S(t; n)$.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': 'La fonction Python `f(t, T)` est la suivante:\n'
+                         '!bc pycod\n'
+                         'def f(t, T):\n'
+                         '    if 0 < t < T/2:\n'
+                         '        return 1\n'
+                         '    elif t == T/2:\n'
+                         '        return 0\n'
+                         '    elif T/2 < t <= T:\n'
+                         '        return -1\n'
+                         '\n'
+                         '!ec',
+             'text': 'Ecrivez une fonction Python `f(t, T)` pour calculer '
+                     '$f(t)$.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': 'Le tableau de valeurs de $t$ pour $T = 2 \\pi$ est '
+                         'défini comme suit:\n'
+                         '!bc pycod\n'
+                         'T = 2*pi\n'
+                         't = linspace(0, T, 100)\n'
+                         '\n'
+                         '!ec',
+             'text': "Créer un tableau `t` à l'aide de la fonction `linspace`, "
+                     'du module `numpy`, pour `100` valeurs `t` uniformément '
+                     'espacés dans [0, T]. On prendra $T = 2 \\pi$.'},
+            {'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': 'Le code suivant nous permet d’avoir un tableau de '
+                         '$f(t)$:\n'
+                         '!bc pycod\n'
+                         'F = []\n'
+                         'for ti in t:\n'
+                         '  F.append(f(ti,T))\n'
+                         'F = array(F)\n'
+                         '\n'
+                         '!ec',
+             'text': 'Remplir une liste `F` par les valeurs de `f(ti,T)` avec '
+                     '$ti \\in t$. Transformer la liste `F` en un tableau '
+                     '(nous voulons avoir un tableau pour la fonction $f(t)$ '
+                     'avec $t \\in [0, T]$ et $T = 2\\pi$).'},
+            {'answer': '',
+             'file': None,
+             'hints': ['Le résultat devrait être similaire au graphique '
+                       'ci-dessous.\n'
+                       'FIGURE: [imgs/fourier, width=500 frac=0.8]'],
+             'solution': 'Le programme qui donne le graphique est:\n'
+                         '!bc pycod\n'
+                         "plot(t, S(t, n=1, T=2*pi), 'k-.', label = "
+                         '"S(t;1)")\n'
+                         "plot(t, S(t, n=3, T=2*pi), 'k:', label = "
+                         '"S(t;3)")\n'
+                         "plot(t, S(t, n=20, T=2*pi), 'k:', label = "
+                         '"S(t;20)")\n'
+                         "plot(t, S(t, n=200, T=2*pi), 'k--', label = "
+                         '"S(t;200)")\n'
+                         'plot(t, F, \'k-\', label = "f(t)")\n'
+                         'title("Approximation d’une fonction par sa série de '
+                         'Fourier", fontweight=\'bold\')\n'
+                         'ylabel("f(t)/S(t;n)")\n'
+                         'xlabel("t")\n'
+                         'legend()\n'
+                         '\n'
+                         '!ec',
+             'text': 'Tracer $S(t; 1)$, $S(t; 3)$, $S(t; 20)$, $S(t; 200)$ et '
+                     'la fonction exacte $f(t)$ dans le même graphique.'},
+            {'aftertext': "# ===== Exercise: Diffraction par un bord d'écran "
+                          'rectiligne  =====\n'
+                          "# Une source ponctuelle éclaire un bord d'écran "
+                          'rectiligne comme représenté dans la Figure '
+                          'ref{fig:bord}. On cherche à déterminer les franges '
+                          'de diffraction observées sur un écran placé au-delà '
+                          "de l'écran obstacle. Dans l'une des expériences de "
+                          'Fresnel a = 100, b = 799 (en mm) et $\\lambda = '
+                          '638$ nm.\n'
+                          '#\n'
+                          '# FIGURE: [imgs/bord, width=500 frac=0.8] Ombre '
+                          "d'un bord droit portée sur un écran éclairé par une "
+                          'source ponctuelle. label{fig:bord}',
+             'answer': '',
+             'file': None,
+             'hints': [],
+             'solution': "La qualité de l'approximation dépend de $n$. "
+                         '$S(t;n)\\rightarrow f(t)$ quand '
+                         '$n\\rightarrow\\infty$.',
+             'text': 'Quelle est la relation entre la qualité de '
+                     "l'approximation et le choix de la valeur de `n`?"}],
+  'text': 'Nous considérons la fonction constante par morceaux:\n'
+          '\n'
+          '!bt\n'
+          '\\begin{equation}\n'
+          'f(t) = \\left\\lbrace\n'
+          '\\begin{array}{ll}\n'
+          '1, & 0 < t < T/2,\\\\\n'
+          '0, & t = T/2,\\\\\n'
+          '-1, & T/2 < t \\le T\n'
+          '\\end{array}\\right.\n'
+          'label{_auto1}\n'
+          '\\end{equation}\n'
+          '\n'
+          '!et\n'
+          'On peut approcher f(t) par la somme:\n'
+          '!bt\n'
+          '\\begin{equation}\n'
+          'S(t;n) = {4\\over\\pi}\\sum_{i=1}^n {1\\over 2i-1}\n'
+          '\\sin\\left( {2(2i-1)\\pi t\\over T}\\right)\n'
+          'label{_auto2}\n'
+          '\\end{equation}\n'
+          '\n'
+          '!et\n'
+          'On peut montrer que $S(t;n)\\rightarrow f(t)$ quand '
+          '$n\\rightarrow\\infty$',
+  'title': 'Approximer une fonction par une somme de sinus',
+  'type': 'Exercise',
+  'type_visible': True}]

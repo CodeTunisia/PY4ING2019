@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{n}{In} \PYG{p}{[}\PYG{l+m+mi}{37}\PYG{p}{]:} \PYG{n}{rand}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,}\PYG{l+m+mi}{2}\PYG{p}{)}
+\PYG{n}{Out}\PYG{p}{[}\PYG{l+m+mi}{37}\PYG{p}{]:}
+\PYG{n}{array}\PYG{p}{([[}\PYG{l+m+mf}{0.01900499}\PYG{p}{,} \PYG{l+m+mf}{0.10872428}\PYG{p}{],}
+       \PYG{p}{[}\PYG{l+m+mf}{0.78849226}\PYG{p}{,} \PYG{l+m+mf}{0.22114384}\PYG{p}{],}
+       \PYG{p}{[}\PYG{l+m+mf}{0.88739675}\PYG{p}{,} \PYG{l+m+mf}{0.94190273}\PYG{p}{]])}
+\end{Verbatim}

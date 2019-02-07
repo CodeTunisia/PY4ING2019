@@ -1,0 +1,9 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Avoir Python install\351 sur sa machine}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Distribution Anaconda}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Comment d\351marrer le navigateur Anaconda?}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Spyder}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Biblioth\350ques Python largement utilis\351es}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{Biblioth\350que num\351rique: numpy }{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Biblioth\350que Python de visualisation des donn\351es: matplotlib }{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.3}{Biblioth\350que scientifique python: scipy }{section.3}% 9

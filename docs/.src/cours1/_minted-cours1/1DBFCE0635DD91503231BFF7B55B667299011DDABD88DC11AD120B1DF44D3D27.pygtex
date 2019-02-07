@@ -1,0 +1,35 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}*\PYGZhy{} coding: utf\PYGZhy{}8 \PYGZhy{}*\PYGZhy{}}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{as} \PYG{n+nn}{plt}
+
+\PYG{n}{fig} \PYG{o}{=} \PYG{n}{plt}\PYG{o}{.}\PYG{n}{figure}\PYG{p}{()}
+\PYG{n}{fig}\PYG{o}{.}\PYG{n}{suptitle}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}bold figure suptitle\PYGZsq{}}\PYG{p}{,} \PYG{n}{fontsize}\PYG{o}{=}\PYG{l+m+mi}{14}\PYG{p}{,} \PYG{n}{fontweight}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}bold\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{ax} \PYG{o}{=} \PYG{n}{fig}\PYG{o}{.}\PYG{n}{add\PYGZus{}subplot}\PYG{p}{(}\PYG{l+m+mi}{111}\PYG{p}{)}
+\PYG{n}{fig}\PYG{o}{.}\PYG{n}{subplots\PYGZus{}adjust}\PYG{p}{(}\PYG{n}{top}\PYG{o}{=}\PYG{l+m+mf}{0.85}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}title}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}axes title\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}xlabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}xlabel\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{set\PYGZus{}ylabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}ylabel\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{text}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{8}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}boxed italics text in data coords\PYGZsq{}}\PYG{p}{,} \PYG{n}{style}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}italic\PYGZsq{}}\PYG{p}{,}
+        \PYG{n}{bbox}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+s+s1}{\PYGZsq{}facecolor\PYGZsq{}}\PYG{p}{:}\PYG{l+s+s1}{\PYGZsq{}red\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}alpha\PYGZsq{}}\PYG{p}{:}\PYG{l+m+mf}{0.5}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}pad\PYGZsq{}}\PYG{p}{:}\PYG{l+m+mi}{10}\PYG{p}{\PYGZcb{})}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{text}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{6}\PYG{p}{,} \PYG{l+s+sa}{r}\PYG{l+s+s1}{\PYGZsq{}an equation: \PYGZdl{}E=mc\PYGZca{}2\PYGZdl{}\PYGZsq{}}\PYG{p}{,} \PYG{n}{fontsize}\PYG{o}{=}\PYG{l+m+mi}{15}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{text}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+s+sa}{u}\PYG{l+s+s1}{\PYGZsq{}unicode: Institut f}\PYG{l+s+se}{\PYGZbs{}374}\PYG{l+s+s1}{r Festk}\PYG{l+s+se}{\PYGZbs{}366}\PYG{l+s+s1}{rperphysik\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{text}\PYG{p}{(}\PYG{l+m+mf}{0.95}\PYG{p}{,} \PYG{l+m+mf}{0.01}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}colored text in axes coords\PYGZsq{}}\PYG{p}{,}
+        \PYG{n}{verticalalignment}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}bottom\PYGZsq{}}\PYG{p}{,} \PYG{n}{horizontalalignment}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}right\PYGZsq{}}\PYG{p}{,}
+        \PYG{n}{transform}\PYG{o}{=}\PYG{n}{ax}\PYG{o}{.}\PYG{n}{transAxes}\PYG{p}{,}
+        \PYG{n}{color}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}green\PYGZsq{}}\PYG{p}{,} \PYG{n}{fontsize}\PYG{o}{=}\PYG{l+m+mi}{15}\PYG{p}{)}
+
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{plot}\PYG{p}{([}\PYG{l+m+mi}{2}\PYG{p}{],} \PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{],} \PYG{l+s+s1}{\PYGZsq{}o\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{annotate}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}annotate\PYGZsq{}}\PYG{p}{,} \PYG{n}{xy}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{),} \PYG{n}{xytext}\PYG{o}{=}\PYG{p}{(}\PYG{l+m+mi}{3}\PYG{p}{,} \PYG{l+m+mi}{4}\PYG{p}{),}
+            \PYG{n}{arrowprops}\PYG{o}{=}\PYG{n+nb}{dict}\PYG{p}{(}\PYG{n}{facecolor}\PYG{o}{=}\PYG{l+s+s1}{\PYGZsq{}black\PYGZsq{}}\PYG{p}{,} \PYG{n}{shrink}\PYG{o}{=}\PYG{l+m+mf}{0.05}\PYG{p}{))}
+
+\PYG{n}{ax}\PYG{o}{.}\PYG{n}{axis}\PYG{p}{([}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{])}
+
+\PYG{n}{plt}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\end{Verbatim}
