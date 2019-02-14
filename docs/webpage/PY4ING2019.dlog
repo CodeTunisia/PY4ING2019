@@ -33,3 +33,21 @@ output in index.html
 translating doconce text in PY4ING2019.do.txt to html
 open file with encoding utf-8
 output in index.html
+translating doconce text in PY4ING2019.do.txt to html
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 101.3 s (accumulated time: 102.9)
+
+
+...doconce format used 104.0 s to translate the document (192 lines)
+
+output in index.html
+translating doconce text in PY4ING2019.do.txt to html
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 15.7 s (accumulated time: 16.7)
+
+
+...doconce format used 17.7 s to translate the document (193 lines)
+
+output in index.html

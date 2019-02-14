@@ -25,3 +25,4 @@ DATE: today
 * HTML:
   * "html simple" : "https://codetunisia.github.io/PY4ING2019/cours1/cours1-solarized.html"
   * "Style Bootstrap, facile à lire sur les appareils mobiles" : "https://codetunisia.github.io/PY4ING2019/cours1/cours1-bs.html"
+* " _Annexe_ : Débuter avec les notebooks ": "https://codetunisia.github.io/CoursSimNum/annexes/AnnexeI/AnnexeI.html"
