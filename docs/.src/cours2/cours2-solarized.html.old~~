@@ -1,0 +1,308 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Apprenez à développer des applications de bureau avec Python and Qt">
+
+<title>Apprenez à développer des applications de bureau avec Python and Qt</title>
+
+
+<link href="https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
+<script src="https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<link href="https://thomasf.github.io/solarized-css/solarized-light.min.css" rel="stylesheet">
+<style type="text/css">
+h1 {color: #b58900;}  /* yellow */
+/* h1 {color: #cb4b16;}  orange */
+/* h1 {color: #d33682;}  magenta, the original choice of thomasf */
+code { padding: 0px; background-color: inherit; }
+pre {
+  border: 0pt solid #93a1a1;
+  box-shadow: none;
+}
+.alert-text-small   { font-size: 80%;  }
+.alert-text-large   { font-size: 130%; }
+.alert-text-normal  { font-size: 90%;  }
+.alert {
+  padding:8px 35px 8px 14px; margin-bottom:18px;
+  text-shadow:0 1px 0 rgba(255,255,255,0.5);
+  border:1px solid #93a1a1;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #555;
+  background-color: #eee8d5;
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  background-size: 38px;
+  padding-left: 55px;
+  width: 75%;
+ }
+.alert-block {padding-top:14px; padding-bottom:14px}
+.alert-block > p, .alert-block > ul {margin-bottom:1em}
+.alert li {margin-top: 1em}
+.alert-block p+p {margin-top:5px}
+.alert-notice { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_question.png); }
+
+div { text-align: justify; text-justify: inter-word; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table of contents',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Introduction', 1, None, '___sec0'),
+              ("Premières étapes pour la création d'une application graphique "
+               "à l'aide de PyQt5",
+               1,
+               None,
+               '___sec1'),
+              ('Importation de PyQt5 et création d\'une "fenêtre PyQt5"',
+               2,
+               None,
+               '___sec2'),
+              ("Structure d'application PyQT", 2, None, '___sec3')]}
+end of tocinfo -->
+
+<body>
+
+    
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<center><h1>Apprenez &#224; d&#233;velopper des applications de bureau avec Python and Qt</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Ahmed Ammar -->
+
+<center>
+<b>Ahmed Ammar</b>  (<tt>ahmed.ammar at fst.utm.tn</tt>)
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>Facult&#233; des Sciences de Tunis, Universit&#233; de Tunis El Manar.</b></center>
+<br>
+<p>
+<center><h4>Feb 16, 2019</h4></center> <!-- date -->
+<br>
+
+<h1 id="table_of_contents">Table of contents</h2>
+
+<p>
+<a href="#___sec0"> Introduction </a><br>
+<a href="#___sec1"> Premi&#232;res &#233;tapes pour la cr&#233;ation d'une application graphique &#224; l'aide de PyQt5 </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec2"> Importation de PyQt5 et cr&#233;ation d'une "fen&#234;tre PyQt5" </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec3"> Structure d'application PyQT </a><br>
+</p>
+<p>
+<!-- !split --><br><br><br><br><br><br><br><br><br><br>
+
+<h1 id="___sec0">Introduction </h1>
+Dans ce chapitre, nous allons passer &#224; la cr&#233;ation d&#8217;applications graphiques. De telles applications permettent de modifier l'apparence d'un programme en utilisant des <b>&#233;l&#233;ments de contr&#244;le</b> tels que des <b>widgets</b>, des <b>boutons</b>, des <b>curseurs</b>, etc.
+
+<p>
+<b>PyQt5</b> (<a href="https://www.riverbankcomputing.com/software/pyqt/intro" target="_blank"><tt>https://www.riverbankcomputing.com/software/pyqt/intro</tt></a>) est une bo&#238;te &#224; outils de widgets d' interface graphique (en anglais <b>GUI</b> pour <em>Graphical User Interface</em>) combinant le langage de programmation Python et le logiciel <b>Qt5</b> (<a href="https://www.qt.io" target="_blank"><tt>https://www.qt.io</tt></a>). PyQt5 est une biblioth&#232;que d'interface graphique populaire qui pr&#233;sente de nombreux avantages par rapport aux autres biblioth&#232;ques d'interface graphique telles que <em>Tkinter</em> et <em>wx</em>. Ceux-ci inclus:
+
+<ul>
+<li> Biblioth&#232;que d'interface graphique multi-plateforme (Windows, MacOS, Linux).</li>
+<li> Bonne performance.</li>
+<li> Prise en charge des styles personnalis&#233;s.</li>
+<li> Plus de biblioth&#232;ques pour la conception d'interface graphique complexe.</li>
+<li> Facilit&#233; d'utilisation.</li>
+</ul>
+
+<h1 id="___sec1">Premi&#232;res &#233;tapes pour la cr&#233;ation d'une application graphique &#224; l'aide de PyQt5 </h1>
+
+<h2 id="___sec2">Importation de PyQt5 et cr&#233;ation d'une "fen&#234;tre PyQt5" </h2>
+
+<p>
+Passons directement &#224; l'action et apprenons &#224; cr&#233;er une fen&#234;tre simple avec PyQt5. Premi&#232;rement, nous devrons importer certains modules essentiels &#224; l&#8217;ex&#233;cution d&#8217;une interface graphique avec PyQt5. Nous commen&#231;ons par <b>importer</b> quelques sous-modules de PyQt5.
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtWidgets</span> <span style="color: #8B008B; font-weight: bold">import</span> QApplication, QWidget
+</pre></div>
+<p>
+<div class="alert alert-block alert-notice alert-text-normal">
+<b>Note.</b>
+<p>
+<code>QtWidgets</code> est l'un des nombreux composants de PyQt5. Certains des plus couramment utilis&#233;s sont &#233;num&#233;r&#233;s ci-dessous:
+
+<ul>
+<li> <code>QtWidgets</code>: Contient des classes qui fournissent un ensemble d'&#233;l&#233;ments pour cr&#233;er une interface graphique classique de type bureau.</li>
+<li> <code>QtCore</code>: Ce module contient les classes principales, y compris la boucle d'&#233;v&#233;nement et les m&#233;canismes <code>signal</code> et <code>slot</code> de Qt.</li>
+<li> <code>QtGui</code>: Celui-ci contient des classes pour l&#8217;int&#233;gration du syst&#232;me de fen&#234;trage, la gestion des &#233;v&#233;nements, les graphiques 2D, les images de base, les polices et le texte.</li>
+<li> <code>QtDesigner</code>: Ce module contient des classes permettant l'extension de <em>Qt Designer</em> &#224; l'aide de PyQt5.</li>
+<li> <code>uic</code>: Ce module contient des classes permettant de g&#233;rer les fichiers <b>.ui</b> cr&#233;&#233;s par Qt Designer d&#233;crivant l&#8217;ensemble ou une partie d&#8217;une interface graphique.</li>
+<li> etc.</li>
+</ul>
+</div>
+
+Ensuite, nous importons le module <code>sys</code> car nous voulons acc&#233;der aux arguments de ligne de commande. Ceux-ci sont contenus dans la liste `sys.argv
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
+app = QApplication(sys.argv)
+</pre></div>
+<p>
+En utilisant les arguments de ligne de commande contenus dans <code>sys.argv</code>, nous devrions cr&#233;er un objet <code>QApplication</code>. Dans l'exemple ci-dessus, nous avons enregistr&#233; cet objet sous le nom <b>app</b>. Ceci est l'objet <em>ex&#233;cut&#233;</em> lorsque nous ex&#233;cutons &#224; l'invite de commande la commande <code>python filename.py</code> o&#249; <b>filename.py</b> est le fichier dans lequel les instructions sont stock&#233;es. Cet objet contiendra tous les &#233;l&#233;ments de l'interface graphique et leurs m&#233;thodes. Par cons&#233;quent, lorsque cet objet est cr&#233;&#233; et <em>ex&#233;cut&#233;</em>, nous avons acc&#232;s &#224; toutes les interfaces graphiques utilis&#233;es dans le programme. Les &#233;l&#233;ments de l'interface graphique sont h&#233;rit&#233;s de la classe <code>QWidgets</code>. Nous obtenons donc un objet <code>QWidget</code> comme indiqu&#233; ci-dessous.
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>window = QWidget()
+</pre></div>
+<p>
+En utilisant les nombreuses m&#233;thodes <em>set</em>, nous pouvons d&#233;finir les valeurs des diff&#233;rents attributs de cet objet <em>window</em>. Nous allons d&#8217;abord d&#233;finir les dimensions de la fen&#234;tre en utilisant la m&#233;thode <code>setGeometry</code>. Il prend quatre param&#232;tres: <b>x</b> coordonn&#233;e du point le plus &#224; gauche de l'objet (<em>window</em>), <b>y</b> coordonn&#233;e du point le plus haut, <b>la largeur</b> et <b>la hauteur</b> de la fen&#234;tre, dans cet ordre. Toutes ces valeurs doivent &#234;tre des entiers r&#233;f&#233;renc&#233;s par rapport aux coordonn&#233;es d'&#233;cran natives. Par exemple, nous pourrions &#233;crire:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>window.setGeometry(<span style="color: #B452CD">400</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">300</span>, <span style="color: #B452CD">200</span>)
+</pre></div>
+<p>
+Cela d&#233;finirait la fen&#234;tre avec une largeur de 300 pixels et une hauteur de 200 pixels &#224; 400 pixels du c&#244;t&#233; gauche et &#224; 100 pixels du haut de l'&#233;cran natif (&#233;cran de votre ordinateur).
+
+<p>
+Nous pouvons d&#233;finir un titre pour la fen&#234;tre. Par exemple:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>window.setWindowTitle(<span style="color: #CD5555">&#39;My first app&#39;</span>)
+</pre></div>
+<p>
+afficherait <em>My first app</em> dans la barre de titre de la fen&#234;tre.
+
+<p>
+Une fois que nous sommes satisfaits de l'interface graphique que nous avons construite, nous appelons:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>window.show()
+</pre></div>
+<p>
+pour afficher l'objet graphique dans <em>l'application</em> que nous avons cr&#233;&#233;e. Cependant, l'application n'est toujours pas ex&#233;cut&#233;e. Pour ex&#233;cuter l'application, nous ex&#233;cutons la commande:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>app.<span style="color: #8B008B; font-weight: bold">exec</span>()
+</pre></div>
+<p>
+La m&#233;thode <code>.show ()</code> est une m&#233;thode QT qui ouvre la fen&#234;tre &#224; l'&#233;cran pour l'utilisateur.
+
+<p>
+Enfin, pour assurer une fermeture agr&#233;able et propre de l'application lorsque nous quittons:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>sys.exit(app.exec_())
+</pre></div>
+<p>
+Le code complet de cette application est donn&#233; ci-dessous et le r&#233;sultat est illustr&#233; &#224; la Figure <a href="#fig:myfirstapp">1</a>. Le code peut &#234;tre stock&#233; dans un fichier, par exemple <b>myfirstapp.py</b>, puis lorsque vous ex&#233;cutez la commande <code>python MyFirstApp.py</code> &#224; l'invite de commande (ou dans Spyder), vous obtenez la fen&#234;tre de sortie affich&#233;e.
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER: myfirstapp.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtWidgets</span> <span style="color: #8B008B; font-weight: bold">import</span> QApplication, QWidget
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
+<span style="color: #228B22"># crÃ©er un objet QApplication</span>
+app = QApplication(sys.argv)
+<span style="color: #228B22"># appeler la classe QWidgets</span>
+window = QWidget()
+<span style="color: #228B22"># dÃ©finir les dimensions de la fenÃªtre</span>
+window.setGeometry(<span style="color: #B452CD">400</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">300</span>, <span style="color: #B452CD">200</span>)
+<span style="color: #228B22"># dÃ©finir un titre pour la fenÃªtre</span>
+window.setWindowTitle(<span style="color: #CD5555">&#39;My first app&#39;</span>)
+<span style="color: #228B22"># afficher l&#39;objet graphique dans l&#39;application</span>
+window.show()
+<span style="color: #228B22"># fermer l&#39;application</span>
+sys.exit(app.exec_())
+</pre></div>
+<p>
+<center> <!-- figure label: --> <div id="fig:myfirstapp"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 1:  Une fen&#234;tre PyQt5 cr&#233;&#233;e par le code <code>myfirstapp.py</code> et &#233;galement par le code <code>myfirstappStructure.py</code>.  <!-- caption label: fig:myfirstapp --> </p></center>
+<p><img src="imgs/myfirstapp.png" align="bottom" width=300></p>
+</center>
+
+<h2 id="___sec3">Structure d'application PyQT </h2>
+Les &#233;tapes suivantes (dont certaines ont d&#233;j&#224; &#233;t&#233; utilis&#233;es dans l'exemple ci-dessus) aideront &#224; cr&#233;er une structure solide et propre pour toute application d&#233;velopp&#233;e avec PyQt:
+
+<ol>
+<li> Importer les modules n&#233;cessaires.</li>
+<li> Cr&#233;er une classe h&#233;rit&#233;e de <code>QMainWindow</code> (&#224; l'aide de la construction <code>class MainWindow(QMainWindow):</code>). La <code>QMainWindow</code> est une classe Qt qui fournit une fen&#234;tre principale de l&#8217;application avec toutes les options (telle que la barre de menus, la barre d&#8217;&#233;tat, etc.).</li>
+<li> Impl&#233;mentez le <b>constructeur</b> (&#233;galement appel&#233; <b>l'initialiseur</b>) de la classe en utilisant la m&#233;thode <code>__init __ ()</code>. Chaque fois qu'un objet d'une classe est cr&#233;&#233;, cette m&#233;thode sera ex&#233;cut&#233;e. L'initialiseur commence g&#233;n&#233;ralement par un appel &#224; l'initialiseur de la classe <code>super ()</code>; Ainsi, toutes les m&#233;thodes d&#233;finies dans la classe parent sont imm&#233;diatement disponibles, m&#234;me si elles sont remplac&#233;es dans la d&#233;finition de classe actuelle.</li>
+<li> Cette op&#233;ration est ensuite suivie par la d&#233;finition des valeurs (par d&#233;faut) pour divers attributs, tels que la g&#233;om&#233;trie, le titre, etc., et la d&#233;finition des diff&#233;rentes m&#233;thodes.</li>
+<li> Enfin, utiliser la construction <code>if __name__ == &quot;__main __&quot;:</code> &#224; la fin pour cr&#233;er un objet <code>QApplication</code> et l'ex&#233;cuter.</li>
+</ol>
+
+La fen&#234;tre illustr&#233;e &#224; la Figure <a href="#fig:myfirstapp">1</a> peut &#233;galement &#234;tre cr&#233;&#233;e &#224; l'aide des &#233;tapes d&#233;crites ci-dessus. Le code permettant de faire cela est donn&#233; dans le script <b>myfirstappStructure.py</b>. Dans une fen&#234;tre d'invite de commande, ex&#233;cutez la commande <code>python myfirstappStructure.py</code> (ou ex&#233;cutez le script sur Spyder), o&#249; <b>myfirstappStructure.py</b> est le nom du fichier contenant le code permettant d'afficher la fen&#234;tre illustr&#233;e &#224; la Figure <a href="#fig:myfirstapp">1</a>.
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER: myfirstappStructure.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtWidgets</span> <span style="color: #8B008B; font-weight: bold">import</span> QApplication, QMainWindow
+
+<span style="color: #8B008B; font-weight: bold">class</span> <span style="color: #008b45; font-weight: bold">MainWindow</span>(QMainWindow):
+    <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">    DOCUMENTATION</span>
+<span style="color: #CD5555">    -------------</span>
+<span style="color: #CD5555">    CrÃ©er une fenÃªtre (300x200 pixels)</span>
+<span style="color: #CD5555">    &#39;&#39;&#39;</span>
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        INITIALISEUR </span>
+<span style="color: #CD5555">        ------------</span>
+<span style="color: #CD5555">        La classe `MainWindow()` rendre une fenÃªtre (300x200 pixels) </span>
+<span style="color: #CD5555">        avec un titre &#39;My first app&#39;.</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        <span style="color: #658b00">super</span>(MainWindow, <span style="color: #658b00">self</span>).<span style="color: #008b45">__init__</span>()
+        <span style="color: #228B22"># PropriÃ©tÃ©s de l&#39;interface graphique</span>
+        <span style="color: #658b00">self</span>.setGeometry(<span style="color: #B452CD">400</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">300</span>, <span style="color: #B452CD">200</span>)
+        <span style="color: #658b00">self</span>.setWindowTitle(<span style="color: #CD5555">&#39;My first app&#39;</span>)
+
+<span style="color: #8B008B; font-weight: bold">if</span> <span style="color: #00688B">__name__</span> == <span style="color: #CD5555">&quot;__main__&quot;</span>:
+    <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
+    app = QApplication(sys.argv)
+    MyApplication = MainWindow()
+    MyApplication.show()
+    sys.exit(app.exec_())
+</pre></div>
+<p>
+
+<!-- ------------------- end of main content --------------- -->
+
+
+<center style="font-size:80%">
+<!-- copyright --> &copy; 2019, Ahmed Ammar. Released under CC Attribution 4.0 license
+</center>
+
+
+</body>
+</html>
+    
+

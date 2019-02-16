@@ -1,0 +1,93 @@
+TITLE: Apprenez à développer des applications de bureau avec Python and Qt
+AUTHOR: Ahmed Ammar {copyright|CC BY} Email:ahmed.ammar@fst.utm.tn at Faculté des Sciences de Tunis, Université de Tunis El Manar.
+DATE: today
+
+TOC: on
+
+!split
+======= Introduction =======
+Dans ce chapitre, nous allons passer à la création d’applications graphiques. De telles applications permettent de modifier l'apparence d'un programme en utilisant des _éléments de contrôle_ tels que des _widgets_, des _boutons_, des _curseurs_, etc.
+
+_PyQt5_ (URL:"https://www.riverbankcomputing.com/software/pyqt/intro") est une boîte à outils de widgets d' interface graphique (en anglais _GUI_ pour *Graphical User Interface*) combinant le langage de programmation Python et le logiciel _Qt5_ (URL:"https://www.qt.io"). PyQt5 est une bibliothèque d'interface graphique populaire qui présente de nombreux avantages par rapport aux autres bibliothèques d'interface graphique telles que *Tkinter* et *wx*. Ceux-ci inclus:
+
+* Bibliothèque d'interface graphique multi-plateforme (Windows, MacOS, Linux).
+* Bonne performance.
+* Prise en charge des styles personnalisés.
+* Plus de bibliothèques pour la conception d'interface graphique complexe.
+* Facilité d'utilisation.
+
+======= Premières étapes pour la création d'une application graphique à l'aide de PyQt5 =======
+
+===== Importation de PyQt5 et création d'une "fenêtre PyQt5" =====
+
+Passons directement à l'action et apprenons à créer une fenêtre simple avec PyQt5. Premièrement, nous devrons importer certains modules essentiels à l’exécution d’une interface graphique avec PyQt5. Nous commençons par _importer_ quelques sous-modules de PyQt5.
+
+!bc pycod-t
+from PyQt5.QtWidgets import QApplication, QWidget
+!ec
+!bnotice
+`QtWidgets` est l'un des nombreux composants de PyQt5. Certains des plus couramment utilisés sont énumérés ci-dessous:
+* `QtWidgets`: Contient des classes qui fournissent un ensemble d'éléments pour créer une interface graphique classique de type bureau.
+* `QtCore`: Ce module contient les classes principales, y compris la boucle d'événement et les mécanismes `signal` et `slot` de Qt.
+* `QtGui`: Celui-ci contient des classes pour l’intégration du système de fenêtrage, la gestion des événements, les graphiques 2D, les images de base, les polices et le texte.
+* `QtDesigner`: Ce module contient des classes permettant l'extension de *Qt Designer* à l'aide de PyQt5.
+* `uic`: Ce module contient des classes permettant de gérer les fichiers _.ui_ créés par Qt Designer décrivant l’ensemble ou une partie d’une interface graphique.
+* etc.
+!enotice
+Ensuite, nous importons le module `sys` car nous voulons accéder aux arguments de ligne de commande. Ceux-ci sont contenus dans la liste `sys.argv
+
+!bc pycod-t
+import sys
+app = QApplication(sys.argv)
+!ec
+
+En utilisant les arguments de ligne de commande contenus dans `sys.argv`, nous devrions créer un objet `QApplication`. Dans l'exemple ci-dessus, nous avons enregistré cet objet sous le nom _app_. Ceci est l'objet *exécuté* lorsque nous exécutons à l'invite de commande la commande `python filename.py` où _filename.py_ est le fichier dans lequel les instructions sont stockées. Cet objet contiendra tous les éléments de l'interface graphique et leurs méthodes. Par conséquent, lorsque cet objet est créé et *exécuté*, nous avons accès à toutes les interfaces graphiques utilisées dans le programme. Les éléments de l'interface graphique sont hérités de la classe `QWidgets`. Nous obtenons donc un objet `QWidget` comme indiqué ci-dessous.
+!bc pycod-t
+window = QWidget()
+!ec
+En utilisant les nombreuses méthodes *set*, nous pouvons définir les valeurs des différents attributs de cet objet *window*. Nous allons d’abord définir les dimensions de la fenêtre en utilisant la méthode `setGeometry`. Il prend quatre paramètres: _x_ coordonnée du point le plus à gauche de l'objet (*window*), _y_ coordonnée du point le plus haut, _la largeur_ et _la hauteur_ de la fenêtre, dans cet ordre. Toutes ces valeurs doivent être des entiers référencés par rapport aux coordonnées d'écran natives. Par exemple, nous pourrions écrire:
+
+!bc pycod-t
+window.setGeometry(400, 100, 300, 200)
+!ec
+Cela définirait la fenêtre avec une largeur de 300 pixels et une hauteur de 200 pixels à 400 pixels du côté gauche et à 100 pixels du haut de l'écran natif (écran de votre ordinateur).
+
+Nous pouvons définir un titre pour la fenêtre. Par exemple:
+
+!bc pycod-t
+window.setWindowTitle('My first app')
+!ec
+afficherait *My first app* dans la barre de titre de la fenêtre.
+
+Une fois que nous sommes satisfaits de l'interface graphique que nous avons construite, nous appelons:
+!bc pycod-t
+window.show()
+!ec
+pour afficher l'objet graphique dans *l'application* que nous avons créée. Cependant, l'application n'est toujours pas exécutée. Pour exécuter l'application, nous exécutons la commande:
+!bc pycod-t
+app.exec()
+!ec
+La méthode `.show ()` est une méthode QT qui ouvre la fenêtre à l'écran pour l'utilisateur.
+
+Enfin, pour assurer une fermeture agréable et propre de l'application lorsque nous quittons:
+!bc pycod-t
+sys.exit(app.exec_())
+!ec
+Le code complet de cette application est donné ci-dessous et le résultat est illustré à la Figure ref{fig:myfirstapp}. Le code peut être stocké dans un fichier, par exemple _myfirstapp.py_, puis lorsque vous exécutez la commande `python MyFirstApp.py` à l'invite de commande (ou dans Spyder), vous obtenez la fenêtre de sortie affichée.
+
+@@@CODE scripts/myfirstapp.py
+
+FIGURE: [imgs/myfirstapp, width=300 frac=0.7] Une fenêtre PyQt5 créée par le code `myfirstapp.py` et également par le code `myfirstappStructure.py`. label{fig:myfirstapp}
+
+===== Structure d'application PyQT =====
+Les étapes suivantes (dont certaines ont déjà été utilisées dans l'exemple ci-dessus) aideront à créer une structure solide et propre pour toute application développée avec PyQt:
+
+o Importer les modules nécessaires.
+o Créer une classe héritée de `QMainWindow` (à l'aide de la construction `class MainWindow(QMainWindow):`). La `QMainWindow` est une classe Qt qui fournit une fenêtre principale de l’application avec toutes les options (telle que la barre de menus, la barre d’état, etc.).
+o Implémentez le _constructeur_ (également appelé _l'initialiseur_) de la classe en utilisant la méthode `__init __ ()`. Chaque fois qu'un objet d'une classe est créé, cette méthode sera exécutée. L'initialiseur commence généralement par un appel à l'initialiseur de la classe `super ()`; Ainsi, toutes les méthodes définies dans la classe parent sont immédiatement disponibles, même si elles sont remplacées dans la définition de classe actuelle.
+o Cette opération est ensuite suivie par la définition des valeurs (par défaut) pour divers attributs, tels que la géométrie, le titre, etc., et la définition des différentes méthodes.
+o Enfin, utiliser la construction `if __name__ == "__main __":` à la fin pour créer un objet `QApplication` et l'exécuter.
+
+La fenêtre illustrée à la Figure ref{fig:myfirstapp} peut également être créée à l'aide des étapes décrites ci-dessus. Le code permettant de faire cela est donné dans le script _myfirstappStructure.py_. Dans une fenêtre d'invite de commande, exécutez la commande `python myfirstappStructure.py` (ou exécutez le script sur Spyder), où _myfirstappStructure.py_ est le nom du fichier contenant le code permettant d'afficher la fenêtre illustrée à la Figure ref{fig:myfirstapp}.
+
+@@@CODE scripts/myfirstappStructure.py

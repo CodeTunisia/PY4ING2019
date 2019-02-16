@@ -1,0 +1,385 @@
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 38.6 s (accumulated time: 39.1)
+
+
+...doconce format used 40.1 s to translate the document (130 lines)
+
+output in cours2.tex
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 56.0 s (accumulated time: 56.6)
+
+
+...doconce format used 57.6 s to translate the document (147 lines)
+
+output in cours2.tex
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+*** error: space in label is not allowed!
+    label{Sec: first steps}
+
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+*** error: space in label is not allowed!
+    label{Sec: first steps}
+
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+*** error: space in label is not allowed!
+    label{Sec: first steps}
+
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+*** error: space in label is not allowed!
+    label{Sec: first steps}
+
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+*** error: space in label is not allowed!
+    label{Sec: first steps}
+
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 20.8 s (accumulated time: 21.1)
+
+
+...doconce format used 22.1 s to translate the document (162 lines)
+
+output in cours2.tex
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+output in cours2.tex
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 18.0 s (accumulated time: 18.6)
+
+
+...doconce format used 19.6 s to translate the document (273 lines)
+
+output in cours2.tex
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 17.5 s (accumulated time: 18.1)
+
+
+...doconce format used 19.1 s to translate the document (138 lines)
+
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 41.0 s (accumulated time: 41.4)
+*** error: could not translate environment: !bnote
+ication, QWidget
+\end{minted}
+\end{cod}
+\noindent
+!bnote
+\texttt{QtWidgets} est l'un des nombreux composan
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 16.5 s (accumulated time: 16.8)
+*** made directory latex_figs for admon figures
+
+
+...doconce format used 22.0 s to translate the document (392 lines)
+
+output in cours2.tex
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 16.0 s (accumulated time: 16.1)
+
+
+...doconce format used 17.1 s to translate the document (172 lines)
+
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+
+...doconce translation: insertion of verbatim and latex blocks 23.9 s (accumulated time: 24.2)
+
+
+...doconce format used 27.6 s to translate the document (398 lines)
+
+output in cours2.tex
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+output in cours2.tex
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+output in cours2.tex
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+output in cours2.tex
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+output in cours2.tex
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to pdflatex
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+output in cours2.tex
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+
+...doconce translation: insertion of verbatim and latex blocks 28.6 s (accumulated time: 29.0)
+
+
+...doconce format used 30.1 s to translate the document (259 lines)
+
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+
+...doconce translation: insertion of verbatim and latex blocks 31.8 s (accumulated time: 32.3)
+
+
+...doconce format used 33.3 s to translate the document (291 lines)
+
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+*** syntax error: ~ref (2 problems)
+    non-breaking space character not needed/allowed before
+    figure, section, etc. (or other non-equation) references
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+*** syntax error: ~ref (2 problems)
+    non-breaking space character not needed/allowed before
+    figure, section, etc. (or other non-equation) references
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+*** syntax error: ~ref (2 problems)
+    non-breaking space character not needed/allowed before
+    figure, section, etc. (or other non-equation) references
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstapp_structure.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstapp_structure.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstapp_structure.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb

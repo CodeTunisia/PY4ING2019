@@ -1,0 +1,79 @@
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #000080; font-weight: bold">TITLE: Apprenez à développer des applications de bureau avec Python and Qt</span>
+<span style="color: #000080; font-weight: bold">AUTHOR:</span> Ahmed Ammar {copyright|CC BY} Email:ahmed.ammar@fst.utm.tn at Faculté des Sciences de Tunis, Université de Tunis El Manar.
+<span style="color: #000080; font-weight: bold">DATE:</span> today
+
+<span style="color: #000080; font-weight: bold">TOC:</span> on
+
+<span style="color: #8B008B; font-weight: bold">!split</span>
+<span style="color: #000080; font-weight: bold">======= Introduction =======</span>
+Dans ce chapitre, nous allons passer à la création d’applications graphiques. De telles applications permettent de modifier l&#39;apparence d&#39;un programme en utilisant des _éléments de contrôle_ tels que des _widgets_, des _boutons_, des _curseurs_, etc.
+
+_PyQt5_ (URL:&quot;https://www.riverbankcomputing.com/software/pyqt/intro&quot;) est une boîte à outils de widgets d&#39; interface graphique (en anglais _GUI_ pour *Graphical User Interface*) combinant le langage de programmation Python et le logiciel _Qt5_ (URL:&quot;https://www.qt.io&quot;). PyQt5 est une bibliothèque d&#39;interface graphique populaire qui présente de nombreux avantages par rapport aux autres bibliothèques d&#39;interface graphique telles que *Tkinter* et *wx*. Ceux-ci inclus:
+
+* Bibliothèque d&#39;interface graphique multi-plateforme (Windows, MacOS, Linux).
+* Bonne performance.
+* Prise en charge des styles personnalisés.
+* Plus de bibliothèques pour la conception d&#39;interface graphique complexe.
+* Facilité d&#39;utilisation.
+
+<span style="color: #000080; font-weight: bold">======= Premières étapes pour la création d&#39;une application graphique à l&#39;aide de PyQt5 =======</span>
+
+<span style="color: #000080; font-weight: bold">===== Importation de PyQt5 et création d&#39;une &quot;fenêtre PyQt5&quot; =====</span>
+
+Passons directement à l&#39;action et apprenons à créer une fenêtre simple avec PyQt5. Premièrement, nous devrons importer certains modules essentiels à l’exécution d’une interface graphique avec PyQt5. Nous commençons par _importer_ quelques sous-modules de PyQt5.
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+from PyQt5.QtWidgets import QApplication, QWidget
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+<span style="color: #8B008B; font-weight: bold">!bnotice</span>
+<span style="color: #CD5555">`QtWidgets`</span> est l&#39;un des nombreux composants de PyQt5. Certains des plus couramment utilisés sont énumérés ci-dessous:
+* `QtWidgets`: Contient des classes qui fournissent un ensemble d&#39;éléments pour créer une interface graphique classique de type bureau.
+* `QtCore`: Ce module contient les classes principales, y compris la boucle d&#39;événement et les mécanismes `signal` et `slot` de Qt.
+* `QtGui`: Celui-ci contient des classes pour l’intégration du système de fenêtrage, la gestion des événements, les graphiques 2D, les images de base, les polices et le texte.
+* `QtDesigner`: Ce module contient des classes permettant l&#39;extension de *Qt Designer* à l&#39;aide de PyQt5.
+* `uic`: Ce module contient des classes permettant de gérer les fichiers _.ui_ créés par Qt Designer décrivant l’ensemble ou une partie d’une interface graphique.
+* etc.
+<span style="color: #8B008B; font-weight: bold">!enotice</span>
+Ensuite, nous importons le module `sys` car nous voulons accéder aux arguments de ligne de commande. Ceux-ci sont contenus dans la liste `sys.argv
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+import sys
+app = QApplication(sys.argv)
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+
+En utilisant les arguments de ligne de commande contenus dans `sys.argv`, nous devrions créer un objet `QApplication`. Dans l&#39;exemple ci-dessus, nous avons enregistré cet objet sous le nom _app_. Ceci est l&#39;objet *exécuté* lorsque nous exécutons à l&#39;invite de commande la commande `python filename.py` où _filename.py_ est le fichier dans lequel les instructions sont stockées. Cet objet contiendra tous les éléments de l&#39;interface graphique et leurs méthodes. Par conséquent, lorsque cet objet est créé et *exécuté*, nous avons accès à toutes les interfaces graphiques utilisées dans le programme. Les éléments de l&#39;interface graphique sont hérités de la classe `QWidgets`. Nous obtenons donc un objet `QWidget` comme indiqué ci-dessous.
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+window = QWidget()
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+En utilisant les nombreuses méthodes *set*, nous pouvons définir les valeurs des différents attributs de cet objet *window*. Nous allons d’abord définir les dimensions de la fenêtre en utilisant la méthode `setGeometry`. Il prend quatre paramètres: _x_ coordonnée du point le plus à gauche de l&#39;objet (*window*), _y_ coordonnée du point le plus haut, _la largeur_ et _la hauteur_ de la fenêtre, dans cet ordre. Toutes ces valeurs doivent être des entiers référencés par rapport aux coordonnées d&#39;écran natives. Par exemple, nous pourrions écrire:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+window.setGeometry(400, 100, 300, 200)
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+Cela définirait la fenêtre avec une largeur de 300 pixels et une hauteur de 200 pixels à 400 pixels du côté gauche et à 100 pixels du haut de l&#39;écran natif (écran de votre ordinateur).
+
+Nous pouvons définir un titre pour la fenêtre. Par exemple:
+
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+window.setWindowTitle(&#39;My first app&#39;)
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+afficherait *My first app* dans la barre de titre de la fenêtre.
+
+Une fois que nous sommes satisfaits de l&#39;interface graphique que nous avons construite, nous appelons:
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+window.show()
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+pour afficher l&#39;objet graphique dans *l&#39;application* que nous avons créée. Cependant, l&#39;application n&#39;est toujours pas exécutée. Pour exécuter l&#39;application, nous exécutons la commande:
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+app.exec()
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+La méthode `.show ()` est une méthode QT qui ouvre la fenêtre à l&#39;écran pour l&#39;utilisateur.
+
+Enfin, pour assurer une fermeture agréable et propre de l&#39;application lorsque nous quittons:
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+sys.exit(app.exec_())
+<span style="color: #8B008B; font-weight: bold">!ec</span>
+Le code complet de cette application est donné ci-dessous et le résultat est illustré à la figure 1. Le code peut être stocké dans un fichier, par exemple _myfirstapp.py_, puis lorsque vous exécutez la commande `python MyFirstApp.py` à l&#39;invite de commande (ou dans Spyder), vous obtenez la fenêtre de sortie affichée.
+
+<span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstapp.py</span>
+</pre></div>
