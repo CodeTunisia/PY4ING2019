@@ -1,7 +1,8 @@
-# NOM DU FICHIER: myfirstappButtons.py
+# NOM DU FICHIER: myfirstappSlider.py
 #% IMPORTATION
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton
-from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtWidgets import (QApplication, QMainWindow, QLabel,
+                             QPushButton, QSpinBox, QSlider)
+from PyQt5.QtCore import pyqtSlot, Qt
 
 
 class MainWindow(QMainWindow):
@@ -53,6 +54,36 @@ class MainWindow(QMainWindow):
         # connecter le signal à l'événement
         button2.clicked.connect(self.on_click_button2)
 
+        # Ajouter des Spin Box: QSpinBox
+        self.spb = QSpinBox(self)
+        # Spin Box changer une valeur entière de 0 à 100
+        self.spb.setMinimum(0)
+        self.spb.setMaximum(100)
+        self.spb.setValue(50) # valeur par défaut
+        self.spb.setSingleStep(1) # pas
+        # définir la géométrie (x, y, largeur, hauteur) en pixels
+        self.spb.setGeometry(120, 100, 50, 20)
+        # connecter le signal à l'événement
+        self.spb.valueChanged.connect(self.spb_valuechange)
+        # définir une étiquette disant à quoi Spin Box fait référence
+        txt = QLabel('La valeur actuelle est: ', self)
+        # définir la géométrie (x, y, largeur, hauteur) en pixels
+        txt.setGeometry(10, 100, 100, 20)
+        # définir une étiquette pour recevoir une valeur du spin box
+        self.val = QLabel("", self)
+        # définir la géométrie (x, y, largeur, hauteur) en pixels
+        self.val.setGeometry(190, 100, 30, 20)
+
+        # Slider: Slider change integer value from 0 to 100
+        self.sldr = QSlider(Qt.Horizontal, self)
+        self.sldr.setMinimum(0)
+        self.sldr.setMaximum(100)
+        self.sldr.setValue(50)
+        self.sldr.setSingleStep(1)
+        # set geometry (x,y,width,hight)
+        self.sldr.setGeometry(10, 150, 280, 20)
+        self.sldr.valueChanged.connect(self.sldr_valuechange)
+
     @pyqtSlot()  # signal du bouton bonjour
     def on_click_button1(self):
         '''
@@ -70,6 +101,24 @@ class MainWindow(QMainWindow):
         message = "<h3><b><font color='red'>Au revoir IE3!</font></b>"
         self.label2.setText(message)
         self.label2.setFixedWidth(120)
+
+    @pyqtSlot(int)  # signal du Spin Box: renvoie un entier
+    def spb_valuechange(self, value):
+        '''
+        la valeur du Spin Box est un entier,
+        convertissez-le en chaîne à l'aide de la fonction str().
+        '''
+        self.val.setText(str(self.spb.value()))
+        # connecter le curseur au Spin Box
+        self.sldr.setValue(value)
+
+    @pyqtSlot(int)  # signal du curseur
+    def sldr_valuechange(self, value):
+        '''
+        connecter le Spin Box au curseur
+        '''
+        self.spb.setValue(value)
+
 
 if __name__ == "__main__":
     import sys

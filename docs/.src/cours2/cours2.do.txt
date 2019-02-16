@@ -114,4 +114,15 @@ FIGURE: [imgs/myfirstappButtons1, width=300 frac=0.7] Résultat de l'exécution 
 Toute méthode peut être connectée à un signal. Cependant, pour être sûr, il est préférable de s’assurer qu’une méthode particulière est bien un _slot_. Ceci est réalisé en déclarant une méthode comme étant un slot en utilisant le décorateur `@pyqtSlot()` comme indiqué dans le code _myfirstappButtons.py_.
 
 === Ajouter des Spin Box: `QSpinBox` ===
-Les Spin Box sont des widgets utilisés pour accepter et afficher des nombres entiers. Celles-ci peuvent être considérées comme une boîte d'édition avec une molette attachée. En cliquant une fois sur une flèche vers le haut de la molette, la valeur dans la zone d'édition augmente d'un point; cliquer sur la flèche vers le bas diminuera la valeur de un. Vous pouvez également entrer la valeur directement dans la zone d'édition. La plage de valeurs accessible dans un spinbox peut être définie à l'aide de la méthode `setRange()` ou de la combinaison des méthodes `setMinimum()` et `setMaximum()`.
+Les Spin Box sont des widgets utilisés pour accepter et afficher des nombres entiers. Celles-ci peuvent être considérées comme une boîte d'édition avec une molette attachée. En cliquant une fois sur une flèche vers le haut de la molette, la valeur dans la zone d'édition augmente d'un point; cliquer sur la flèche vers le bas diminuera la valeur de un. Vous pouvez également entrer la valeur directement dans la zone d'édition. La plage de valeurs accessible dans un spinbox peut être définie à l'aide de la méthode `setRange()` ou de la combinaison des méthodes `setMinimum()` et `setMaximum()`. Toutes ces idées sont montrées dans le code _myfirstappSpinBox.py_ et illustrées par la Figure ref{fig:myfirstappSpinBox}.
+
+@@@CODE scripts/myfirstappSpinBox.py
+
+FIGURE: [imgs/myfirstappSpinBox2, width=300 frac=0.7] Résultat de l'exécution du code `myfirstappSpinBox.py`. label{fig:myfirstappSpinBox}
+
+=== Ajouter des curseurs : `QSlider` ===
+Un QSlider est un widget doté d'une poignée simple. Cette poignée peut être déplacée d'avant en arrière. En utilisant cela, nous pouvons choisir une valeur pour une tâche spécifique. Comme le Spin Box, un curseur ne peut avoir qu'une valeur entière; la plage des valeurs peut être définie entre un minimum et un maximum. Parfois, l’utilisation d’un curseur est plus naturelle que celle d’un Spin Box et cela dépend de la tâche ou de l’application.
+
+@@@CODE scripts/myfirstappSlider.py
+
+FIGURE: [imgs/myfirstappSlider2, width=300 frac=0.7] Résultat de l'exécution du code `myfirstappSlider.py`. label{fig:myfirstappSlider}

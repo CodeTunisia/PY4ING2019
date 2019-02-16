@@ -79,7 +79,8 @@ div { text-align: justify; text-justify: inter-word; }
               ('Widgets, événements et signaux', 2, None, '___sec4'),
               ('Ajouter des étiquettes: `QLabel`', 3, None, '___sec5'),
               ('Ajouter des boutons: `QPushButton`', 3, None, '___sec6'),
-              ('Ajouter des Spin Box: `QSpinBox`', 3, None, '___sec7')]}
+              ('Ajouter des Spin Box: `QSpinBox`', 3, None, '___sec7'),
+              ('Ajouter des curseurs : `QSlider`', 3, None, '___sec8')]}
 end of tocinfo -->
 
 <body>
@@ -104,7 +105,7 @@ end of tocinfo -->
 <center><b>Facult&#233; des Sciences de Tunis, Universit&#233; de Tunis El Manar.</b></center>
 <br>
 <p>
-<center><h4>Feb 16, 2019</h4></center> <!-- date -->
+<center><h4>Feb 17, 2019</h4></center> <!-- date -->
 <br>
 
 <h1 id="table_of_contents">Table of contents</h2>
@@ -417,11 +418,13 @@ La plupart des interfaces graphiques sont utilis&#233;es pour prendre les entr&#
         button1 = QPushButton(<span style="color: #CD5555">&#39;Bonjour&#39;</span>, <span style="color: #658b00">self</span>)
         button1.setToolTip(<span style="color: #CD5555">&quot;C&#39;est le bouton Bonjour&quot;</span>)
         button1.move(<span style="color: #B452CD">50</span>, <span style="color: #B452CD">50</span>)
+        <span style="color: #228B22"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
         button1.clicked.connect(<span style="color: #658b00">self</span>.on_click_button1)
         <span style="color: #228B22"># Push Button 2: Bouton au revoir</span>
         button2 = QPushButton(<span style="color: #CD5555">&#39;Au revoir&#39;</span>, <span style="color: #658b00">self</span>)
         button2.setToolTip(<span style="color: #CD5555">&quot;C&#39;est le bouton Au revoir&quot;</span>)
         button2.move(<span style="color: #B452CD">170</span>, <span style="color: #B452CD">50</span>)
+        <span style="color: #228B22"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
         button2.clicked.connect(<span style="color: #658b00">self</span>.on_click_button2)
 
     <span style="color: #707a7c">@pyqtSlot</span>()  <span style="color: #228B22"># signal du bouton bonjour</span>
@@ -461,7 +464,269 @@ Toute m&#233;thode peut &#234;tre connect&#233;e &#224; un signal. Cependant, po
 
 <h3 id="___sec7">Ajouter des Spin Box: <code>QSpinBox</code> </h3>
 
-Les Spin Box sont des widgets utilis&#233;s pour accepter et afficher des nombres entiers. Celles-ci peuvent &#234;tre consid&#233;r&#233;es comme une bo&#238;te d'&#233;dition avec une molette attach&#233;e. En cliquant une fois sur une fl&#232;che vers le haut de la molette, la valeur dans la zone d'&#233;dition augmente d'un point; cliquer sur la fl&#232;che vers le bas diminuera la valeur de un. Vous pouvez &#233;galement entrer la valeur directement dans la zone d'&#233;dition. La plage de valeurs accessible dans un spinbox peut &#234;tre d&#233;finie &#224; l'aide de la m&#233;thode <code>setRange()</code> ou de la combinaison des m&#233;thodes <code>setMinimum()</code> et <code>setMaximum()</code>.
+Les Spin Box sont des widgets utilis&#233;s pour accepter et afficher des nombres entiers. Celles-ci peuvent &#234;tre consid&#233;r&#233;es comme une bo&#238;te d'&#233;dition avec une molette attach&#233;e. En cliquant une fois sur une fl&#232;che vers le haut de la molette, la valeur dans la zone d'&#233;dition augmente d'un point; cliquer sur la fl&#232;che vers le bas diminuera la valeur de un. Vous pouvez &#233;galement entrer la valeur directement dans la zone d'&#233;dition. La plage de valeurs accessible dans un spinbox peut &#234;tre d&#233;finie &#224; l'aide de la m&#233;thode <code>setRange()</code> ou de la combinaison des m&#233;thodes <code>setMinimum()</code> et <code>setMaximum()</code>. Toutes ces id&#233;es sont montr&#233;es dans le code <b>myfirstappSpinBox.py</b> et illustr&#233;es par la Figure <a href="#fig:myfirstappSpinBox">4</a>.
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER: myfirstappSpinBox.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtWidgets</span> <span style="color: #8B008B; font-weight: bold">import</span> (QApplication, QMainWindow, QLabel,
+                             QPushButton, QSpinBox)
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtCore</span> <span style="color: #8B008B; font-weight: bold">import</span> pyqtSlot
+
+
+<span style="color: #8B008B; font-weight: bold">class</span> <span style="color: #008b45; font-weight: bold">MainWindow</span>(QMainWindow):
+    <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">    DOCUMENTATION</span>
+<span style="color: #CD5555">    -------------</span>
+<span style="color: #CD5555">    CrÃ©er une fenÃªtre (300x200 pixels)</span>
+<span style="color: #CD5555">    &#39;&#39;&#39;</span>
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        INITIALISEUR </span>
+<span style="color: #CD5555">        ------------</span>
+<span style="color: #CD5555">        La classe `MainWindow()` rendre une fenÃªtre (300x200 pixels) </span>
+<span style="color: #CD5555">        avec un titre &#39;My first app&#39;.</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        <span style="color: #658b00">super</span>(MainWindow, <span style="color: #658b00">self</span>).<span style="color: #008b45">__init__</span>()
+        <span style="color: #228B22"># GUI proprieties</span>
+        <span style="color: #658b00">self</span>.setGeometry(<span style="color: #B452CD">400</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">300</span>, <span style="color: #B452CD">200</span>)
+        <span style="color: #658b00">self</span>.setWindowTitle(<span style="color: #CD5555">&#39;My first app&#39;</span>)
+        <span style="color: #228B22"># Ajouter des Ã©tiquettes: QLabel</span>
+        <span style="color: #228B22">## Label 1: Texte brut</span>
+        <span style="color: #658b00">self</span>.label1 = QLabel(<span style="color: #CD5555">&#39;Ma premiÃ¨re application affiche: &#39;</span>, <span style="color: #658b00">self</span>)
+        <span style="color: #228B22"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #658b00">self</span>.label1.setFixedWidth(<span style="color: #B452CD">160</span>)
+        <span style="color: #228B22"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        <span style="color: #658b00">self</span>.label1.move(<span style="color: #B452CD">10</span>, <span style="color: #B452CD">10</span>)
+        <span style="color: #228B22">## Label 2: Texte riche</span>
+        <span style="color: #658b00">self</span>.label2 = QLabel(<span style="color: #CD5555">&quot;&quot;</span>, <span style="color: #658b00">self</span>)
+        <span style="color: #228B22"># crÃ©er un message HTML</span>
+        message = <span style="color: #CD5555">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
+        <span style="color: #228B22"># ajouter le text du message </span>
+        <span style="color: #658b00">self</span>.label2.setText(message)
+        <span style="color: #228B22"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #658b00">self</span>.label2.setFixedWidth(<span style="color: #B452CD">120</span>)
+         <span style="color: #228B22"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        <span style="color: #658b00">self</span>.label2.move(<span style="color: #B452CD">200</span>, <span style="color: #B452CD">10</span>)
+        
+        <span style="color: #228B22"># Ajouter des boutons: `QPushButton`</span>
+        <span style="color: #228B22"># Push Button 1: Bouton bonjour</span>
+        button1 = QPushButton(<span style="color: #CD5555">&#39;Bonjour&#39;</span>, <span style="color: #658b00">self</span>)
+        button1.setToolTip(<span style="color: #CD5555">&quot;C&#39;est le bouton Bonjour&quot;</span>)
+        button1.move(<span style="color: #B452CD">50</span>, <span style="color: #B452CD">50</span>)
+        <span style="color: #228B22"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        button1.clicked.connect(<span style="color: #658b00">self</span>.on_click_button1)
+        <span style="color: #228B22"># Push Button 2: Bouton au revoir</span>
+        button2 = QPushButton(<span style="color: #CD5555">&#39;Au revoir&#39;</span>, <span style="color: #658b00">self</span>)
+        button2.setToolTip(<span style="color: #CD5555">&quot;C&#39;est le bouton Au revoir&quot;</span>)
+        button2.move(<span style="color: #B452CD">170</span>, <span style="color: #B452CD">50</span>)
+        <span style="color: #228B22"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        button2.clicked.connect(<span style="color: #658b00">self</span>.on_click_button2)
+
+        <span style="color: #228B22"># Ajouter des Spin Box: QSpinBox</span>
+        <span style="color: #658b00">self</span>.spb = QSpinBox(<span style="color: #658b00">self</span>)
+        <span style="color: #228B22"># Spin Box changer une valeur entiÃ¨re de 0 Ã  100</span>
+        <span style="color: #658b00">self</span>.spb.setMinimum(<span style="color: #B452CD">0</span>)
+        <span style="color: #658b00">self</span>.spb.setMaximum(<span style="color: #B452CD">100</span>)
+        <span style="color: #658b00">self</span>.spb.setValue(<span style="color: #B452CD">50</span>) <span style="color: #228B22"># valeur par dÃ©faut</span>
+        <span style="color: #658b00">self</span>.spb.setSingleStep(<span style="color: #B452CD">1</span>) <span style="color: #228B22"># pas</span>
+        <span style="color: #228B22"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        <span style="color: #658b00">self</span>.spb.setGeometry(<span style="color: #B452CD">120</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">50</span>, <span style="color: #B452CD">20</span>)
+        <span style="color: #228B22"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        <span style="color: #658b00">self</span>.spb.valueChanged.connect(<span style="color: #658b00">self</span>.spb_valuechange)
+        <span style="color: #228B22"># dÃ©finir une Ã©tiquette disant Ã  quoi Spin Box fait rÃ©fÃ©rence</span>
+        txt = QLabel(<span style="color: #CD5555">&#39;La valeur actuelle est: &#39;</span>, <span style="color: #658b00">self</span>)
+        <span style="color: #228B22"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        txt.setGeometry(<span style="color: #B452CD">10</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">20</span>)
+        <span style="color: #228B22"># dÃ©finir une Ã©tiquette pour recevoir une valeur du spin box</span>
+        <span style="color: #658b00">self</span>.val = QLabel(<span style="color: #CD5555">&quot;&quot;</span>, <span style="color: #658b00">self</span>)
+        <span style="color: #228B22"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        <span style="color: #658b00">self</span>.val.setGeometry(<span style="color: #B452CD">190</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">30</span>, <span style="color: #B452CD">20</span>)
+
+    <span style="color: #707a7c">@pyqtSlot</span>()  <span style="color: #228B22"># signal du bouton bonjour</span>
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_click_button1</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        Afficher un message &quot;Bonjour&quot;</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        message = <span style="color: #CD5555">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
+        <span style="color: #658b00">self</span>.label2.setText(message)
+        <span style="color: #658b00">self</span>.label2.setFixedWidth(<span style="color: #B452CD">120</span>)
+
+    <span style="color: #707a7c">@pyqtSlot</span>()  <span style="color: #228B22"># signal du bouton au revoir</span>
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_click_button2</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        Afficher un message &quot;Au revoir&quot;</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        message = <span style="color: #CD5555">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;red&#39;&gt;Au revoir IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
+        <span style="color: #658b00">self</span>.label2.setText(message)
+        <span style="color: #658b00">self</span>.label2.setFixedWidth(<span style="color: #B452CD">120</span>)
+
+    <span style="color: #707a7c">@pyqtSlot</span>(<span style="color: #658b00">int</span>)  <span style="color: #228B22"># signal du Spin Box: renvoie un entier</span>
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">spb_valuechange</span>(<span style="color: #658b00">self</span>, value):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        la valeur du Spin Box est un entier,</span>
+<span style="color: #CD5555">        convertissez-le en chaÃ®ne Ã  l&#39;aide de la fonction str().</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        <span style="color: #658b00">self</span>.val.setText(<span style="color: #658b00">str</span>(<span style="color: #658b00">self</span>.spb.value()))
+
+<span style="color: #8B008B; font-weight: bold">if</span> <span style="color: #00688B">__name__</span> == <span style="color: #CD5555">&quot;__main__&quot;</span>:
+    <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
+    app = QApplication(sys.argv)
+    MyApplication = MainWindow()
+    MyApplication.show()
+    sys.exit(app.exec_())
+</pre></div>
+<p>
+<center> <!-- figure label: --> <div id="fig:myfirstappSpinBox"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 4:  R&#233;sultat de l'ex&#233;cution du code <code>myfirstappSpinBox.py</code>.  <!-- caption label: fig:myfirstappSpinBox --> </p></center>
+<p><img src="imgs/myfirstappSpinBox2.png" align="bottom" width=300></p>
+</center>
+
+<h3 id="___sec8">Ajouter des curseurs : <code>QSlider</code> </h3>
+
+Un QSlider est un widget dot&#233; d'une poign&#233;e simple. Cette poign&#233;e peut &#234;tre d&#233;plac&#233;e d'avant en arri&#232;re. En utilisant cela, nous pouvons choisir une valeur pour une t&#226;che sp&#233;cifique. Comme le Spin Box, un curseur ne peut avoir qu'une valeur enti&#232;re; la plage des valeurs peut &#234;tre d&#233;finie entre un minimum et un maximum. Parfois, l&#8217;utilisation d&#8217;un curseur est plus naturelle que celle d&#8217;un Spin Box et cela d&#233;pend de la t&#226;che ou de l&#8217;application.
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER: myfirstappSlider.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtWidgets</span> <span style="color: #8B008B; font-weight: bold">import</span> (QApplication, QMainWindow, QLabel,
+                             QPushButton, QSpinBox, QSlider)
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtCore</span> <span style="color: #8B008B; font-weight: bold">import</span> pyqtSlot, Qt
+
+
+<span style="color: #8B008B; font-weight: bold">class</span> <span style="color: #008b45; font-weight: bold">MainWindow</span>(QMainWindow):
+    <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">    DOCUMENTATION</span>
+<span style="color: #CD5555">    -------------</span>
+<span style="color: #CD5555">    CrÃ©er une fenÃªtre (300x200 pixels)</span>
+<span style="color: #CD5555">    &#39;&#39;&#39;</span>
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        INITIALISEUR </span>
+<span style="color: #CD5555">        ------------</span>
+<span style="color: #CD5555">        La classe `MainWindow()` rendre une fenÃªtre (300x200 pixels) </span>
+<span style="color: #CD5555">        avec un titre &#39;My first app&#39;.</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        <span style="color: #658b00">super</span>(MainWindow, <span style="color: #658b00">self</span>).<span style="color: #008b45">__init__</span>()
+        <span style="color: #228B22"># GUI proprieties</span>
+        <span style="color: #658b00">self</span>.setGeometry(<span style="color: #B452CD">400</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">300</span>, <span style="color: #B452CD">200</span>)
+        <span style="color: #658b00">self</span>.setWindowTitle(<span style="color: #CD5555">&#39;My first app&#39;</span>)
+        <span style="color: #228B22"># Ajouter des Ã©tiquettes: QLabel</span>
+        <span style="color: #228B22">## Label 1: Texte brut</span>
+        <span style="color: #658b00">self</span>.label1 = QLabel(<span style="color: #CD5555">&#39;Ma premiÃ¨re application affiche: &#39;</span>, <span style="color: #658b00">self</span>)
+        <span style="color: #228B22"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #658b00">self</span>.label1.setFixedWidth(<span style="color: #B452CD">160</span>)
+        <span style="color: #228B22"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        <span style="color: #658b00">self</span>.label1.move(<span style="color: #B452CD">10</span>, <span style="color: #B452CD">10</span>)
+        <span style="color: #228B22">## Label 2: Texte riche</span>
+        <span style="color: #658b00">self</span>.label2 = QLabel(<span style="color: #CD5555">&quot;&quot;</span>, <span style="color: #658b00">self</span>)
+        <span style="color: #228B22"># crÃ©er un message HTML</span>
+        message = <span style="color: #CD5555">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
+        <span style="color: #228B22"># ajouter le text du message </span>
+        <span style="color: #658b00">self</span>.label2.setText(message)
+        <span style="color: #228B22"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #658b00">self</span>.label2.setFixedWidth(<span style="color: #B452CD">120</span>)
+         <span style="color: #228B22"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        <span style="color: #658b00">self</span>.label2.move(<span style="color: #B452CD">200</span>, <span style="color: #B452CD">10</span>)
+        
+        <span style="color: #228B22"># Ajouter des boutons: `QPushButton`</span>
+        <span style="color: #228B22"># Push Button 1: Bouton bonjour</span>
+        button1 = QPushButton(<span style="color: #CD5555">&#39;Bonjour&#39;</span>, <span style="color: #658b00">self</span>)
+        button1.setToolTip(<span style="color: #CD5555">&quot;C&#39;est le bouton Bonjour&quot;</span>)
+        button1.move(<span style="color: #B452CD">50</span>, <span style="color: #B452CD">50</span>)
+        <span style="color: #228B22"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        button1.clicked.connect(<span style="color: #658b00">self</span>.on_click_button1)
+        <span style="color: #228B22"># Push Button 2: Bouton au revoir</span>
+        button2 = QPushButton(<span style="color: #CD5555">&#39;Au revoir&#39;</span>, <span style="color: #658b00">self</span>)
+        button2.setToolTip(<span style="color: #CD5555">&quot;C&#39;est le bouton Au revoir&quot;</span>)
+        button2.move(<span style="color: #B452CD">170</span>, <span style="color: #B452CD">50</span>)
+        <span style="color: #228B22"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        button2.clicked.connect(<span style="color: #658b00">self</span>.on_click_button2)
+
+        <span style="color: #228B22"># Ajouter des Spin Box: QSpinBox</span>
+        <span style="color: #658b00">self</span>.spb = QSpinBox(<span style="color: #658b00">self</span>)
+        <span style="color: #228B22"># Spin Box changer une valeur entiÃ¨re de 0 Ã  100</span>
+        <span style="color: #658b00">self</span>.spb.setMinimum(<span style="color: #B452CD">0</span>)
+        <span style="color: #658b00">self</span>.spb.setMaximum(<span style="color: #B452CD">100</span>)
+        <span style="color: #658b00">self</span>.spb.setValue(<span style="color: #B452CD">50</span>) <span style="color: #228B22"># valeur par dÃ©faut</span>
+        <span style="color: #658b00">self</span>.spb.setSingleStep(<span style="color: #B452CD">1</span>) <span style="color: #228B22"># pas</span>
+        <span style="color: #228B22"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        <span style="color: #658b00">self</span>.spb.setGeometry(<span style="color: #B452CD">120</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">50</span>, <span style="color: #B452CD">20</span>)
+        <span style="color: #228B22"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        <span style="color: #658b00">self</span>.spb.valueChanged.connect(<span style="color: #658b00">self</span>.spb_valuechange)
+        <span style="color: #228B22"># dÃ©finir une Ã©tiquette disant Ã  quoi Spin Box fait rÃ©fÃ©rence</span>
+        txt = QLabel(<span style="color: #CD5555">&#39;La valeur actuelle est: &#39;</span>, <span style="color: #658b00">self</span>)
+        <span style="color: #228B22"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        txt.setGeometry(<span style="color: #B452CD">10</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">20</span>)
+        <span style="color: #228B22"># dÃ©finir une Ã©tiquette pour recevoir une valeur du spin box</span>
+        <span style="color: #658b00">self</span>.val = QLabel(<span style="color: #CD5555">&quot;&quot;</span>, <span style="color: #658b00">self</span>)
+        <span style="color: #228B22"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        <span style="color: #658b00">self</span>.val.setGeometry(<span style="color: #B452CD">190</span>, <span style="color: #B452CD">100</span>, <span style="color: #B452CD">30</span>, <span style="color: #B452CD">20</span>)
+
+        <span style="color: #228B22"># Slider: Slider change integer value from 0 to 100</span>
+        <span style="color: #658b00">self</span>.sldr = QSlider(Qt.Horizontal, <span style="color: #658b00">self</span>)
+        <span style="color: #658b00">self</span>.sldr.setMinimum(<span style="color: #B452CD">0</span>)
+        <span style="color: #658b00">self</span>.sldr.setMaximum(<span style="color: #B452CD">100</span>)
+        <span style="color: #658b00">self</span>.sldr.setValue(<span style="color: #B452CD">50</span>)
+        <span style="color: #658b00">self</span>.sldr.setSingleStep(<span style="color: #B452CD">1</span>)
+        <span style="color: #228B22"># set geometry (x,y,width,hight)</span>
+        <span style="color: #658b00">self</span>.sldr.setGeometry(<span style="color: #B452CD">10</span>, <span style="color: #B452CD">150</span>, <span style="color: #B452CD">280</span>, <span style="color: #B452CD">20</span>)
+        <span style="color: #658b00">self</span>.sldr.valueChanged.connect(<span style="color: #658b00">self</span>.sldr_valuechange)
+
+    <span style="color: #707a7c">@pyqtSlot</span>()  <span style="color: #228B22"># signal du bouton bonjour</span>
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_click_button1</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        Afficher un message &quot;Bonjour&quot;</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        message = <span style="color: #CD5555">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
+        <span style="color: #658b00">self</span>.label2.setText(message)
+        <span style="color: #658b00">self</span>.label2.setFixedWidth(<span style="color: #B452CD">120</span>)
+
+    <span style="color: #707a7c">@pyqtSlot</span>()  <span style="color: #228B22"># signal du bouton au revoir</span>
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_click_button2</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        Afficher un message &quot;Au revoir&quot;</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        message = <span style="color: #CD5555">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;red&#39;&gt;Au revoir IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
+        <span style="color: #658b00">self</span>.label2.setText(message)
+        <span style="color: #658b00">self</span>.label2.setFixedWidth(<span style="color: #B452CD">120</span>)
+
+    <span style="color: #707a7c">@pyqtSlot</span>(<span style="color: #658b00">int</span>)  <span style="color: #228B22"># signal du Spin Box: renvoie un entier</span>
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">spb_valuechange</span>(<span style="color: #658b00">self</span>, value):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        la valeur du Spin Box est un entier,</span>
+<span style="color: #CD5555">        convertissez-le en chaÃ®ne Ã  l&#39;aide de la fonction str().</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        <span style="color: #658b00">self</span>.val.setText(<span style="color: #658b00">str</span>(<span style="color: #658b00">self</span>.spb.value()))
+        <span style="color: #228B22"># connecter le curseur au Spin Box</span>
+        <span style="color: #658b00">self</span>.sldr.setValue(value)
+
+    <span style="color: #707a7c">@pyqtSlot</span>(<span style="color: #658b00">int</span>)  <span style="color: #228B22"># signal du curseur</span>
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">sldr_valuechange</span>(<span style="color: #658b00">self</span>, value):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        connecter le Spin Box au curseur</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        <span style="color: #658b00">self</span>.spb.setValue(value)
+
+
+<span style="color: #8B008B; font-weight: bold">if</span> <span style="color: #00688B">__name__</span> == <span style="color: #CD5555">&quot;__main__&quot;</span>:
+    <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
+    app = QApplication(sys.argv)
+    MyApplication = MainWindow()
+    MyApplication.show()
+    sys.exit(app.exec_())
+</pre></div>
+<p>
+<center> <!-- figure label: --> <div id="fig:myfirstappSlider"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 5:  R&#233;sultat de l'ex&#233;cution du code <code>myfirstappSlider.py</code>.  <!-- caption label: fig:myfirstappSlider --> </p></center>
+<p><img src="imgs/myfirstappSlider2.png" align="bottom" width=300></p>
+</center>
 
 <!-- ------------------- end of main content --------------- -->
 

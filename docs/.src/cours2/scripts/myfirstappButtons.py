@@ -44,11 +44,13 @@ class MainWindow(QMainWindow):
         button1 = QPushButton('Bonjour', self)
         button1.setToolTip("C'est le bouton Bonjour")
         button1.move(50, 50)
+        # connecter le signal à l'événement
         button1.clicked.connect(self.on_click_button1)
         # Push Button 2: Bouton au revoir
         button2 = QPushButton('Au revoir', self)
         button2.setToolTip("C'est le bouton Au revoir")
         button2.move(170, 50)
+        # connecter le signal à l'événement
         button2.clicked.connect(self.on_click_button2)
 
     @pyqtSlot()  # signal du bouton bonjour
