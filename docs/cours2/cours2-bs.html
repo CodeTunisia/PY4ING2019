@@ -57,7 +57,11 @@ body { font-size:20px;line-height:1.5; }
                2,
                None,
                '___sec2'),
-              ("Structure d'application PyQT", 2, None, '___sec3')]}
+              ("Structure d'application PyQT", 2, None, '___sec3'),
+              ('Widgets, événements et signaux', 2, None, '___sec4'),
+              ('Ajouter des étiquettes: `QLabel`', 3, None, '___sec5'),
+              ('Ajouter des boutons: `QPushButton`', 3, None, '___sec6'),
+              ('Ajouter des Spin Box: `QSpinBox`', 3, None, '___sec7')]}
 end of tocinfo -->
 
 <body>
@@ -84,6 +88,10 @@ end of tocinfo -->
      <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 80%;"><b>Premières étapes pour la création d'une application graphique à l'aide de PyQt5</b></a></li>
      <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Importation de PyQt5 et création d'une "fenêtre PyQt5"</a></li>
      <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Structure d'application PyQT</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Widgets, événements et signaux</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ajouter des étiquettes: <code>QLabel</code></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec6" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ajouter des boutons: <code>QPushButton</code></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ajouter des Spin Box: <code>QSpinBox</code></a></li>
 
         </ul>
       </li>
@@ -128,6 +136,7 @@ end of tocinfo -->
 <a href="#___sec1"> Premi&#232;res &#233;tapes pour la cr&#233;ation d'une application graphique &#224; l'aide de PyQt5 </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec2"> Importation de PyQt5 et cr&#233;ation d'une "fen&#234;tre PyQt5" </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec3"> Structure d'application PyQT </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec4"> Widgets, &#233;v&#233;nements et signaux </a><br>
 </p>
 <p>
 <!-- !split -->
@@ -178,6 +187,8 @@ Passons directement &#224; l'action et apprenons &#224; cr&#233;er une fen&#234;
 </div>
 </div>
 
+
+<p>
 Ensuite, nous importons le module <code>sys</code> car nous voulons acc&#233;der aux arguments de ligne de commande. Ceux-ci sont contenus dans la liste `sys.argv
 
 <p>
@@ -270,6 +281,8 @@ sys<span style="color: #666666">.</span>exit(app<span style="color: #666666">.</
 </center>
 
 <h2 id="___sec3" class="anchor">Structure d'application PyQT </h2>
+
+<p>
 Les &#233;tapes suivantes (dont certaines ont d&#233;j&#224; &#233;t&#233; utilis&#233;es dans l'exemple ci-dessus) aideront &#224; cr&#233;er une structure solide et propre pour toute application d&#233;velopp&#233;e avec PyQt:
 
 <ol>
@@ -314,7 +327,167 @@ La fen&#234;tre illustr&#233;e &#224; la Figure <a href="#fig:myfirstapp">1</a> 
     MyApplication<span style="color: #666666">.</span>show()
     sys<span style="color: #666666">.</span>exit(app<span style="color: #666666">.</span>exec_())
 </pre></div>
+
+<h2 id="___sec4" class="anchor">Widgets, &#233;v&#233;nements et signaux </h2>
+Les widgets sont les &#233;l&#233;ments de base d'une interface graphique. PyQt5 a une large gamme de widgets, y compris des boutons (<code>buttons</code>), des &#233;tiquettes (<code>labels</code>), des cases &#224; cocher (<code>check boxes</code>), des curseurs (<code>sliders</code>), des zones de liste (<code>list boxes</code>), etc. Nous d&#233;crirons plusieurs widgets couramment utilis&#233;s dans cette section. Ceux-ci incluent un <code>QPushButton</code>, un <code>ToggleButton</code>, un <code>QLabel</code>, un <code>QCheckBox</code>, un <code>QSlider</code>, un <code>QProgressBar</code>, un <code>QCalendarWidget</code>, etc.
+
+<h3 id="___sec5" class="anchor">Ajouter des &#233;tiquettes: <code>QLabel</code> </h3>
+
+Nous avons besoin d'une &#233;tiquette pour afficher les messages. Un <code>QLabel</code> peut afficher du texte brut ou riche, HTML. Le code pr&#233;sent&#233; ci-dessous (<b>myfirstappLabels.py</b>) ajouterait deux objets <code>QLabel</code> &#224; la m&#234;me fen&#234;tre que celle pr&#233;c&#233;demment cr&#233;&#233;e. Le premier affiche un texte brut (<code>&quot;Ma premi&#232;re application affiche: &quot;</code>) et le second un texte HTML enrichi ("Bonjour IE3!", Gras et de couleur verte). L'ex&#233;cution du code produira une fen&#234;tre illustr&#233;e &#224; la Figure <a href="#fig:myfirstappLabels">2</a>.
 <p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># NOM DU FICHIER: myfirstappLabels.py</span>
+<span style="color: #408080; font-style: italic">#% IMPORTATION</span>
+<span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">PyQt5.QtWidgets</span> <span style="color: #008000; font-weight: bold">import</span> QApplication, QMainWindow, QLabel
+
+<span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">MainWindow</span>(QMainWindow):
+    <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
+<span style="color: #BA2121; font-style: italic">    DOCUMENTATION</span>
+<span style="color: #BA2121; font-style: italic">    -------------</span>
+<span style="color: #BA2121; font-style: italic">    CrÃ©er une fenÃªtre (300x200 pixels)</span>
+<span style="color: #BA2121; font-style: italic">    &#39;&#39;&#39;</span>
+    <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">__init__</span>(<span style="color: #008000">self</span>):
+        <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
+<span style="color: #BA2121; font-style: italic">        INITIALISEUR </span>
+<span style="color: #BA2121; font-style: italic">        ------------</span>
+<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenÃªtre (300x200 pixels) </span>
+<span style="color: #BA2121; font-style: italic">        avec un titre &#39;My first app&#39;.</span>
+<span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
+        <span style="color: #008000">super</span>(MainWindow, <span style="color: #008000">self</span>)<span style="color: #666666">.</span><span style="color: #0000FF">__init__</span>()
+        <span style="color: #408080; font-style: italic"># GUI proprieties</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>setGeometry(<span style="color: #666666">400</span>, <span style="color: #666666">100</span>, <span style="color: #666666">300</span>, <span style="color: #666666">200</span>)
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>setWindowTitle(<span style="color: #BA2121">&#39;My first app&#39;</span>)
+        <span style="color: #408080; font-style: italic"># Ajouter des Ã©tiquettes: QLabel</span>
+        <span style="color: #408080; font-style: italic">## Label 1: Texte brut</span>
+        label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma premiÃ¨re application affiche: &#39;</span>, <span style="color: #008000">self</span>)
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        label1<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">160</span>)
+        <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        label1<span style="color: #666666">.</span>move(<span style="color: #666666">10</span>, <span style="color: #666666">10</span>)
+        <span style="color: #408080; font-style: italic">## Label 2: Texte riche</span>
+        label2 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&quot;&quot;</span>, <span style="color: #008000">self</span>)
+        <span style="color: #408080; font-style: italic"># crÃ©er un message HTML</span>
+        message <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
+        <span style="color: #408080; font-style: italic"># ajouter le text du message </span>
+        label2<span style="color: #666666">.</span>setText(message)
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        label2<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">120</span>)
+         <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        label2<span style="color: #666666">.</span>move(<span style="color: #666666">200</span>, <span style="color: #666666">10</span>)
+
+<span style="color: #008000; font-weight: bold">if</span> <span style="color: #19177C">__name__</span> <span style="color: #666666">==</span> <span style="color: #BA2121">&quot;__main__&quot;</span>:
+    <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">sys</span>
+    app <span style="color: #666666">=</span> QApplication(sys<span style="color: #666666">.</span>argv)
+    MyApplication <span style="color: #666666">=</span> MainWindow()
+    MyApplication<span style="color: #666666">.</span>show()
+    sys<span style="color: #666666">.</span>exit(app<span style="color: #666666">.</span>exec_())
+</pre></div>
+<p>
+<center> <!-- figure label: --> <div id="fig:myfirstappLabels"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 2:  R&#233;sultat de l'ex&#233;cution du code <code>myfirstappLabels.py</code>.  <!-- caption label: fig:myfirstappLabels --> </p></center>
+<p><img src="imgs/myfirstappLabels.png" align="bottom" width=300></p>
+</center>
+
+<h3 id="___sec6" class="anchor">Ajouter des boutons: <code>QPushButton</code> </h3>
+
+La plupart des interfaces graphiques sont utilis&#233;es pour prendre les entr&#233;es de l'utilisateur et produire des sorties en fonction de l'entr&#233;e donn&#233;e. Une technique courante consiste &#224; demander &#224; l'utilisateur de cliquer sur un bouton <code>OK</code> ou sur un bouton <code>Annuler</code>. Dans PyQt5, cela est impl&#233;ment&#233; &#224; l'aide de la classe <code>QPushButton</code>. Chaque widget d'une application peut &#234;tre programm&#233; pour r&#233;pondre de mani&#232;re pr&#233;d&#233;termin&#233;e &#224; tout changement survenant dans la fen&#234;tre de l'application ou n'importe o&#249; sur l'ordinateur. Ces <em>changements</em> sont appel&#233;s <b>des &#233;v&#233;nements</b>. Par exemple, nous pourrions d&#233;placer la souris autour de l'&#233;cran ou sur la fen&#234;tre de l'application, ou peut-&#234;tre avons-nous appuy&#233; sur la touche <code>Entr&#233;e</code>. Lorsqu'un tel &#233;v&#233;nement se produit, le syst&#232;me &#233;met un ou plusieurs signaux; autrement dit, modifie certaines propri&#233;t&#233;s des widgets. Nous pouvons &#233;crire du code qui sera ex&#233;cut&#233; &#224; chaque fois qu'un tel signal est &#233;mis. Ce morceau de code s'appelle un <b>slot</b>. Par exemple, nous pouvons souhaiter fermer la fen&#234;tre et quitter l&#8217;application lorsque le bouton gauche d&#8217;une souris est cliqu&#233; sur le bouton de commande <code>Annuler</code>. Lorsque cet &#233;v&#233;nement de clic gauche de la souris sur le bouton <code>Annuler</code> se produit, un signal de <b>clicked</b> est &#233;mis sur le bouton et un <b>slot</b> qui quitte l'application et quitte sera impl&#233;ment&#233;. Cependant, pour que cela se produise, nous devons explicitement <b>connecter</b> le <b>slot</b> au signal. Toutes ces id&#233;es sont montr&#233;es dans le code <b>myfirstappButtons.py</b>.
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># NOM DU FICHIER: myfirstappButtons.py</span>
+<span style="color: #408080; font-style: italic">#% IMPORTATION</span>
+<span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">PyQt5.QtWidgets</span> <span style="color: #008000; font-weight: bold">import</span> QApplication, QMainWindow, QLabel, QPushButton
+<span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">PyQt5.QtCore</span> <span style="color: #008000; font-weight: bold">import</span> pyqtSlot
+
+
+<span style="color: #008000; font-weight: bold">class</span> <span style="color: #0000FF; font-weight: bold">MainWindow</span>(QMainWindow):
+    <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
+<span style="color: #BA2121; font-style: italic">    DOCUMENTATION</span>
+<span style="color: #BA2121; font-style: italic">    -------------</span>
+<span style="color: #BA2121; font-style: italic">    CrÃ©er une fenÃªtre (300x200 pixels)</span>
+<span style="color: #BA2121; font-style: italic">    &#39;&#39;&#39;</span>
+    <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">__init__</span>(<span style="color: #008000">self</span>):
+        <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
+<span style="color: #BA2121; font-style: italic">        INITIALISEUR </span>
+<span style="color: #BA2121; font-style: italic">        ------------</span>
+<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenÃªtre (300x200 pixels) </span>
+<span style="color: #BA2121; font-style: italic">        avec un titre &#39;My first app&#39;.</span>
+<span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
+        <span style="color: #008000">super</span>(MainWindow, <span style="color: #008000">self</span>)<span style="color: #666666">.</span><span style="color: #0000FF">__init__</span>()
+        <span style="color: #408080; font-style: italic"># GUI proprieties</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>setGeometry(<span style="color: #666666">400</span>, <span style="color: #666666">100</span>, <span style="color: #666666">300</span>, <span style="color: #666666">200</span>)
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>setWindowTitle(<span style="color: #BA2121">&#39;My first app&#39;</span>)
+        <span style="color: #408080; font-style: italic"># Ajouter des Ã©tiquettes: QLabel</span>
+        <span style="color: #408080; font-style: italic">## Label 1: Texte brut</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma premiÃ¨re application affiche: &#39;</span>, <span style="color: #008000">self</span>)
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">160</span>)
+        <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>move(<span style="color: #666666">10</span>, <span style="color: #666666">10</span>)
+        <span style="color: #408080; font-style: italic">## Label 2: Texte riche</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label2 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&quot;&quot;</span>, <span style="color: #008000">self</span>)
+        <span style="color: #408080; font-style: italic"># crÃ©er un message HTML</span>
+        message <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
+        <span style="color: #408080; font-style: italic"># ajouter le text du message </span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setText(message)
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">120</span>)
+         <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>move(<span style="color: #666666">200</span>, <span style="color: #666666">10</span>)
+        
+        <span style="color: #408080; font-style: italic"># Ajouter des boutons: `QPushButton`</span>
+        <span style="color: #408080; font-style: italic"># Push Button 1: Bouton bonjour</span>
+        button1 <span style="color: #666666">=</span> QPushButton(<span style="color: #BA2121">&#39;Bonjour&#39;</span>, <span style="color: #008000">self</span>)
+        button1<span style="color: #666666">.</span>setToolTip(<span style="color: #BA2121">&quot;C&#39;est le bouton Bonjour&quot;</span>)
+        button1<span style="color: #666666">.</span>move(<span style="color: #666666">50</span>, <span style="color: #666666">50</span>)
+        button1<span style="color: #666666">.</span>clicked<span style="color: #666666">.</span>connect(<span style="color: #008000">self</span><span style="color: #666666">.</span>on_click_button1)
+        <span style="color: #408080; font-style: italic"># Push Button 2: Bouton au revoir</span>
+        button2 <span style="color: #666666">=</span> QPushButton(<span style="color: #BA2121">&#39;Au revoir&#39;</span>, <span style="color: #008000">self</span>)
+        button2<span style="color: #666666">.</span>setToolTip(<span style="color: #BA2121">&quot;C&#39;est le bouton Au revoir&quot;</span>)
+        button2<span style="color: #666666">.</span>move(<span style="color: #666666">170</span>, <span style="color: #666666">50</span>)
+        button2<span style="color: #666666">.</span>clicked<span style="color: #666666">.</span>connect(<span style="color: #008000">self</span><span style="color: #666666">.</span>on_click_button2)
+
+    <span style="color: #AA22FF">@pyqtSlot</span>()  <span style="color: #408080; font-style: italic"># signal du bouton bonjour</span>
+    <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">on_click_button1</span>(<span style="color: #008000">self</span>):
+        <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
+<span style="color: #BA2121; font-style: italic">        Afficher un message &quot;Bonjour&quot;</span>
+<span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
+        message <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setText(message)
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">120</span>)
+
+    <span style="color: #AA22FF">@pyqtSlot</span>()  <span style="color: #408080; font-style: italic"># signal du bouton au revoir</span>
+    <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">on_click_button2</span>(<span style="color: #008000">self</span>):
+        <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
+<span style="color: #BA2121; font-style: italic">        Afficher un message &quot;Au revoir&quot;</span>
+<span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
+        message <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;red&#39;&gt;Au revoir IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setText(message)
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">120</span>)
+
+<span style="color: #008000; font-weight: bold">if</span> <span style="color: #19177C">__name__</span> <span style="color: #666666">==</span> <span style="color: #BA2121">&quot;__main__&quot;</span>:
+    <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">sys</span>
+    app <span style="color: #666666">=</span> QApplication(sys<span style="color: #666666">.</span>argv)
+    MyApplication <span style="color: #666666">=</span> MainWindow()
+    MyApplication<span style="color: #666666">.</span>show()
+    sys<span style="color: #666666">.</span>exit(app<span style="color: #666666">.</span>exec_())
+</pre></div>
+<p>
+<center> <!-- figure label: --> <div id="fig:myfirstappButtons"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 3:  R&#233;sultat de l'ex&#233;cution du code <code>myfirstappButtons.py</code>.  <!-- caption label: fig:myfirstappButtons --> </p></center>
+<p><img src="imgs/myfirstappButtons1.png" align="bottom" width=300></p>
+</center>
+
+<p>
+Toute m&#233;thode peut &#234;tre connect&#233;e &#224; un signal. Cependant, pour &#234;tre s&#251;r, il est pr&#233;f&#233;rable de s&#8217;assurer qu&#8217;une m&#233;thode particuli&#232;re est bien un <b>slot</b>. Ceci est r&#233;alis&#233; en d&#233;clarant une m&#233;thode comme &#233;tant un slot en utilisant le d&#233;corateur <code>@pyqtSlot()</code> comme indiqu&#233; dans le code <b>myfirstappButtons.py</b>.
+
+<h3 id="___sec7" class="anchor">Ajouter des Spin Box: <code>QSpinBox</code> </h3>
+
+Les Spin Box sont des widgets utilis&#233;s pour accepter et afficher des nombres entiers. Celles-ci peuvent &#234;tre consid&#233;r&#233;es comme une bo&#238;te d'&#233;dition avec une molette attach&#233;e. En cliquant une fois sur une fl&#232;che vers le haut de la molette, la valeur dans la zone d'&#233;dition augmente d'un point; cliquer sur la fl&#232;che vers le bas diminuera la valeur de un. Vous pouvez &#233;galement entrer la valeur directement dans la zone d'&#233;dition. La plage de valeurs accessible dans un spinbox peut &#234;tre d&#233;finie &#224; l'aide de la m&#233;thode <code>setRange()</code> ou de la combinaison des m&#233;thodes <code>setMinimum()</code> et <code>setMaximum()</code>.
 
 <!-- ------------------- end of main content --------------- -->
 

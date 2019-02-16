@@ -34,35 +34,37 @@ from PyQt5.QtWidgets import QApplication, QWidget
 * `uic`: Ce module contient des classes permettant de gérer les fichiers _.ui_ créés par Qt Designer décrivant l’ensemble ou une partie d’une interface graphique.
 * etc.
 !enotice
+
 Ensuite, nous importons le module `sys` car nous voulons accéder aux arguments de ligne de commande. Ceux-ci sont contenus dans la liste `sys.argv
 
-!bc pycod-t
+!bc pycod
 import sys
 app = QApplication(sys.argv)
 !ec
 
 En utilisant les arguments de ligne de commande contenus dans `sys.argv`, nous devrions créer un objet `QApplication`. Dans l'exemple ci-dessus, nous avons enregistré cet objet sous le nom _app_. Ceci est l'objet *exécuté* lorsque nous exécutons à l'invite de commande la commande `python filename.py` où _filename.py_ est le fichier dans lequel les instructions sont stockées. Cet objet contiendra tous les éléments de l'interface graphique et leurs méthodes. Par conséquent, lorsque cet objet est créé et *exécuté*, nous avons accès à toutes les interfaces graphiques utilisées dans le programme. Les éléments de l'interface graphique sont hérités de la classe `QWidgets`. Nous obtenons donc un objet `QWidget` comme indiqué ci-dessous.
-!bc pycod-t
+!bc pycod
 window = QWidget()
 !ec
 En utilisant les nombreuses méthodes *set*, nous pouvons définir les valeurs des différents attributs de cet objet *window*. Nous allons d’abord définir les dimensions de la fenêtre en utilisant la méthode `setGeometry`. Il prend quatre paramètres: _x_ coordonnée du point le plus à gauche de l'objet (*window*), _y_ coordonnée du point le plus haut, _la largeur_ et _la hauteur_ de la fenêtre, dans cet ordre. Toutes ces valeurs doivent être des entiers référencés par rapport aux coordonnées d'écran natives. Par exemple, nous pourrions écrire:
 
-!bc pycod-t
+!bc pycod
 window.setGeometry(400, 100, 300, 200)
 !ec
 Cela définirait la fenêtre avec une largeur de 300 pixels et une hauteur de 200 pixels à 400 pixels du côté gauche et à 100 pixels du haut de l'écran natif (écran de votre ordinateur).
 
 Nous pouvons définir un titre pour la fenêtre. Par exemple:
 
-!bc pycod-t
+!bc pycod
 window.setWindowTitle('My first app')
 !ec
 afficherait *My first app* dans la barre de titre de la fenêtre.
 
 Une fois que nous sommes satisfaits de l'interface graphique que nous avons construite, nous appelons:
-!bc pycod-t
+!bc pycod
 window.show()
 !ec
+
 pour afficher l'objet graphique dans *l'application* que nous avons créée. Cependant, l'application n'est toujours pas exécutée. Pour exécuter l'application, nous exécutons la commande:
 !bc pycod-t
 app.exec()
@@ -70,7 +72,7 @@ app.exec()
 La méthode `.show ()` est une méthode QT qui ouvre la fenêtre à l'écran pour l'utilisateur.
 
 Enfin, pour assurer une fermeture agréable et propre de l'application lorsque nous quittons:
-!bc pycod-t
+!bc pycod
 sys.exit(app.exec_())
 !ec
 Le code complet de cette application est donné ci-dessous et le résultat est illustré à la Figure ref{fig:myfirstapp}. Le code peut être stocké dans un fichier, par exemple _myfirstapp.py_, puis lorsque vous exécutez la commande `python MyFirstApp.py` à l'invite de commande (ou dans Spyder), vous obtenez la fenêtre de sortie affichée.
@@ -80,6 +82,7 @@ Le code complet de cette application est donné ci-dessous et le résultat est i
 FIGURE: [imgs/myfirstapp, width=300 frac=0.7] Une fenêtre PyQt5 créée par le code `myfirstapp.py` et également par le code `myfirstappStructure.py`. label{fig:myfirstapp}
 
 ===== Structure d'application PyQT =====
+
 Les étapes suivantes (dont certaines ont déjà été utilisées dans l'exemple ci-dessus) aideront à créer une structure solide et propre pour toute application développée avec PyQt:
 
 o Importer les modules nécessaires.
@@ -91,3 +94,24 @@ o Enfin, utiliser la construction `if __name__ == "__main __":` à la fin pour c
 La fenêtre illustrée à la Figure ref{fig:myfirstapp} peut également être créée à l'aide des étapes décrites ci-dessus. Le code permettant de faire cela est donné dans le script _myfirstappStructure.py_. Dans une fenêtre d'invite de commande, exécutez la commande `python myfirstappStructure.py` (ou exécutez le script sur Spyder), où _myfirstappStructure.py_ est le nom du fichier contenant le code permettant d'afficher la fenêtre illustrée à la Figure ref{fig:myfirstapp}.
 
 @@@CODE scripts/myfirstappStructure.py
+
+===== Widgets, événements et signaux =====
+Les widgets sont les éléments de base d'une interface graphique. PyQt5 a une large gamme de widgets, y compris des boutons (`buttons`), des étiquettes (`labels`), des cases à cocher (`check boxes`), des curseurs (`sliders`), des zones de liste (`list boxes`), etc. Nous décrirons plusieurs widgets couramment utilisés dans cette section. Ceux-ci incluent un `QPushButton`, un `ToggleButton`, un `QLabel`, un `QCheckBox`, un `QSlider`, un `QProgressBar`, un `QCalendarWidget`, etc.
+
+=== Ajouter des étiquettes: `QLabel` ===
+Nous avons besoin d'une étiquette pour afficher les messages. Un `QLabel` peut afficher du texte brut ou riche, HTML. Le code présenté ci-dessous (_myfirstappLabels.py_) ajouterait deux objets `QLabel` à la même fenêtre que celle précédemment créée. Le premier affiche un texte brut (`"Ma première application affiche: "`) et le second un texte HTML enrichi ("Bonjour IE3!", Gras et de couleur verte). L'exécution du code produira une fenêtre illustrée à la Figure ref{fig:myfirstappLabels}.
+@@@CODE scripts/myfirstappLabels.py
+
+FIGURE: [imgs/myfirstappLabels, width=300 frac=0.7] Résultat de l'exécution du code `myfirstappLabels.py`. label{fig:myfirstappLabels}
+
+=== Ajouter des boutons: `QPushButton` ===
+La plupart des interfaces graphiques sont utilisées pour prendre les entrées de l'utilisateur et produire des sorties en fonction de l'entrée donnée. Une technique courante consiste à demander à l'utilisateur de cliquer sur un bouton `OK` ou sur un bouton `Annuler`. Dans PyQt5, cela est implémenté à l'aide de la classe `QPushButton`. Chaque widget d'une application peut être programmé pour répondre de manière prédéterminée à tout changement survenant dans la fenêtre de l'application ou n'importe où sur l'ordinateur. Ces *changements* sont appelés _des événements_. Par exemple, nous pourrions déplacer la souris autour de l'écran ou sur la fenêtre de l'application, ou peut-être avons-nous appuyé sur la touche `Entrée`. Lorsqu'un tel événement se produit, le système émet un ou plusieurs signaux; autrement dit, modifie certaines propriétés des widgets. Nous pouvons écrire du code qui sera exécuté à chaque fois qu'un tel signal est émis. Ce morceau de code s'appelle un _slot_. Par exemple, nous pouvons souhaiter fermer la fenêtre et quitter l’application lorsque le bouton gauche d’une souris est cliqué sur le bouton de commande `Annuler`. Lorsque cet événement de clic gauche de la souris sur le bouton `Annuler` se produit, un signal de _clicked_ est émis sur le bouton et un _slot_ qui quitte l'application et quitte sera implémenté. Cependant, pour que cela se produise, nous devons explicitement _connecter_ le _slot_ au signal. Toutes ces idées sont montrées dans le code _myfirstappButtons.py_.
+
+@@@CODE scripts/myfirstappButtons.py
+
+FIGURE: [imgs/myfirstappButtons1, width=300 frac=0.7] Résultat de l'exécution du code `myfirstappButtons.py`. label{fig:myfirstappButtons}
+
+Toute méthode peut être connectée à un signal. Cependant, pour être sûr, il est préférable de s’assurer qu’une méthode particulière est bien un _slot_. Ceci est réalisé en déclarant une méthode comme étant un slot en utilisant le décorateur `@pyqtSlot()` comme indiqué dans le code _myfirstappButtons.py_.
+
+=== Ajouter des Spin Box: `QSpinBox` ===
+Les Spin Box sont des widgets utilisés pour accepter et afficher des nombres entiers. Celles-ci peuvent être considérées comme une boîte d'édition avec une molette attachée. En cliquant une fois sur une flèche vers le haut de la molette, la valeur dans la zone d'édition augmente d'un point; cliquer sur la flèche vers le bas diminuera la valeur de un. Vous pouvez également entrer la valeur directement dans la zone d'édition. La plage de valeurs accessible dans un spinbox peut être définie à l'aide de la méthode `setRange()` ou de la combinaison des méthodes `setMinimum()` et `setMaximum()`.

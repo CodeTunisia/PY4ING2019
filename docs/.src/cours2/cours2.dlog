@@ -383,3 +383,213 @@ figure file imgs/myfirstapp:
     can use imgs/myfirstapp.png for format ipynb
 collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
 output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format ipynb
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format ipynb
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format ipynb
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format ipynb
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format ipynb
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format ipynb
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format ipynb
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
