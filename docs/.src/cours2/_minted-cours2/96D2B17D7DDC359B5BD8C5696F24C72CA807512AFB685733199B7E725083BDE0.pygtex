@@ -1,0 +1,110 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{c+c1}{\PYGZsh{} NOM DU FICHIER: myfirstappSpinBox.py}
+\PYG{c+c1}{\PYGZsh{}\PYGZpc{} IMPORTATION}
+\PYG{k+kn}{from} \PYG{n+nn}{PyQt5.QtWidgets} \PYG{k+kn}{import} \PYG{p}{(}\PYG{n}{QApplication}\PYG{p}{,} \PYG{n}{QMainWindow}\PYG{p}{,} \PYG{n}{QLabel}\PYG{p}{,}
+                             \PYG{n}{QPushButton}\PYG{p}{,} \PYG{n}{QSpinBox}\PYG{p}{)}
+\PYG{k+kn}{from} \PYG{n+nn}{PyQt5.QtCore} \PYG{k+kn}{import} \PYG{n}{pyqtSlot}
+
+
+\PYG{k}{class} \PYG{n+nc}{MainWindow}\PYG{p}{(}\PYG{n}{QMainWindow}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    DOCUMENTATION}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    Créer une fenêtre (300x200 pixels)}
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{        INITIALISEUR}
+\PYG{l+s+sd}{        \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{        La classe `MainWindow()` rendre une fenêtre (300x200 pixels)}
+\PYG{l+s+sd}{        avec un titre \PYGZsq{}My first app\PYGZsq{}.}
+\PYG{l+s+sd}{        \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+        \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{MainWindow}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{()}
+        \PYG{c+c1}{\PYGZsh{} GUI proprieties}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{setGeometry}\PYG{p}{(}\PYG{l+m+mi}{400}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{300}\PYG{p}{,} \PYG{l+m+mi}{200}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{setWindowTitle}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}My first app\PYGZsq{}}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} Ajouter des étiquettes: QLabel}
+        \PYG{c+c1}{\PYGZsh{}\PYGZsh{} Label 1: Texte brut}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label1} \PYG{o}{=} \PYG{n}{QLabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Ma première application affiche: \PYGZsq{}}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} fixer la largeur de l\PYGZsq{}étiquette}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label1}\PYG{o}{.}\PYG{n}{setFixedWidth}\PYG{p}{(}\PYG{l+m+mi}{160}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} position de l\PYGZsq{}étiquette (x, y) en pixels}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label1}\PYG{o}{.}\PYG{n}{move}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}\PYGZsh{} Label 2: Texte riche}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label2} \PYG{o}{=} \PYG{n}{QLabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} créer un message HTML}
+        \PYG{n}{message} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZlt{}h3\PYGZgt{}\PYGZlt{}b\PYGZgt{}\PYGZlt{}font color=\PYGZsq{}green\PYGZsq{}\PYGZgt{}Bonjour IE3!\PYGZlt{}/font\PYGZgt{}\PYGZlt{}/b\PYGZgt{}\PYGZdq{}}
+        \PYG{c+c1}{\PYGZsh{} ajouter le text du message}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label2}\PYG{o}{.}\PYG{n}{setText}\PYG{p}{(}\PYG{n}{message}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} fixer la largeur de l\PYGZsq{}étiquette}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label2}\PYG{o}{.}\PYG{n}{setFixedWidth}\PYG{p}{(}\PYG{l+m+mi}{120}\PYG{p}{)}
+         \PYG{c+c1}{\PYGZsh{} position de l\PYGZsq{}étiquette (x, y) en pixels}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label2}\PYG{o}{.}\PYG{n}{move}\PYG{p}{(}\PYG{l+m+mi}{200}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Ajouter des boutons: `QPushButton`}
+        \PYG{c+c1}{\PYGZsh{} Push Button 1: Bouton bonjour}
+        \PYG{n}{button1} \PYG{o}{=} \PYG{n}{QPushButton}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Bonjour\PYGZsq{}}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}
+        \PYG{n}{button1}\PYG{o}{.}\PYG{n}{setToolTip}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}C\PYGZsq{}est le bouton Bonjour\PYGZdq{}}\PYG{p}{)}
+        \PYG{n}{button1}\PYG{o}{.}\PYG{n}{move}\PYG{p}{(}\PYG{l+m+mi}{50}\PYG{p}{,} \PYG{l+m+mi}{50}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} connecter le signal à l\PYGZsq{}événement}
+        \PYG{n}{button1}\PYG{o}{.}\PYG{n}{clicked}\PYG{o}{.}\PYG{n}{connect}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{on\PYGZus{}click\PYGZus{}button1}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} Push Button 2: Bouton au revoir}
+        \PYG{n}{button2} \PYG{o}{=} \PYG{n}{QPushButton}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Au revoir\PYGZsq{}}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}
+        \PYG{n}{button2}\PYG{o}{.}\PYG{n}{setToolTip}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}C\PYGZsq{}est le bouton Au revoir\PYGZdq{}}\PYG{p}{)}
+        \PYG{n}{button2}\PYG{o}{.}\PYG{n}{move}\PYG{p}{(}\PYG{l+m+mi}{170}\PYG{p}{,} \PYG{l+m+mi}{50}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} connecter le signal à l\PYGZsq{}événement}
+        \PYG{n}{button2}\PYG{o}{.}\PYG{n}{clicked}\PYG{o}{.}\PYG{n}{connect}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{on\PYGZus{}click\PYGZus{}button2}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} Ajouter des Spin Box: QSpinBox}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{spb} \PYG{o}{=} \PYG{n}{QSpinBox}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} Spin Box changer une valeur entière de 0 à 100}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{spb}\PYG{o}{.}\PYG{n}{setMinimum}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{spb}\PYG{o}{.}\PYG{n}{setMaximum}\PYG{p}{(}\PYG{l+m+mi}{100}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{spb}\PYG{o}{.}\PYG{n}{setValue}\PYG{p}{(}\PYG{l+m+mi}{50}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} valeur par défaut}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{spb}\PYG{o}{.}\PYG{n}{setSingleStep}\PYG{p}{(}\PYG{l+m+mi}{1}\PYG{p}{)} \PYG{c+c1}{\PYGZsh{} pas}
+        \PYG{c+c1}{\PYGZsh{} définir la géométrie (x, y, largeur, hauteur) en pixels}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{spb}\PYG{o}{.}\PYG{n}{setGeometry}\PYG{p}{(}\PYG{l+m+mi}{120}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{50}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} connecter le signal à l\PYGZsq{}événement}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{spb}\PYG{o}{.}\PYG{n}{valueChanged}\PYG{o}{.}\PYG{n}{connect}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{spb\PYGZus{}valuechange}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} définir une étiquette disant à quoi Spin Box fait référence}
+        \PYG{n}{txt} \PYG{o}{=} \PYG{n}{QLabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}La valeur actuelle est: \PYGZsq{}}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} définir la géométrie (x, y, largeur, hauteur) en pixels}
+        \PYG{n}{txt}\PYG{o}{.}\PYG{n}{setGeometry}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} définir une étiquette pour recevoir une valeur du spin box}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{val} \PYG{o}{=} \PYG{n}{QLabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} définir la géométrie (x, y, largeur, hauteur) en pixels}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{val}\PYG{o}{.}\PYG{n}{setGeometry}\PYG{p}{(}\PYG{l+m+mi}{190}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{30}\PYG{p}{,} \PYG{l+m+mi}{20}\PYG{p}{)}
+
+    \PYG{n+nd}{@pyqtSlot}\PYG{p}{()}  \PYG{c+c1}{\PYGZsh{} signal du bouton bonjour}
+    \PYG{k}{def} \PYG{n+nf}{on\PYGZus{}click\PYGZus{}button1}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{        Afficher un message \PYGZdq{}Bonjour\PYGZdq{}}
+\PYG{l+s+sd}{        \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+        \PYG{n}{message} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZlt{}h3\PYGZgt{}\PYGZlt{}b\PYGZgt{}\PYGZlt{}font color=\PYGZsq{}green\PYGZsq{}\PYGZgt{}Bonjour IE3!\PYGZlt{}/font\PYGZgt{}\PYGZlt{}/b\PYGZgt{}\PYGZdq{}}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label2}\PYG{o}{.}\PYG{n}{setText}\PYG{p}{(}\PYG{n}{message}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label2}\PYG{o}{.}\PYG{n}{setFixedWidth}\PYG{p}{(}\PYG{l+m+mi}{120}\PYG{p}{)}
+
+    \PYG{n+nd}{@pyqtSlot}\PYG{p}{()}  \PYG{c+c1}{\PYGZsh{} signal du bouton au revoir}
+    \PYG{k}{def} \PYG{n+nf}{on\PYGZus{}click\PYGZus{}button2}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{        Afficher un message \PYGZdq{}Au revoir\PYGZdq{}}
+\PYG{l+s+sd}{        \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+        \PYG{n}{message} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZlt{}h3\PYGZgt{}\PYGZlt{}b\PYGZgt{}\PYGZlt{}font color=\PYGZsq{}red\PYGZsq{}\PYGZgt{}Au revoir IE3!\PYGZlt{}/font\PYGZgt{}\PYGZlt{}/b\PYGZgt{}\PYGZdq{}}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label2}\PYG{o}{.}\PYG{n}{setText}\PYG{p}{(}\PYG{n}{message}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label2}\PYG{o}{.}\PYG{n}{setFixedWidth}\PYG{p}{(}\PYG{l+m+mi}{120}\PYG{p}{)}
+
+    \PYG{n+nd}{@pyqtSlot}\PYG{p}{(}\PYG{n+nb}{int}\PYG{p}{)}  \PYG{c+c1}{\PYGZsh{} signal du Spin Box: renvoie un entier}
+    \PYG{k}{def} \PYG{n+nf}{spb\PYGZus{}valuechange}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{,} \PYG{n}{value}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{        la valeur du Spin Box est un entier,}
+\PYG{l+s+sd}{        convertissez\PYGZhy{}le en chaîne à l\PYGZsq{}aide de la fonction str().}
+\PYG{l+s+sd}{        \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{val}\PYG{o}{.}\PYG{n}{setText}\PYG{p}{(}\PYG{n+nb}{str}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{spb}\PYG{o}{.}\PYG{n}{value}\PYG{p}{()))}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+    \PYG{k+kn}{import} \PYG{n+nn}{sys}
+    \PYG{n}{app} \PYG{o}{=} \PYG{n}{QApplication}\PYG{p}{(}\PYG{n}{sys}\PYG{o}{.}\PYG{n}{argv}\PYG{p}{)}
+    \PYG{n}{MyApplication} \PYG{o}{=} \PYG{n}{MainWindow}\PYG{p}{()}
+    \PYG{n}{MyApplication}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+    \PYG{n}{sys}\PYG{o}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{n}{app}\PYG{o}{.}\PYG{n}{exec\PYGZus{}}\PYG{p}{())}
+\end{Verbatim}

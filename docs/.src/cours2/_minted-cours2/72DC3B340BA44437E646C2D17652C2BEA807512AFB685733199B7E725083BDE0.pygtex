@@ -1,0 +1,47 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{c+c1}{\PYGZsh{} NOM DU FICHIER: myfirstappLabels.py}
+\PYG{c+c1}{\PYGZsh{}\PYGZpc{} IMPORTATION}
+\PYG{k+kn}{from} \PYG{n+nn}{PyQt5.QtWidgets} \PYG{k+kn}{import} \PYG{n}{QApplication}\PYG{p}{,} \PYG{n}{QMainWindow}\PYG{p}{,} \PYG{n}{QLabel}
+
+\PYG{k}{class} \PYG{n+nc}{MainWindow}\PYG{p}{(}\PYG{n}{QMainWindow}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    DOCUMENTATION}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    Créer une fenêtre (300x200 pixels)}
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{        INITIALISEUR}
+\PYG{l+s+sd}{        \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{        La classe `MainWindow()` rendre une fenêtre (300x200 pixels)}
+\PYG{l+s+sd}{        avec un titre \PYGZsq{}My first app\PYGZsq{}.}
+\PYG{l+s+sd}{        \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+        \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{MainWindow}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{()}
+        \PYG{c+c1}{\PYGZsh{} GUI proprieties}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{setGeometry}\PYG{p}{(}\PYG{l+m+mi}{400}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{300}\PYG{p}{,} \PYG{l+m+mi}{200}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{setWindowTitle}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}My first app\PYGZsq{}}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} Ajouter des étiquettes: QLabel}
+        \PYG{c+c1}{\PYGZsh{}\PYGZsh{} Label 1: Texte brut}
+        \PYG{n}{label1} \PYG{o}{=} \PYG{n}{QLabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Ma première application affiche: \PYGZsq{}}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} fixer la largeur de l\PYGZsq{}étiquette}
+        \PYG{n}{label1}\PYG{o}{.}\PYG{n}{setFixedWidth}\PYG{p}{(}\PYG{l+m+mi}{160}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} position de l\PYGZsq{}étiquette (x, y) en pixels}
+        \PYG{n}{label1}\PYG{o}{.}\PYG{n}{move}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{}\PYGZsh{} Label 2: Texte riche}
+        \PYG{n}{label2} \PYG{o}{=} \PYG{n}{QLabel}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}\PYGZdq{}}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} créer un message HTML}
+        \PYG{n}{message} \PYG{o}{=} \PYG{l+s+s2}{\PYGZdq{}\PYGZlt{}h3\PYGZgt{}\PYGZlt{}b\PYGZgt{}\PYGZlt{}font color=\PYGZsq{}green\PYGZsq{}\PYGZgt{}Bonjour IE3!\PYGZlt{}/font\PYGZgt{}\PYGZlt{}/b\PYGZgt{}\PYGZdq{}}
+        \PYG{c+c1}{\PYGZsh{} ajouter le text du message}
+        \PYG{n}{label2}\PYG{o}{.}\PYG{n}{setText}\PYG{p}{(}\PYG{n}{message}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} fixer la largeur de l\PYGZsq{}étiquette}
+        \PYG{n}{label2}\PYG{o}{.}\PYG{n}{setFixedWidth}\PYG{p}{(}\PYG{l+m+mi}{120}\PYG{p}{)}
+         \PYG{c+c1}{\PYGZsh{} position de l\PYGZsq{}étiquette (x, y) en pixels}
+        \PYG{n}{label2}\PYG{o}{.}\PYG{n}{move}\PYG{p}{(}\PYG{l+m+mi}{200}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{)}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+    \PYG{k+kn}{import} \PYG{n+nn}{sys}
+    \PYG{n}{app} \PYG{o}{=} \PYG{n}{QApplication}\PYG{p}{(}\PYG{n}{sys}\PYG{o}{.}\PYG{n}{argv}\PYG{p}{)}
+    \PYG{n}{MyApplication} \PYG{o}{=} \PYG{n}{MainWindow}\PYG{p}{()}
+    \PYG{n}{MyApplication}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+    \PYG{n}{sys}\PYG{o}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{n}{app}\PYG{o}{.}\PYG{n}{exec\PYGZus{}}\PYG{p}{())}
+\end{Verbatim}

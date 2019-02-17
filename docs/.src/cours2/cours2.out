@@ -1,3 +1,8 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Premi\350res \351tapes pour la cr\351ation d'une application graphique \340 l'aide de PyQt5}{}% 2
 \BOOKMARK [2][-]{subsection.2.1}{Importation de PyQt5 et cr\351ation d'une "fen\352tre PyQt5"}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Structure d'application PyQT}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.3}{Widgets, \351v\351nements et signaux}{section.2}% 5
+\BOOKMARK [1][-]{section.3}{Le concepteur Qt: "Qt Designer"}{}% 6
+\BOOKMARK [2][-]{subsection.3.1}{La fen\352tre du concepteur Qt}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.2}{L'\351diteur de propri\351t\351}{section.3}% 8

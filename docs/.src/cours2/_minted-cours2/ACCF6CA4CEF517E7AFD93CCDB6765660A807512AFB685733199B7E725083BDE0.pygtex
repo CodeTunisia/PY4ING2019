@@ -1,0 +1,30 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{c+c1}{\PYGZsh{} NOM DU FICHIER: myfirstappStructure.py}
+\PYG{c+c1}{\PYGZsh{}\PYGZpc{} IMPORTATION}
+\PYG{k+kn}{from} \PYG{n+nn}{PyQt5.QtWidgets} \PYG{k+kn}{import} \PYG{n}{QApplication}\PYG{p}{,} \PYG{n}{QMainWindow}
+
+\PYG{k}{class} \PYG{n+nc}{MainWindow}\PYG{p}{(}\PYG{n}{QMainWindow}\PYG{p}{):}
+    \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{    DOCUMENTATION}
+\PYG{l+s+sd}{    \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{    Créer une fenêtre (300x200 pixels)}
+\PYG{l+s+sd}{    \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+    \PYG{k}{def} \PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{(}\PYG{n+nb+bp}{self}\PYG{p}{):}
+        \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{        INITIALISEUR}
+\PYG{l+s+sd}{        \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{l+s+sd}{        La classe `MainWindow()` rendre une fenêtre (300x200 pixels)}
+\PYG{l+s+sd}{        avec un titre \PYGZsq{}My first app\PYGZsq{}.}
+\PYG{l+s+sd}{        \PYGZsq{}\PYGZsq{}\PYGZsq{}}
+        \PYG{n+nb}{super}\PYG{p}{(}\PYG{n}{MainWindow}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}\PYG{o}{.}\PYG{n+nf+fm}{\PYGZus{}\PYGZus{}init\PYGZus{}\PYGZus{}}\PYG{p}{()}
+        \PYG{c+c1}{\PYGZsh{} Propriétés de l\PYGZsq{}interface graphique}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{setGeometry}\PYG{p}{(}\PYG{l+m+mi}{400}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{300}\PYG{p}{,} \PYG{l+m+mi}{200}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{setWindowTitle}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}My first app\PYGZsq{}}\PYG{p}{)}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s2}{\PYGZdq{}\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}\PYGZdq{}}\PYG{p}{:}
+    \PYG{k+kn}{import} \PYG{n+nn}{sys}
+    \PYG{n}{app} \PYG{o}{=} \PYG{n}{QApplication}\PYG{p}{(}\PYG{n}{sys}\PYG{o}{.}\PYG{n}{argv}\PYG{p}{)}
+    \PYG{n}{MyApplication} \PYG{o}{=} \PYG{n}{MainWindow}\PYG{p}{()}
+    \PYG{n}{MyApplication}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+    \PYG{n}{sys}\PYG{o}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{n}{app}\PYG{o}{.}\PYG{n}{exec\PYGZus{}}\PYG{p}{())}
+\end{Verbatim}

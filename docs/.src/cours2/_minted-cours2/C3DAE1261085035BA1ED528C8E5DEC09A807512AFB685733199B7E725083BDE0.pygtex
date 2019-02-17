@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{c+c1}{\PYGZsh{} NOM DU FICHIER: myfirstapp.py}
+\PYG{c+c1}{\PYGZsh{}\PYGZpc{} IMPORTATION}
+\PYG{k+kn}{from} \PYG{n+nn}{PyQt5.QtWidgets} \PYG{k+kn}{import} \PYG{n}{QApplication}\PYG{p}{,} \PYG{n}{QWidget}
+\PYG{k+kn}{import} \PYG{n+nn}{sys}
+\PYG{c+c1}{\PYGZsh{} créer un objet QApplication}
+\PYG{n}{app} \PYG{o}{=} \PYG{n}{QApplication}\PYG{p}{(}\PYG{n}{sys}\PYG{o}{.}\PYG{n}{argv}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} appeler la classe QWidgets}
+\PYG{n}{window} \PYG{o}{=} \PYG{n}{QWidget}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} définir les dimensions de la fenêtre}
+\PYG{n}{window}\PYG{o}{.}\PYG{n}{setGeometry}\PYG{p}{(}\PYG{l+m+mi}{400}\PYG{p}{,} \PYG{l+m+mi}{100}\PYG{p}{,} \PYG{l+m+mi}{300}\PYG{p}{,} \PYG{l+m+mi}{200}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} définir un titre pour la fenêtre}
+\PYG{n}{window}\PYG{o}{.}\PYG{n}{setWindowTitle}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}My first app\PYGZsq{}}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} afficher l\PYGZsq{}objet graphique dans l\PYGZsq{}application}
+\PYG{n}{window}\PYG{o}{.}\PYG{n}{show}\PYG{p}{()}
+\PYG{c+c1}{\PYGZsh{} fermer l\PYGZsq{}application}
+\PYG{n}{sys}\PYG{o}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{n}{app}\PYG{o}{.}\PYG{n}{exec\PYGZus{}}\PYG{p}{())}
+\end{Verbatim}

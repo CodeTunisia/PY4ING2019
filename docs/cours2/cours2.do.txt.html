@@ -34,35 +34,37 @@ from PyQt5.QtWidgets import QApplication, QWidget
 * `uic`: Ce module contient des classes permettant de gérer les fichiers _.ui_ créés par Qt Designer décrivant l’ensemble ou une partie d’une interface graphique.
 * etc.
 <span style="color: #8B008B; font-weight: bold">!enotice</span>
+
 Ensuite, nous importons le module `sys` car nous voulons accéder aux arguments de ligne de commande. Ceux-ci sont contenus dans la liste `sys.argv
 
-<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
 import sys
 app = QApplication(sys.argv)
 <span style="color: #8B008B; font-weight: bold">!ec</span>
 
 En utilisant les arguments de ligne de commande contenus dans `sys.argv`, nous devrions créer un objet `QApplication`. Dans l&#39;exemple ci-dessus, nous avons enregistré cet objet sous le nom _app_. Ceci est l&#39;objet *exécuté* lorsque nous exécutons à l&#39;invite de commande la commande `python filename.py` où _filename.py_ est le fichier dans lequel les instructions sont stockées. Cet objet contiendra tous les éléments de l&#39;interface graphique et leurs méthodes. Par conséquent, lorsque cet objet est créé et *exécuté*, nous avons accès à toutes les interfaces graphiques utilisées dans le programme. Les éléments de l&#39;interface graphique sont hérités de la classe `QWidgets`. Nous obtenons donc un objet `QWidget` comme indiqué ci-dessous.
-<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
 window = QWidget()
 <span style="color: #8B008B; font-weight: bold">!ec</span>
 En utilisant les nombreuses méthodes *set*, nous pouvons définir les valeurs des différents attributs de cet objet *window*. Nous allons d’abord définir les dimensions de la fenêtre en utilisant la méthode `setGeometry`. Il prend quatre paramètres: _x_ coordonnée du point le plus à gauche de l&#39;objet (*window*), _y_ coordonnée du point le plus haut, _la largeur_ et _la hauteur_ de la fenêtre, dans cet ordre. Toutes ces valeurs doivent être des entiers référencés par rapport aux coordonnées d&#39;écran natives. Par exemple, nous pourrions écrire:
 
-<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
 window.setGeometry(400, 100, 300, 200)
 <span style="color: #8B008B; font-weight: bold">!ec</span>
 Cela définirait la fenêtre avec une largeur de 300 pixels et une hauteur de 200 pixels à 400 pixels du côté gauche et à 100 pixels du haut de l&#39;écran natif (écran de votre ordinateur).
 
 Nous pouvons définir un titre pour la fenêtre. Par exemple:
 
-<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
 window.setWindowTitle(&#39;My first app&#39;)
 <span style="color: #8B008B; font-weight: bold">!ec</span>
 afficherait *My first app* dans la barre de titre de la fenêtre.
 
 Une fois que nous sommes satisfaits de l&#39;interface graphique que nous avons construite, nous appelons:
-<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
 window.show()
 <span style="color: #8B008B; font-weight: bold">!ec</span>
+
 pour afficher l&#39;objet graphique dans *l&#39;application* que nous avons créée. Cependant, l&#39;application n&#39;est toujours pas exécutée. Pour exécuter l&#39;application, nous exécutons la commande:
 <span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
 app.exec()
@@ -70,10 +72,76 @@ app.exec()
 La méthode `.show ()` est une méthode QT qui ouvre la fenêtre à l&#39;écran pour l&#39;utilisateur.
 
 Enfin, pour assurer une fermeture agréable et propre de l&#39;application lorsque nous quittons:
-<span style="color: #8B008B; font-weight: bold">!bc</span> pycod-t
+<span style="color: #8B008B; font-weight: bold">!bc</span> pycod
 sys.exit(app.exec_())
 <span style="color: #8B008B; font-weight: bold">!ec</span>
-Le code complet de cette application est donné ci-dessous et le résultat est illustré à la figure 1. Le code peut être stocké dans un fichier, par exemple _myfirstapp.py_, puis lorsque vous exécutez la commande `python MyFirstApp.py` à l&#39;invite de commande (ou dans Spyder), vous obtenez la fenêtre de sortie affichée.
+Le code complet de cette application est donné ci-dessous et le résultat est illustré à la Figure ref{fig:myfirstapp}. Le code peut être stocké dans un fichier, par exemple _myfirstapp.py_, puis lorsque vous exécutez la commande `python MyFirstApp.py` à l&#39;invite de commande (ou dans Spyder), vous obtenez la fenêtre de sortie affichée.
 
 <span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstapp.py</span>
+
+<span style="color: #658b00">FIGURE: [imgs/myfirstapp, width=300 frac=0.7] Une fenêtre PyQt5 créée par le code `myfirstapp.py` et également par le code `myfirstappStructure.py`. label{fig:myfirstapp}</span>
+
+<span style="color: #000080; font-weight: bold">===== Structure d&#39;application PyQT =====</span>
+
+Les étapes suivantes (dont certaines ont déjà été utilisées dans l&#39;exemple ci-dessus) aideront à créer une structure solide et propre pour toute application développée avec PyQt:
+
+o Importer les modules nécessaires.
+o Créer une classe héritée de `QMainWindow` (à l&#39;aide de la construction `class MainWindow(QMainWindow):`). La `QMainWindow` est une classe Qt qui fournit une fenêtre principale de l’application avec toutes les options (telle que la barre de menus, la barre d’état, etc.).
+o Implémentez le _constructeur_ (également appelé _l&#39;initialiseur_) de la classe en utilisant la méthode `__init __ ()`. Chaque fois qu&#39;un objet d&#39;une classe est créé, cette méthode sera exécutée. L&#39;initialiseur commence généralement par un appel à l&#39;initialiseur de la classe `super ()`; Ainsi, toutes les méthodes définies dans la classe parent sont immédiatement disponibles, même si elles sont remplacées dans la définition de classe actuelle.
+o Cette opération est ensuite suivie par la définition des valeurs (par défaut) pour divers attributs, tels que la géométrie, le titre, etc., et la définition des différentes méthodes.
+o Enfin, utiliser la construction `if __name__ == &quot;__main __&quot;:` à la fin pour créer un objet `QApplication` et l&#39;exécuter.
+
+La fenêtre illustrée à la Figure ref{fig:myfirstapp} peut également être créée à l&#39;aide des étapes décrites ci-dessus. Le code permettant de faire cela est donné dans le script _myfirstappStructure.py_. Dans une fenêtre d&#39;invite de commande, exécutez la commande `python myfirstappStructure.py` (ou exécutez le script sur Spyder), où _myfirstappStructure.py_ est le nom du fichier contenant le code permettant d&#39;afficher la fenêtre illustrée à la Figure ref{fig:myfirstapp}.
+
+<span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappStructure.py</span>
+
+<span style="color: #000080; font-weight: bold">===== Widgets, événements et signaux =====</span>
+Les widgets sont les éléments de base d&#39;une interface graphique. PyQt5 a une large gamme de widgets, y compris des boutons (`buttons`), des étiquettes (`labels`), des cases à cocher (`check boxes`), des curseurs (`sliders`), des zones de liste (`list boxes`), etc. Nous décrirons plusieurs widgets couramment utilisés dans cette section. Ceux-ci incluent un `QPushButton`, un `ToggleButton`, un `QLabel`, un `QCheckBox`, un `QSlider`, un `QProgressBar`, un `QCalendarWidget`, etc.
+
+<span style="color: #000080; font-weight: bold">=== Ajouter des étiquettes: `QLabel` ===</span>
+Nous avons besoin d&#39;une étiquette pour afficher les messages. Un `QLabel` peut afficher du texte brut ou riche, HTML. Le code présenté ci-dessous (_myfirstappLabels.py_) ajouterait deux objets `QLabel` à la même fenêtre que celle précédemment créée. Le premier affiche un texte brut (`&quot;Ma première application affiche: &quot;`) et le second un texte HTML enrichi (&quot;Bonjour IE3!&quot;, Gras et de couleur verte). L&#39;exécution du code produira une fenêtre illustrée à la Figure ref{fig:myfirstappLabels}.
+<span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappLabels.py</span>
+
+<span style="color: #658b00">FIGURE: [imgs/myfirstappLabels, width=300 frac=0.7] Résultat de l&#39;exécution du code `myfirstappLabels.py`. label{fig:myfirstappLabels}</span>
+
+<span style="color: #000080; font-weight: bold">=== Ajouter des boutons: `QPushButton` ===</span>
+La plupart des interfaces graphiques sont utilisées pour prendre les entrées de l&#39;utilisateur et produire des sorties en fonction de l&#39;entrée donnée. Une technique courante consiste à demander à l&#39;utilisateur de cliquer sur un bouton `OK` ou sur un bouton `Annuler`. Dans PyQt5, cela est implémenté à l&#39;aide de la classe `QPushButton`. Chaque widget d&#39;une application peut être programmé pour répondre de manière prédéterminée à tout changement survenant dans la fenêtre de l&#39;application ou n&#39;importe où sur l&#39;ordinateur. Ces *changements* sont appelés _des événements_. Par exemple, nous pourrions déplacer la souris autour de l&#39;écran ou sur la fenêtre de l&#39;application, ou peut-être avons-nous appuyé sur la touche `Entrée`. Lorsqu&#39;un tel événement se produit, le système émet un ou plusieurs signaux; autrement dit, modifie certaines propriétés des widgets. Nous pouvons écrire du code qui sera exécuté à chaque fois qu&#39;un tel signal est émis. Ce morceau de code s&#39;appelle un _slot_. Par exemple, nous pouvons souhaiter fermer la fenêtre et quitter l’application lorsque le bouton gauche d’une souris est cliqué sur le bouton de commande `Annuler`. Lorsque cet événement de clic gauche de la souris sur le bouton `Annuler` se produit, un signal de _clicked_ est émis sur le bouton et un _slot_ qui quitte l&#39;application et quitte sera implémenté. Cependant, pour que cela se produise, nous devons explicitement _connecter_ le _slot_ au signal. Toutes ces idées sont montrées dans le code _myfirstappButtons.py_.
+
+<span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappButtons.py</span>
+
+<span style="color: #658b00">FIGURE: [imgs/myfirstappButtons1, width=300 frac=0.7] Résultat de l&#39;exécution du code `myfirstappButtons.py`. label{fig:myfirstappButtons}</span>
+
+Toute méthode peut être connectée à un signal. Cependant, pour être sûr, il est préférable de s’assurer qu’une méthode particulière est bien un _slot_. Ceci est réalisé en déclarant une méthode comme étant un slot en utilisant le décorateur `@pyqtSlot()` comme indiqué dans le code _myfirstappButtons.py_.
+
+<span style="color: #000080; font-weight: bold">=== Ajouter des Spin Box: `QSpinBox` ===</span>
+Les Spin Box sont des widgets utilisés pour accepter et afficher des nombres entiers. Celles-ci peuvent être considérées comme une boîte d&#39;édition avec une molette attachée. En cliquant une fois sur une flèche vers le haut de la molette, la valeur dans la zone d&#39;édition augmente d&#39;un point; cliquer sur la flèche vers le bas diminuera la valeur de un. Vous pouvez également entrer la valeur directement dans la zone d&#39;édition. La plage de valeurs accessible dans un spinbox peut être définie à l&#39;aide de la méthode `setRange()` ou de la combinaison des méthodes `setMinimum()` et `setMaximum()`. Toutes ces idées sont montrées dans le code _myfirstappSpinBox.py_ et illustrées par la Figure ref{fig:myfirstappSpinBox}.
+
+<span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappSpinBox.py</span>
+
+<span style="color: #658b00">FIGURE: [imgs/myfirstappSpinBox2, width=300 frac=0.7] Résultat de l&#39;exécution du code `myfirstappSpinBox.py`. label{fig:myfirstappSpinBox}</span>
+
+<span style="color: #000080; font-weight: bold">=== Ajouter des curseurs : `QSlider` ===</span>
+Un QSlider est un widget doté d&#39;une poignée simple. Cette poignée peut être déplacée d&#39;avant en arrière. En utilisant cela, nous pouvons choisir une valeur pour une tâche spécifique. Comme le Spin Box, un curseur ne peut avoir qu&#39;une valeur entière; la plage des valeurs peut être définie entre un minimum et un maximum. Parfois, l’utilisation d’un curseur est plus naturelle que celle d’un Spin Box et cela dépend de la tâche ou de l’application.
+
+<span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappSlider.py</span>
+
+<span style="color: #658b00">FIGURE: [imgs/myfirstappSlider2, width=300 frac=0.7] Résultat de l&#39;exécution du code `myfirstappSlider.py`. label{fig:myfirstappSlider}</span>
+
+<span style="color: #000080; font-weight: bold">======= Le concepteur Qt: &quot;Qt Designer&quot; =======</span>
+Le paquet PyQt est livré avec un outil de générateur d&#39;interface graphique appelé Qt Designer (ou concepteur Qt). Qt Designer est l’outil Qt permettant de concevoir et de construire des interfaces graphiques à l’aide d’une simple approche _glisser-déposer_. Il vous permet de concevoir des widgets, des boîtes de dialogue ou des fenêtres principales complètes à l&#39;aide de formulaires à l&#39;écran (en anglais appelés: on-screen forms). Il a la possibilité de prévisualiser les conceptions pour s&#39;assurer que l&#39;interface graphique fonctionne comme prévu. Il permet une interface de prototypage avant qu’un code ne soit écrit.
+
+Qt Designer peut être démarré en tapant `designer` dans la fenêtre d&#39;invite de commande sous Windows ou sur un terminal sous n&#39;importe quel système Linux. Sur un Mac, double-cliquez sur l&#39;application Qt Desginer dans le répertoire &quot;anaconda3 / bin&quot; pour lancer Qt Designer. Une fois démarré, Qt Designer ressemblera à celui illustré à la figure ref{fig:designerNew}.
+
+La création d’une interface graphique à l’aide de Qt Designer commence par la sélection d’une fenêtre de niveau supérieur pour l’application. Dans un premier temps, Qt Designer affiche une boîte de dialogue d’initialisation dans laquelle vous pouvez choisir le type de base de l’interface graphique que vous souhaitez créer. Vous avez la possibilité de choisir entre trois types de formulaires: _Dialog_, _Main Window_ et _Widget_.
+
+<span style="color: #658b00">FIGURE: [imgs/designerNew, width=400 frac=0.7] Dialogue d&#39;initialisation du concepteur Qt. label{fig:designerNew}</span>
+
+Une fois que le type de formulaire requis est sélectionné et créé (en cliquant sur le bouton _Create_), il peut être redimensionné pour répondre aux besoins de l&#39;application et tous les widgets peuvent être placés dessus.
+
+<span style="color: #000080; font-weight: bold">===== La fenêtre du concepteur Qt =====</span>
+Par défaut, à gauche du formulaire se trouve un panneau appelé la *Boîte à widgets* (Widget Box) qui contient tous les objets Qt regroupés sous différentes catégories. Sur la droite, de nombreux panneaux tels que *l&#39;inspecteur d&#39;objets* (Object Inspector), *l&#39;éditeur de propriétés* (Property Editor), etc.
+
+<span style="color: #658b00">FIGURE: [imgs/designerWindow, width=700 frac=0.9] La fenêtre du concepteur Qt. label{fig:designerWindow}</span>
+
+<span style="color: #000080; font-weight: bold">===== L&#39;éditeur de propriété =====</span>
 </pre></div>

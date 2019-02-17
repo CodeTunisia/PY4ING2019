@@ -271,13 +271,13 @@ Le code complet de cette application est donn&#233; ci-dessous et le r&#233;sult
 <span style="color: #408080; font-style: italic">#% IMPORTATION</span>
 <span style="color: #008000; font-weight: bold">from</span> <span style="color: #0000FF; font-weight: bold">PyQt5.QtWidgets</span> <span style="color: #008000; font-weight: bold">import</span> QApplication, QWidget
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">sys</span>
-<span style="color: #408080; font-style: italic"># crÃ©er un objet QApplication</span>
+<span style="color: #408080; font-style: italic"># créer un objet QApplication</span>
 app <span style="color: #666666">=</span> QApplication(sys<span style="color: #666666">.</span>argv)
 <span style="color: #408080; font-style: italic"># appeler la classe QWidgets</span>
 window <span style="color: #666666">=</span> QWidget()
-<span style="color: #408080; font-style: italic"># dÃ©finir les dimensions de la fenÃªtre</span>
+<span style="color: #408080; font-style: italic"># définir les dimensions de la fenêtre</span>
 window<span style="color: #666666">.</span>setGeometry(<span style="color: #666666">400</span>, <span style="color: #666666">100</span>, <span style="color: #666666">300</span>, <span style="color: #666666">200</span>)
-<span style="color: #408080; font-style: italic"># dÃ©finir un titre pour la fenÃªtre</span>
+<span style="color: #408080; font-style: italic"># définir un titre pour la fenêtre</span>
 window<span style="color: #666666">.</span>setWindowTitle(<span style="color: #BA2121">&#39;My first app&#39;</span>)
 <span style="color: #408080; font-style: italic"># afficher l&#39;objet graphique dans l&#39;application</span>
 window<span style="color: #666666">.</span>show()
@@ -317,17 +317,17 @@ La fen&#234;tre illustr&#233;e &#224; la Figure <a href="#fig:myfirstapp">1</a> 
     <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">    DOCUMENTATION</span>
 <span style="color: #BA2121; font-style: italic">    -------------</span>
-<span style="color: #BA2121; font-style: italic">    CrÃ©er une fenÃªtre (300x200 pixels)</span>
+<span style="color: #BA2121; font-style: italic">    Créer une fenêtre (300x200 pixels)</span>
 <span style="color: #BA2121; font-style: italic">    &#39;&#39;&#39;</span>
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">__init__</span>(<span style="color: #008000">self</span>):
         <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">        INITIALISEUR </span>
 <span style="color: #BA2121; font-style: italic">        ------------</span>
-<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenÃªtre (300x200 pixels) </span>
+<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenêtre (300x200 pixels) </span>
 <span style="color: #BA2121; font-style: italic">        avec un titre &#39;My first app&#39;.</span>
 <span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
         <span style="color: #008000">super</span>(MainWindow, <span style="color: #008000">self</span>)<span style="color: #666666">.</span><span style="color: #0000FF">__init__</span>()
-        <span style="color: #408080; font-style: italic"># PropriÃ©tÃ©s de l&#39;interface graphique</span>
+        <span style="color: #408080; font-style: italic"># Propriétés de l&#39;interface graphique</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setGeometry(<span style="color: #666666">400</span>, <span style="color: #666666">100</span>, <span style="color: #666666">300</span>, <span style="color: #666666">200</span>)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setWindowTitle(<span style="color: #BA2121">&#39;My first app&#39;</span>)
 
@@ -356,35 +356,35 @@ Nous avons besoin d'une &#233;tiquette pour afficher les messages. Un <code>QLab
     <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">    DOCUMENTATION</span>
 <span style="color: #BA2121; font-style: italic">    -------------</span>
-<span style="color: #BA2121; font-style: italic">    CrÃ©er une fenÃªtre (300x200 pixels)</span>
+<span style="color: #BA2121; font-style: italic">    Créer une fenêtre (300x200 pixels)</span>
 <span style="color: #BA2121; font-style: italic">    &#39;&#39;&#39;</span>
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">__init__</span>(<span style="color: #008000">self</span>):
         <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">        INITIALISEUR </span>
 <span style="color: #BA2121; font-style: italic">        ------------</span>
-<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenÃªtre (300x200 pixels) </span>
+<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenêtre (300x200 pixels) </span>
 <span style="color: #BA2121; font-style: italic">        avec un titre &#39;My first app&#39;.</span>
 <span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
         <span style="color: #008000">super</span>(MainWindow, <span style="color: #008000">self</span>)<span style="color: #666666">.</span><span style="color: #0000FF">__init__</span>()
         <span style="color: #408080; font-style: italic"># GUI proprieties</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setGeometry(<span style="color: #666666">400</span>, <span style="color: #666666">100</span>, <span style="color: #666666">300</span>, <span style="color: #666666">200</span>)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setWindowTitle(<span style="color: #BA2121">&#39;My first app&#39;</span>)
-        <span style="color: #408080; font-style: italic"># Ajouter des Ã©tiquettes: QLabel</span>
+        <span style="color: #408080; font-style: italic"># Ajouter des étiquettes: QLabel</span>
         <span style="color: #408080; font-style: italic">## Label 1: Texte brut</span>
-        label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma premiÃ¨re application affiche: &#39;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma première application affiche: &#39;</span>, <span style="color: #008000">self</span>)
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;étiquette</span>
         label1<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">160</span>)
-        <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        <span style="color: #408080; font-style: italic"># position de l&#39;étiquette (x, y) en pixels</span>
         label1<span style="color: #666666">.</span>move(<span style="color: #666666">10</span>, <span style="color: #666666">10</span>)
         <span style="color: #408080; font-style: italic">## Label 2: Texte riche</span>
         label2 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&quot;&quot;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># crÃ©er un message HTML</span>
+        <span style="color: #408080; font-style: italic"># créer un message HTML</span>
         message <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
         <span style="color: #408080; font-style: italic"># ajouter le text du message </span>
         label2<span style="color: #666666">.</span>setText(message)
-        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;étiquette</span>
         label2<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">120</span>)
-         <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+         <span style="color: #408080; font-style: italic"># position de l&#39;étiquette (x, y) en pixels</span>
         label2<span style="color: #666666">.</span>move(<span style="color: #666666">200</span>, <span style="color: #666666">10</span>)
 
 <span style="color: #008000; font-weight: bold">if</span> <span style="color: #19177C">__name__</span> <span style="color: #666666">==</span> <span style="color: #BA2121">&quot;__main__&quot;</span>:
@@ -418,35 +418,35 @@ La plupart des interfaces graphiques sont utilis&#233;es pour prendre les entr&#
     <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">    DOCUMENTATION</span>
 <span style="color: #BA2121; font-style: italic">    -------------</span>
-<span style="color: #BA2121; font-style: italic">    CrÃ©er une fenÃªtre (300x200 pixels)</span>
+<span style="color: #BA2121; font-style: italic">    Créer une fenêtre (300x200 pixels)</span>
 <span style="color: #BA2121; font-style: italic">    &#39;&#39;&#39;</span>
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">__init__</span>(<span style="color: #008000">self</span>):
         <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">        INITIALISEUR </span>
 <span style="color: #BA2121; font-style: italic">        ------------</span>
-<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenÃªtre (300x200 pixels) </span>
+<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenêtre (300x200 pixels) </span>
 <span style="color: #BA2121; font-style: italic">        avec un titre &#39;My first app&#39;.</span>
 <span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
         <span style="color: #008000">super</span>(MainWindow, <span style="color: #008000">self</span>)<span style="color: #666666">.</span><span style="color: #0000FF">__init__</span>()
         <span style="color: #408080; font-style: italic"># GUI proprieties</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setGeometry(<span style="color: #666666">400</span>, <span style="color: #666666">100</span>, <span style="color: #666666">300</span>, <span style="color: #666666">200</span>)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setWindowTitle(<span style="color: #BA2121">&#39;My first app&#39;</span>)
-        <span style="color: #408080; font-style: italic"># Ajouter des Ã©tiquettes: QLabel</span>
+        <span style="color: #408080; font-style: italic"># Ajouter des étiquettes: QLabel</span>
         <span style="color: #408080; font-style: italic">## Label 1: Texte brut</span>
-        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma premiÃ¨re application affiche: &#39;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma première application affiche: &#39;</span>, <span style="color: #008000">self</span>)
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;étiquette</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">160</span>)
-        <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        <span style="color: #408080; font-style: italic"># position de l&#39;étiquette (x, y) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>move(<span style="color: #666666">10</span>, <span style="color: #666666">10</span>)
         <span style="color: #408080; font-style: italic">## Label 2: Texte riche</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&quot;&quot;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># crÃ©er un message HTML</span>
+        <span style="color: #408080; font-style: italic"># créer un message HTML</span>
         message <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
         <span style="color: #408080; font-style: italic"># ajouter le text du message </span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setText(message)
-        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;étiquette</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">120</span>)
-         <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+         <span style="color: #408080; font-style: italic"># position de l&#39;étiquette (x, y) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>move(<span style="color: #666666">200</span>, <span style="color: #666666">10</span>)
         
         <span style="color: #408080; font-style: italic"># Ajouter des boutons: `QPushButton`</span>
@@ -454,13 +454,13 @@ La plupart des interfaces graphiques sont utilis&#233;es pour prendre les entr&#
         button1 <span style="color: #666666">=</span> QPushButton(<span style="color: #BA2121">&#39;Bonjour&#39;</span>, <span style="color: #008000">self</span>)
         button1<span style="color: #666666">.</span>setToolTip(<span style="color: #BA2121">&quot;C&#39;est le bouton Bonjour&quot;</span>)
         button1<span style="color: #666666">.</span>move(<span style="color: #666666">50</span>, <span style="color: #666666">50</span>)
-        <span style="color: #408080; font-style: italic"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        <span style="color: #408080; font-style: italic"># connecter le signal à l&#39;événement</span>
         button1<span style="color: #666666">.</span>clicked<span style="color: #666666">.</span>connect(<span style="color: #008000">self</span><span style="color: #666666">.</span>on_click_button1)
         <span style="color: #408080; font-style: italic"># Push Button 2: Bouton au revoir</span>
         button2 <span style="color: #666666">=</span> QPushButton(<span style="color: #BA2121">&#39;Au revoir&#39;</span>, <span style="color: #008000">self</span>)
         button2<span style="color: #666666">.</span>setToolTip(<span style="color: #BA2121">&quot;C&#39;est le bouton Au revoir&quot;</span>)
         button2<span style="color: #666666">.</span>move(<span style="color: #666666">170</span>, <span style="color: #666666">50</span>)
-        <span style="color: #408080; font-style: italic"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        <span style="color: #408080; font-style: italic"># connecter le signal à l&#39;événement</span>
         button2<span style="color: #666666">.</span>clicked<span style="color: #666666">.</span>connect(<span style="color: #008000">self</span><span style="color: #666666">.</span>on_click_button2)
 
     <span style="color: #AA22FF">@pyqtSlot</span>()  <span style="color: #408080; font-style: italic"># signal du bouton bonjour</span>
@@ -516,35 +516,35 @@ Les Spin Box sont des widgets utilis&#233;s pour accepter et afficher des nombre
     <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">    DOCUMENTATION</span>
 <span style="color: #BA2121; font-style: italic">    -------------</span>
-<span style="color: #BA2121; font-style: italic">    CrÃ©er une fenÃªtre (300x200 pixels)</span>
+<span style="color: #BA2121; font-style: italic">    Créer une fenêtre (300x200 pixels)</span>
 <span style="color: #BA2121; font-style: italic">    &#39;&#39;&#39;</span>
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">__init__</span>(<span style="color: #008000">self</span>):
         <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">        INITIALISEUR </span>
 <span style="color: #BA2121; font-style: italic">        ------------</span>
-<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenÃªtre (300x200 pixels) </span>
+<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenêtre (300x200 pixels) </span>
 <span style="color: #BA2121; font-style: italic">        avec un titre &#39;My first app&#39;.</span>
 <span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
         <span style="color: #008000">super</span>(MainWindow, <span style="color: #008000">self</span>)<span style="color: #666666">.</span><span style="color: #0000FF">__init__</span>()
         <span style="color: #408080; font-style: italic"># GUI proprieties</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setGeometry(<span style="color: #666666">400</span>, <span style="color: #666666">100</span>, <span style="color: #666666">300</span>, <span style="color: #666666">200</span>)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setWindowTitle(<span style="color: #BA2121">&#39;My first app&#39;</span>)
-        <span style="color: #408080; font-style: italic"># Ajouter des Ã©tiquettes: QLabel</span>
+        <span style="color: #408080; font-style: italic"># Ajouter des étiquettes: QLabel</span>
         <span style="color: #408080; font-style: italic">## Label 1: Texte brut</span>
-        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma premiÃ¨re application affiche: &#39;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma première application affiche: &#39;</span>, <span style="color: #008000">self</span>)
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;étiquette</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">160</span>)
-        <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        <span style="color: #408080; font-style: italic"># position de l&#39;étiquette (x, y) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>move(<span style="color: #666666">10</span>, <span style="color: #666666">10</span>)
         <span style="color: #408080; font-style: italic">## Label 2: Texte riche</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&quot;&quot;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># crÃ©er un message HTML</span>
+        <span style="color: #408080; font-style: italic"># créer un message HTML</span>
         message <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
         <span style="color: #408080; font-style: italic"># ajouter le text du message </span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setText(message)
-        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;étiquette</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">120</span>)
-         <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+         <span style="color: #408080; font-style: italic"># position de l&#39;étiquette (x, y) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>move(<span style="color: #666666">200</span>, <span style="color: #666666">10</span>)
         
         <span style="color: #408080; font-style: italic"># Ajouter des boutons: `QPushButton`</span>
@@ -552,33 +552,33 @@ Les Spin Box sont des widgets utilis&#233;s pour accepter et afficher des nombre
         button1 <span style="color: #666666">=</span> QPushButton(<span style="color: #BA2121">&#39;Bonjour&#39;</span>, <span style="color: #008000">self</span>)
         button1<span style="color: #666666">.</span>setToolTip(<span style="color: #BA2121">&quot;C&#39;est le bouton Bonjour&quot;</span>)
         button1<span style="color: #666666">.</span>move(<span style="color: #666666">50</span>, <span style="color: #666666">50</span>)
-        <span style="color: #408080; font-style: italic"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        <span style="color: #408080; font-style: italic"># connecter le signal à l&#39;événement</span>
         button1<span style="color: #666666">.</span>clicked<span style="color: #666666">.</span>connect(<span style="color: #008000">self</span><span style="color: #666666">.</span>on_click_button1)
         <span style="color: #408080; font-style: italic"># Push Button 2: Bouton au revoir</span>
         button2 <span style="color: #666666">=</span> QPushButton(<span style="color: #BA2121">&#39;Au revoir&#39;</span>, <span style="color: #008000">self</span>)
         button2<span style="color: #666666">.</span>setToolTip(<span style="color: #BA2121">&quot;C&#39;est le bouton Au revoir&quot;</span>)
         button2<span style="color: #666666">.</span>move(<span style="color: #666666">170</span>, <span style="color: #666666">50</span>)
-        <span style="color: #408080; font-style: italic"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        <span style="color: #408080; font-style: italic"># connecter le signal à l&#39;événement</span>
         button2<span style="color: #666666">.</span>clicked<span style="color: #666666">.</span>connect(<span style="color: #008000">self</span><span style="color: #666666">.</span>on_click_button2)
 
         <span style="color: #408080; font-style: italic"># Ajouter des Spin Box: QSpinBox</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb <span style="color: #666666">=</span> QSpinBox(<span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># Spin Box changer une valeur entiÃ¨re de 0 Ã  100</span>
+        <span style="color: #408080; font-style: italic"># Spin Box changer une valeur entière de 0 à 100</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setMinimum(<span style="color: #666666">0</span>)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setMaximum(<span style="color: #666666">100</span>)
-        <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setValue(<span style="color: #666666">50</span>) <span style="color: #408080; font-style: italic"># valeur par dÃ©faut</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setValue(<span style="color: #666666">50</span>) <span style="color: #408080; font-style: italic"># valeur par défaut</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setSingleStep(<span style="color: #666666">1</span>) <span style="color: #408080; font-style: italic"># pas</span>
-        <span style="color: #408080; font-style: italic"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        <span style="color: #408080; font-style: italic"># définir la géométrie (x, y, largeur, hauteur) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setGeometry(<span style="color: #666666">120</span>, <span style="color: #666666">100</span>, <span style="color: #666666">50</span>, <span style="color: #666666">20</span>)
-        <span style="color: #408080; font-style: italic"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        <span style="color: #408080; font-style: italic"># connecter le signal à l&#39;événement</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>valueChanged<span style="color: #666666">.</span>connect(<span style="color: #008000">self</span><span style="color: #666666">.</span>spb_valuechange)
-        <span style="color: #408080; font-style: italic"># dÃ©finir une Ã©tiquette disant Ã  quoi Spin Box fait rÃ©fÃ©rence</span>
+        <span style="color: #408080; font-style: italic"># définir une étiquette disant à quoi Spin Box fait référence</span>
         txt <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;La valeur actuelle est: &#39;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        <span style="color: #408080; font-style: italic"># définir la géométrie (x, y, largeur, hauteur) en pixels</span>
         txt<span style="color: #666666">.</span>setGeometry(<span style="color: #666666">10</span>, <span style="color: #666666">100</span>, <span style="color: #666666">100</span>, <span style="color: #666666">20</span>)
-        <span style="color: #408080; font-style: italic"># dÃ©finir une Ã©tiquette pour recevoir une valeur du spin box</span>
+        <span style="color: #408080; font-style: italic"># définir une étiquette pour recevoir une valeur du spin box</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>val <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&quot;&quot;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        <span style="color: #408080; font-style: italic"># définir la géométrie (x, y, largeur, hauteur) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>val<span style="color: #666666">.</span>setGeometry(<span style="color: #666666">190</span>, <span style="color: #666666">100</span>, <span style="color: #666666">30</span>, <span style="color: #666666">20</span>)
 
     <span style="color: #AA22FF">@pyqtSlot</span>()  <span style="color: #408080; font-style: italic"># signal du bouton bonjour</span>
@@ -603,7 +603,7 @@ Les Spin Box sont des widgets utilis&#233;s pour accepter et afficher des nombre
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">spb_valuechange</span>(<span style="color: #008000">self</span>, value):
         <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">        la valeur du Spin Box est un entier,</span>
-<span style="color: #BA2121; font-style: italic">        convertissez-le en chaÃ®ne Ã  l&#39;aide de la fonction str().</span>
+<span style="color: #BA2121; font-style: italic">        convertissez-le en chaîne à l&#39;aide de la fonction str().</span>
 <span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>val<span style="color: #666666">.</span>setText(<span style="color: #008000">str</span>(<span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>value()))
 
@@ -639,35 +639,35 @@ Un QSlider est un widget dot&#233; d'une poign&#233;e simple. Cette poign&#233;e
     <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">    DOCUMENTATION</span>
 <span style="color: #BA2121; font-style: italic">    -------------</span>
-<span style="color: #BA2121; font-style: italic">    CrÃ©er une fenÃªtre (300x200 pixels)</span>
+<span style="color: #BA2121; font-style: italic">    Créer une fenêtre (300x200 pixels)</span>
 <span style="color: #BA2121; font-style: italic">    &#39;&#39;&#39;</span>
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">__init__</span>(<span style="color: #008000">self</span>):
         <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">        INITIALISEUR </span>
 <span style="color: #BA2121; font-style: italic">        ------------</span>
-<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenÃªtre (300x200 pixels) </span>
+<span style="color: #BA2121; font-style: italic">        La classe `MainWindow()` rendre une fenêtre (300x200 pixels) </span>
 <span style="color: #BA2121; font-style: italic">        avec un titre &#39;My first app&#39;.</span>
 <span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
         <span style="color: #008000">super</span>(MainWindow, <span style="color: #008000">self</span>)<span style="color: #666666">.</span><span style="color: #0000FF">__init__</span>()
         <span style="color: #408080; font-style: italic"># GUI proprieties</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setGeometry(<span style="color: #666666">400</span>, <span style="color: #666666">100</span>, <span style="color: #666666">300</span>, <span style="color: #666666">200</span>)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setWindowTitle(<span style="color: #BA2121">&#39;My first app&#39;</span>)
-        <span style="color: #408080; font-style: italic"># Ajouter des Ã©tiquettes: QLabel</span>
+        <span style="color: #408080; font-style: italic"># Ajouter des étiquettes: QLabel</span>
         <span style="color: #408080; font-style: italic">## Label 1: Texte brut</span>
-        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma premiÃ¨re application affiche: &#39;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma première application affiche: &#39;</span>, <span style="color: #008000">self</span>)
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;étiquette</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">160</span>)
-        <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+        <span style="color: #408080; font-style: italic"># position de l&#39;étiquette (x, y) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>move(<span style="color: #666666">10</span>, <span style="color: #666666">10</span>)
         <span style="color: #408080; font-style: italic">## Label 2: Texte riche</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&quot;&quot;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># crÃ©er un message HTML</span>
+        <span style="color: #408080; font-style: italic"># créer un message HTML</span>
         message <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;&lt;h3&gt;&lt;b&gt;&lt;font color=&#39;green&#39;&gt;Bonjour IE3!&lt;/font&gt;&lt;/b&gt;&quot;</span>
         <span style="color: #408080; font-style: italic"># ajouter le text du message </span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setText(message)
-        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;Ã©tiquette</span>
+        <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;étiquette</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">120</span>)
-         <span style="color: #408080; font-style: italic"># position de l&#39;Ã©tiquette (x, y) en pixels</span>
+         <span style="color: #408080; font-style: italic"># position de l&#39;étiquette (x, y) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label2<span style="color: #666666">.</span>move(<span style="color: #666666">200</span>, <span style="color: #666666">10</span>)
         
         <span style="color: #408080; font-style: italic"># Ajouter des boutons: `QPushButton`</span>
@@ -675,33 +675,33 @@ Un QSlider est un widget dot&#233; d'une poign&#233;e simple. Cette poign&#233;e
         button1 <span style="color: #666666">=</span> QPushButton(<span style="color: #BA2121">&#39;Bonjour&#39;</span>, <span style="color: #008000">self</span>)
         button1<span style="color: #666666">.</span>setToolTip(<span style="color: #BA2121">&quot;C&#39;est le bouton Bonjour&quot;</span>)
         button1<span style="color: #666666">.</span>move(<span style="color: #666666">50</span>, <span style="color: #666666">50</span>)
-        <span style="color: #408080; font-style: italic"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        <span style="color: #408080; font-style: italic"># connecter le signal à l&#39;événement</span>
         button1<span style="color: #666666">.</span>clicked<span style="color: #666666">.</span>connect(<span style="color: #008000">self</span><span style="color: #666666">.</span>on_click_button1)
         <span style="color: #408080; font-style: italic"># Push Button 2: Bouton au revoir</span>
         button2 <span style="color: #666666">=</span> QPushButton(<span style="color: #BA2121">&#39;Au revoir&#39;</span>, <span style="color: #008000">self</span>)
         button2<span style="color: #666666">.</span>setToolTip(<span style="color: #BA2121">&quot;C&#39;est le bouton Au revoir&quot;</span>)
         button2<span style="color: #666666">.</span>move(<span style="color: #666666">170</span>, <span style="color: #666666">50</span>)
-        <span style="color: #408080; font-style: italic"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        <span style="color: #408080; font-style: italic"># connecter le signal à l&#39;événement</span>
         button2<span style="color: #666666">.</span>clicked<span style="color: #666666">.</span>connect(<span style="color: #008000">self</span><span style="color: #666666">.</span>on_click_button2)
 
         <span style="color: #408080; font-style: italic"># Ajouter des Spin Box: QSpinBox</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb <span style="color: #666666">=</span> QSpinBox(<span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># Spin Box changer une valeur entiÃ¨re de 0 Ã  100</span>
+        <span style="color: #408080; font-style: italic"># Spin Box changer une valeur entière de 0 à 100</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setMinimum(<span style="color: #666666">0</span>)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setMaximum(<span style="color: #666666">100</span>)
-        <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setValue(<span style="color: #666666">50</span>) <span style="color: #408080; font-style: italic"># valeur par dÃ©faut</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setValue(<span style="color: #666666">50</span>) <span style="color: #408080; font-style: italic"># valeur par défaut</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setSingleStep(<span style="color: #666666">1</span>) <span style="color: #408080; font-style: italic"># pas</span>
-        <span style="color: #408080; font-style: italic"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        <span style="color: #408080; font-style: italic"># définir la géométrie (x, y, largeur, hauteur) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>setGeometry(<span style="color: #666666">120</span>, <span style="color: #666666">100</span>, <span style="color: #666666">50</span>, <span style="color: #666666">20</span>)
-        <span style="color: #408080; font-style: italic"># connecter le signal Ã  l&#39;Ã©vÃ©nement</span>
+        <span style="color: #408080; font-style: italic"># connecter le signal à l&#39;événement</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>valueChanged<span style="color: #666666">.</span>connect(<span style="color: #008000">self</span><span style="color: #666666">.</span>spb_valuechange)
-        <span style="color: #408080; font-style: italic"># dÃ©finir une Ã©tiquette disant Ã  quoi Spin Box fait rÃ©fÃ©rence</span>
+        <span style="color: #408080; font-style: italic"># définir une étiquette disant à quoi Spin Box fait référence</span>
         txt <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;La valeur actuelle est: &#39;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        <span style="color: #408080; font-style: italic"># définir la géométrie (x, y, largeur, hauteur) en pixels</span>
         txt<span style="color: #666666">.</span>setGeometry(<span style="color: #666666">10</span>, <span style="color: #666666">100</span>, <span style="color: #666666">100</span>, <span style="color: #666666">20</span>)
-        <span style="color: #408080; font-style: italic"># dÃ©finir une Ã©tiquette pour recevoir une valeur du spin box</span>
+        <span style="color: #408080; font-style: italic"># définir une étiquette pour recevoir une valeur du spin box</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>val <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&quot;&quot;</span>, <span style="color: #008000">self</span>)
-        <span style="color: #408080; font-style: italic"># dÃ©finir la gÃ©omÃ©trie (x, y, largeur, hauteur) en pixels</span>
+        <span style="color: #408080; font-style: italic"># définir la géométrie (x, y, largeur, hauteur) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>val<span style="color: #666666">.</span>setGeometry(<span style="color: #666666">190</span>, <span style="color: #666666">100</span>, <span style="color: #666666">30</span>, <span style="color: #666666">20</span>)
 
         <span style="color: #408080; font-style: italic"># Slider: Slider change integer value from 0 to 100</span>
@@ -736,7 +736,7 @@ Un QSlider est un widget dot&#233; d'une poign&#233;e simple. Cette poign&#233;e
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">spb_valuechange</span>(<span style="color: #008000">self</span>, value):
         <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
 <span style="color: #BA2121; font-style: italic">        la valeur du Spin Box est un entier,</span>
-<span style="color: #BA2121; font-style: italic">        convertissez-le en chaÃ®ne Ã  l&#39;aide de la fonction str().</span>
+<span style="color: #BA2121; font-style: italic">        convertissez-le en chaîne à l&#39;aide de la fonction str().</span>
 <span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>val<span style="color: #666666">.</span>setText(<span style="color: #008000">str</span>(<span style="color: #008000">self</span><span style="color: #666666">.</span>spb<span style="color: #666666">.</span>value()))
         <span style="color: #408080; font-style: italic"># connecter le curseur au Spin Box</span>

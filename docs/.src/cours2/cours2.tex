@@ -150,6 +150,21 @@ final,                   % draft: marks overfull hboxes, figures with paths
 
 \setcounter{tocdepth}{2}  % levels in table of contents
 
+% Tricks for having figures close to where they are defined:
+% 1. define less restrictive rules for where to put figures
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+\renewcommand{\topfraction}{0.95}
+\renewcommand{\bottomfraction}{0.95}
+\renewcommand{\textfraction}{0}
+\renewcommand{\floatpagefraction}{0.75}
+% floatpagefraction must always be less than topfraction!
+% 2. ensure all figures are flushed before next section
+\usepackage[section]{placeins}
+% 3. enable begin{figure}[H] (often leads to ugly pagebreaks)
+%\usepackage{float}\restylefloat{figure}
+
 % --- fancyhdr package for fancy headers ---
 \usepackage{fancyhdr}
 \fancyhf{} % sets both header and footer to nothing
@@ -288,6 +303,8 @@ final,                   % draft: marks overfull hboxes, figures with paths
 % --- end of standard preamble for documents ---
 
 
+\usepackage[french]{babel}
+
 % insert custom LaTeX commands...
 
 \raggedbottom
@@ -319,7 +336,7 @@ final,                   % draft: marks overfull hboxes, figures with paths
 
 % ----------------- end author(s) -------------------------
 
-\date{Feb 15, 2019}
+\date{Feb 17, 2019}
 \maketitle
 
 \tableofcontents
@@ -381,6 +398,7 @@ from PyQt5.QtWidgets import QApplication, QWidget
 \end{notice_grayiconadmon} % title: Notice
 
 
+
 Ensuite, nous importons le module \texttt{sys} car nous voulons accéder aux arguments de ligne de commande. Ceux-ci sont contenus dans la liste `sys.argv
 
 \begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
@@ -420,6 +438,7 @@ window.show()
 \end{minted}
 \end{cod}
 \noindent
+
 pour afficher l'objet graphique dans \emph{l'application} que nous avons créée. Cependant, l'application n'est toujours pas exécutée. Pour exécuter l'application, nous exécutons la commande:
 \begin{cod}{cbg_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
 app.exec()
@@ -434,20 +453,20 @@ sys.exit(app.exec_())
 \end{minted}
 \end{cod}
 \noindent
-Le code complet de cette application est donné ci-dessous et le résultat est illustré à la figure 1. Le code peut être stocké dans un fichier, par exemple \textbf{myfirstapp.py}, puis lorsque vous exécutez la commande \texttt{python MyFirstApp.py} à l'invite de commande (ou dans Spyder), vous obtenez la fenêtre de sortie affichée.
+Le code complet de cette application est donné ci-dessous et le résultat est illustré à la Figure~\ref{fig:myfirstapp}. Le code peut être stocké dans un fichier, par exemple \textbf{myfirstapp.py}, puis lorsque vous exécutez la commande \texttt{python MyFirstApp.py} à l'invite de commande (ou dans Spyder), vous obtenez la fenêtre de sortie affichée.
 
 \begin{pro}{cbg_gray}{bar_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
 # NOM DU FICHIER: myfirstapp.py
 #% IMPORTATION
 from PyQt5.QtWidgets import QApplication, QWidget
 import sys
-# crÃ©er un objet QApplication
+# créer un objet QApplication
 app = QApplication(sys.argv)
 # appeler la classe QWidgets
 window = QWidget()
-# dÃ©finir les dimensions de la fenÃªtre
+# définir les dimensions de la fenêtre
 window.setGeometry(400, 100, 300, 200)
-# dÃ©finir un titre pour la fenÃªtre
+# définir un titre pour la fenêtre
 window.setWindowTitle('My first app')
 # afficher l'objet graphique dans l'application
 window.show()
@@ -456,6 +475,538 @@ sys.exit(app.exec_())
 \end{minted}
 \end{pro}
 \noindent
+
+
+\begin{figure}[!ht]  % fig:myfirstapp
+  \centerline{\includegraphics[width=0.7\linewidth]{imgs/myfirstapp.png}}
+  \caption{
+  Une fenêtre PyQt5 créée par le code \texttt{myfirstapp.py} et également par le code \texttt{myfirstappStructure.py}. \label{fig:myfirstapp}
+  }
+\end{figure}
+%\clearpage % flush figures fig:myfirstapp
+
+
+\subsection{Structure d'application PyQT}
+
+Les étapes suivantes (dont certaines ont déjà été utilisées dans l'exemple ci-dessus) aideront à créer une structure solide et propre pour toute application développée avec PyQt:
+
+\begin{enumerate}
+\item Importer les modules nécessaires.
+
+\item Créer une classe héritée de \texttt{QMainWindow} (à l'aide de la construction \texttt{class MainWindow(QMainWindow):}). La \texttt{QMainWindow} est une classe Qt qui fournit une fenêtre principale de l’application avec toutes les options (telle que la barre de menus, la barre d’état, etc.).
+
+\item Implémentez le \textbf{constructeur} (également appelé \textbf{l'initialiseur}) de la classe en utilisant la méthode \Verb!__init __ ()!. Chaque fois qu'un objet d'une classe est créé, cette méthode sera exécutée. L'initialiseur commence généralement par un appel à l'initialiseur de la classe \texttt{super ()}; Ainsi, toutes les méthodes définies dans la classe parent sont immédiatement disponibles, même si elles sont remplacées dans la définition de classe actuelle.
+
+\item Cette opération est ensuite suivie par la définition des valeurs (par défaut) pour divers attributs, tels que la géométrie, le titre, etc., et la définition des différentes méthodes.
+
+\item Enfin, utiliser la construction \Verb!if __name__ == "__main __":! à la fin pour créer un objet \texttt{QApplication} et l'exécuter.
+\end{enumerate}
+
+\noindent
+La fenêtre illustrée à la Figure~\ref{fig:myfirstapp} peut également être créée à l'aide des étapes décrites ci-dessus. Le code permettant de faire cela est donné dans le script \textbf{myfirstappStructure.py}. Dans une fenêtre d'invite de commande, exécutez la commande \texttt{python myfirstappStructure.py} (ou exécutez le script sur Spyder), où \textbf{myfirstappStructure.py} est le nom du fichier contenant le code permettant d'afficher la fenêtre illustrée à la Figure~\ref{fig:myfirstapp}.
+
+\begin{pro}{cbg_gray}{bar_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+# NOM DU FICHIER: myfirstappStructure.py
+#% IMPORTATION
+from PyQt5.QtWidgets import QApplication, QMainWindow
+
+class MainWindow(QMainWindow):
+    '''
+    DOCUMENTATION
+    -------------
+    Créer une fenêtre (300x200 pixels)
+    '''
+    def __init__(self):
+        '''
+        INITIALISEUR 
+        ------------
+        La classe `MainWindow()` rendre une fenêtre (300x200 pixels) 
+        avec un titre 'My first app'.
+        '''
+        super(MainWindow, self).__init__()
+        # Propriétés de l'interface graphique
+        self.setGeometry(400, 100, 300, 200)
+        self.setWindowTitle('My first app')
+
+if __name__ == "__main__":
+    import sys
+    app = QApplication(sys.argv)
+    MyApplication = MainWindow()
+    MyApplication.show()
+    sys.exit(app.exec_())
+\end{minted}
+\end{pro}
+\noindent
+
+\subsection{Widgets, événements et signaux}
+Les widgets sont les éléments de base d'une interface graphique. PyQt5 a une large gamme de widgets, y compris des boutons (\texttt{buttons}), des étiquettes (\texttt{labels}), des cases à cocher (\texttt{check boxes}), des curseurs (\texttt{sliders}), des zones de liste (\texttt{list boxes}), etc. Nous décrirons plusieurs widgets couramment utilisés dans cette section. Ceux-ci incluent un \texttt{QPushButton}, un \texttt{ToggleButton}, un \texttt{QLabel}, un \texttt{QCheckBox}, un \texttt{QSlider}, un \texttt{QProgressBar}, un \texttt{QCalendarWidget}, etc.
+
+\paragraph{Ajouter des étiquettes: \texttt{QLabel}.}
+Nous avons besoin d'une étiquette pour afficher les messages. Un \texttt{QLabel} peut afficher du texte brut ou riche, HTML. Le code présenté ci-dessous (\textbf{myfirstappLabels.py}) ajouterait deux objets \texttt{QLabel} à la même fenêtre que celle précédemment créée. Le premier affiche un texte brut (\texttt{"Ma première application affiche: "}) et le second un texte HTML enrichi ("Bonjour IE3!", Gras et de couleur verte). L'exécution du code produira une fenêtre illustrée à la Figure~\ref{fig:myfirstappLabels}.
+\begin{pro}{cbg_gray}{bar_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+# NOM DU FICHIER: myfirstappLabels.py
+#% IMPORTATION
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
+
+class MainWindow(QMainWindow):
+    '''
+    DOCUMENTATION
+    -------------
+    Créer une fenêtre (300x200 pixels)
+    '''
+    def __init__(self):
+        '''
+        INITIALISEUR 
+        ------------
+        La classe `MainWindow()` rendre une fenêtre (300x200 pixels) 
+        avec un titre 'My first app'.
+        '''
+        super(MainWindow, self).__init__()
+        # GUI proprieties
+        self.setGeometry(400, 100, 300, 200)
+        self.setWindowTitle('My first app')
+        # Ajouter des étiquettes: QLabel
+        ## Label 1: Texte brut
+        label1 = QLabel('Ma première application affiche: ', self)
+        # fixer la largeur de l'étiquette
+        label1.setFixedWidth(160)
+        # position de l'étiquette (x, y) en pixels
+        label1.move(10, 10)
+        ## Label 2: Texte riche
+        label2 = QLabel("", self)
+        # créer un message HTML
+        message = "<h3><b><font color='green'>Bonjour IE3!</font></b>"
+        # ajouter le text du message 
+        label2.setText(message)
+        # fixer la largeur de l'étiquette
+        label2.setFixedWidth(120)
+         # position de l'étiquette (x, y) en pixels
+        label2.move(200, 10)
+
+if __name__ == "__main__":
+    import sys
+    app = QApplication(sys.argv)
+    MyApplication = MainWindow()
+    MyApplication.show()
+    sys.exit(app.exec_())
+\end{minted}
+\end{pro}
+\noindent
+
+
+\begin{figure}[!ht]  % fig:myfirstappLabels
+  \centerline{\includegraphics[width=0.7\linewidth]{imgs/myfirstappLabels.png}}
+  \caption{
+  Résultat de l'exécution du code \texttt{myfirstappLabels.py}. \label{fig:myfirstappLabels}
+  }
+\end{figure}
+%\clearpage % flush figures fig:myfirstappLabels
+
+
+\paragraph{Ajouter des boutons: \texttt{QPushButton}.}
+La plupart des interfaces graphiques sont utilisées pour prendre les entrées de l'utilisateur et produire des sorties en fonction de l'entrée donnée. Une technique courante consiste à demander à l'utilisateur de cliquer sur un bouton \texttt{OK} ou sur un bouton \texttt{Annuler}. Dans PyQt5, cela est implémenté à l'aide de la classe \texttt{QPushButton}. Chaque widget d'une application peut être programmé pour répondre de manière prédéterminée à tout changement survenant dans la fenêtre de l'application ou n'importe où sur l'ordinateur. Ces \emph{changements} sont appelés \textbf{des événements}. Par exemple, nous pourrions déplacer la souris autour de l'écran ou sur la fenêtre de l'application, ou peut-être avons-nous appuyé sur la touche \texttt{Entrée}. Lorsqu'un tel événement se produit, le système émet un ou plusieurs signaux; autrement dit, modifie certaines propriétés des widgets. Nous pouvons écrire du code qui sera exécuté à chaque fois qu'un tel signal est émis. Ce morceau de code s'appelle un \textbf{slot}. Par exemple, nous pouvons souhaiter fermer la fenêtre et quitter l’application lorsque le bouton gauche d’une souris est cliqué sur le bouton de commande \texttt{Annuler}. Lorsque cet événement de clic gauche de la souris sur le bouton \texttt{Annuler} se produit, un signal de \textbf{clicked} est émis sur le bouton et un \textbf{slot} qui quitte l'application et quitte sera implémenté. Cependant, pour que cela se produise, nous devons explicitement \textbf{connecter} le \textbf{slot} au signal. Toutes ces idées sont montrées dans le code \textbf{myfirstappButtons.py}.
+
+\begin{pro}{cbg_gray}{bar_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+# NOM DU FICHIER: myfirstappButtons.py
+#% IMPORTATION
+from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel, QPushButton
+from PyQt5.QtCore import pyqtSlot
+
+
+class MainWindow(QMainWindow):
+    '''
+    DOCUMENTATION
+    -------------
+    Créer une fenêtre (300x200 pixels)
+    '''
+    def __init__(self):
+        '''
+        INITIALISEUR 
+        ------------
+        La classe `MainWindow()` rendre une fenêtre (300x200 pixels) 
+        avec un titre 'My first app'.
+        '''
+        super(MainWindow, self).__init__()
+        # GUI proprieties
+        self.setGeometry(400, 100, 300, 200)
+        self.setWindowTitle('My first app')
+        # Ajouter des étiquettes: QLabel
+        ## Label 1: Texte brut
+        self.label1 = QLabel('Ma première application affiche: ', self)
+        # fixer la largeur de l'étiquette
+        self.label1.setFixedWidth(160)
+        # position de l'étiquette (x, y) en pixels
+        self.label1.move(10, 10)
+        ## Label 2: Texte riche
+        self.label2 = QLabel("", self)
+        # créer un message HTML
+        message = "<h3><b><font color='green'>Bonjour IE3!</font></b>"
+        # ajouter le text du message 
+        self.label2.setText(message)
+        # fixer la largeur de l'étiquette
+        self.label2.setFixedWidth(120)
+         # position de l'étiquette (x, y) en pixels
+        self.label2.move(200, 10)
+        
+        # Ajouter des boutons: `QPushButton`
+        # Push Button 1: Bouton bonjour
+        button1 = QPushButton('Bonjour', self)
+        button1.setToolTip("C'est le bouton Bonjour")
+        button1.move(50, 50)
+        # connecter le signal à l'événement
+        button1.clicked.connect(self.on_click_button1)
+        # Push Button 2: Bouton au revoir
+        button2 = QPushButton('Au revoir', self)
+        button2.setToolTip("C'est le bouton Au revoir")
+        button2.move(170, 50)
+        # connecter le signal à l'événement
+        button2.clicked.connect(self.on_click_button2)
+
+    @pyqtSlot()  # signal du bouton bonjour
+    def on_click_button1(self):
+        '''
+        Afficher un message "Bonjour"
+        '''
+        message = "<h3><b><font color='green'>Bonjour IE3!</font></b>"
+        self.label2.setText(message)
+        self.label2.setFixedWidth(120)
+
+    @pyqtSlot()  # signal du bouton au revoir
+    def on_click_button2(self):
+        '''
+        Afficher un message "Au revoir"
+        '''
+        message = "<h3><b><font color='red'>Au revoir IE3!</font></b>"
+        self.label2.setText(message)
+        self.label2.setFixedWidth(120)
+
+if __name__ == "__main__":
+    import sys
+    app = QApplication(sys.argv)
+    MyApplication = MainWindow()
+    MyApplication.show()
+    sys.exit(app.exec_())
+\end{minted}
+\end{pro}
+\noindent
+
+
+\begin{figure}[!ht]  % fig:myfirstappButtons
+  \centerline{\includegraphics[width=0.7\linewidth]{imgs/myfirstappButtons1.png}}
+  \caption{
+  Résultat de l'exécution du code \texttt{myfirstappButtons.py}. \label{fig:myfirstappButtons}
+  }
+\end{figure}
+%\clearpage % flush figures fig:myfirstappButtons
+
+
+Toute méthode peut être connectée à un signal. Cependant, pour être sûr, il est préférable de s’assurer qu’une méthode particulière est bien un \textbf{slot}. Ceci est réalisé en déclarant une méthode comme étant un slot en utilisant le décorateur \texttt{@pyqtSlot()} comme indiqué dans le code \textbf{myfirstappButtons.py}.
+
+\paragraph{Ajouter des Spin Box: \texttt{QSpinBox}.}
+Les Spin Box sont des widgets utilisés pour accepter et afficher des nombres entiers. Celles-ci peuvent être considérées comme une boîte d'édition avec une molette attachée. En cliquant une fois sur une flèche vers le haut de la molette, la valeur dans la zone d'édition augmente d'un point; cliquer sur la flèche vers le bas diminuera la valeur de un. Vous pouvez également entrer la valeur directement dans la zone d'édition. La plage de valeurs accessible dans un spinbox peut être définie à l'aide de la méthode \texttt{setRange()} ou de la combinaison des méthodes \texttt{setMinimum()} et \texttt{setMaximum()}. Toutes ces idées sont montrées dans le code \textbf{myfirstappSpinBox.py} et illustrées par la Figure~\ref{fig:myfirstappSpinBox}.
+
+\begin{pro}{cbg_gray}{bar_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+# NOM DU FICHIER: myfirstappSpinBox.py
+#% IMPORTATION
+from PyQt5.QtWidgets import (QApplication, QMainWindow, QLabel,
+                             QPushButton, QSpinBox)
+from PyQt5.QtCore import pyqtSlot
+
+
+class MainWindow(QMainWindow):
+    '''
+    DOCUMENTATION
+    -------------
+    Créer une fenêtre (300x200 pixels)
+    '''
+    def __init__(self):
+        '''
+        INITIALISEUR 
+        ------------
+        La classe `MainWindow()` rendre une fenêtre (300x200 pixels) 
+        avec un titre 'My first app'.
+        '''
+        super(MainWindow, self).__init__()
+        # GUI proprieties
+        self.setGeometry(400, 100, 300, 200)
+        self.setWindowTitle('My first app')
+        # Ajouter des étiquettes: QLabel
+        ## Label 1: Texte brut
+        self.label1 = QLabel('Ma première application affiche: ', self)
+        # fixer la largeur de l'étiquette
+        self.label1.setFixedWidth(160)
+        # position de l'étiquette (x, y) en pixels
+        self.label1.move(10, 10)
+        ## Label 2: Texte riche
+        self.label2 = QLabel("", self)
+        # créer un message HTML
+        message = "<h3><b><font color='green'>Bonjour IE3!</font></b>"
+        # ajouter le text du message 
+        self.label2.setText(message)
+        # fixer la largeur de l'étiquette
+        self.label2.setFixedWidth(120)
+         # position de l'étiquette (x, y) en pixels
+        self.label2.move(200, 10)
+        
+        # Ajouter des boutons: `QPushButton`
+        # Push Button 1: Bouton bonjour
+        button1 = QPushButton('Bonjour', self)
+        button1.setToolTip("C'est le bouton Bonjour")
+        button1.move(50, 50)
+        # connecter le signal à l'événement
+        button1.clicked.connect(self.on_click_button1)
+        # Push Button 2: Bouton au revoir
+        button2 = QPushButton('Au revoir', self)
+        button2.setToolTip("C'est le bouton Au revoir")
+        button2.move(170, 50)
+        # connecter le signal à l'événement
+        button2.clicked.connect(self.on_click_button2)
+
+        # Ajouter des Spin Box: QSpinBox
+        self.spb = QSpinBox(self)
+        # Spin Box changer une valeur entière de 0 à 100
+        self.spb.setMinimum(0)
+        self.spb.setMaximum(100)
+        self.spb.setValue(50) # valeur par défaut
+        self.spb.setSingleStep(1) # pas
+        # définir la géométrie (x, y, largeur, hauteur) en pixels
+        self.spb.setGeometry(120, 100, 50, 20)
+        # connecter le signal à l'événement
+        self.spb.valueChanged.connect(self.spb_valuechange)
+        # définir une étiquette disant à quoi Spin Box fait référence
+        txt = QLabel('La valeur actuelle est: ', self)
+        # définir la géométrie (x, y, largeur, hauteur) en pixels
+        txt.setGeometry(10, 100, 100, 20)
+        # définir une étiquette pour recevoir une valeur du spin box
+        self.val = QLabel("", self)
+        # définir la géométrie (x, y, largeur, hauteur) en pixels
+        self.val.setGeometry(190, 100, 30, 20)
+
+    @pyqtSlot()  # signal du bouton bonjour
+    def on_click_button1(self):
+        '''
+        Afficher un message "Bonjour"
+        '''
+        message = "<h3><b><font color='green'>Bonjour IE3!</font></b>"
+        self.label2.setText(message)
+        self.label2.setFixedWidth(120)
+
+    @pyqtSlot()  # signal du bouton au revoir
+    def on_click_button2(self):
+        '''
+        Afficher un message "Au revoir"
+        '''
+        message = "<h3><b><font color='red'>Au revoir IE3!</font></b>"
+        self.label2.setText(message)
+        self.label2.setFixedWidth(120)
+
+    @pyqtSlot(int)  # signal du Spin Box: renvoie un entier
+    def spb_valuechange(self, value):
+        '''
+        la valeur du Spin Box est un entier,
+        convertissez-le en chaîne à l'aide de la fonction str().
+        '''
+        self.val.setText(str(self.spb.value()))
+
+if __name__ == "__main__":
+    import sys
+    app = QApplication(sys.argv)
+    MyApplication = MainWindow()
+    MyApplication.show()
+    sys.exit(app.exec_())
+\end{minted}
+\end{pro}
+\noindent
+
+
+\begin{figure}[!ht]  % fig:myfirstappSpinBox
+  \centerline{\includegraphics[width=0.7\linewidth]{imgs/myfirstappSpinBox2.png}}
+  \caption{
+  Résultat de l'exécution du code \texttt{myfirstappSpinBox.py}. \label{fig:myfirstappSpinBox}
+  }
+\end{figure}
+%\clearpage % flush figures fig:myfirstappSpinBox
+
+
+\paragraph{Ajouter des curseurs : \texttt{QSlider}.}
+Un QSlider est un widget doté d'une poignée simple. Cette poignée peut être déplacée d'avant en arrière. En utilisant cela, nous pouvons choisir une valeur pour une tâche spécifique. Comme le Spin Box, un curseur ne peut avoir qu'une valeur entière; la plage des valeurs peut être définie entre un minimum et un maximum. Parfois, l’utilisation d’un curseur est plus naturelle que celle d’un Spin Box et cela dépend de la tâche ou de l’application.
+
+\begin{pro}{cbg_gray}{bar_gray}\begin{minted}[fontsize=\fontsize{9pt}{9pt},linenos=false,mathescape,baselinestretch=1.0,fontfamily=tt,xleftmargin=2mm]{python}
+# NOM DU FICHIER: myfirstappSlider.py
+#% IMPORTATION
+from PyQt5.QtWidgets import (QApplication, QMainWindow, QLabel,
+                             QPushButton, QSpinBox, QSlider)
+from PyQt5.QtCore import pyqtSlot, Qt
+
+
+class MainWindow(QMainWindow):
+    '''
+    DOCUMENTATION
+    -------------
+    Créer une fenêtre (300x200 pixels)
+    '''
+    def __init__(self):
+        '''
+        INITIALISEUR 
+        ------------
+        La classe `MainWindow()` rendre une fenêtre (300x200 pixels) 
+        avec un titre 'My first app'.
+        '''
+        super(MainWindow, self).__init__()
+        # GUI proprieties
+        self.setGeometry(400, 100, 300, 200)
+        self.setWindowTitle('My first app')
+        # Ajouter des étiquettes: QLabel
+        ## Label 1: Texte brut
+        self.label1 = QLabel('Ma première application affiche: ', self)
+        # fixer la largeur de l'étiquette
+        self.label1.setFixedWidth(160)
+        # position de l'étiquette (x, y) en pixels
+        self.label1.move(10, 10)
+        ## Label 2: Texte riche
+        self.label2 = QLabel("", self)
+        # créer un message HTML
+        message = "<h3><b><font color='green'>Bonjour IE3!</font></b>"
+        # ajouter le text du message 
+        self.label2.setText(message)
+        # fixer la largeur de l'étiquette
+        self.label2.setFixedWidth(120)
+         # position de l'étiquette (x, y) en pixels
+        self.label2.move(200, 10)
+        
+        # Ajouter des boutons: `QPushButton`
+        # Push Button 1: Bouton bonjour
+        button1 = QPushButton('Bonjour', self)
+        button1.setToolTip("C'est le bouton Bonjour")
+        button1.move(50, 50)
+        # connecter le signal à l'événement
+        button1.clicked.connect(self.on_click_button1)
+        # Push Button 2: Bouton au revoir
+        button2 = QPushButton('Au revoir', self)
+        button2.setToolTip("C'est le bouton Au revoir")
+        button2.move(170, 50)
+        # connecter le signal à l'événement
+        button2.clicked.connect(self.on_click_button2)
+
+        # Ajouter des Spin Box: QSpinBox
+        self.spb = QSpinBox(self)
+        # Spin Box changer une valeur entière de 0 à 100
+        self.spb.setMinimum(0)
+        self.spb.setMaximum(100)
+        self.spb.setValue(50) # valeur par défaut
+        self.spb.setSingleStep(1) # pas
+        # définir la géométrie (x, y, largeur, hauteur) en pixels
+        self.spb.setGeometry(120, 100, 50, 20)
+        # connecter le signal à l'événement
+        self.spb.valueChanged.connect(self.spb_valuechange)
+        # définir une étiquette disant à quoi Spin Box fait référence
+        txt = QLabel('La valeur actuelle est: ', self)
+        # définir la géométrie (x, y, largeur, hauteur) en pixels
+        txt.setGeometry(10, 100, 100, 20)
+        # définir une étiquette pour recevoir une valeur du spin box
+        self.val = QLabel("", self)
+        # définir la géométrie (x, y, largeur, hauteur) en pixels
+        self.val.setGeometry(190, 100, 30, 20)
+
+        # Slider: Slider change integer value from 0 to 100
+        self.sldr = QSlider(Qt.Horizontal, self)
+        self.sldr.setMinimum(0)
+        self.sldr.setMaximum(100)
+        self.sldr.setValue(50)
+        self.sldr.setSingleStep(1)
+        # set geometry (x,y,width,hight)
+        self.sldr.setGeometry(10, 150, 280, 20)
+        self.sldr.valueChanged.connect(self.sldr_valuechange)
+
+    @pyqtSlot()  # signal du bouton bonjour
+    def on_click_button1(self):
+        '''
+        Afficher un message "Bonjour"
+        '''
+        message = "<h3><b><font color='green'>Bonjour IE3!</font></b>"
+        self.label2.setText(message)
+        self.label2.setFixedWidth(120)
+
+    @pyqtSlot()  # signal du bouton au revoir
+    def on_click_button2(self):
+        '''
+        Afficher un message "Au revoir"
+        '''
+        message = "<h3><b><font color='red'>Au revoir IE3!</font></b>"
+        self.label2.setText(message)
+        self.label2.setFixedWidth(120)
+
+    @pyqtSlot(int)  # signal du Spin Box: renvoie un entier
+    def spb_valuechange(self, value):
+        '''
+        la valeur du Spin Box est un entier,
+        convertissez-le en chaîne à l'aide de la fonction str().
+        '''
+        self.val.setText(str(self.spb.value()))
+        # connecter le curseur au Spin Box
+        self.sldr.setValue(value)
+
+    @pyqtSlot(int)  # signal du curseur
+    def sldr_valuechange(self, value):
+        '''
+        connecter le Spin Box au curseur
+        '''
+        self.spb.setValue(value)
+
+
+if __name__ == "__main__":
+    import sys
+    app = QApplication(sys.argv)
+    MyApplication = MainWindow()
+    MyApplication.show()
+    sys.exit(app.exec_())
+\end{minted}
+\end{pro}
+\noindent
+
+
+\begin{figure}[!ht]  % fig:myfirstappSlider
+  \centerline{\includegraphics[width=0.7\linewidth]{imgs/myfirstappSlider2.png}}
+  \caption{
+  Résultat de l'exécution du code \texttt{myfirstappSlider.py}. \label{fig:myfirstappSlider}
+  }
+\end{figure}
+%\clearpage % flush figures fig:myfirstappSlider
+
+
+\section{Le concepteur Qt: "Qt Designer"}
+Le paquet PyQt est livré avec un outil de générateur d'interface graphique appelé Qt Designer (ou concepteur Qt). Qt Designer est l’outil Qt permettant de concevoir et de construire des interfaces graphiques à l’aide d’une simple approche \textbf{glisser-déposer}. Il vous permet de concevoir des widgets, des boîtes de dialogue ou des fenêtres principales complètes à l'aide de formulaires à l'écran (en anglais appelés: on-screen forms). Il a la possibilité de prévisualiser les conceptions pour s'assurer que l'interface graphique fonctionne comme prévu. Il permet une interface de prototypage avant qu’un code ne soit écrit.
+
+Qt Designer peut être démarré en tapant \texttt{designer} dans la fenêtre d'invite de commande sous Windows ou sur un terminal sous n'importe quel système Linux. Sur un Mac, double-cliquez sur l'application Qt Desginer dans le répertoire "anaconda3 / bin" pour lancer Qt Designer. Une fois démarré, Qt Designer ressemblera à celui illustré à la figure~\ref{fig:designerNew}.
+
+La création d’une interface graphique à l’aide de Qt Designer commence par la sélection d’une fenêtre de niveau supérieur pour l’application. Dans un premier temps, Qt Designer affiche une boîte de dialogue d’initialisation dans laquelle vous pouvez choisir le type de base de l’interface graphique que vous souhaitez créer. Vous avez la possibilité de choisir entre trois types de formulaires: \textbf{Dialog}, \textbf{Main Window} et \textbf{Widget}.
+
+
+\begin{figure}[!ht]  % fig:designerNew
+  \centerline{\includegraphics[width=0.7\linewidth]{imgs/designerNew.png}}
+  \caption{
+  Dialogue d'initialisation du concepteur Qt. \label{fig:designerNew}
+  }
+\end{figure}
+%\clearpage % flush figures fig:designerNew
+
+
+Une fois que le type de formulaire requis est sélectionné et créé (en cliquant sur le bouton \textbf{Create}), il peut être redimensionné pour répondre aux besoins de l'application et tous les widgets peuvent être placés dessus.
+
+\subsection{La fenêtre du concepteur Qt}
+Par défaut, à gauche du formulaire se trouve un panneau appelé la \emph{Boîte à widgets} (Widget Box) qui contient tous les objets Qt regroupés sous différentes catégories. Sur la droite, de nombreux panneaux tels que \emph{l'inspecteur d'objets} (Object Inspector), \emph{l'éditeur de propriétés} (Property Editor), etc.
+
+
+\begin{figure}[!ht]  % fig:designerWindow
+  \centerline{\includegraphics[width=0.9\linewidth]{imgs/designerWindow.png}}
+  \caption{
+  La fenêtre du concepteur Qt. \label{fig:designerWindow}
+  }
+\end{figure}
+%\clearpage % flush figures fig:designerWindow
+
+
+\subsection{L'éditeur de propriété}
 
 % ------------------- end of main content ---------------
 
