@@ -80,7 +80,10 @@ div { text-align: justify; text-justify: inter-word; }
               ('Ajouter des étiquettes: `QLabel`', 3, None, '___sec5'),
               ('Ajouter des boutons: `QPushButton`', 3, None, '___sec6'),
               ('Ajouter des Spin Box: `QSpinBox`', 3, None, '___sec7'),
-              ('Ajouter des curseurs : `QSlider`', 3, None, '___sec8')]}
+              ('Ajouter des curseurs : `QSlider`', 3, None, '___sec8'),
+              ('Le concepteur Qt: "Qt Designer"', 1, None, '___sec9'),
+              ('La fenêtre du concepteur Qt', 2, None, '___sec10'),
+              ("L'éditeur de propriété", 2, None, '___sec11')]}
 end of tocinfo -->
 
 <body>
@@ -116,6 +119,9 @@ end of tocinfo -->
 &nbsp; &nbsp; &nbsp; <a href="#___sec2"> Importation de PyQt5 et cr&#233;ation d'une "fen&#234;tre PyQt5" </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec3"> Structure d'application PyQT </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec4"> Widgets, &#233;v&#233;nements et signaux </a><br>
+<a href="#___sec9"> Le concepteur Qt: "Qt Designer" </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec10"> La fen&#234;tre du concepteur Qt </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec11"> L'&#233;diteur de propri&#233;t&#233; </a><br>
 </p>
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
@@ -727,6 +733,37 @@ Un QSlider est un widget dot&#233; d'une poign&#233;e simple. Cette poign&#233;e
 <center><p class="caption">Figure 5:  R&#233;sultat de l'ex&#233;cution du code <code>myfirstappSlider.py</code>.  <!-- caption label: fig:myfirstappSlider --> </p></center>
 <p><img src="imgs/myfirstappSlider2.png" align="bottom" width=300></p>
 </center>
+
+<h1 id="___sec9">Le concepteur Qt: "Qt Designer" </h1>
+Le paquet PyQt est livr&#233; avec un outil de g&#233;n&#233;rateur d'interface graphique appel&#233; Qt Designer (ou concepteur Qt). Qt Designer est l&#8217;outil Qt permettant de concevoir et de construire des interfaces graphiques &#224; l&#8217;aide d&#8217;une simple approche <b>glisser-d&#233;poser</b>. Il vous permet de concevoir des widgets, des bo&#238;tes de dialogue ou des fen&#234;tres principales compl&#232;tes &#224; l'aide de formulaires &#224; l'&#233;cran (en anglais appel&#233;s: on-screen forms). Il a la possibilit&#233; de pr&#233;visualiser les conceptions pour s'assurer que l'interface graphique fonctionne comme pr&#233;vu. Il permet une interface de prototypage avant qu&#8217;un code ne soit &#233;crit.
+
+<p>
+Qt Designer peut &#234;tre d&#233;marr&#233; en tapant <code>designer</code> dans la fen&#234;tre d'invite de commande sous Windows ou sur un terminal sous n'importe quel syst&#232;me Linux. Sur un Mac, double-cliquez sur l'application Qt Desginer dans le r&#233;pertoire "anaconda3 / bin" pour lancer Qt Designer. Une fois d&#233;marr&#233;, Qt Designer ressemblera &#224; celui illustr&#233; &#224; la figure <a href="#fig:designerNew">6</a>.
+
+<p>
+La cr&#233;ation d&#8217;une interface graphique &#224; l&#8217;aide de Qt Designer commence par la s&#233;lection d&#8217;une fen&#234;tre de niveau sup&#233;rieur pour l&#8217;application. Dans un premier temps, Qt Designer affiche une bo&#238;te de dialogue d&#8217;initialisation dans laquelle vous pouvez choisir le type de base de l&#8217;interface graphique que vous souhaitez cr&#233;er. Vous avez la possibilit&#233; de choisir entre trois types de formulaires: <b>Dialog</b>, <b>Main Window</b> et <b>Widget</b>.
+
+<p>
+<center> <!-- figure label: --> <div id="fig:designerNew"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 6:  Dialogue d'initialisation du concepteur Qt.  <!-- caption label: fig:designerNew --> </p></center>
+<p><img src="imgs/designerNew.png" align="bottom" width=400></p>
+</center>
+
+<p>
+Une fois que le type de formulaire requis est s&#233;lectionn&#233; et cr&#233;&#233; (en cliquant sur le bouton <b>Create</b>), il peut &#234;tre redimensionn&#233; pour r&#233;pondre aux besoins de l'application et tous les widgets peuvent &#234;tre plac&#233;s dessus.
+
+<h2 id="___sec10">La fen&#234;tre du concepteur Qt </h2>
+Par d&#233;faut, &#224; gauche du formulaire se trouve un panneau appel&#233; la <em>Bo&#238;te &#224; widgets</em> (Widget Box) qui contient tous les objets Qt regroup&#233;s sous diff&#233;rentes cat&#233;gories. Sur la droite, de nombreux panneaux tels que <em>l'inspecteur d'objets</em> (Object Inspector), <em>l'&#233;diteur de propri&#233;t&#233;s</em> (Property Editor), etc.
+
+<p>
+<center> <!-- figure label: --> <div id="fig:designerWindow"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 7:  La fen&#234;tre du concepteur Qt.  <!-- caption label: fig:designerWindow --> </p></center>
+<p><img src="imgs/designerWindow.png" align="bottom" width=700></p>
+</center>
+
+<h2 id="___sec11">L'&#233;diteur de propri&#233;t&#233; </h2>
 
 <!-- ------------------- end of main content --------------- -->
 

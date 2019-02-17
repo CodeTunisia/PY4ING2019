@@ -794,3 +794,273 @@ figure file imgs/myfirstappSlider2:
     can use imgs/myfirstappSlider2.png for format ipynb
 collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
 output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format html
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format ipynb
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format ipynb
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format ipynb
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format ipynb
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format html
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format html
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format html
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format ipynb
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format ipynb
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format ipynb
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format ipynb
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format html
+figure file imgs/designerWindow:
+    can use imgs/designerWindow.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+
+...doconce translation: insertion of verbatim and latex blocks 18.4 s (accumulated time: 19.5)
+
+
+...doconce format used 20.5 s to translate the document (779 lines)
+
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/designerWindow:
+    can use imgs/designerWindow.png for format html
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format html
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format ipynb
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format ipynb
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format ipynb
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format ipynb
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format ipynb
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+figure file imgs/designerWindow:
+    can use imgs/designerWindow.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/designerWindow:
+    can use imgs/designerWindow.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format html
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format html
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format html
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+output in cours2-solarized.html
+translating doconce text in cours2.do.txt to html
+open file with encoding utf-8
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format html
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format html
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format html
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format html
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format html
+figure file imgs/designerWindow:
+    can use imgs/designerWindow.png for format html
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format html
+output in cours2-bs.html
+translating doconce text in cours2.do.txt to ipynb
+copy complete file scripts/myfirstapp.py (format: pypro)
+copy complete file scripts/myfirstappStructure.py (format: pypro)
+copy complete file scripts/myfirstappLabels.py (format: pypro)
+copy complete file scripts/myfirstappButtons.py (format: pypro)
+copy complete file scripts/myfirstappSpinBox.py (format: pypro)
+copy complete file scripts/myfirstappSlider.py (format: pypro)
+figure file imgs/myfirstappLabels:
+    can use imgs/myfirstappLabels.png for format ipynb
+figure file imgs/myfirstappSpinBox2:
+    can use imgs/myfirstappSpinBox2.png for format ipynb
+figure file imgs/myfirstappSlider2:
+    can use imgs/myfirstappSlider2.png for format ipynb
+figure file imgs/designerWindow:
+    can use imgs/designerWindow.png for format ipynb
+figure file imgs/designerNew:
+    can use imgs/designerNew.png for format ipynb
+figure file imgs/myfirstapp:
+    can use imgs/myfirstapp.png for format ipynb
+figure file imgs/myfirstappButtons1:
+    can use imgs/myfirstappButtons1.png for format ipynb
+collected all required additional files in ipynb-cours2-src.tar.gz which must be distributed with the notebook
+output in cours2.ipynb
