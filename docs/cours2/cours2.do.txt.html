@@ -79,7 +79,7 @@ Le code complet de cette application est donné ci-dessous et le résultat est i
 
 <span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstapp.py</span>
 
-<span style="color: #658b00">FIGURE: [imgs/myfirstapp, width=300 frac=0.7] Une fenêtre PyQt5 créée par le code `myfirstapp.py` et également par le code `myfirstappStructure.py`. label{fig:myfirstapp}</span>
+<span style="color: #658b00">FIGURE: [imgs/myfirstapp, width=300 frac=0.4] Une fenêtre PyQt5 créée par le code `myfirstapp.py` et également par le code `myfirstappStructure.py`. label{fig:myfirstapp}</span>
 
 <span style="color: #000080; font-weight: bold">===== Structure d&#39;application PyQT =====</span>
 
@@ -102,14 +102,14 @@ Les widgets sont les éléments de base d&#39;une interface graphique. PyQt5 a u
 Nous avons besoin d&#39;une étiquette pour afficher les messages. Un `QLabel` peut afficher du texte brut ou riche, HTML. Le code présenté ci-dessous (_myfirstappLabels.py_) ajouterait deux objets `QLabel` à la même fenêtre que celle précédemment créée. Le premier affiche un texte brut (`&quot;Ma première application affiche: &quot;`) et le second un texte HTML enrichi (&quot;Bonjour IE3!&quot;, Gras et de couleur verte). L&#39;exécution du code produira une fenêtre illustrée à la Figure ref{fig:myfirstappLabels}.
 <span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappLabels.py</span>
 
-<span style="color: #658b00">FIGURE: [imgs/myfirstappLabels, width=300 frac=0.7] Résultat de l&#39;exécution du code `myfirstappLabels.py`. label{fig:myfirstappLabels}</span>
+<span style="color: #658b00">FIGURE: [imgs/myfirstappLabels, width=300 frac=0.4] Résultat de l&#39;exécution du code `myfirstappLabels.py`. label{fig:myfirstappLabels}</span>
 
 <span style="color: #000080; font-weight: bold">=== Ajouter des boutons: `QPushButton` ===</span>
 La plupart des interfaces graphiques sont utilisées pour prendre les entrées de l&#39;utilisateur et produire des sorties en fonction de l&#39;entrée donnée. Une technique courante consiste à demander à l&#39;utilisateur de cliquer sur un bouton `OK` ou sur un bouton `Annuler`. Dans PyQt5, cela est implémenté à l&#39;aide de la classe `QPushButton`. Chaque widget d&#39;une application peut être programmé pour répondre de manière prédéterminée à tout changement survenant dans la fenêtre de l&#39;application ou n&#39;importe où sur l&#39;ordinateur. Ces *changements* sont appelés _des événements_. Par exemple, nous pourrions déplacer la souris autour de l&#39;écran ou sur la fenêtre de l&#39;application, ou peut-être avons-nous appuyé sur la touche `Entrée`. Lorsqu&#39;un tel événement se produit, le système émet un ou plusieurs signaux; autrement dit, modifie certaines propriétés des widgets. Nous pouvons écrire du code qui sera exécuté à chaque fois qu&#39;un tel signal est émis. Ce morceau de code s&#39;appelle un _slot_. Par exemple, nous pouvons souhaiter fermer la fenêtre et quitter l’application lorsque le bouton gauche d’une souris est cliqué sur le bouton de commande `Annuler`. Lorsque cet événement de clic gauche de la souris sur le bouton `Annuler` se produit, un signal de _clicked_ est émis sur le bouton et un _slot_ qui quitte l&#39;application et quitte sera implémenté. Cependant, pour que cela se produise, nous devons explicitement _connecter_ le _slot_ au signal. Toutes ces idées sont montrées dans le code _myfirstappButtons.py_.
 
 <span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappButtons.py</span>
 
-<span style="color: #658b00">FIGURE: [imgs/myfirstappButtons1, width=300 frac=0.7] Résultat de l&#39;exécution du code `myfirstappButtons.py`. label{fig:myfirstappButtons}</span>
+<span style="color: #658b00">FIGURE: [imgs/myfirstappButtons1, width=300 frac=0.4] Résultat de l&#39;exécution du code `myfirstappButtons.py`. label{fig:myfirstappButtons}</span>
 
 Toute méthode peut être connectée à un signal. Cependant, pour être sûr, il est préférable de s’assurer qu’une méthode particulière est bien un _slot_. Ceci est réalisé en déclarant une méthode comme étant un slot en utilisant le décorateur `@pyqtSlot()` comme indiqué dans le code _myfirstappButtons.py_.
 
@@ -118,14 +118,14 @@ Les Spin Box sont des widgets utilisés pour accepter et afficher des nombres en
 
 <span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappSpinBox.py</span>
 
-<span style="color: #658b00">FIGURE: [imgs/myfirstappSpinBox2, width=300 frac=0.7] Résultat de l&#39;exécution du code `myfirstappSpinBox.py`. label{fig:myfirstappSpinBox}</span>
+<span style="color: #658b00">FIGURE: [imgs/myfirstappSpinBox2, width=300 frac=0.4] Résultat de l&#39;exécution du code `myfirstappSpinBox.py`. label{fig:myfirstappSpinBox}</span>
 
 <span style="color: #000080; font-weight: bold">=== Ajouter des curseurs : `QSlider` ===</span>
 Un QSlider est un widget doté d&#39;une poignée simple. Cette poignée peut être déplacée d&#39;avant en arrière. En utilisant cela, nous pouvons choisir une valeur pour une tâche spécifique. Comme le Spin Box, un curseur ne peut avoir qu&#39;une valeur entière; la plage des valeurs peut être définie entre un minimum et un maximum. Parfois, l’utilisation d’un curseur est plus naturelle que celle d’un Spin Box et cela dépend de la tâche ou de l’application.
 
 <span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappSlider.py</span>
 
-<span style="color: #658b00">FIGURE: [imgs/myfirstappSlider2, width=300 frac=0.7] Résultat de l&#39;exécution du code `myfirstappSlider.py`. label{fig:myfirstappSlider}</span>
+<span style="color: #658b00">FIGURE: [imgs/myfirstappSlider2, width=300 frac=0.4] Résultat de l&#39;exécution du code `myfirstappSlider.py`. label{fig:myfirstappSlider}</span>
 
 <span style="color: #000080; font-weight: bold">======= Le concepteur Qt: &quot;Qt Designer&quot; =======</span>
 Le paquet PyQt est livré avec un outil de générateur d&#39;interface graphique appelé Qt Designer (ou concepteur Qt). Qt Designer est l’outil Qt permettant de concevoir et de construire des interfaces graphiques à l’aide d’une simple approche _glisser-déposer_. Il vous permet de concevoir des widgets, des boîtes de dialogue ou des fenêtres principales complètes à l&#39;aide de formulaires à l&#39;écran (en anglais appelés: on-screen forms). Il a la possibilité de prévisualiser les conceptions pour s&#39;assurer que l&#39;interface graphique fonctionne comme prévu. Il permet une interface de prototypage avant qu’un code ne soit écrit.
