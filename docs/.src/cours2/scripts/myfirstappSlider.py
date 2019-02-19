@@ -26,7 +26,7 @@ class MainWindow(QMainWindow):
         ## Label 1: Texte brut
         self.label1 = QLabel('Ma première application affiche: ', self)
         # fixer la largeur de l'étiquette
-        self.label1.setFixedWidth(160)
+        self.label1.setFixedWidth(190)
         # position de l'étiquette (x, y) en pixels
         self.label1.move(10, 10)
         ## Label 2: Texte riche
