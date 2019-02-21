@@ -34,6 +34,8 @@ class MainApp(QMainWindow, Ui_MainWindow):
         self.val.setText(str(self.spb.value()))
         # connecter le curseur au Spin Box
         self.sldr.setValue(value)
+        self.dial.setValue(value)
+        self.lcd.display(value)
 
     @pyqtSlot(int)  # signal du curseur
     def on_sldr_valueChanged(self, value):
@@ -41,6 +43,15 @@ class MainApp(QMainWindow, Ui_MainWindow):
         connecter le Spin Box au curseur
         '''
         self.spb.setValue(value)
+        self.dial.setValue(value)
+        self.lcd.display(value)
+    @pyqtSlot(int)  # signal du curseur
+    def on_dial_valueChanged(self, value):
+        '''
+        connecter le Spin Box au curseur
+        '''
+        self.spb.setValue(value)
+        self.lcd.display(value)
         
 if __name__ == "__main__":
     import sys

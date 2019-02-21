@@ -326,7 +326,7 @@ final,                   % draft: marks overfull hboxes, figures with paths
 
 % ----------------- title -------------------------
 
-\title{Apprenez à développer des applications de bureau avec Python and Qt}
+\title{Développer des applications de bureau avec Python et Qt}
 
 % ----------------- author(s) -------------------------
 
@@ -334,7 +334,7 @@ final,                   % draft: marks overfull hboxes, figures with paths
 
 % ----------------- end author(s) -------------------------
 
-\date{Feb 18, 2019}
+\date{Feb 21, 2019}
 \maketitle
 
 \tableofcontents
@@ -858,7 +858,7 @@ class MainWindow(QMainWindow):
         ## Label 1: Texte brut
         self.label1 = QLabel('Ma première application affiche: ', self)
         # fixer la largeur de l'étiquette
-        self.label1.setFixedWidth(160)
+        self.label1.setFixedWidth(190)
         # position de l'étiquette (x, y) en pixels
         self.label1.move(10, 10)
         ## Label 2: Texte riche
@@ -1005,6 +1005,18 @@ Par défaut, à gauche du formulaire se trouve un panneau appelé la \emph{Boît
 
 
 \subsection{L'éditeur de propriété}
+
+À suivre...
+
+
+\begin{figure}[!ht]  % fig:myfirstappDesigner
+  \centerline{\includegraphics[width=0.4\linewidth]{imgs/myfirstappDesigner.png}}
+  \caption{
+  Interface graphique créée par le concepteur Qt. \label{fig:myfirstappDesigner}
+  }
+\end{figure}
+%\clearpage % flush figures fig:myfirstappDesigner
+
 
 % ------------------- end of main content ---------------
 

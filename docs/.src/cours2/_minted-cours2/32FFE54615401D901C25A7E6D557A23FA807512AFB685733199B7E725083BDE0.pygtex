@@ -27,7 +27,7 @@
         \PYG{c+c1}{\PYGZsh{}\PYGZsh{} Label 1: Texte brut}
         \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label1} \PYG{o}{=} \PYG{n}{QLabel}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Ma première application affiche: \PYGZsq{}}\PYG{p}{,} \PYG{n+nb+bp}{self}\PYG{p}{)}
         \PYG{c+c1}{\PYGZsh{} fixer la largeur de l\PYGZsq{}étiquette}
-        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label1}\PYG{o}{.}\PYG{n}{setFixedWidth}\PYG{p}{(}\PYG{l+m+mi}{160}\PYG{p}{)}
+        \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label1}\PYG{o}{.}\PYG{n}{setFixedWidth}\PYG{p}{(}\PYG{l+m+mi}{190}\PYG{p}{)}
         \PYG{c+c1}{\PYGZsh{} position de l\PYGZsq{}étiquette (x, y) en pixels}
         \PYG{n+nb+bp}{self}\PYG{o}{.}\PYG{n}{label1}\PYG{o}{.}\PYG{n}{move}\PYG{p}{(}\PYG{l+m+mi}{10}\PYG{p}{,} \PYG{l+m+mi}{10}\PYG{p}{)}
         \PYG{c+c1}{\PYGZsh{}\PYGZsh{} Label 2: Texte riche}

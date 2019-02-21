@@ -1,4 +1,4 @@
-TITLE: Apprenez à développer des applications de bureau avec Python and Qt
+TITLE: Développer des applications de bureau avec Python et Qt
 AUTHOR: Ahmed Ammar {copyright|CC BY} Email:ahmed.ammar@fst.utm.tn at Faculté des Sciences de Tunis, Université de Tunis El Manar.
 DATE: today
 
@@ -144,3 +144,7 @@ Par défaut, à gauche du formulaire se trouve un panneau appelé la *Boîte à 
 FIGURE: [imgs/designerWindow, width=700 frac=0.9] La fenêtre du concepteur Qt. label{fig:designerWindow}
 
 ===== L'éditeur de propriété =====
+
+À suivre...
+
+FIGURE: [imgs/myfirstappDesigner, width=400 frac=0.4] Interface graphique créée par le concepteur Qt. label{fig:myfirstappDesigner}

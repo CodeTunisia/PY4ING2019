@@ -7,9 +7,9 @@ Automatically generated HTML file from DocOnce source
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Apprenez à développer des applications de bureau avec Python and Qt">
+<meta name="description" content="Développer des applications de bureau avec Python et Qt">
 
-<title>Apprenez à développer des applications de bureau avec Python and Qt</title>
+<title>Développer des applications de bureau avec Python et Qt</title>
 
 <!-- Bootstrap style: bootswatch_journal -->
 <link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
@@ -79,7 +79,7 @@ end of tocinfo -->
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="cours2-bs.html">Apprenez à développer des applications de bureau avec Python and Qt</a>
+    <a class="navbar-brand" href="cours2-bs.html">Développer des applications de bureau avec Python et Qt</a>
   </div>
 
   <div class="navbar-collapse collapse navbar-responsive-collapse">
@@ -117,7 +117,7 @@ end of tocinfo -->
 
 
 <div class="jumbotron">
-<center><h1>Apprenez &#224; d&#233;velopper des applications de bureau avec Python and Qt</h1></center>  <!-- document title -->
+<center><h1>D&#233;velopper des applications de bureau avec Python et Qt</h1></center>  <!-- document title -->
 
 <p>
 <!-- author(s): Ahmed Ammar -->
@@ -132,7 +132,7 @@ end of tocinfo -->
 <center><b>Facult&#233; des Sciences de Tunis, Universit&#233; de Tunis El Manar.</b></center>
 <br>
 <p>
-<center><h4>Feb 18, 2019</h4></center> <!-- date -->
+<center><h4>Feb 21, 2019</h4></center> <!-- date -->
 <br>
 <p>
 </div> <!-- end jumbotron -->
@@ -656,7 +656,7 @@ Un QSlider est un widget dot&#233; d'une poign&#233;e simple. Cette poign&#233;e
         <span style="color: #408080; font-style: italic">## Label 1: Texte brut</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label1 <span style="color: #666666">=</span> QLabel(<span style="color: #BA2121">&#39;Ma première application affiche: &#39;</span>, <span style="color: #008000">self</span>)
         <span style="color: #408080; font-style: italic"># fixer la largeur de l&#39;étiquette</span>
-        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">160</span>)
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>setFixedWidth(<span style="color: #666666">190</span>)
         <span style="color: #408080; font-style: italic"># position de l&#39;étiquette (x, y) en pixels</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>label1<span style="color: #666666">.</span>move(<span style="color: #666666">10</span>, <span style="color: #666666">10</span>)
         <span style="color: #408080; font-style: italic">## Label 2: Texte riche</span>
@@ -794,6 +794,16 @@ Par d&#233;faut, &#224; gauche du formulaire se trouve un panneau appel&#233; la
 </center>
 
 <h2 id="___sec11" class="anchor">L'&#233;diteur de propri&#233;t&#233; </h2>
+
+<p>
+&#192; suivre...
+
+<p>
+<center> <!-- figure label: --> <div id="fig:myfirstappDesigner"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 8:  Interface graphique cr&#233;&#233;e par le concepteur Qt.  <!-- caption label: fig:myfirstappDesigner --> </p></center>
+<p><img src="imgs/myfirstappDesigner.png" align="bottom" width=400></p>
+</center>
 
 <!-- ------------------- end of main content --------------- -->
 

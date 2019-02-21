@@ -26,3 +26,14 @@ DATE: today
   * "html simple" : "https://codetunisia.github.io/PY4ING2019/cours1/cours1-solarized.html"
   * "Style Bootstrap, facile à lire sur les appareils mobiles" : "https://codetunisia.github.io/PY4ING2019/cours1/cours1-bs.html"
 * " _Annexe_ : Débuter avec les notebooks ": "https://codetunisia.github.io/CoursSimNum/annexes/AnnexeI/AnnexeI.html"
+
+===== Développer des applications de bureau avec Python et Qt =====
+* Notebook:
+  * "jupyter/ipython (fichier _ipynb_)" : "https://codetunisia.github.io/PY4ING2019/cours2/cours2.ipynb"
+  * "Les images (Décompressez le fichier _tar.gz_ dans le même répertoire que le fichier _ipynb_)" : "https://codetunisia.github.io/PY4ING2019/cours2/ipynb-cours2-src.tar.gz"
+* PDF
+  * "pdf (LaTeX)" : "https://codetunisia.github.io/PY4ING2019/cours2/cours2.pdf"
+
+* HTML:
+  * "html simple" : "https://codetunisia.github.io/PY4ING2019/cours2/cours2-solarized.html"
+  * "Style Bootstrap, facile à lire sur les appareils mobiles" : "https://codetunisia.github.io/PY4ING2019/cours2/cours2-bs.html"

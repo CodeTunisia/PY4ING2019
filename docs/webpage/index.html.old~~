@@ -46,10 +46,11 @@ pre { color: inherit; background-color: transparent; }
 <!-- tocinfo
 {'highest level': 1,
  'sections': [('Documents', 1, None, '___sec0'),
-              ('Introduction à Python pour les ingénieurs',
+              ('Introduction à Python pour les ingénieurs', 2, None, '___sec1'),
+              ('Développer des applications de bureau avec Python et Qt',
                2,
                None,
-               '___sec1')]}
+               '___sec2')]}
 end of tocinfo -->
 
 <body>
@@ -73,6 +74,7 @@ end of tocinfo -->
         <ul class="dropdown-menu">
      <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 14px; padding: 4px 15px;"><b>Documents</b></a></li>
      <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 14px; padding: 4px 15px;">&nbsp;&nbsp;&nbsp;Introduction à Python pour les ingénieurs</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 14px; padding: 4px 15px;">&nbsp;&nbsp;&nbsp;Développer des applications de bureau avec Python et Qt</a></li>
 
         </ul>
       </li>
@@ -128,7 +130,7 @@ Si vous constatez des erreurs signalez-les simplement aux auteurs:
 </div>
 
 <p>
-<center><h4>Feb 14, 2019</h4></center> <!-- date -->
+<center><h4>Feb 21, 2019</h4></center> <!-- date -->
 <br>
 <p>
 <!-- potential-jumbotron-button -->
@@ -165,6 +167,31 @@ Si vous constatez des erreurs signalez-les simplement aux auteurs:
 </ul>
 
 <li> <a href="https://codetunisia.github.io/CoursSimNum/annexes/AnnexeI/AnnexeI.html" target="_blank"> <b>Annexe</b> : D&#233;buter avec les notebooks </a></li>
+</ul>
+
+<h2 id="___sec2" class="anchor">D&#233;velopper des applications de bureau avec Python et Qt </h2>
+
+<ul>
+<li> Notebook:</li>
+
+<ul>
+  <li> <a href="https://codetunisia.github.io/PY4ING2019/cours2/cours2.ipynb" target="_blank">jupyter/ipython (fichier <b>ipynb</b>)</a></li>
+  <li> <a href="https://codetunisia.github.io/PY4ING2019/cours2/ipynb-cours2-src.tar.gz" target="_blank">Les images (D&#233;compressez le fichier <b>tar.gz</b> dans le m&#234;me r&#233;pertoire que le fichier <b>ipynb</b>)</a></li>
+</ul>
+
+<li> PDF</li>
+
+<ul>
+  <li> <a href="https://codetunisia.github.io/PY4ING2019/cours2/cours2.pdf" target="_blank">pdf (LaTeX)</a></li>
+</ul>
+
+<li> HTML:</li>
+
+<ul>
+  <li> <a href="https://codetunisia.github.io/PY4ING2019/cours2/cours2-solarized.html" target="_blank">html simple</a></li>
+  <li> <a href="https://codetunisia.github.io/PY4ING2019/cours2/cours2-bs.html" target="_blank">Style Bootstrap, facile &#224; lire sur les appareils mobiles</a></li>
+</ul>
+
 </ul>
 
 
