@@ -109,7 +109,7 @@ La plupart des interfaces graphiques sont utilisées pour prendre les entrées d
 
 <span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappButtons.py</span>
 
-<span style="color: #658b00">FIGURE: [imgs/myfirstappButtons1, width=300 frac=0.4] Résultat de l&#39;exécution du code `myfirstappButtons.py`. label{fig:myfirstappButtons}</span>
+<span style="color: #658b00">FIGURE: [imgs/myfirstappButtons, width=600 frac=0.4] Résultat de l&#39;exécution du code `myfirstappButtons.py`. label{fig:myfirstappButtons}</span>
 
 Toute méthode peut être connectée à un signal. Cependant, pour être sûr, il est préférable de s’assurer qu’une méthode particulière est bien un _slot_. Ceci est réalisé en déclarant une méthode comme étant un slot en utilisant le décorateur `@pyqtSlot()` comme indiqué dans le code _myfirstappButtons.py_.
 
@@ -118,14 +118,14 @@ Les Spin Box sont des widgets utilisés pour accepter et afficher des nombres en
 
 <span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappSpinBox.py</span>
 
-<span style="color: #658b00">FIGURE: [imgs/myfirstappSpinBox2, width=300 frac=0.4] Résultat de l&#39;exécution du code `myfirstappSpinBox.py`. label{fig:myfirstappSpinBox}</span>
+<span style="color: #658b00">FIGURE: [imgs/myfirstappSpinBox, width=600 frac=0.4] Résultat de l&#39;exécution du code `myfirstappSpinBox.py`. label{fig:myfirstappSpinBox}</span>
 
 <span style="color: #000080; font-weight: bold">=== Ajouter des curseurs : `QSlider` ===</span>
 Un QSlider est un widget doté d&#39;une poignée simple. Cette poignée peut être déplacée d&#39;avant en arrière. En utilisant cela, nous pouvons choisir une valeur pour une tâche spécifique. Comme le Spin Box, un curseur ne peut avoir qu&#39;une valeur entière; la plage des valeurs peut être définie entre un minimum et un maximum. Parfois, l’utilisation d’un curseur est plus naturelle que celle d’un Spin Box et cela dépend de la tâche ou de l’application.
 
 <span style="color: #800080; font-weight: bold">@@@CODE scripts/myfirstappSlider.py</span>
 
-<span style="color: #658b00">FIGURE: [imgs/myfirstappSlider2, width=300 frac=0.4] Résultat de l&#39;exécution du code `myfirstappSlider.py`. label{fig:myfirstappSlider}</span>
+<span style="color: #658b00">FIGURE: [imgs/myfirstappSlider, width=600 frac=0.4] Résultat de l&#39;exécution du code `myfirstappSlider.py`. label{fig:myfirstappSlider}</span>
 
 <span style="color: #000080; font-weight: bold">======= Le concepteur Qt: &quot;Qt Designer&quot; =======</span>
 Le paquet PyQt est livré avec un outil de générateur d&#39;interface graphique appelé Qt Designer (ou concepteur Qt). Qt Designer est l’outil Qt permettant de concevoir et de construire des interfaces graphiques à l’aide d’une simple approche _glisser-déposer_. Il vous permet de concevoir des widgets, des boîtes de dialogue ou des fenêtres principales complètes à l&#39;aide de formulaires à l&#39;écran (en anglais appelés: on-screen forms). Il a la possibilité de prévisualiser les conceptions pour s&#39;assurer que l&#39;interface graphique fonctionne comme prévu. Il permet une interface de prototypage avant qu’un code ne soit écrit.

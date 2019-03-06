@@ -109,7 +109,7 @@ La plupart des interfaces graphiques sont utilisées pour prendre les entrées d
 
 @@@CODE scripts/myfirstappButtons.py
 
-FIGURE: [imgs/myfirstappButtons1, width=300 frac=0.4] Résultat de l'exécution du code `myfirstappButtons.py`. label{fig:myfirstappButtons}
+FIGURE: [imgs/myfirstappButtons, width=600 frac=0.4] Résultat de l'exécution du code `myfirstappButtons.py`. label{fig:myfirstappButtons}
 
 Toute méthode peut être connectée à un signal. Cependant, pour être sûr, il est préférable de s’assurer qu’une méthode particulière est bien un _slot_. Ceci est réalisé en déclarant une méthode comme étant un slot en utilisant le décorateur `@pyqtSlot()` comme indiqué dans le code _myfirstappButtons.py_.
 
@@ -118,14 +118,14 @@ Les Spin Box sont des widgets utilisés pour accepter et afficher des nombres en
 
 @@@CODE scripts/myfirstappSpinBox.py
 
-FIGURE: [imgs/myfirstappSpinBox2, width=300 frac=0.4] Résultat de l'exécution du code `myfirstappSpinBox.py`. label{fig:myfirstappSpinBox}
+FIGURE: [imgs/myfirstappSpinBox, width=600 frac=0.4] Résultat de l'exécution du code `myfirstappSpinBox.py`. label{fig:myfirstappSpinBox}
 
 === Ajouter des curseurs : `QSlider` ===
 Un QSlider est un widget doté d'une poignée simple. Cette poignée peut être déplacée d'avant en arrière. En utilisant cela, nous pouvons choisir une valeur pour une tâche spécifique. Comme le Spin Box, un curseur ne peut avoir qu'une valeur entière; la plage des valeurs peut être définie entre un minimum et un maximum. Parfois, l’utilisation d’un curseur est plus naturelle que celle d’un Spin Box et cela dépend de la tâche ou de l’application.
 
 @@@CODE scripts/myfirstappSlider.py
 
-FIGURE: [imgs/myfirstappSlider2, width=300 frac=0.4] Résultat de l'exécution du code `myfirstappSlider.py`. label{fig:myfirstappSlider}
+FIGURE: [imgs/myfirstappSlider, width=600 frac=0.4] Résultat de l'exécution du code `myfirstappSlider.py`. label{fig:myfirstappSlider}
 
 ======= Le concepteur Qt: "Qt Designer" =======
 Le paquet PyQt est livré avec un outil de générateur d'interface graphique appelé Qt Designer (ou concepteur Qt). Qt Designer est l’outil Qt permettant de concevoir et de construire des interfaces graphiques à l’aide d’une simple approche _glisser-déposer_. Il vous permet de concevoir des widgets, des boîtes de dialogue ou des fenêtres principales complètes à l'aide de formulaires à l'écran (en anglais appelés: on-screen forms). Il a la possibilité de prévisualiser les conceptions pour s'assurer que l'interface graphique fonctionne comme prévu. Il permet une interface de prototypage avant qu’un code ne soit écrit.

@@ -334,7 +334,7 @@ final,                   % draft: marks overfull hboxes, figures with paths
 
 % ----------------- end author(s) -------------------------
 
-\date{Feb 21, 2019}
+\date{Mar 6, 2019}
 \maketitle
 
 \tableofcontents
@@ -690,7 +690,7 @@ if __name__ == "__main__":
 
 
 \begin{figure}[!ht]  % fig:myfirstappButtons
-  \centerline{\includegraphics[width=0.4\linewidth]{imgs/myfirstappButtons1.png}}
+  \centerline{\includegraphics[width=0.4\linewidth]{imgs/myfirstappButtons.png}}
   \caption{
   Résultat de l'exécution du code \texttt{myfirstappButtons.py}. \label{fig:myfirstappButtons}
   }
@@ -818,7 +818,7 @@ if __name__ == "__main__":
 
 
 \begin{figure}[!ht]  % fig:myfirstappSpinBox
-  \centerline{\includegraphics[width=0.4\linewidth]{imgs/myfirstappSpinBox2.png}}
+  \centerline{\includegraphics[width=0.4\linewidth]{imgs/myfirstappSpinBox.png}}
   \caption{
   Résultat de l'exécution du code \texttt{myfirstappSpinBox.py}. \label{fig:myfirstappSpinBox}
   }
@@ -964,7 +964,7 @@ if __name__ == "__main__":
 
 
 \begin{figure}[!ht]  % fig:myfirstappSlider
-  \centerline{\includegraphics[width=0.4\linewidth]{imgs/myfirstappSlider2.png}}
+  \centerline{\includegraphics[width=0.4\linewidth]{imgs/myfirstappSlider.png}}
   \caption{
   Résultat de l'exécution du code \texttt{myfirstappSlider.py}. \label{fig:myfirstappSlider}
   }
