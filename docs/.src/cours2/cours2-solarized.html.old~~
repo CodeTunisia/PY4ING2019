@@ -766,7 +766,13 @@ Par d&#233;faut, &#224; gauche du formulaire se trouve un panneau appel&#233; la
 <h2 id="___sec11">L'&#233;diteur de propri&#233;t&#233; </h2>
 
 <p>
-&#192; suivre...
+Nous pouvons choisir le widget souhait&#233; dans la <b>Bo&#238;te des widgets</b>, le faire glisser et le d&#233;poser sur le formulaire Qt, puis modifier ses propri&#233;t&#233;s &#224; l'aide de <b>l'&#233;diteur de propri&#233;t&#233;s</b>. Par exemple, faisons glisser deux widgets de la cat&#233;gorie <b>Display Widgets</b>  dans la Bo&#238;te des widgets. Chaque widget a la propri&#233;t&#233; commune appel&#233;e <b>objectName</b> dont les valeurs peuvent &#234;tre d&#233;finies dans l'&#233;diteur de propri&#233;t&#233;s. Par exemple, dans notre cas, <code>label</code> et <code>label_2</code> sont les objectName par d&#233;faut des deux labels ajout&#233; &#224; l'interface que nous allons chang&#233; par <code>label1</code> et <code>label2</code> respectivement. On peut changer le texte de ces labels en cliquant deux fois sur le texte par d&#233;faut ou en cliquant sur <code>&lt;Bouton droite Modifier texte simple/texte riche&gt;</code>. La vid&#233;o ci dessous illustre les &#233;tape de cr&#233;ation de l'interface graphique "My first app" avec le concepteur Qt.
+<div class="alert alert-block alert-notice alert-text-normal">
+<b>Note.</b>
+<p>
+Une fois que tous les widgets sont d&#233;finis dans la position souhait&#233;e et que les valeurs des diff&#233;rentes propri&#233;t&#233;s de tous les widgets sont d&#233;finies, nous pouvons examiner comment la fen&#234;tre de l'interface graphique ressemblerait par pr&#233;visualisation. Cela se fait en tapant <code>&lt;Ctrl + R&gt;</code> sur le clavier.
+</div>
+
 
 <p>
 <center> <!-- figure label: --> <div id="fig:myfirstappDesigner"></div> <!-- FIGURE -->

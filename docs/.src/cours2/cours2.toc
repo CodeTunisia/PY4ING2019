@@ -10,4 +10,4 @@
 \contentsline {paragraph}{Ajouter des curseurs : \texttt {QSlider}.}{11}{section*.5}
 \contentsline {section}{\numberline {3}Le concepteur Qt: "Qt Designer"}{14}{section.3}
 \contentsline {subsection}{\numberline {3.1}La fen\IeC {\^e}tre du concepteur Qt}{14}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}L'\IeC {\'e}diteur de propri\IeC {\'e}t\IeC {\'e}}{14}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}L'\IeC {\'e}diteur de propri\IeC {\'e}t\IeC {\'e}}{15}{subsection.3.2}
