@@ -108,7 +108,7 @@ end of tocinfo -->
 <center><b>Facult&#233; des Sciences de Tunis, Universit&#233; de Tunis El Manar.</b></center>
 <br>
 <p>
-<center><h4>Mar 6, 2019</h4></center> <!-- date -->
+<center><h4>Mar 7, 2019</h4></center> <!-- date -->
 <br>
 
 <h1 id="table_of_contents">Table of contents</h2>
@@ -773,6 +773,12 @@ Nous pouvons choisir le widget souhait&#233; dans la <b>Bo&#238;te des widgets</
 Une fois que tous les widgets sont d&#233;finis dans la position souhait&#233;e et que les valeurs des diff&#233;rentes propri&#233;t&#233;s de tous les widgets sont d&#233;finies, nous pouvons examiner comment la fen&#234;tre de l'interface graphique ressemblerait par pr&#233;visualisation. Cela se fait en tapant <code>&lt;Ctrl + R&gt;</code> sur le clavier.
 </div>
 
+
+<p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YSeyRZXOfuk" frameborder="0" allowfullscreen></iframe>
+
+<p><em>PyQt5-Demo (Designer).</em></p>
 
 <p>
 <center> <!-- figure label: --> <div id="fig:myfirstappDesigner"></div> <!-- FIGURE -->

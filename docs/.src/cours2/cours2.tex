@@ -21,6 +21,11 @@ final,                   % draft: marks overfull hboxes, figures with paths
 
 \usepackage[pdftex]{graphicx}
 
+% Movies are handled by the href package
+\newenvironment{doconce:movie}{}{}
+\newcounter{doconce:movie:counter}
+
+
 % Packages for typesetting blocks of computer code
 \usepackage{fancyvrb,framed,moreverb}
 
@@ -336,7 +341,7 @@ final,                   % draft: marks overfull hboxes, figures with paths
 
 % ----------------- end author(s) -------------------------
 
-\date{Mar 6, 2019}
+\date{Mar 7, 2019}
 \maketitle
 
 \tableofcontents
@@ -1013,6 +1018,21 @@ Nous pouvons choisir le widget souhaité dans la \textbf{Boîte des widgets}, le
 \begin{notice_grayiconadmon}[Notice]
 Une fois que tous les widgets sont définis dans la position souhaitée et que les valeurs des différentes propriétés de tous les widgets sont définies, nous pouvons examiner comment la fenêtre de l'interface graphique ressemblerait par prévisualisation. Cela se fait en tapant \texttt{<Ctrl + R>} sur le clavier.
 \end{notice_grayiconadmon} % title: Notice
+
+
+
+
+\begin{doconce:movie}
+\refstepcounter{doconce:movie:counter}
+\begin{center}
+\href{{https://www.youtube.com/watch?v=YSeyRZXOfuk}}{\nolinkurl{https://www.youtube.com/watch?v=YSeyRZXOfuk}}
+\end{center}
+
+\begin{center}  % movie caption
+Movie \arabic{doconce:movie:counter}: YouTube movie.
+\end{center}
+\end{doconce:movie}
+
 
 
 

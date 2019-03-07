@@ -149,4 +149,8 @@ Nous pouvons choisir le widget souhaité dans la _Boîte des widgets_, le faire 
 !bnotice
 Une fois que tous les widgets sont définis dans la position souhaitée et que les valeurs des différentes propriétés de tous les widgets sont définies, nous pouvons examiner comment la fenêtre de l'interface graphique ressemblerait par prévisualisation. Cela se fait en tapant `<Ctrl + R>` sur le clavier.
 !enotice
+
+MOVIE: [https://www.youtube.com/watch?v=YSeyRZXOfuk, width=560 height=315] PyQt5-Demo (Designer).
+
+
 FIGURE: [imgs/myfirstappDesigner, width=400 frac=0.4] Interface graphique créée par le concepteur Qt. label{fig:myfirstappDesigner}
