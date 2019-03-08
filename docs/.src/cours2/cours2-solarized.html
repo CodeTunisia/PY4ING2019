@@ -78,12 +78,27 @@ div { text-align: justify; text-justify: inter-word; }
               ("Structure d'application PyQT", 2, None, '___sec3'),
               ('Widgets, événements et signaux', 2, None, '___sec4'),
               ('Ajouter des étiquettes: `QLabel`', 3, None, '___sec5'),
-              ('Ajouter des boutons: `QPushButton`', 3, None, '___sec6'),
-              ('Ajouter des Spin Box: `QSpinBox`', 3, None, '___sec7'),
-              ('Ajouter des curseurs : `QSlider`', 3, None, '___sec8'),
+              ('Ajouter des boutons: `QPushButton`',
+               3,
+               'sec:boutons',
+               'sec:boutons'),
+              ('Ajouter des Spin Box: `QSpinBox`',
+               3,
+               'sec:SpinBox',
+               'sec:SpinBox'),
+              ('Ajouter des curseurs : `QSlider`',
+               3,
+               'sec:Slider',
+               'sec:Slider'),
               ('Le concepteur Qt: "Qt Designer"', 1, None, '___sec9'),
               ('La fenêtre du concepteur Qt', 2, None, '___sec10'),
-              ("L'éditeur de propriété", 2, None, '___sec11')]}
+              ("L'éditeur de propriété", 2, None, '___sec11'),
+              ('Conversion du fichier UI en code Python', 2, None, '___sec12'),
+              ('En utilisant la ligne de commande', 3, None, '___sec13'),
+              ('En utilisant un script Python', 3, None, '___sec14'),
+              ('Le programme principale: MainMyApp.py', 2, None, '___sec15'),
+              ('Signaux et slots', 2, None, '___sec16'),
+              ('Conclusion', 1, None, '___sec17')]}
 end of tocinfo -->
 
 <body>
@@ -108,7 +123,7 @@ end of tocinfo -->
 <center><b>Facult&#233; des Sciences de Tunis, Universit&#233; de Tunis El Manar.</b></center>
 <br>
 <p>
-<center><h4>Mar 7, 2019</h4></center> <!-- date -->
+<center><h4>Mar 8, 2019</h4></center> <!-- date -->
 <br>
 
 <h1 id="table_of_contents">Table des matières</h2>
@@ -122,6 +137,10 @@ end of tocinfo -->
 <a href="#___sec9"> Le concepteur Qt: "Qt Designer" </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec10"> La fen&#234;tre du concepteur Qt </a><br>
 &nbsp; &nbsp; &nbsp; <a href="#___sec11"> L'&#233;diteur de propri&#233;t&#233; </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec12"> Conversion du fichier UI en code Python </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec15"> Le programme principale: MainMyApp.py </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec16"> Signaux et slots </a><br>
+<a href="#___sec17"> Conclusion </a><br>
 </p>
 <p>
 <!-- !split --><br><br><br><br><br><br><br><br><br><br>
@@ -371,8 +390,9 @@ Nous avons besoin d'une &#233;tiquette pour afficher les messages. Un <code>QLab
 <p><img src="imgs/myfirstappLabels.png" align="bottom" width=300></p>
 </center>
 
-<h3 id="___sec6">Ajouter des boutons: <code>QPushButton</code> </h3>
+<h3 id="sec:boutons">Ajouter des boutons: <code>QPushButton</code></h3>
 
+<p>
 La plupart des interfaces graphiques sont utilis&#233;es pour prendre les entr&#233;es de l'utilisateur et produire des sorties en fonction de l'entr&#233;e donn&#233;e. Une technique courante consiste &#224; demander &#224; l'utilisateur de cliquer sur un bouton <code>OK</code> ou sur un bouton <code>Annuler</code>. Dans PyQt5, cela est impl&#233;ment&#233; &#224; l'aide de la classe <code>QPushButton</code>. Chaque widget d'une application peut &#234;tre programm&#233; pour r&#233;pondre de mani&#232;re pr&#233;d&#233;termin&#233;e &#224; tout changement survenant dans la fen&#234;tre de l'application ou n'importe o&#249; sur l'ordinateur. Ces <em>changements</em> sont appel&#233;s <b>des &#233;v&#233;nements</b>. Par exemple, nous pourrions d&#233;placer la souris autour de l'&#233;cran ou sur la fen&#234;tre de l'application, ou peut-&#234;tre avons-nous appuy&#233; sur la touche <code>Entr&#233;e</code>. Lorsqu'un tel &#233;v&#233;nement se produit, le syst&#232;me &#233;met un ou plusieurs signaux; autrement dit, modifie certaines propri&#233;t&#233;s des widgets. Nous pouvons &#233;crire du code qui sera ex&#233;cut&#233; &#224; chaque fois qu'un tel signal est &#233;mis. Ce morceau de code s'appelle un <b>slot</b>. Par exemple, nous pouvons souhaiter fermer la fen&#234;tre et quitter l&#8217;application lorsque le bouton gauche d&#8217;une souris est cliqu&#233; sur le bouton de commande <code>Annuler</code>. Lorsque cet &#233;v&#233;nement de clic gauche de la souris sur le bouton <code>Annuler</code> se produit, un signal de <b>clicked</b> est &#233;mis sur le bouton et un <b>slot</b> qui quitte l'application et quitte sera impl&#233;ment&#233;. Cependant, pour que cela se produise, nous devons explicitement <b>connecter</b> le <b>slot</b> au signal. Toutes ces id&#233;es sont montr&#233;es dans le code <b>myfirstappButtons.py</b>.
 
 <p>
@@ -468,8 +488,9 @@ La plupart des interfaces graphiques sont utilis&#233;es pour prendre les entr&#
 <p>
 Toute m&#233;thode peut &#234;tre connect&#233;e &#224; un signal. Cependant, pour &#234;tre s&#251;r, il est pr&#233;f&#233;rable de s&#8217;assurer qu&#8217;une m&#233;thode particuli&#232;re est bien un <b>slot</b>. Ceci est r&#233;alis&#233; en d&#233;clarant une m&#233;thode comme &#233;tant un slot en utilisant le d&#233;corateur <code>@pyqtSlot()</code> comme indiqu&#233; dans le code <b>myfirstappButtons.py</b>.
 
-<h3 id="___sec7">Ajouter des Spin Box: <code>QSpinBox</code> </h3>
+<h3 id="sec:SpinBox">Ajouter des Spin Box: <code>QSpinBox</code></h3>
 
+<p>
 Les Spin Box sont des widgets utilis&#233;s pour accepter et afficher des nombres entiers. Celles-ci peuvent &#234;tre consid&#233;r&#233;es comme une bo&#238;te d'&#233;dition avec une molette attach&#233;e. En cliquant une fois sur une fl&#232;che vers le haut de la molette, la valeur dans la zone d'&#233;dition augmente d'un point; cliquer sur la fl&#232;che vers le bas diminuera la valeur de un. Vous pouvez &#233;galement entrer la valeur directement dans la zone d'&#233;dition. La plage de valeurs accessible dans un spinbox peut &#234;tre d&#233;finie &#224; l'aide de la m&#233;thode <code>setRange()</code> ou de la combinaison des m&#233;thodes <code>setMinimum()</code> et <code>setMaximum()</code>. Toutes ces id&#233;es sont montr&#233;es dans le code <b>myfirstappSpinBox.py</b> et illustr&#233;es par la Figure <a href="#fig:myfirstappSpinBox">4</a>.
 
 <p>
@@ -591,7 +612,7 @@ Les Spin Box sont des widgets utilis&#233;s pour accepter et afficher des nombre
 <p><img src="imgs/myfirstappSpinBox.png" align="bottom" width=600></p>
 </center>
 
-<h3 id="___sec8">Ajouter des curseurs : <code>QSlider</code> </h3>
+<h3 id="sec:Slider">Ajouter des curseurs : <code>QSlider</code></h3>
 
 Un QSlider est un widget dot&#233; d'une poign&#233;e simple. Cette poign&#233;e peut &#234;tre d&#233;plac&#233;e d'avant en arri&#232;re. En utilisant cela, nous pouvons choisir une valeur pour une t&#226;che sp&#233;cifique. Comme le Spin Box, un curseur ne peut avoir qu'une valeur enti&#232;re; la plage des valeurs peut &#234;tre d&#233;finie entre un minimum et un maximum. Parfois, l&#8217;utilisation d&#8217;un curseur est plus naturelle que celle d&#8217;un Spin Box et cela d&#233;pend de la t&#226;che ou de l&#8217;application.
 
@@ -780,12 +801,165 @@ Une fois que tous les widgets sont d&#233;finis dans la position souhait&#233;e 
 
 <p><em>PyQt5-Demo (Designer).</em></p>
 
+<h2 id="___sec12">Conversion du fichier UI en code Python </h2>
+Qt Designer utilise des fichiers XML <b>.ui</b> pour stocker les conceptions et ne g&#233;n&#232;re aucun code par lui-m&#234;me. Qt inclut l'utilitaire "uic" qui g&#233;n&#232;re le code C ++ qui cr&#233;e l'interface utilisateur. PyQt5 inclut le module <code>uic</code> Python. Ce module peut charger les fichiers <b>.ui</b> pour cr&#233;er une interface utilisateur de mani&#232;re dynamique. Comme l'utilitaire uic en C ++ , il peut &#233;galement g&#233;n&#233;rer le code Python qui cr&#233;era l&#8217;interface utilisateur. L&#8217;utilitaire <code>pyuic5</code> de PyQt5 est une interface de ligne de commande avec le module uic. Ils sont d&#233;crits dans les paragraphes suivants.
+
+<h3 id="___sec13">En utilisant la ligne de commande </h3>
+
+Pour convertir le fichier de conception en code Python enregistr&#233; en tant que <b>UiMyApp.ui</b>, utilisez la commande <code>cd</code> pour passer au r&#233;pertoire (dossier) <b>MyApp</b> contenant le fichier <b>UiMyApp.ui</b> et ex&#233;cutez simplement:
 <p>
-<center> <!-- figure label: --> <div id="fig:myfirstappDesigner"></div> <!-- FIGURE -->
-<hr class="figure">
-<center><p class="caption">Figure 8:  Interface graphique cr&#233;&#233;e par le concepteur Qt.  <!-- caption label: fig:myfirstappDesigner --> </p></center>
-<p><img src="imgs/myfirstappDesigner.png" align="bottom" width=400></p>
-</center>
+
+<!-- code=text typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>\chemin\vers\mon\répertoire\MyApp&gt;pyuic5 -x UiMyApp.ui -o UiMyApp.py
+</pre></div>
+<p>
+Les d&#233;tails de la conception sont maintenant stock&#233;s dans le fichier Python <b>UiMyApp.py</b>.
+
+<h3 id="___sec14">En utilisant un script Python </h3>
+
+PyQt5 inclut le module <code>uic</code> Python qui peut charger les fichiers <b>.ui</b> pour cr&#233;er une interface utilisateur de mani&#232;re dynamique et g&#233;n&#233;rer le code Python qui cr&#233;era l'interface utilisateur. Cela se fait comme indiqu&#233; dans un script Python nomm&#233; <b>UI2PYconverter.py</b>:
+
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22">## NOM DU PROGRAMME: UI2PYconverter.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5</span> <span style="color: #8B008B; font-weight: bold">import</span> uic
+<span style="color: #228B22"># Le module uic de PyQt5, convertit un fichier ui (code XML)</span>
+<span style="color: #228B22"># en un fichier py (code Python)</span>
+fin = <span style="color: #658b00">open</span>(<span style="color: #CD5555">&#39;UiMainApp.ui&#39;</span>, <span style="color: #CD5555">&#39;r&#39;</span>)
+fout = <span style="color: #658b00">open</span>(<span style="color: #CD5555">&#39;UiMainApp.py&#39;</span>, <span style="color: #CD5555">&#39;w&#39;</span>)
+uic.compileUi(fin, fout, execute=<span style="color: #658b00">True</span>)
+fin.close()
+fout.close()
+</pre></div>
+<p>
+Le fichier <b>UiMyApp.ui</b> est traduit en code Python (<b>UiMyApp.py</b>) en ex&#233;cutant le code <b>UI2PYconverter.py</b> et elle est &#233;quivalente &#224; l'aide de la ligne de commande <code>pyuic5</code> utilitaire.
+
+<p>
+Lorsque ce script <b>UiMyApp.py</b> est ex&#233;cut&#233;, une fen&#234;tre Qt avec l'interface que nous avons cr&#233;&#233;e &#224; l'aide de Qt Designer avec tous les widgets ajout&#233;s (toutes ces &#233;tapes sont illustr&#233;es dans la vid&#233;o YouTube ci-dessus).
+
+<h2 id="___sec15">Le programme principale: MainMyApp.py </h2>
+
+<p>
+Puisque le fichier <b>UiMyApp.py</b> sera compl&#232;tement &#233;cras&#233; chaque fois que nous modifierons et / ou ajouterons quelque chose dans la fen&#234;tre de conception, nous ne devrions &#233;crire aucun code dans celui-ci. Nous cr&#233;erons plut&#244;t un nouveau fichier Python <b>MainMyApp.py</b> (dans le m&#234;me r&#233;pertoire <b>MyApp</b> ) et une nouvelle classe <code>MainApp ()</code> qui h&#233;ritera de la classe d&#8217;interface <code>Ui_MainWindow ()</code> du code <b>UiMyApp.py</b>. De cette fa&#231;on, nous pouvons utiliser toutes ses fonctionnalit&#233;s et faire toutes les complications dont nous avons besoin sans souci. Par exemple, notre fichier <b>MainMyApp.py</b> pourrait ressembler au code donn&#233; dans le script ci-dessous:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22">## NOM DU PROGRAMME: MainMyApp.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtWidgets</span> <span style="color: #8B008B; font-weight: bold">import</span> QMainWindow, QApplication
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">UiMyApp</span> <span style="color: #8B008B; font-weight: bold">import</span> Ui_MainWindow
+
+<span style="color: #8B008B; font-weight: bold">class</span> <span style="color: #008b45; font-weight: bold">MainApp</span>(QMainWindow, Ui_MainWindow):
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>):
+        QMainWindow.<span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>)
+        <span style="color: #658b00">self</span>.setupUi(<span style="color: #658b00">self</span>)
+
+
+<span style="color: #8B008B; font-weight: bold">if</span> <span style="color: #00688B">__name__</span> == <span style="color: #CD5555">&quot;__main__&quot;</span>:
+    <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
+    app = QApplication(sys.argv)
+    MainWindow = MainApp()
+    MainWindow.show()
+    sys.exit(app.exec_())
+</pre></div>
+
+<h2 id="___sec16">Signaux et slots </h2>
+Dans cette partie, comme dans <a href="#sec:boutons">Ajouter des boutons: <code>QPushButton</code></a>, <a href="#sec:SpinBox">Ajouter des Spin Box: <code>QSpinBox</code></a> et <a href="#sec:Slider">Ajouter des curseurs : <code>QSlider</code></a>, nous allons ajouter dans le script <b>MainMyApp.py</b> les fonctions qui connectent les signaux des <em>Boutons</em>, <em>SpinBox</em> et <em>Slider</em>. Toutes les &#233;tapes sont illustr&#233;es dans la vid&#233;o YouTube ci-dessous:
+
+<p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qYFCgkxQWBU" frameborder="0" allowfullscreen></iframe>
+
+<p><em>PyQt5-Demo (Designer).</em></p>
+
+<p>
+Le script <b>MainMyApp.py</b> sous sa forme finale est donc:
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22">## NOM DU PROGRAMME: MainMyApp.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtWidgets</span> <span style="color: #8B008B; font-weight: bold">import</span> QMainWindow, QApplication
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">UiMyApp</span> <span style="color: #8B008B; font-weight: bold">import</span> Ui_MainWindow
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtCore</span> <span style="color: #8B008B; font-weight: bold">import</span> pyqtSlot
+
+<span style="color: #8B008B; font-weight: bold">class</span> <span style="color: #008b45; font-weight: bold">MainApp</span>(QMainWindow, Ui_MainWindow):
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>):
+        QMainWindow.<span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>)
+        <span style="color: #658b00">self</span>.setupUi(<span style="color: #658b00">self</span>)
+        
+        
+        
+    <span style="color: #228B22"># Ajouter des signaux</span>
+    <span style="color: #707a7c">@pyqtSlot</span>()
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_btn1_clicked</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        Afficher un messge bonjour dans label2</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        message=<span style="color: #CD5555">&#39;&#39;&#39;&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#005500;&quot;&gt;Bonjour IE3&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#39;&#39;&#39;</span>
+        <span style="color: #658b00">self</span>.label2.setText(message)
+    <span style="color: #707a7c">@pyqtSlot</span>()
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_btn2_clicked</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        Afficher un messge au revoir dans label2</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        message = <span style="color: #CD5555">&#39;&#39;&#39; &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt; font-weight:600; color:#aa0000;&quot;&gt;Au revoir IE3&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;&#39;&#39;&#39;</span>
+        <span style="color: #658b00">self</span>.label2.setText(message)
+    <span style="color: #707a7c">@pyqtSlot</span>(<span style="color: #658b00">int</span>)
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_spb_valueChanged</span>(<span style="color: #658b00">self</span>, value):
+        <span style="color: #CD5555">&quot;&quot;&quot;</span>
+<span style="color: #CD5555">        changer la valeur de 1 à 100 et l&#39;afficher dans label valeur</span>
+<span style="color: #CD5555">        &quot;&quot;&quot;</span>
+        <span style="color: #658b00">self</span>.valeur.setText(<span style="color: #658b00">str</span>(value))
+        <span style="color: #658b00">self</span>.sldr.setValue(value)
+        <span style="color: #658b00">self</span>.dial.setValue(value)
+        <span style="color: #658b00">self</span>.lcd.display(value)
+    <span style="color: #228B22"># Ajouter d&#39;autre widgets, soit par exemple:</span>
+    <span style="color: #228B22"># * Dial</span>
+    <span style="color: #228B22"># * Display LCD</span>
+    <span style="color: #707a7c">@pyqtSlot</span>(<span style="color: #658b00">int</span>)
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_dial_valueChanged</span>(<span style="color: #658b00">self</span>, value):
+        <span style="color: #CD5555">&quot;&quot;&quot;</span>
+<span style="color: #CD5555">        Relier le Dial au SpinBox et au Slider</span>
+<span style="color: #CD5555">        &quot;&quot;&quot;</span>
+        <span style="color: #658b00">self</span>.sldr.setValue(value)
+        <span style="color: #658b00">self</span>.spb.setValue(value)
+        <span style="color: #658b00">self</span>.lcd.display(value)
+        
+    <span style="color: #707a7c">@pyqtSlot</span>(<span style="color: #658b00">int</span>)
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_sldr_valueChanged</span>(<span style="color: #658b00">self</span>, value):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        mettre à jour la valeur du SpinBox et du texte dans label valeur</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        <span style="color: #658b00">self</span>.spb.setValue(value)
+        <span style="color: #658b00">self</span>.dial.setValue(value)
+        <span style="color: #658b00">self</span>.lcd.display(value)
+        
+        
+    
+        
+<span style="color: #8B008B; font-weight: bold">if</span> <span style="color: #00688B">__name__</span> == <span style="color: #CD5555">&quot;__main__&quot;</span>:
+    <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
+    app = QApplication(sys.argv)
+    MainWindow = MainApp()
+    MainWindow.show()
+    sys.exit(app.exec_())
+</pre></div>
+
+<h1 id="___sec17">Conclusion </h1>
+Nous avons vu dans ce chapitre, &#233;tape par &#233;tape, comment d&#233;velopper des applications &#224; l'aide du module PyQt5 et comment utiliser Qt Designer, l'outil de construction d'interface graphique. En fait, ce chapitre n'inclut pas tous les d&#233;tails et fonctionnalit&#233;s de PyQt5. Pour plus d'informations sur la programmation PyQt5 et l'interface graphique en Python, nous vous recommandons la liste ci-dessous:
+
+<ul>
+<li> Guide de r&#233;f&#233;rence PyQt5 sur le site officiel de PyQt: <a href="http://pyqt.sourceforge.net/Docs/PyQt5/index.html" target="_blank"><tt>http://pyqt.sourceforge.net/Docs/PyQt5/index.html</tt></a></li>
+<li> Tutoriel de base de PyQT sur le site Web de Harrison Kinsley et sa cha&#238;ne YouTube: <a href="https://pythonprogramming.net/basic-gui-pyqt-tutorial/" target="_blank"><tt>https://pythonprogramming.net/basic-gui-pyqt-tutorial/</tt></a></li>
+<li> PyQt5 tutorial on the Python Tutorials website: <a href="https://pythonspot.com/en/pyqt5/" target="_blank"><tt>https://pythonspot.com/en/pyqt5/</tt></a></li>
+<li> PyQt5 tutorial on ZetCode website: <a href="http://zetcode.com/gui/pyqt5/" target="_blank"><tt>http://zetcode.com/gui/pyqt5/</tt></a></li>
+<li> Rapid GUI Programming with Python and Qt: The Definitive Guide to Pyqt Programming. Tous les codes de ce livre ont &#233;t&#233; &#233;crits pour la version PyQt4, bien que vous puissiez trouver la version PyQt5 sur le r&#233;f&#233;rentiel GitHub de Jacob Su: <a href="https://github.com/suzp1984/pyqt5-book-code" target="_blank"><tt>https://github.com/suzp1984/pyqt5-book-code</tt></a></li>
+<li> Si vous utilisez la version PyQt4 et souhaitez effectuer la mise &#224; niveau vers PyQt5, voici un lien permettant de comprendre les diff&#233;rences entre les deux versions: <a href="http://pyqt.sourceforge.net/Docs/PyQt5/pyqt4_differences.html" target="_blank"><tt>http://pyqt.sourceforge.net/Docs/PyQt5/pyqt4_differences.html</tt></a></li>
+</ul>
+
 
 <!-- ------------------- end of main content --------------- -->
 
