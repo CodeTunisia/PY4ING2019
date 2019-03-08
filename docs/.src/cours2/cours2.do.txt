@@ -161,14 +161,14 @@ MOVIE: [https://www.youtube.com/embed/q7Zeac3Bgac, width=560 height=315] PyQt5-D
 Qt Designer utilise des fichiers XML _.ui_ pour stocker les conceptions et ne génère aucun code par lui-même. Qt inclut l'utilitaire "uic" qui génère le code C ++ qui crée l'interface utilisateur. PyQt5 inclut le module `uic` Python. Ce module peut charger les fichiers _.ui_ pour créer une interface utilisateur de manière dynamique. Comme l'utilitaire uic en C ++ , il peut également générer le code Python qui créera l’interface utilisateur. L’utilitaire `pyuic5` de PyQt5 est une interface de ligne de commande avec le module `uic`. Ils sont décrits dans les paragraphes suivants.
 
 === En utilisant la ligne de commande ===
-Pour convertir le fichier de conception en code Python enregistré en tant que _"UiMyApp.ui":"https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/UiMyApp.ui"_, utilisez la commande `cd` pour passer au répertoire (dossier) _"MyProject1":""https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1"_ contenant le fichier _"UiMyApp.ui":"https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/UiMyApp.ui"_ et exécutez simplement:
+Pour convertir le fichier de conception en code Python enregistré en tant que _UiMyApp.ui_, utilisez la commande `cd` pour passer au répertoire (dossier) _MyProject1_ contenant le fichier _UiMyApp.ui_ et exécutez simplement:
 !bc
 \chemin\vers\mon\répertoire\MyProject1>pyuic5 -x UiMyApp.ui -o UiMyApp.py
 !ec
-Les détails de la conception sont maintenant stockés dans le fichier Python _"UiMyApp.py":"https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/UiMyApp.py"_.
+Les détails de la conception sont maintenant stockés dans le fichier Python _UiMyApp.py_.
 
 === En utilisant un script Python ===
-PyQt5 inclut le module `uic` Python qui peut charger les fichiers _.ui_ pour créer une interface utilisateur de manière dynamique et générer le code Python qui créera l'interface utilisateur. Cela se fait comme indiqué dans un script Python nommé _"UI2PYconverter.py":"https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/UI2PYconverter.py"_:
+PyQt5 inclut le module `uic` Python qui peut charger les fichiers _.ui_ pour créer une interface utilisateur de manière dynamique et générer le code Python qui créera l'interface utilisateur. Cela se fait comme indiqué dans un script Python nommé _UI2PYconverter.py_:
 
 !bc pycod
 ## NOM DU PROGRAMME: UI2PYconverter.py
@@ -188,7 +188,7 @@ Lorsque ce script _UiMyApp.py_ est exécuté, une fenêtre Qt avec l'interface q
 
 ===== Le programme principale: MainMyApp.py =====
 
-Puisque le fichier _"UiMyApp.py":"https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/UiMyApp.py"_ sera complètement écrasé chaque fois que nous modifierons et/ou ajouterons quelque chose dans la fenêtre de conception, nous ne devrions écrire aucun code dans celui-ci. Nous créerons plutôt un nouveau fichier Python _"MainMyApp.py":"https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/MainMyApp.py"_ (dans le même répertoire _MyProject1_ ) et une nouvelle classe `MainApp()` qui héritera de la classe d’interface `Ui_MainWindow()` du code _UiMyApp.py_. De cette façon, nous pouvons utiliser toutes ses fonctionnalités et faire toutes les complications dont nous avons besoin sans souci. Par exemple, notre fichier _"MainMyApp.py":"https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/MainMyApp.py"_ pourrait ressembler au code donné dans le script ci-dessous:
+Puisque le fichier _UiMyApp.py_ sera complètement écrasé chaque fois que nous modifierons et/ou ajouterons quelque chose dans la fenêtre de conception, nous ne devrions écrire aucun code dans celui-ci. Nous créerons plutôt un nouveau fichier Python _MainMyApp.py_ (dans le même répertoire _MyProject1_ ) et une nouvelle classe `MainApp()` qui héritera de la classe d’interface `Ui_MainWindow()` du code _UiMyApp.py_. De cette façon, nous pouvons utiliser toutes ses fonctionnalités et faire toutes les complications dont nous avons besoin sans souci. Par exemple, notre fichier _MainMyApp.py_ pourrait ressembler au code donné dans le script ci-dessous:
 !bc pycod
 ## NOM DU PROGRAMME: MainMyApp.py
 #% IMPORTATION
@@ -214,8 +214,9 @@ Dans cette partie, comme dans ref{sec:boutons}, ref{sec:SpinBox} et ref{sec:Slid
 
 MOVIE: [https://www.youtube.com/embed/qYFCgkxQWBU, width=560 height=315] PyQt5-Demo #2 (Signaux/Slots).
 
-Le script _"MainMyApp.py":"https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/MainMyApp.py"_ sous sa forme finale est donc:
+Le script _MainMyApp.py_ sous sa forme finale est donc:
 @@@CODE scripts/MyProject1/MainMyApp.py
+
 
 ======= Conclusion =======
 Nous avons vu dans ce chapitre, étape par étape, comment développer des applications à l'aide du module PyQt5 et comment utiliser Qt Designer, l'outil de construction d'interface graphique. En fait, ce chapitre n'inclut pas tous les détails et fonctionnalités de PyQt5. Pour plus d'informations sur la programmation PyQt5 et l'interface graphique en Python, nous vous recommandons la liste ci-dessous:

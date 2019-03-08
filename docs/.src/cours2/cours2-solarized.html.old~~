@@ -806,18 +806,18 @@ Qt Designer utilise des fichiers XML <b>.ui</b> pour stocker les conceptions et 
 
 <h3 id="___sec13">En utilisant la ligne de commande </h3>
 
-Pour convertir le fichier de conception en code Python enregistr&#233; en tant que <b><a href="https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/UiMyApp.ui" target="_blank">UiMyApp.ui</a></b>, utilisez la commande <code>cd</code> pour passer au r&#233;pertoire (dossier) <b>"MyProject1":""https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1"</b> contenant le fichier <b><a href="https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/UiMyApp.ui" target="_blank">UiMyApp.ui</a></b> et ex&#233;cutez simplement:
+Pour convertir le fichier de conception en code Python enregistr&#233; en tant que <b>UiMyApp.ui</b>, utilisez la commande <code>cd</code> pour passer au r&#233;pertoire (dossier) <b>MyProject1</b> contenant le fichier <b>UiMyApp.ui</b> et ex&#233;cutez simplement:
 <p>
 
 <!-- code=text typeset with pygments style "perldoc" -->
 <div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>\chemin\vers\mon\répertoire\MyProject1&gt;pyuic5 -x UiMyApp.ui -o UiMyApp.py
 </pre></div>
 <p>
-Les d&#233;tails de la conception sont maintenant stock&#233;s dans le fichier Python <b><a href="https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/UiMyApp.py" target="_blank">UiMyApp.py</a></b>.
+Les d&#233;tails de la conception sont maintenant stock&#233;s dans le fichier Python <b>UiMyApp.py</b>.
 
 <h3 id="___sec14">En utilisant un script Python </h3>
 
-PyQt5 inclut le module <code>uic</code> Python qui peut charger les fichiers <b>.ui</b> pour cr&#233;er une interface utilisateur de mani&#232;re dynamique et g&#233;n&#233;rer le code Python qui cr&#233;era l'interface utilisateur. Cela se fait comme indiqu&#233; dans un script Python nomm&#233; <b><a href="https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/UI2PYconverter.py" target="_blank">UI2PYconverter.py</a></b>:
+PyQt5 inclut le module <code>uic</code> Python qui peut charger les fichiers <b>.ui</b> pour cr&#233;er une interface utilisateur de mani&#232;re dynamique et g&#233;n&#233;rer le code Python qui cr&#233;era l'interface utilisateur. Cela se fait comme indiqu&#233; dans un script Python nomm&#233; <b>UI2PYconverter.py</b>:
 
 <p>
 
@@ -842,7 +842,7 @@ Lorsque ce script <b>UiMyApp.py</b> est ex&#233;cut&#233;, une fen&#234;tre Qt a
 <h2 id="___sec15">Le programme principale: MainMyApp.py </h2>
 
 <p>
-Puisque le fichier <b><a href="https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/UiMyApp.py" target="_blank">UiMyApp.py</a></b> sera compl&#232;tement &#233;cras&#233; chaque fois que nous modifierons et/ou ajouterons quelque chose dans la fen&#234;tre de conception, nous ne devrions &#233;crire aucun code dans celui-ci. Nous cr&#233;erons plut&#244;t un nouveau fichier Python <b><a href="https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/MainMyApp.py" target="_blank">MainMyApp.py</a></b> (dans le m&#234;me r&#233;pertoire <b>MyProject1</b> ) et une nouvelle classe <code>MainApp()</code> qui h&#233;ritera de la classe d&#8217;interface <code>Ui_MainWindow()</code> du code <b>UiMyApp.py</b>. De cette fa&#231;on, nous pouvons utiliser toutes ses fonctionnalit&#233;s et faire toutes les complications dont nous avons besoin sans souci. Par exemple, notre fichier <b><a href="https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/MainMyApp.py" target="_blank">MainMyApp.py</a></b> pourrait ressembler au code donn&#233; dans le script ci-dessous:
+Puisque le fichier <b>UiMyApp.py</b> sera compl&#232;tement &#233;cras&#233; chaque fois que nous modifierons et/ou ajouterons quelque chose dans la fen&#234;tre de conception, nous ne devrions &#233;crire aucun code dans celui-ci. Nous cr&#233;erons plut&#244;t un nouveau fichier Python <b>MainMyApp.py</b> (dans le m&#234;me r&#233;pertoire <b>MyProject1</b> ) et une nouvelle classe <code>MainApp()</code> qui h&#233;ritera de la classe d&#8217;interface <code>Ui_MainWindow()</code> du code <b>UiMyApp.py</b>. De cette fa&#231;on, nous pouvons utiliser toutes ses fonctionnalit&#233;s et faire toutes les complications dont nous avons besoin sans souci. Par exemple, notre fichier <b>MainMyApp.py</b> pourrait ressembler au code donn&#233; dans le script ci-dessous:
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
@@ -875,7 +875,7 @@ Dans cette partie, comme dans <a href="#sec:boutons">Ajouter des boutons: <code>
 <p><em>PyQt5-Demo #2 (Signaux/Slots).</em></p>
 
 <p>
-Le script <b><a href="https://codetunisia.github.io/PY4ING2019/cours2/scripts/MyProject1/MainMyApp.py" target="_blank">MainMyApp.py</a></b> sous sa forme finale est donc:
+Le script <b>MainMyApp.py</b> sous sa forme finale est donc:
 <p>
 
 <!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
