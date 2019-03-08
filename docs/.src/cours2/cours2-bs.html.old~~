@@ -100,7 +100,7 @@ end of tocinfo -->
   <div class="navbar-collapse collapse navbar-responsive-collapse">
     <ul class="nav navbar-nav navbar-right">
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contents <b class="caret"></b></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contenu <b class="caret"></b></a>
         <ul class="dropdown-menu">
      <!-- navigation toc: --> <li><a href="#table_of_contents" style="font-size: 80%;"><b>Table des matières</b></a></li>
      <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;"><b>Introduction</b></a></li>
@@ -839,18 +839,18 @@ Une fois que tous les widgets sont d&#233;finis dans la position souhait&#233;e 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q7Zeac3Bgac" frameborder="0" allowfullscreen></iframe>
 
-<p><em>PyQt5-Demo (Designer).</em></p>
+<p><em>PyQt5-Demo #1 (Designer).</em></p>
 
 <h2 id="___sec12" class="anchor">Conversion du fichier UI en code Python </h2>
-Qt Designer utilise des fichiers XML <b>.ui</b> pour stocker les conceptions et ne g&#233;n&#232;re aucun code par lui-m&#234;me. Qt inclut l'utilitaire "uic" qui g&#233;n&#232;re le code C ++ qui cr&#233;e l'interface utilisateur. PyQt5 inclut le module <code>uic</code> Python. Ce module peut charger les fichiers <b>.ui</b> pour cr&#233;er une interface utilisateur de mani&#232;re dynamique. Comme l'utilitaire uic en C ++ , il peut &#233;galement g&#233;n&#233;rer le code Python qui cr&#233;era l&#8217;interface utilisateur. L&#8217;utilitaire <code>pyuic5</code> de PyQt5 est une interface de ligne de commande avec le module uic. Ils sont d&#233;crits dans les paragraphes suivants.
+Qt Designer utilise des fichiers XML <b>.ui</b> pour stocker les conceptions et ne g&#233;n&#232;re aucun code par lui-m&#234;me. Qt inclut l'utilitaire "uic" qui g&#233;n&#232;re le code C ++ qui cr&#233;e l'interface utilisateur. PyQt5 inclut le module <code>uic</code> Python. Ce module peut charger les fichiers <b>.ui</b> pour cr&#233;er une interface utilisateur de mani&#232;re dynamique. Comme l'utilitaire uic en C ++ , il peut &#233;galement g&#233;n&#233;rer le code Python qui cr&#233;era l&#8217;interface utilisateur. L&#8217;utilitaire <code>pyuic5</code> de PyQt5 est une interface de ligne de commande avec le module <code>uic</code>. Ils sont d&#233;crits dans les paragraphes suivants.
 
 <h3 id="___sec13" class="anchor">En utilisant la ligne de commande </h3>
 
-Pour convertir le fichier de conception en code Python enregistr&#233; en tant que <b>UiMyApp.ui</b>, utilisez la commande <code>cd</code> pour passer au r&#233;pertoire (dossier) <b>MyApp</b> contenant le fichier <b>UiMyApp.ui</b> et ex&#233;cutez simplement:
+Pour convertir le fichier de conception en code Python enregistr&#233; en tant que <b>UiMyApp.ui</b>, utilisez la commande <code>cd</code> pour passer au r&#233;pertoire (dossier) <b>MyProject1</b> contenant le fichier <b>UiMyApp.ui</b> et ex&#233;cutez simplement:
 <p>
 
 <!-- code=text typeset with pygments style "default" -->
-<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>\chemin\vers\mon\répertoire\MyApp&gt;pyuic5 -x UiMyApp.ui -o UiMyApp.py
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>\chemin\vers\mon\répertoire\MyProject1&gt;pyuic5 -x UiMyApp.ui -o UiMyApp.py
 </pre></div>
 <p>
 Les d&#233;tails de la conception sont maintenant stock&#233;s dans le fichier Python <b>UiMyApp.py</b>.
@@ -882,7 +882,7 @@ Lorsque ce script <b>UiMyApp.py</b> est ex&#233;cut&#233;, une fen&#234;tre Qt a
 <h2 id="___sec15" class="anchor">Le programme principale: MainMyApp.py </h2>
 
 <p>
-Puisque le fichier <b>UiMyApp.py</b> sera compl&#232;tement &#233;cras&#233; chaque fois que nous modifierons et / ou ajouterons quelque chose dans la fen&#234;tre de conception, nous ne devrions &#233;crire aucun code dans celui-ci. Nous cr&#233;erons plut&#244;t un nouveau fichier Python <b>MainMyApp.py</b> (dans le m&#234;me r&#233;pertoire <b>MyApp</b> ) et une nouvelle classe <code>MainApp ()</code> qui h&#233;ritera de la classe d&#8217;interface <code>Ui_MainWindow ()</code> du code <b>UiMyApp.py</b>. De cette fa&#231;on, nous pouvons utiliser toutes ses fonctionnalit&#233;s et faire toutes les complications dont nous avons besoin sans souci. Par exemple, notre fichier <b>MainMyApp.py</b> pourrait ressembler au code donn&#233; dans le script ci-dessous:
+Puisque le fichier <b>UiMyApp.py</b> sera compl&#232;tement &#233;cras&#233; chaque fois que nous modifierons et/ou ajouterons quelque chose dans la fen&#234;tre de conception, nous ne devrions &#233;crire aucun code dans celui-ci. Nous cr&#233;erons plut&#244;t un nouveau fichier Python <b>MainMyApp.py</b> (dans le m&#234;me r&#233;pertoire <b>MyProject1</b> ) et une nouvelle classe <code>MainApp()</code> qui h&#233;ritera de la classe d&#8217;interface <code>Ui_MainWindow()</code> du code <b>UiMyApp.py</b>. De cette fa&#231;on, nous pouvons utiliser toutes ses fonctionnalit&#233;s et faire toutes les complications dont nous avons besoin sans souci. Par exemple, notre fichier <b>MainMyApp.py</b> pourrait ressembler au code donn&#233; dans le script ci-dessous:
 <p>
 
 <!-- code=python (!bc pycod) typeset with pygments style "default" -->
@@ -912,7 +912,7 @@ Dans cette partie, comme dans <a href="#sec:boutons">Ajouter des boutons: <code>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qYFCgkxQWBU" frameborder="0" allowfullscreen></iframe>
 
-<p><em>PyQt5-Demo (Designer).</em></p>
+<p><em>PyQt5-Demo #2 (Signaux/Slots).</em></p>
 
 <p>
 Le script <b>MainMyApp.py</b> sous sa forme finale est donc:
