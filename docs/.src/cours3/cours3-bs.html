@@ -148,7 +148,7 @@ end of tocinfo -->
 <center><b>Facult&#233; des Sciences de Tunis, Universit&#233; de Tunis El Manar.</b></center>
 <br>
 <p>
-<center><h4>Apr 9, 2019</h4></center> <!-- date -->
+<center><h4>Apr 10, 2019</h4></center> <!-- date -->
 <br>
 <p>
 </div> <!-- end jumbotron -->
@@ -377,27 +377,27 @@ Le programme Arduino pour l&#8217;interfa&#231;age d&#8217;Arduino avec python e
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># NOM DU FICHIER:LEDSerial.py</span>
 <span style="color: #408080; font-style: italic">#% IMPORTATION</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">serial</span>
-<span style="color: #408080; font-style: italic"># crÃ©er un objet de port sÃ©rie appelÃ© Arduino_Serial</span>
+<span style="color: #408080; font-style: italic"># créer un objet de port série appelé Arduino_Serial</span>
 Arduino_Serial <span style="color: #666666">=</span> serial<span style="color: #666666">.</span>Serial(<span style="color: #BA2121">&#39;com12&#39;</span>,<span style="color: #666666">9600</span>)
-<span style="color: #408080; font-style: italic"># lire les donnÃ©es de sÃ©rie et l&#39;afficher en ligne</span>
+<span style="color: #408080; font-style: italic"># lire les données de série et l&#39;afficher en ligne</span>
 <span style="color: #008000; font-weight: bold">print</span>(Arduino_Serial<span style="color: #666666">.</span>readline())
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Entrez 1 pour allumÃ©e la LED et 0 pour l&#39;Ã©teindre&quot;</span>)
+<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Entrez 1 pour allumée la LED et 0 pour l&#39;éteindre&quot;</span>)
 
 <span style="color: #408080; font-style: italic"># boucle infinie</span>
 <span style="color: #008000; font-weight: bold">while</span> <span style="color: #666666">1</span>:
-    <span style="color: #408080; font-style: italic"># attend que l&#39;utilisateur entre les donnÃ©es                                 </span>
+    <span style="color: #408080; font-style: italic"># attend que l&#39;utilisateur entre les données                                 </span>
     input_data <span style="color: #666666">=</span> <span style="color: #008000">input</span>()
-    <span style="color: #408080; font-style: italic"># affiche les donnÃ©es pour confirmation</span>
+    <span style="color: #408080; font-style: italic"># affiche les données pour confirmation</span>
     <span style="color: #008000; font-weight: bold">print</span> (<span style="color: #BA2121">&quot;you entered&quot;</span>, input_data)
-    <span style="color: #408080; font-style: italic"># si la donnÃ©e entrÃ©e est 1</span>
+    <span style="color: #408080; font-style: italic"># si la donnée entrée est 1</span>
     <span style="color: #008000; font-weight: bold">if</span> (input_data <span style="color: #666666">==</span> <span style="color: #BA2121">&#39;1&#39;</span>):
-        <span style="color: #408080; font-style: italic"># envoyer 1 Ã  arduino               </span>
+        <span style="color: #408080; font-style: italic"># envoyer 1 à arduino               </span>
         Arduino_Serial<span style="color: #666666">.</span>write(<span style="color: #BA2121">&#39;1&#39;</span>)
         <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;LED ON&quot;</span>)
 
-    <span style="color: #408080; font-style: italic"># si la donnÃ©e entrÃ©e est 0</span>
+    <span style="color: #408080; font-style: italic"># si la donnée entrée est 0</span>
     <span style="color: #008000; font-weight: bold">if</span> (input_data <span style="color: #666666">==</span> <span style="color: #BA2121">&#39;0&#39;</span>):    
-        <span style="color: #408080; font-style: italic"># envoyer 0 Ã  arduino                </span>
+        <span style="color: #408080; font-style: italic"># envoyer 0 à arduino                </span>
         Arduino_Serial<span style="color: #666666">.</span>write(<span style="color: #BA2121">&#39;0&#39;</span>)
         <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;LED OFF&quot;</span>)
 </pre></div>
@@ -472,9 +472,9 @@ Ces outils nous permet de communiquer facilement et rapidement avec toutes les p
 <div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># NOM DU FICHIER: LEDBlink.py</span>
 <span style="color: #408080; font-style: italic">#% IMPORTATION</span>
 <span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pyfirmata</span>
-PIN <span style="color: #666666">=</span> <span style="color: #666666">13</span> <span style="color: #408080; font-style: italic"># Pin 13 est utilisÃ©</span>
-DELAY <span style="color: #666666">=</span> <span style="color: #666666">2</span> <span style="color: #408080; font-style: italic"># Un dÃ©lai de 2 secondes</span>
-<span style="color: #408080; font-style: italic"># VÃ©rifiez que le port correspond Ã  votre systÃ¨me, voir exemples ci-dessous:</span>
+PIN <span style="color: #666666">=</span> <span style="color: #666666">13</span> <span style="color: #408080; font-style: italic"># Pin 13 est utilisé</span>
+DELAY <span style="color: #666666">=</span> <span style="color: #666666">2</span> <span style="color: #408080; font-style: italic"># Un délai de 2 secondes</span>
+<span style="color: #408080; font-style: italic"># Vérifiez que le port correspond à votre système, voir exemples ci-dessous:</span>
 <span style="color: #408080; font-style: italic"># Sur Linux: /dev/tty.usbserial-A6008rIF, /dev/ttyACM0, </span>
 <span style="color: #408080; font-style: italic"># Sous Windows: &#39;COM1&#39;, &#39;COM2&#39;, &#39;COM3&#39;</span>
 PORT <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;COM3&#39;</span>

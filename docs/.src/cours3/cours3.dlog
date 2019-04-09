@@ -3284,3 +3284,94 @@ figure file imgs/anaconda_from_start_menu:
     can use imgs/anaconda_from_start_menu.png for format ipynb
 collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
 output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+
+
+...doconce format used 15.3 s to translate the document (475 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
