@@ -1,0 +1,520 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Prototypage de projets Arduino en utilisant Python et PyQt5">
+
+<title>Prototypage de projets Arduino en utilisant Python et PyQt5</title>
+
+<!-- Bootstrap style: bootswatch_journal -->
+<link href="https://netdna.bootstrapcdn.com/bootswatch/3.1.1/journal/bootstrap.min.css" rel="stylesheet">
+<!-- not necessary
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+-->
+
+<style type="text/css">
+
+/* Add scrollbar to dropdown menus in bootstrap navigation bar */
+.dropdown-menu {
+   height: auto;
+   max-height: 400px;
+   overflow-x: hidden;
+}
+
+/* Adds an invisible element before each target to offset for the navigation
+   bar */
+.anchor::before {
+  content:"";
+  display:block;
+  height:60px;      /* fixed header height for style bootswatch_journal */
+  margin:-60px 0 0; /* negative fixed header height */
+}
+
+body { font-size:20px;line-height:1.5; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table des matières',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Introduction', 1, None, '___sec0'),
+              ('Python et Arduino', 1, None, '___sec1'),
+              ('Installation des packages `pyserial` et `pyfirmata`',
+               2,
+               None,
+               '___sec2'),
+              ('Installation de package `pyserial`', 3, None, '___sec3'),
+              ('Installation de package `pyfirmata`', 3, None, '___sec4'),
+              ("Téléchargez l'IDE Arduino", 2, None, '___sec5'),
+              ('Exemple 1: Connectez une LED sur un pin (1 à 13)',
+               1,
+               None,
+               '___sec6'),
+              ('Montage', 2, None, '___sec7'),
+              ('Trouver le numéro de port sous Windows', 2, None, '___sec8'),
+              ('Trouver le numéro de port sur Linux', 2, None, '___sec9'),
+              ('Le code Arduino', 2, None, '___sec10'),
+              ('Le code python (avec le module `pyserial`)',
+               2,
+               None,
+               '___sec11'),
+              ('Firmata protocol', 2, None, '___sec12'),
+              ('Firmata Test', 3, None, '___sec13'),
+              ('Le code python (avec le module `pyfirmata`)',
+               3,
+               None,
+               '___sec14'),
+              ('Application PyQt5 (avec le module `pyfirmata`)',
+               3,
+               None,
+               '___sec15')]}
+end of tocinfo -->
+
+<body>
+
+    
+<!-- Bootstrap navigation bar -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="cours3-bs.html">Prototypage de projets Arduino en utilisant Python et PyQt5</a>
+  </div>
+
+  <div class="navbar-collapse collapse navbar-responsive-collapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contenu <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+     <!-- navigation toc: --> <li><a href="#table_of_contents" style="font-size: 80%;"><b>Table des matières</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 80%;"><b>Introduction</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 80%;"><b>Python et Arduino</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Installation des packages <code>pyserial</code> et <code>pyfirmata</code></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Installation de package <code>pyserial</code></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec4" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Installation de package <code>pyfirmata</code></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec5" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Téléchargez l'IDE Arduino</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec6" style="font-size: 80%;"><b>Exemple 1: Connectez une LED sur un pin (1 à 13)</b></a></li>
+     <!-- navigation toc: --> <li><a href="#___sec7" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Montage</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec8" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Trouver le numéro de port sous Windows</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec9" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Trouver le numéro de port sur Linux</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec10" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Le code Arduino</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec11" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Le code python (avec le module <code>pyserial</code>)</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec12" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;Firmata protocol</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec13" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Firmata Test</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec14" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Le code python (avec le module <code>pyfirmata</code>)</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec15" style="font-size: 80%;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Application PyQt5 (avec le module <code>pyfirmata</code>)</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</div> <!-- end of navigation bar -->
+
+<div class="container">
+
+<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p> <!-- add vertical space -->
+
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<div class="jumbotron">
+<center><h1>Prototypage de projets Arduino en utilisant Python et PyQt5</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Ahmed Ammar -->
+
+<center>
+<b>Ahmed Ammar</b>  (<tt>ahmed.ammar at fst.utm.tn</tt>)
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>Facult&#233; des Sciences de Tunis, Universit&#233; de Tunis El Manar.</b></center>
+<br>
+<p>
+<center><h4>Apr 9, 2019</h4></center> <!-- date -->
+<br>
+<p>
+</div> <!-- end jumbotron -->
+
+<h1 id="table_of_contents">Table des matières</h2>
+
+<p>
+<a href="#___sec0"> Introduction </a><br>
+<a href="#___sec1"> Python et Arduino </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec2"> Installation des packages <code>pyserial</code> et <code>pyfirmata</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec5"> T&#233;l&#233;chargez l'IDE Arduino </a><br>
+<a href="#___sec6"> Exemple 1: Connectez une LED sur un pin (1 &#224; 13) </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec7"> Montage </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec8"> Trouver le num&#233;ro de port sous Windows </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec9"> Trouver le num&#233;ro de port sur Linux </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec10"> Le code Arduino </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec11"> Le code python (avec le module <code>pyserial</code>) </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec12"> Firmata protocol </a><br>
+</p>
+
+<h1 id="___sec0" class="anchor">Introduction </h1>
+Arduino (<a href="https://www.arduino.cc/" target="_self"><tt>https://www.arduino.cc/</tt></a>) est un microcontr&#244;leur mont&#233; avec ses circuits d&#8217;entr&#233;e/sortie sur une petite carte &#233;lectronique tr&#232;s pratique. Il est capable de mesurer des tensions, et donc d&#8217;acqu&#233;rir des grandeurs physiques qui auront &#233;t&#233; traduites en tension &#233;lectrique, comme un courant &#233;lectrique, une temp&#233;rature, une pression, une acc&#233;l&#233;ration, etc.
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 1:  Arduino Uno Rev3 (<a href="https://store.arduino.cc/arduino-uno-rev3" target="_self"><tt>https://store.arduino.cc/arduino-uno-rev3</tt></a>). </p></center>
+<p><img src="imgs/arduino_uno.jpg" align="bottom" width=400></p>
+</center>
+
+<p>
+Il est capable de g&#233;n&#233;rer des tensions (avec les voies PWM qui peuvent &#234;tre utilis&#233;es en conversion num&#233;rique analogique) et donc de produire une information analogique, qui pourra &#234;tre exploit&#233;e par une interface (un moteur, une LED, un outil). Il peut commander en tout ou rien (ON/OFF) un moteur ou un actionneur une machine ou une LED, par exemple. Et bien sur, il peut effectuer des traitements informatiques et m&#233;moriser des donn&#233;es. Il a le bon go&#251;t d&#8217;&#234;tre programmable en C.
+Son utilisation est tr&#232;s simple : vous chargez sur votre PC (ou Mac) l&#8217;IDE gratuit (<a href="https://www.arduino.cc/en/Main/Software" target="_self"><tt>https://www.arduino.cc/en/Main/Software</tt></a>) qui permet de le programmer, vous branchez la carte Arduino sur l&#8217;interface USB de votre PC (ou Mac), vous &#233;crivez votre programme, vous le chargez dans l&#8217;Arduino et vous le lancez.
+
+<p>
+En bref, il permet d&#8217;op&#233;rer sur le monde physique selon un mod&#232;le qui aura &#233;t&#233; programm&#233;. L&#8217;Arduino est petit et simple, mais c&#8217;est un mod&#232;le presque parfait des syst&#232;mes de contr&#244;le/commande de l&#8217;industrie. Enfin, signalons que l&#8217;Arduino, son hardware et son software sont enti&#232;rement libres : vous pouvez le bidouiller ou le reproduire autant que vous voulez, ou m&#234;me en construire un vous-m&#234;me !
+
+<p>
+Le prix : une carte Arduino Uno Rev3 vaut 20 &#224; 25 euros TTC.
+
+<p>
+L&#8217;une des principales limites de l&#8217;IDE Arduino est sa capacit&#233; limit&#233;e &#224; interagir avec l&#8217;utilisateur. Vous pouvez imprimer du texte dans une simple zone de texte du moniteur s&#233;rie ou obtenir une saisie de texte de l'utilisateur. Vous pouvez ouvrir un nouveau monde de possibilit&#233;s en utilisant le langage de programmation python pour interagir avec l'Arduino. Python combin&#233; avec Arduino est une combinaison puissante qui augmentera consid&#233;rablement le facteur <b>WOW!</b> de vos projets.
+
+<h1 id="___sec1" class="anchor">Python et Arduino </h1>
+Python, C ++ et Java sont les langages de programmation les plus couramment utilis&#233;s pour apporter une id&#233;e novatrice &#224; la r&#233;alit&#233;. Ce sont tous des langages de programmation tr&#232;s puissants. R&#233;cemment, les d&#233;veloppeurs d&#8217;applications et de logiciels ont lib&#233;r&#233; la puissance de Python, principalement pour les applications pilot&#233;es par les donn&#233;es. Arduino ne fait pas exception &#224; la r&#232;gle puisque ce microcontr&#244;leur, petit mais puissant, est con&#231;u pour traiter des donn&#233;es en temps r&#233;el.
+
+<h2 id="___sec2" class="anchor">Installation des packages <code>pyserial</code> et <code>pyfirmata</code> </h2>
+Les versions r&#233;centes d&#8217;Anaconda ne contiennent pas forcement les packages <code>pyserial</code> et <code>pyfirmata</code> dont nous allons avoir besoin pour communiquer avec Arduino.
+
+<h3 id="___sec3" class="anchor">Installation de package <code>pyserial</code> </h3>
+
+<p>
+Ce module encapsule l'acc&#232;s pour le port s&#233;rie. Vous pouvez l&#8217;installer de diff&#233;rentes mani&#232;res:
+
+<p>
+<b>Depuis l&#8217;interface Anaconda Navigator (recommand&#233;)</b>
+
+<ul>
+<li> Cliquer dans la fen&#234;tre d&#8217;accueil sur le menu :Environments</li>
+<li> Un menu d&#233;roulant en haut de la fen&#234;tre indique par d&#233;faut : <em>installed</em></li>
+<li> Choisir <em>Not installed</em></li>
+<li> S&#233;lectionner dans la liste le module <code>pys&#233;rial</code>.</li>
+<li> Valider pour l&#8217;installation.</li>
+</ul>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 2:  Installation de package <code>pyserial</code> depuis l'interface Anaconda Navigator. </p></center>
+<p><img src="imgs/pyserial_navigator.png" align="bottom" width=600></p>
+</center>
+
+<p>
+<b>Depuis l&#8217;invite commande anaconda ou un terminal ubuntu</b>
+Utiliser <b>Anaconda Prompt</b> sur Windows ou bien utiliser le <b>terminal</b> sur un MacOS ou Linux. Pour d&#233;marrer Anaconda Prompt sous Windows 10, cliquer sur le bouton D&#233;marrer Windows en bas &#224; gauche et s&#233;lectionner <b>Anaconda Prompt</b>.
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 3:  . Lancement d'Anaconda Prompt sous Windows 10. </p></center>
+<p><img src="imgs/anaconda_from_start_menu.png" align="bottom" width=300></p>
+</center>
+
+<p>
+Entrer l'un des deux commandes d'installation des packages Python:
+
+<ul>
+<li> commande <code>conda</code></li>
+</ul>
+
+<p>
+
+<!-- code=text typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>conda install pyserial
+</pre></div>
+<ul>
+<li> ou bien la commande <code>pip</code></li>
+</ul>
+
+<p>
+
+<!-- code=text typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>pip install pyserial
+</pre></div>
+
+<h3 id="___sec4" class="anchor">Installation de package <code>pyfirmata</code> </h3>
+
+pyfirmata (<a href="https://pypi.org/project/pyFirmata/" target="_self"><tt>https://pypi.org/project/pyFirmata/</tt></a>) est une interface Python pour le protocole Firmata (<a href="http://firmata.org/wiki/Main_Page" target="_self"><tt>http://firmata.org/wiki/Main_Page</tt></a>).
+
+<p>
+La m&#233;thode d'installation pr&#233;f&#233;r&#233;e est avec <code>pip</code>:
+<p>
+
+<!-- code=text typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span>pip install pyfirmata
+</pre></div>
+
+<h2 id="___sec5" class="anchor">T&#233;l&#233;chargez l'IDE Arduino </h2>
+L'&#233;tape suivante consiste &#224; t&#233;l&#233;charger l'Arduino IDE. IDE signifie "Environnement de D&#233;veloppement Int&#233;gr&#233;". L'IDE Arduino est un programme qui s'ex&#233;cute sur votre ordinateur et qui permet de modifier le code Arduino. L'IDE Arduino est &#233;galement utilis&#233; pour compiler et charger du code d'extension <code>.ino</code> sur un Arduino.
+
+<p>
+T&#233;l&#233;chargez l'IDE Arduino en utilisant le lien suivant: <a href="https://www.arduino.cc/en/Main/Software" target="_self"><tt>https://www.arduino.cc/en/Main/Software</tt></a>
+
+<p>
+Faites d&#233;filer la page jusqu'&#224; la section <b>"Download the Arduino IDE"</b>. Choisissez le fichier d'installation correspondant au syst&#232;me d'exploitation que vous utilisez (Windows, Mac OS X ou Linux). Vous pouvez choisir <b>"JUST DOWNLOAD"</b> dans l'&#233;cran des dons.
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 4:  T&#233;l&#233;chargez l'IDE Arduino. </p></center>
+<p><img src="imgs/downloadArd.png" align="bottom" width=600></p>
+</center>
+
+<h1 id="___sec6" class="anchor">Exemple 1: Connectez une LED sur un pin (1 &#224; 13) </h1>
+Dans cette section, vous allez apprendre &#224; configurer des communications s&#233;rie entre un Arduino UNO et Python. En utilisant Python, nous allons cr&#233;er des boutons pour envoyer des commandes &#224; Arduino UNO pour allumer ou &#233;teindre une LED. En retour, l'Arduino r&#233;pondra par un message de confirmation indiquant que la LED est allum&#233;e ou &#233;teinte.
+
+<h2 id="___sec7" class="anchor">Montage </h2>
+
+<p>
+Prenez une LED (de n'importe quelle couleur), une r&#233;sistance de 220 Ohm, trois c&#226;bles de pontage (rouge, jaune et noir), l'Arduino et une plaque de montage. Raccorder la LED, la r&#233;sistance et les fils de liaison color&#233;s comme indiqu&#233; ci-dessous. Notez que la LED a deux "pattes" de tailles diff&#233;rentes. Assurez-vous que la voyant est branch&#233;e dans le bon sens. Le courant ne peut circuler que dans un sens par une LED.
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 5:  Montage Arduino avec une LED et une r&#233;sistance. </p></center>
+<p><img src="imgs/Blink1_bb.png" align="bottom" width=600></p>
+</center>
+
+<h2 id="___sec8" class="anchor">Trouver le num&#233;ro de port sous Windows </h2>
+
+<ol>
+<li> Ouvrez le <b>Gestionnaire de p&#233;riph&#233;riques</b> et d&#233;veloppez la liste des ports (COM et LPT).</li>
+<li> Notez le num&#233;ro sur le port s&#233;rie USB</li>
+</ol>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 6:  Num&#233;ro de port Arduino sur Windows. Ici c'est <code>COM3</code> </p></center>
+<p><img src="imgs/win_dev_mngr_port.png" align="bottom" width=300></p>
+</center>
+
+<h2 id="___sec9" class="anchor">Trouver le num&#233;ro de port sur Linux </h2>
+
+<ol>
+<li> Ouvrez le terminal et tapez: <code>ls/dev/tty*</code></li>
+<li> Notez le num&#233;ro de port indiqu&#233; pour <code>/dev/ttyUSB*</code> ou <code>/dev/ttyACM*</code>. Le num&#233;ro de port est repr&#233;sent&#233; avec <code>*</code> ici.</li>
+</ol>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 7:  Num&#233;ro de port Arduino sur Linux. Ici c'est <code>/dev/ttyACM0</code> </p></center>
+<p><img src="imgs/COM_Linux.png" align="bottom" width=500></p>
+</center>
+
+<p>
+Une astuce pour r&#233;cup&#233;rer votre chemin vers le port s&#233;rie est de regarder dans l&#8217;environnement Arduino dans le menu <em>Outils/Port</em>.
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 8:  Chemin du port s&#233;rie sur une machine Linux dans le menu <em>Outils/Port</em> </p></center>
+<p><img src="imgs/com_menu.png" align="bottom" width=500></p>
+</center>
+
+<h2 id="___sec10" class="anchor">Le code Arduino </h2>
+Avant de charger le code, assurez-vous d&#8217;avoir s&#233;lectionn&#233; un port COM dans l&#8217;option. Ce port COM s&#233;lectionn&#233; sera utilis&#233; dans le d&#233;veloppement, en particulier avec le code python. De plus, nous devrons prendre en compte le d&#233;bit en bauds (baud rate) utilis&#233; dans le d&#233;veloppement.
+
+<p>
+Nous allons d&#8217;abord &#233;crire un programme simple pour Arduino. L&#8217;id&#233;e du programme est la suivante: Arduino UNO, qui est connect&#233; &#224; un ordinateur, recherche les donn&#233;es s&#233;rie et, en fonction des donn&#233;es re&#231;ues du port s&#233;rie, allume ou &#233;teint le voyant.
+
+<p>
+Le programme Arduino pour l&#8217;interfa&#231;age d&#8217;Arduino avec python est donn&#233; ci-dessous.
+<p>
+
+<!-- code=c (!bc ccod) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">const</span> <span style="color: #B00040">int</span> led<span style="color: #666666">=13</span>;
+<span style="color: #B00040">int</span> value<span style="color: #666666">=0</span>;
+
+<span style="color: #B00040">void</span> <span style="color: #0000FF">setup</span>()
+   {
+      Serial.begin(<span style="color: #666666">9600</span>);
+      pinMode(led, OUTPUT);
+      digitalWrite (led, LOW);
+      Serial.println(<span style="color: #BA2121">&quot;Connection established...&quot;</span>);
+   }
+
+<span style="color: #B00040">void</span> <span style="color: #0000FF">loop</span>()
+   {
+     <span style="color: #008000; font-weight: bold">while</span> (Serial.available())
+        {
+           value <span style="color: #666666">=</span> Serial.read();
+        }
+
+     <span style="color: #008000; font-weight: bold">if</span> (value <span style="color: #666666">==</span> <span style="color: #BA2121">&#39;1&#39;</span>)
+        digitalWrite (led, HIGH);
+
+     <span style="color: #008000; font-weight: bold">else</span> <span style="color: #008000; font-weight: bold">if</span> (value <span style="color: #666666">==</span> <span style="color: #BA2121">&#39;0&#39;</span>)
+        digitalWrite (led, LOW);
+   }
+</pre></div>
+
+<h2 id="___sec11" class="anchor">Le code python (avec le module <code>pyserial</code>) </h2>
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># NOM DU FICHIER:LEDSerial.py</span>
+<span style="color: #408080; font-style: italic">#% IMPORTATION</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">serial</span>
+<span style="color: #408080; font-style: italic"># crÃ©er un objet de port sÃ©rie appelÃ© Arduino_Serial</span>
+Arduino_Serial <span style="color: #666666">=</span> serial<span style="color: #666666">.</span>Serial(<span style="color: #BA2121">&#39;com12&#39;</span>,<span style="color: #666666">9600</span>)
+<span style="color: #408080; font-style: italic"># lire les donnÃ©es de sÃ©rie et l&#39;afficher en ligne</span>
+<span style="color: #008000; font-weight: bold">print</span>(Arduino_Serial<span style="color: #666666">.</span>readline())
+<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Entrez 1 pour allumÃ©e la LED et 0 pour l&#39;Ã©teindre&quot;</span>)
+
+<span style="color: #408080; font-style: italic"># boucle infinie</span>
+<span style="color: #008000; font-weight: bold">while</span> <span style="color: #666666">1</span>:
+    <span style="color: #408080; font-style: italic"># attend que l&#39;utilisateur entre les donnÃ©es                                 </span>
+    input_data <span style="color: #666666">=</span> <span style="color: #008000">input</span>()
+    <span style="color: #408080; font-style: italic"># affiche les donnÃ©es pour confirmation</span>
+    <span style="color: #008000; font-weight: bold">print</span> (<span style="color: #BA2121">&quot;you entered&quot;</span>, input_data)
+    <span style="color: #408080; font-style: italic"># si la donnÃ©e entrÃ©e est 1</span>
+    <span style="color: #008000; font-weight: bold">if</span> (input_data <span style="color: #666666">==</span> <span style="color: #BA2121">&#39;1&#39;</span>):
+        <span style="color: #408080; font-style: italic"># envoyer 1 Ã  arduino               </span>
+        Arduino_Serial<span style="color: #666666">.</span>write(<span style="color: #BA2121">&#39;1&#39;</span>)
+        <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;LED ON&quot;</span>)
+
+    <span style="color: #408080; font-style: italic"># si la donnÃ©e entrÃ©e est 0</span>
+    <span style="color: #008000; font-weight: bold">if</span> (input_data <span style="color: #666666">==</span> <span style="color: #BA2121">&#39;0&#39;</span>):    
+        <span style="color: #408080; font-style: italic"># envoyer 0 Ã  arduino                </span>
+        Arduino_Serial<span style="color: #666666">.</span>write(<span style="color: #BA2121">&#39;0&#39;</span>)
+        <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;LED OFF&quot;</span>)
+</pre></div>
+<p>
+<div class="panel panel-warning">
+  <div class="panel-heading">
+  <h3 class="panel-title">Warning</h3>
+  </div>
+<div class="panel-body">
+<p> <!-- subsequent paragraphs come in larger fonts, so start with a paragraph -->
+Vous pouvez rencontrer l&#8217;erreur suivante lorsque vous ex&#233;cutez le code python sur votre machine Linux (ou Raspberry) pour la premi&#232;re fois: <code>OSError: [Errno 13] Permission denied: '/dev/ttyACM0'</code>
+
+<p>
+Pour r&#233;soudre ce probl&#232;me
+
+<ol>
+<li> modifier les autorisations sur <code>/dev/ttyACM0</code> afin que "world" dispose des privil&#232;ges de lecture et d'&#233;criture (ce que vous ne voudrez peut-&#234;tre pas faire) - bien que vous puissiez constater qu'ils sont r&#233;initialis&#233;s chaque fois que le p&#233;riph&#233;rique est branch&#233;, tapez par exemple sur le terminal: <code>sudo chmod 666 /dev/ttyACM0</code></li>
+<li> Cr&#233;ez une r&#232;gle dans <code>/etc/udev/rules.d</code> qui d&#233;finira les autorisations du p&#233;riph&#233;rique (un red&#233;marrage sera requis):</li>
+</ol>
+
+<p>
+
+<!-- code=shell (!bc shell) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># navigate to rules.d directory</span>
+<span style="color: #008000">cd</span> /etc/udev/rules.d
+<span style="color: #408080; font-style: italic">#create a new rule file</span>
+sudo touch my-newrule.rules
+<span style="color: #408080; font-style: italic"># open the file</span>
+sudo vim my-newrule.rules
+<span style="color: #408080; font-style: italic"># add the following</span>
+<span style="color: #19177C">KERNEL</span><span style="color: #666666">==</span><span style="color: #BA2121">&quot;ttyACM0&quot;</span>, <span style="color: #19177C">MODE</span><span style="color: #666666">=</span><span style="color: #BA2121">&quot;0666&quot;</span>
+</pre></div>
+<p>
+Cela d&#233;finit &#233;galement des autorisations pour le monde en lecture et en &#233;criture, ce que vous ne voudrez peut-&#234;tre pas faire.
+
+<p>
+<b>Solution par:</b> <em>user1063287</em> sur le site Stack Overflow: <a href="https://stackoverflow.com/questions/27858041/oserror-errno-13-permission-denied-dev-ttyacm0-using-pyserial-from-pyth" target="_self"><tt>https://stackoverflow.com/questions/27858041/oserror-errno-13-permission-denied-dev-ttyacm0-using-pyserial-from-pyth</tt></a>
+</div>
+</div>
+
+
+<p>
+Chargez le code Arduino sur l&#8217;Arduino UNO. Notez le port COM auquel il est connect&#233;. Le m&#234;me num&#233;ro de port COM doit &#234;tre indiqu&#233; dans le code Python.
+
+<p>
+Apr&#232;s avoir charg&#233; le code sur Arduino, lancez le programme Python sur l'IDE Spyder. La console Ipython va afficher le message "Connexion &#233;tablie" et "Entrez 1 pour allum&#233;e la LED et 0 pour l'&#233;teindre".
+
+<h2 id="___sec12" class="anchor">Firmata protocol </h2>
+Firmata est un protocole g&#233;n&#233;rique permettant la communication entre un microcontr&#244;leur et un logiciel. Dans notre cas, Firmata nous permet de communiquer Arduino avec Python.
+
+<h3 id="___sec13" class="anchor">Firmata Test </h3>
+
+Un moyen rapide et facile de tester le protocole Firmata imm&#233;diatement est de t&#233;l&#233;charger le programme <b>Firmata Test</b> sur le site Web officiel: <a href="http://www.firmata.org/wiki/Main_Page" target="_self"><tt>http://www.firmata.org/wiki/Main_Page</tt></a>
+
+<p>
+<br /><br /><center><p><img src="imgs/Firmata_Test.png" align="bottom" width=300></p></center><br /><br />
+
+<p>
+Pour Windows 10, vous pouvez installer <b>Windows Remote Arduino Experience</b>: <a href="https://www.microsoft.com/store/apps/9nblggh2041m" target="_self"><tt>https://www.microsoft.com/store/apps/9nblggh2041m</tt></a>
+
+<p>
+<br /><br /><center><p><img src="imgs/WindowsRemoteArduinoExperience.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+Ces outils nous permet de communiquer facilement et rapidement avec toutes les pins d&#8217;Arduino.
+
+<h3 id="___sec14" class="anchor">Le code python (avec le module <code>pyfirmata</code>) </h3>
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "default" -->
+<div class="highlight" style="background: #f8f8f8"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># NOM DU FICHIER: LEDBlink.py</span>
+<span style="color: #408080; font-style: italic">#% IMPORTATION</span>
+<span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">pyfirmata</span>
+PIN <span style="color: #666666">=</span> <span style="color: #666666">13</span> <span style="color: #408080; font-style: italic"># Pin 13 est utilisÃ©</span>
+DELAY <span style="color: #666666">=</span> <span style="color: #666666">2</span> <span style="color: #408080; font-style: italic"># Un dÃ©lai de 2 secondes</span>
+<span style="color: #408080; font-style: italic"># VÃ©rifiez que le port correspond Ã  votre systÃ¨me, voir exemples ci-dessous:</span>
+<span style="color: #408080; font-style: italic"># Sur Linux: /dev/tty.usbserial-A6008rIF, /dev/ttyACM0, </span>
+<span style="color: #408080; font-style: italic"># Sous Windows: &#39;COM1&#39;, &#39;COM2&#39;, &#39;COM3&#39;</span>
+PORT <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;COM3&#39;</span>
+<span style="color: #408080; font-style: italic"># Creates a new board </span>
+board <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>Arduino(PORT)
+<span style="color: #408080; font-style: italic"># Boucle pour clignoter la LED</span>
+<span style="color: #008000; font-weight: bold">while</span> <span style="color: #008000">True</span>:
+    board<span style="color: #666666">.</span>digital[PIN]<span style="color: #666666">.</span>write(<span style="color: #666666">1</span>) <span style="color: #408080; font-style: italic"># Set the LED pin to 1 (HIGH)</span>
+    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;LED ON&quot;</span>)
+    board<span style="color: #666666">.</span>pass_time(DELAY)
+    board<span style="color: #666666">.</span>digital[PIN]<span style="color: #666666">.</span>write(<span style="color: #666666">0</span>) <span style="color: #408080; font-style: italic"># Set the LED pin to 0 (LOW)</span>
+    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;LED OFF&quot;</span>)
+    board<span style="color: #666666">.</span>pass_time(DELAY)
+</pre></div>
+
+<h3 id="___sec15" class="anchor">Application PyQt5 (avec le module <code>pyfirmata</code>) </h3>
+
+<p>
+<br /><br /><center><p><img src="imgs/LEDON.jpg" align="bottom" width=600></p></center><br /><br />
+
+<!-- ------------------- end of main content --------------- -->
+
+</div>  <!-- end container -->
+<!-- include javascript, jQuery *first* -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap footer
+<footer>
+<a href="http://..."><img width="250" align=right src="http://..."></a>
+</footer>
+-->
+
+
+<center style="font-size:80%">
+<!-- copyright --> &copy; 2019, Ahmed Ammar. Released under CC Attribution 4.0 license
+</center>
+
+
+</body>
+</html>
+    
+

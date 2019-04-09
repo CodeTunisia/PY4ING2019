@@ -37,3 +37,8 @@ DATE: today
 * HTML:
   * "html simple" : "https://codetunisia.github.io/PY4ING2019/cours2/cours2-solarized.html"
   * "Style Bootstrap, facile à lire sur les appareils mobiles" : "https://codetunisia.github.io/PY4ING2019/cours2/cours2-bs.html"
+
+===== Prototypage de projets Arduino en utilisant Python et PyQt5 =====
+* HTML:
+  * "html simple" : "https://codetunisia.github.io/PY4ING2019/cours3/cours3-solarized.html"
+  * "Style Bootstrap, facile à lire sur les appareils mobiles" : "https://codetunisia.github.io/PY4ING2019/cours3/cours3-bs.html"

@@ -1,0 +1,3286 @@
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+
+...doconce translation: insertion of verbatim and latex blocks 16.9 s (accumulated time: 17.0)
+
+
+...doconce format used 18.0 s to translate the document (105 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+
+*** error: inconsistent no of = in heading:
+=== Installation de package `pyserial`====
+    lengths: 3 and 14, must be equal and odd
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+
+*** error: inconsistent no of = in heading:
+=== Installation de package `pyserial`===
+    lengths: 3 and 13, must be equal and odd
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+
+...doconce translation: insertion of verbatim and latex blocks 17.0 s (accumulated time: 17.1)
+
+
+...doconce format used 18.1 s to translate the document (146 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 15.9)
+
+
+...doconce format used 16.9 s to translate the document (203 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Macintosh__
+__Trouver le numéro de port sur Linux__
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+
+...doconce translation: insertion of verbatim and latex blocks 15.4 s (accumulated time: 15.5)
+
+
+...doconce format used 16.6 s to translate the document (248 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Macintosh__
+__Trouver le numéro de port sur Linux__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Macintosh__
+__Trouver le numéro de port sur Linux__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+__Trouver le numéro de port sous Windows__
+__Trouver le numéro de port sur Linux__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+
+...doconce translation: insertion of verbatim and latex blocks 16.7 s (accumulated time: 16.9)
+
+
+...doconce format used 17.9 s to translate the document (379 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+
+*** error: !bc is not at the beginning of a line
+    surrounding text:
+ère fois:
+`OSError: [Errno 13] Autorisation refusée: '/ dev / ttyACM0'`.
+
+Pour résoudre ce problème
+o modifier les autorisations sur `/dev/ttyACM0` afin que "world" dispose des privilèges de lecture et d'écriture (ce que vous ne voudrez peut-être pas faire) - bien que vous puissiez constater qu'ils sont réinitialisés chaque fois que le périphérique est branché, tapez par exemple sur le terminal: !bc sudo chmod 666 /dev/ttyACM0 !ec
+
+o Créez une règle dans `/etc/udev/rules.d` qui définira les autori
+
+did you mean to write `!bc` in some sentence?
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+
+...doconce translation: insertion of verbatim and latex blocks 93.6 s (accumulated time: 94.6)
+
+
+...doconce format used 95.8 s to translate the document (413 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+
+...doconce translation: insertion of verbatim and latex blocks 19.4 s (accumulated time: 19.7)
+
+
+...doconce format used 21.5 s to translate the document (344 lines)
+
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+
+...doconce translation: insertion of verbatim and latex blocks 19.8 s (accumulated time: 20.2)
+
+
+...doconce format used 21.2 s to translate the document (425 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+
+...doconce translation: insertion of verbatim and latex blocks 16.9 s (accumulated time: 17.4)
+
+
+...doconce format used 18.4 s to translate the document (435 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+
+*** error: inconsistent no of = in heading:
+=== Le code python (avec le module `pyfirmata`) =====
+    lengths: 3 and 5, must be equal and odd
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+
+*** error: inconsistent no of = in heading:
+=== Le code python (avec le module `pyfirmata`) =====
+    lengths: 3 and 5, must be equal and odd
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+
+...doconce translation: insertion of verbatim and latex blocks 15.8 s (accumulated time: 16.3)
+
+
+...doconce format used 17.3 s to translate the document (456 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+
+
+...doconce format used 15.4 s to translate the document (502 lines)
+
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDBlink.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDBlink.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDBlink.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDBlink.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+
+
+...doconce format used 15.6 s to translate the document (472 lines)
+
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb

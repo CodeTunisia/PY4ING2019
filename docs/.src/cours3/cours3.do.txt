@@ -1,0 +1,182 @@
+TITLE: Prototypage de projets Arduino en utilisant Python et PyQt5
+AUTHOR: Ahmed Ammar {copyright|CC BY} Email:ahmed.ammar@fst.utm.tn at Faculté des Sciences de Tunis, Université de Tunis El Manar.
+DATE: today
+
+TOC: on
+======= Introduction =======
+Arduino (URL:"https://www.arduino.cc/") est un microcontrôleur monté avec ses circuits d’entrée/sortie sur une petite carte électronique très pratique. Il est capable de mesurer des tensions, et donc d’acquérir des grandeurs physiques qui auront été traduites en tension électrique, comme un courant électrique, une température, une pression, une accélération, etc.
+
+FIGURE: [imgs/arduino_uno, width=400 frac=0.4] Arduino Uno Rev3 (URL:"https://store.arduino.cc/arduino-uno-rev3").
+
+Il est capable de générer des tensions (avec les voies PWM qui peuvent être utilisées en conversion numérique analogique) et donc de produire une information analogique, qui pourra être exploitée par une interface (un moteur, une LED, un outil). Il peut commander en tout ou rien (ON/OFF) un moteur ou un actionneur une machine ou une LED, par exemple. Et bien sur, il peut effectuer des traitements informatiques et mémoriser des données. Il a le bon goût d’être programmable en C.
+Son utilisation est très simple : vous chargez sur votre PC (ou Mac) l’IDE gratuit (URL:"https://www.arduino.cc/en/Main/Software") qui permet de le programmer, vous branchez la carte Arduino sur l’interface USB de votre PC (ou Mac), vous écrivez votre programme, vous le chargez dans l’Arduino et vous le lancez.
+
+En bref, il permet d’opérer sur le monde physique selon un modèle qui aura été programmé. L’Arduino est petit et simple, mais c’est un modèle presque parfait des systèmes de contrôle/commande de l’industrie. Enfin, signalons que l’Arduino, son hardware et son software sont entièrement libres : vous pouvez le bidouiller ou le reproduire autant que vous voulez, ou même en construire un vous-même !
+
+Le prix : une carte Arduino Uno Rev3 vaut 20 à 25 euros TTC.
+
+L’une des principales limites de l’IDE Arduino est sa capacité limitée à interagir avec l’utilisateur. Vous pouvez imprimer du texte dans une simple zone de texte du moniteur série ou obtenir une saisie de texte de l'utilisateur. Vous pouvez ouvrir un nouveau monde de possibilités en utilisant le langage de programmation python pour interagir avec l'Arduino. Python combiné avec Arduino est une combinaison puissante qui augmentera considérablement le facteur _WOW!_ de vos projets.
+
+======= Python et Arduino =======
+Python, C ++ et Java sont les langages de programmation les plus couramment utilisés pour apporter une idée novatrice à la réalité. Ce sont tous des langages de programmation très puissants. Récemment, les développeurs d’applications et de logiciels ont libéré la puissance de Python, principalement pour les applications pilotées par les données. Arduino ne fait pas exception à la règle puisque ce microcontrôleur, petit mais puissant, est conçu pour traiter des données en temps réel.
+
+===== Installation des packages `pyserial` et `pyfirmata` =====
+Les versions récentes d’Anaconda ne contiennent pas forcement les packages `pyserial` et `pyfirmata` dont nous allons avoir besoin pour communiquer avec Arduino.
+
+=== Installation de package `pyserial` ===
+
+Ce module encapsule l'accès pour le port série. Vous pouvez l’installer de différentes manières:
+
+__Depuis l’interface Anaconda Navigator (recommandé)__
+
+* Cliquer dans la fenêtre d’accueil sur le menu :Environments
+* Un menu déroulant en haut de la fenêtre indique par défaut : *installed*
+* Choisir *Not installed*
+* Sélectionner dans la liste le module `pysérial`.
+* Valider pour l’installation.
+
+FIGURE: [imgs/pyserial_navigator, width=600 frac=0.8] Installation de package `pyserial` depuis l'interface Anaconda Navigator.
+
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+Utiliser _Anaconda Prompt_ sur Windows ou bien utiliser le _terminal_ sur un MacOS ou Linux. Pour démarrer Anaconda Prompt sous Windows 10, cliquer sur le bouton Démarrer Windows en bas à gauche et sélectionner _Anaconda Prompt_.
+
+FIGURE: [imgs/anaconda_from_start_menu, width=300 frac=0.8]. Lancement d'Anaconda Prompt sous Windows 10.
+
+Entrer l'un des deux commandes d'installation des packages Python:
+* commande `conda`
+!bc
+conda install pyserial
+!ec
+* ou bien la commande `pip`
+!bc
+pip install pyserial
+!ec
+
+=== Installation de package `pyfirmata` ===
+pyfirmata (URL:"https://pypi.org/project/pyFirmata/") est une interface Python pour le protocole Firmata (URL:"http://firmata.org/wiki/Main_Page").
+
+La méthode d'installation préférée est avec `pip`:
+!bc
+pip install pyfirmata
+!ec
+
+===== Téléchargez l'IDE Arduino =====
+L'étape suivante consiste à télécharger l'Arduino IDE. IDE signifie "Environnement de Développement Intégré". L'IDE Arduino est un programme qui s'exécute sur votre ordinateur et qui permet de modifier le code Arduino. L'IDE Arduino est également utilisé pour compiler et charger du code d'extension `.ino` sur un Arduino.
+
+Téléchargez l'IDE Arduino en utilisant le lien suivant: URL: "https://www.arduino.cc/en/Main/Software"
+
+Faites défiler la page jusqu'à la section _"Download the Arduino IDE"_. Choisissez le fichier d'installation correspondant au système d'exploitation que vous utilisez (Windows, Mac OS X ou Linux). Vous pouvez choisir _"JUST DOWNLOAD"_ dans l'écran des dons.
+
+FIGURE: [imgs/downloadArd, width=600 frac=0.8] Téléchargez l'IDE Arduino.
+
+======= Exemple 1: Connectez une LED sur un pin (1 à 13) =======
+Dans cette section, vous allez apprendre à configurer des communications série entre un Arduino UNO et Python. En utilisant Python, nous allons créer des boutons pour envoyer des commandes à Arduino UNO pour allumer ou éteindre une LED. En retour, l'Arduino répondra par un message de confirmation indiquant que la LED est allumée ou éteinte.
+
+===== Montage =====
+
+Prenez une LED (de n'importe quelle couleur), une résistance de 220 Ohm, trois câbles de pontage (rouge, jaune et noir), l'Arduino et une plaque de montage. Raccorder la LED, la résistance et les fils de liaison colorés comme indiqué ci-dessous. Notez que la LED a deux "pattes" de tailles différentes. Assurez-vous que la voyant est branchée dans le bon sens. Le courant ne peut circuler que dans un sens par une LED.
+
+FIGURE: [imgs/Blink1_bb, width=600 frac=0.8] Montage Arduino avec une LED et une résistance.
+
+===== Trouver le numéro de port sous Windows =====
+
+o Ouvrez le _Gestionnaire de périphériques_ et développez la liste des ports (COM et LPT).
+o Notez le numéro sur le port série USB
+
+FIGURE: [imgs/win_dev_mngr_port, width=300 frac=0.8] Numéro de port Arduino sur Windows. Ici c'est `COM3`
+
+===== Trouver le numéro de port sur Linux =====
+
+o Ouvrez le terminal et tapez: `ls/dev/tty*`
+o Notez le numéro de port indiqué pour `/dev/ttyUSB*` ou `/dev/ttyACM*`. Le numéro de port est représenté avec `*` ici.
+
+FIGURE: [imgs/COM_Linux, width=500 frac=0.8] Numéro de port Arduino sur Linux. Ici c'est `/dev/ttyACM0`
+
+Une astuce pour récupérer votre chemin vers le port série est de regarder dans l’environnement Arduino dans le menu *Outils/Port*.
+
+FIGURE: [imgs/com_menu, width=500 frac=0.8] Chemin du port série sur une machine Linux dans le menu *Outils/Port*
+
+===== Le code Arduino =====
+Avant de charger le code, assurez-vous d’avoir sélectionné un port COM dans l’option. Ce port COM sélectionné sera utilisé dans le développement, en particulier avec le code python. De plus, nous devrons prendre en compte le débit en bauds (baud rate) utilisé dans le développement.
+
+Nous allons d’abord écrire un programme simple pour Arduino. L’idée du programme est la suivante: Arduino UNO, qui est connecté à un ordinateur, recherche les données série et, en fonction des données reçues du port série, allume ou éteint le voyant.
+
+Le programme Arduino pour l’interfaçage d’Arduino avec python est donné ci-dessous.
+!bc ccod
+const int led=13;
+int value=0;
+
+void setup()
+   {
+      Serial.begin(9600);
+      pinMode(led, OUTPUT);
+      digitalWrite (led, LOW);
+      Serial.println("Connection established...");
+   }
+
+void loop()
+   {
+     while (Serial.available())
+        {
+           value = Serial.read();
+        }
+
+     if (value == '1')
+        digitalWrite (led, HIGH);
+
+     else if (value == '0')
+        digitalWrite (led, LOW);
+   }
+!ec
+
+===== Le code python (avec le module `pyserial`) =====
+
+@@@CODE scripts/LEDSerial.py
+
+!bwarning
+Vous pouvez rencontrer l’erreur suivante lorsque vous exécutez le code python sur votre machine Linux (ou Raspberry) pour la première fois: `OSError: [Errno 13] Permission denied: '/dev/ttyACM0'`
+
+Pour résoudre ce problème
+o modifier les autorisations sur `/dev/ttyACM0` afin que "world" dispose des privilèges de lecture et d'écriture (ce que vous ne voudrez peut-être pas faire) - bien que vous puissiez constater qu'ils sont réinitialisés chaque fois que le périphérique est branché, tapez par exemple sur le terminal: `sudo chmod 666 /dev/ttyACM0`
+
+o Créez une règle dans `/etc/udev/rules.d` qui définira les autorisations du périphérique (un redémarrage sera requis):
+!bc shell
+# navigate to rules.d directory
+cd /etc/udev/rules.d
+#create a new rule file
+sudo touch my-newrule.rules
+# open the file
+sudo vim my-newrule.rules
+# add the following
+KERNEL=="ttyACM0", MODE="0666"
+!ec
+Cela définit également des autorisations pour le monde en lecture et en écriture, ce que vous ne voudrez peut-être pas faire.
+
+_Solution par:_ *user1063287* sur le site Stack Overflow: URL:"https://stackoverflow.com/questions/27858041/oserror-errno-13-permission-denied-dev-ttyacm0-using-pyserial-from-pyth"
+!ewarning
+
+Chargez le code Arduino sur l’Arduino UNO. Notez le port COM auquel il est connecté. Le même numéro de port COM doit être indiqué dans le code Python.
+
+Après avoir chargé le code sur Arduino, lancez le programme Python sur l'IDE Spyder. La console Ipython va afficher le message "Connexion établie" et "Entrez 1 pour allumée la LED et 0 pour l'éteindre".
+
+===== Firmata protocol =====
+Firmata est un protocole générique permettant la communication entre un microcontrôleur et un logiciel. Dans notre cas, Firmata nous permet de communiquer Arduino avec Python.
+
+=== Firmata Test ===
+Un moyen rapide et facile de tester le protocole Firmata immédiatement est de télécharger le programme _Firmata Test_ sur le site Web officiel: URL:"http://www.firmata.org/wiki/Main_Page"
+
+FIGURE: [imgs/Firmata_Test, width=300 frac=0.8]
+
+Pour Windows 10, vous pouvez installer _Windows Remote Arduino Experience_: URL:"https://www.microsoft.com/store/apps/9nblggh2041m"
+
+FIGURE: [imgs/WindowsRemoteArduinoExperience, width=500 frac=0.8]
+
+Ces outils nous permet de communiquer facilement et rapidement avec toutes les pins d’Arduino.
+
+=== Le code python (avec le module `pyfirmata`) ===
+
+@@@CODE scripts/LEDBlink.py
+
+=== Application PyQt5 (avec le module `pyfirmata`) ===
+
+FIGURE: [imgs/LEDON, width=600 frac=0.8]
