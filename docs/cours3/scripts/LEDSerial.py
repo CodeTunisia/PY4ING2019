@@ -16,11 +16,11 @@ while 1:
     # si la donnée entrée est 1
     if (input_data == '1'):
         # envoyer 1 à arduino               
-        Arduino_Serial.write(str.encode('1'))
+        Arduino_Serial.write('1')
         print("LED ON")
 
     # si la donnée entrée est 0
     if (input_data == '0'):    
         # envoyer 0 à arduino                
-        Arduino_Serial.write(str.encode('0'))
+        Arduino_Serial.write('0')
         print("LED OFF")
