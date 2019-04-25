@@ -211,11 +211,7 @@ end of tocinfo -->
 <center><b>Facult&#233; des Sciences de Tunis, Universit&#233; de Tunis El Manar.</b></center>
 <br>
 <p>
-<<<<<<< HEAD
-<center><h4>Apr 10, 2019</h4></center> <!-- date -->
-=======
 <center><h4>Apr 25, 2019</h4></center> <!-- date -->
->>>>>>> 64d6542ea76ba7e3868c7d3e4d7f4298c6c90a19
 <br>
 <p>
 </div> <!-- end jumbotron -->
@@ -642,7 +638,7 @@ Le script pr&#233;sent&#233; ci-dessous utilise PyQt5, qui semble &#234;tre la s
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">__init__</span>(<span style="color: #008000">self</span>):
         QMainWindow<span style="color: #666666">.</span><span style="color: #0000FF">__init__</span>(<span style="color: #008000">self</span>)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>setupUi(<span style="color: #008000">self</span>)
-        <span style="color: #008000">self</span><span style="color: #666666">.</span>PIN <span style="color: #666666">=</span> <span style="color: #666666">13</span> <span style="color: #408080; font-style: italic"># Pin 13 est utilisÃ©</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>PIN <span style="color: #666666">=</span> <span style="color: #666666">13</span> <span style="color: #408080; font-style: italic"># Pin 13 est utilisé</span>
         PORT <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;COM3&#39;</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>board <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>Arduino(PORT)
     <span style="color: #408080; font-style: italic"># Ajouter des signaux</span>
@@ -752,14 +748,14 @@ port <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;COM
  
 board <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>Arduino(port)
 
-LEDpin <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;d:11:p&#39;</span>) <span style="color: #408080; font-style: italic">## d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
+LEDpin <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;d:11:p&#39;</span>) <span style="color: #408080; font-style: italic">## d = digital, 11 = numéro de la pin, p = PWM</span>
 
 <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;-------------- CONTROLE DE LEDS ----------------&quot;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;En tout temps, vous pouvez quitter le programme en rÃ©pondant par &#39;q&#39;.&quot;</span>)
+<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;En tout temps, vous pouvez quitter le programme en répondant par &#39;q&#39;.&quot;</span>)
 
 <span style="color: #008000; font-weight: bold">while</span> <span style="color: #008000">True</span>:  
-    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;LuminositÃ© dÃ©sirÃ©e pour la LED:&quot;</span>)
-    luminosite <span style="color: #666666">=</span> <span style="color: #008000">input</span>(<span style="color: #BA2121">&quot;De 0 Ã  100 (ou q):  &quot;</span>)
+    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Luminosité désirée pour la LED:&quot;</span>)
+    luminosite <span style="color: #666666">=</span> <span style="color: #008000">input</span>(<span style="color: #BA2121">&quot;De 0 à 100 (ou q):  &quot;</span>)
     <span style="color: #008000; font-weight: bold">if</span> (luminosite <span style="color: #666666">==</span> <span style="color: #BA2121">&#39;q&#39;</span>):
         board<span style="color: #666666">.</span>exit();
         <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Au revoir!&quot;</span>)
@@ -812,14 +808,14 @@ Le code python principal dans ce cas deviendra,
         PORT <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;COM3&#39;</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>board <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>Arduino(PORT)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>LEDpin <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;d:11:p&#39;</span>) 
-        <span style="color: #408080; font-style: italic">## d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
+        <span style="color: #408080; font-style: italic">## d = digital, 11 = numéro de la pin, p = PWM</span>
 
         
     <span style="color: #408080; font-style: italic"># Ajouter des signaux</span>
     <span style="color: #AA22FF">@pyqtSlot</span>(<span style="color: #008000">int</span>)
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">on_pwm_valueChanged</span>(<span style="color: #008000">self</span>, value):
         <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
-<span style="color: #BA2121; font-style: italic">        mettre Ã  jour la valeur</span>
+<span style="color: #BA2121; font-style: italic">        mettre à jour la valeur</span>
 <span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>board<span style="color: #666666">.</span>digital[<span style="color: #008000">self</span><span style="color: #666666">.</span>LEDpin<span style="color: #666666">.</span>pin_number]<span style="color: #666666">.</span>write(value<span style="color: #666666">/100.0</span>)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>lcd<span style="color: #666666">.</span>display(value)
@@ -905,14 +901,14 @@ port <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;COM
 <span style="color: #408080; font-style: italic">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
 board <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>Arduino(port)
 
-it <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>util<span style="color: #666666">.</span>Iterator(board)  <span style="color: #408080; font-style: italic"># itÃ©rateur permet de ne pas engorger </span>
-                                     <span style="color: #408080; font-style: italic"># la communication sÃ©rie</span>
+it <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>util<span style="color: #666666">.</span>Iterator(board)  <span style="color: #408080; font-style: italic"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #408080; font-style: italic"># la communication série</span>
 it<span style="color: #666666">.</span>start()
 
-pinA0 <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;a:0:i&#39;</span>)   <span style="color: #408080; font-style: italic"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
+pinA0 <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;a:0:i&#39;</span>)   <span style="color: #408080; font-style: italic"># a = analogique, 0 = numéro de la pin, i = input.</span>
 
 <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;#-----------------------------&#39;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;#  Lecture de l&#39;entrÃ©e analogique A0 de l&#39;Arduino &quot;</span>)
+<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;#  Lecture de l&#39;entrée analogique A0 de l&#39;Arduino &quot;</span>)
 <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;#-----------------------------&#39;</span>)
 
 <span style="color: #008000; font-weight: bold">while</span> <span style="color: #008000">True</span>:
@@ -988,26 +984,26 @@ port <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;COM
 <span style="color: #408080; font-style: italic">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
 board <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>Arduino(port)
 
-it <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>util<span style="color: #666666">.</span>Iterator(board)  <span style="color: #408080; font-style: italic"># itÃ©rateur permet de ne pas engorger </span>
-                                     <span style="color: #408080; font-style: italic"># la communication sÃ©rie</span>
+it <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>util<span style="color: #666666">.</span>Iterator(board)  <span style="color: #408080; font-style: italic"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #408080; font-style: italic"># la communication série</span>
 it<span style="color: #666666">.</span>start()
 
-pinA0 <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;a:0:i&#39;</span>)   <span style="color: #408080; font-style: italic"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
+pinA0 <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;a:0:i&#39;</span>)   <span style="color: #408080; font-style: italic"># a = analogique, 0 = numéro de la pin, i = input.</span>
 
-<span style="color: #408080; font-style: italic"># Nom du fichier Ã  Ã©crire</span>
+<span style="color: #408080; font-style: italic"># Nom du fichier à écrire</span>
 filename <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Data.txt&quot;</span>
-<span style="color: #408080; font-style: italic"># Ouvrir le fichier avec une permission d&#39;Ã©criture</span>
+<span style="color: #408080; font-style: italic"># Ouvrir le fichier avec une permission d&#39;écriture</span>
 myfile <span style="color: #666666">=</span> <span style="color: #008000">open</span>(filename, <span style="color: #BA2121">&#39;w&#39;</span>)
 <span style="color: #408080; font-style: italic"># Ecrire une ligne dans le fichier</span>
-myfile<span style="color: #666666">.</span>write(<span style="color: #BA2121">&quot;#  Lecture de l&#39;entrÃ©e analogique A0 de l&#39;Arduino </span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>)
+myfile<span style="color: #666666">.</span>write(<span style="color: #BA2121">&quot;#  Lecture de l&#39;entrée analogique A0 de l&#39;Arduino </span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>)
              
 <span style="color: #008000; font-weight: bold">while</span> <span style="color: #008000">True</span>:
     <span style="color: #008000; font-weight: bold">try</span>:
         time<span style="color: #666666">.</span>sleep(<span style="color: #666666">1</span>)  <span style="color: #408080; font-style: italic"># Pause d&#39;une seconde avant la prochaine mesure</span>
         valeur <span style="color: #666666">=</span> pinA0<span style="color: #666666">.</span>read()     <span style="color: #408080; font-style: italic"># la valeur varie entre 0 et 1.</span>
         <span style="color: #008000; font-weight: bold">print</span>(valeur)
-        myfile<span style="color: #666666">.</span>write(<span style="color: #008000">str</span>(valeur) <span style="color: #666666">+</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>) <span style="color: #408080; font-style: italic"># Ã©crire la valeur dans le fichier</span>
-                                         <span style="color: #408080; font-style: italic"># et retourner Ã  la nouvelle ligne</span>
+        myfile<span style="color: #666666">.</span>write(<span style="color: #008000">str</span>(valeur) <span style="color: #666666">+</span> <span style="color: #BA2121">&quot;</span><span style="color: #BB6622; font-weight: bold">\n</span><span style="color: #BA2121">&quot;</span>) <span style="color: #408080; font-style: italic"># écrire la valeur dans le fichier</span>
+                                         <span style="color: #408080; font-style: italic"># et retourner à la nouvelle ligne</span>
     <span style="color: #008000; font-weight: bold">except</span> <span style="color: #D2413A; font-weight: bold">KeyboardInterrupt</span>:
           board<span style="color: #666666">.</span>exit()
           myfile<span style="color: #666666">.</span>close()
@@ -1030,7 +1026,7 @@ pData <span style="color: #666666">=</span> np<span style="color: #666666">.</sp
 fig <span style="color: #666666">=</span> plt<span style="color: #666666">.</span>figure()
 plt<span style="color: #666666">.</span>plot(pData, <span style="color: #BA2121">&quot;-r*&quot;</span>)
 plt<span style="color: #666666">.</span>xlabel(<span style="color: #BA2121">&quot;Temps [s]&quot;</span>)
-plt<span style="color: #666666">.</span>ylabel(<span style="color: #BA2121">&quot;Valeurs du potentiomÃ¨tre&quot;</span>)
+plt<span style="color: #666666">.</span>ylabel(<span style="color: #BA2121">&quot;Valeurs du potentiomètre&quot;</span>)
 plt<span style="color: #666666">.</span>grid()
 plt<span style="color: #666666">.</span>show()
 </pre></div>
@@ -1059,15 +1055,15 @@ port <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;COM
 <span style="color: #408080; font-style: italic">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
 board <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>Arduino(port)
 
-it <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>util<span style="color: #666666">.</span>Iterator(board)  <span style="color: #408080; font-style: italic"># itÃ©rateur permet de ne pas engorger </span>
-                                     <span style="color: #408080; font-style: italic"># la communication sÃ©rie</span>
+it <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>util<span style="color: #666666">.</span>Iterator(board)  <span style="color: #408080; font-style: italic"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #408080; font-style: italic"># la communication série</span>
 it<span style="color: #666666">.</span>start()
 
-pinA0 <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;a:0:i&#39;</span>)   <span style="color: #408080; font-style: italic"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
-LEDpin <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;d:11:p&#39;</span>) <span style="color: #408080; font-style: italic"># d = digital, 11 = numÃƒÂ©ro de la pin, p = PWM</span>
+pinA0 <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;a:0:i&#39;</span>)   <span style="color: #408080; font-style: italic"># a = analogique, 0 = numéro de la pin, i = input.</span>
+LEDpin <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;d:11:p&#39;</span>) <span style="color: #408080; font-style: italic"># d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
 
 <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;#-----------------------------&#39;</span>)
-<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;#  Lecture de l&#39;entrÃ©e analogique A0 de l&#39;Arduino &quot;</span>)
+<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;#  Lecture de l&#39;entrée analogique A0 de l&#39;Arduino &quot;</span>)
 <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;#-----------------------------&#39;</span>)
 
 <span style="color: #008000; font-weight: bold">while</span> <span style="color: #008000">True</span>:
@@ -1099,16 +1095,16 @@ port <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;COM
 <span style="color: #408080; font-style: italic">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
 board <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>Arduino(port)
 
-it <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>util<span style="color: #666666">.</span>Iterator(board)  <span style="color: #408080; font-style: italic"># itÃ©rateur permet de ne pas engorger </span>
-                                     <span style="color: #408080; font-style: italic"># la communication sÃ©rie</span>
+it <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>util<span style="color: #666666">.</span>Iterator(board)  <span style="color: #408080; font-style: italic"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #408080; font-style: italic"># la communication série</span>
 it<span style="color: #666666">.</span>start()
 
-pinA0 <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;a:0:i&#39;</span>)   <span style="color: #408080; font-style: italic"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
-LEDpin <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;d:11:p&#39;</span>) <span style="color: #408080; font-style: italic"># d = digital, 11 = numÃƒÂ©ro de la pin, p = PWM</span>
+pinA0 <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;a:0:i&#39;</span>)   <span style="color: #408080; font-style: italic"># a = analogique, 0 = numéro de la pin, i = input.</span>
+LEDpin <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;d:11:p&#39;</span>) <span style="color: #408080; font-style: italic"># d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
 
-<span style="color: #408080; font-style: italic"># PrÃ©parer la figure (matplotlib)</span>
+<span style="color: #408080; font-style: italic"># Préparer la figure (matplotlib)</span>
 plt<span style="color: #666666">.</span>ion() <span style="color: #408080; font-style: italic"># Activer le mode interactif</span>
-fig <span style="color: #666666">=</span> plt<span style="color: #666666">.</span>figure() <span style="color: #408080; font-style: italic"># crÃ©er une figure</span>
+fig <span style="color: #666666">=</span> plt<span style="color: #666666">.</span>figure() <span style="color: #408080; font-style: italic"># créer une figure</span>
 pData <span style="color: #666666">=</span> [<span style="color: #666666">0</span>] <span style="color: #666666">*</span> <span style="color: #666666">25</span>    <span style="color: #408080; font-style: italic"># initiliser par une liste de 25 valeurs = 0</span>
 l1, <span style="color: #666666">=</span> plt<span style="color: #666666">.</span>plot(pData, <span style="color: #BA2121">&quot;-r*&quot;</span>) <span style="color: #408080; font-style: italic"># tracer les pData initialement des 0</span>
 plt<span style="color: #666666">.</span>ylim((<span style="color: #666666">-0.1</span>, <span style="color: #666666">1.1</span>))
@@ -1122,14 +1118,14 @@ i <span style="color: #666666">=</span> <span style="color: #666666">0</span>
           i <span style="color: #666666">+=1</span>
           <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;Temps = </span><span style="color: #BB6688; font-weight: bold">%s</span><span style="color: #BA2121"> s; valeur = </span><span style="color: #BB6688; font-weight: bold">% s</span><span style="color: #BA2121"> &quot;</span> <span style="color: #666666">%</span>(i, valeur))
           
-          pData<span style="color: #666666">.</span>append(valeur) <span style="color: #408080; font-style: italic"># ajouter la valeur Ã  la fin de la liste</span>
-          <span style="color: #008000; font-weight: bold">del</span> pData[<span style="color: #666666">0</span>] <span style="color: #408080; font-style: italic"># effacer le premier Ã©liment de la liste </span>
+          pData<span style="color: #666666">.</span>append(valeur) <span style="color: #408080; font-style: italic"># ajouter la valeur à la fin de la liste</span>
+          <span style="color: #008000; font-weight: bold">del</span> pData[<span style="color: #666666">0</span>] <span style="color: #408080; font-style: italic"># effacer le premier éliment de la liste </span>
           <span style="color: #408080; font-style: italic"># update plot</span>
           l1<span style="color: #666666">.</span>set_xdata([i <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">25</span>)])
           plt<span style="color: #666666">.</span>pause(<span style="color: #666666">0.0001</span>) <span style="color: #408080; font-style: italic"># assurez-vous de faire une pause sinon il va planter</span>
           l1<span style="color: #666666">.</span>set_ydata(pData)
           plt<span style="color: #666666">.</span>pause(<span style="color: #666666">0.0001</span>) <span style="color: #408080; font-style: italic"># assurez-vous de faire une pause sinon il va planter</span>
-          plt<span style="color: #666666">.</span>title(<span style="color: #BA2121">&quot;PotentiomÃ¨tre en temps rÃ©el (t = </span><span style="color: #BB6688; font-weight: bold">%s</span><span style="color: #BA2121"> s)&quot;</span><span style="color: #666666">%</span>i)
+          plt<span style="color: #666666">.</span>title(<span style="color: #BA2121">&quot;Potentiomètre en temps réel (t = </span><span style="color: #BB6688; font-weight: bold">%s</span><span style="color: #BA2121"> s)&quot;</span><span style="color: #666666">%</span>i)
           plt<span style="color: #666666">.</span>draw()
           
           board<span style="color: #666666">.</span>digital[LEDpin<span style="color: #666666">.</span>pin_number]<span style="color: #666666">.</span>write(valeur)
@@ -1190,25 +1186,25 @@ Une interface graphique se lancera et vous guidera dans les diff&#233;rents exem
         port <span style="color: #666666">=</span> <span style="color: #BA2121">&#39;COM3&#39;</span> <span style="color: #408080; font-style: italic">#windows</span>
         <span style="color: #408080; font-style: italic">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
         board <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>Arduino(port)
-        it <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>util<span style="color: #666666">.</span>Iterator(board)  <span style="color: #408080; font-style: italic"># itÃ©rateur permet de ne pas engorger </span>
-                                     <span style="color: #408080; font-style: italic"># la communication sÃ©rie</span>
+        it <span style="color: #666666">=</span> pyfirmata<span style="color: #666666">.</span>util<span style="color: #666666">.</span>Iterator(board)  <span style="color: #408080; font-style: italic"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #408080; font-style: italic"># la communication série</span>
         it<span style="color: #666666">.</span>start()
         
-        <span style="color: #008000">self</span><span style="color: #666666">.</span>pinA0 <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;a:0:i&#39;</span>)   <span style="color: #408080; font-style: italic"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
-        LEDpin <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;d:11:p&#39;</span>) <span style="color: #408080; font-style: italic"># d = digital, 11 = numÃƒÂ©ro de la pin, p = PWM</span>
+        <span style="color: #008000">self</span><span style="color: #666666">.</span>pinA0 <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;a:0:i&#39;</span>)   <span style="color: #408080; font-style: italic"># a = analogique, 0 = numéro de la pin, i = input.</span>
+        LEDpin <span style="color: #666666">=</span> board<span style="color: #666666">.</span>get_pin(<span style="color: #BA2121">&#39;d:11:p&#39;</span>) <span style="color: #408080; font-style: italic"># d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
         <span style="color: #008000">self</span><span style="color: #666666">.</span>pyqtgraph<span style="color: #666666">.</span>plotItem<span style="color: #666666">.</span>showGrid(<span style="color: #008000">True</span>, <span style="color: #008000">True</span>, <span style="color: #666666">0.7</span>)
         <span style="color: #008000">self</span><span style="color: #666666">.</span>update()
         
     <span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">update</span>(<span style="color: #008000">self</span>):
         <span style="color: #BA2121; font-style: italic">&#39;&#39;&#39;</span>
-<span style="color: #BA2121; font-style: italic">        mettre Ã  jour la valeur</span>
+<span style="color: #BA2121; font-style: italic">        mettre à jour la valeur</span>
 <span style="color: #BA2121; font-style: italic">        &#39;&#39;&#39;</span>
         time<span style="color: #666666">.</span>sleep(<span style="color: #666666">1</span>)
         valeur <span style="color: #666666">=</span> <span style="color: #008000">self</span><span style="color: #666666">.</span>pinA0<span style="color: #666666">.</span>read()
         <span style="color: #008000">self</span><span style="color: #666666">.</span>lcd<span style="color: #666666">.</span>display(valeur)
         pData <span style="color: #666666">=</span> [<span style="color: #666666">0</span>] <span style="color: #666666">*</span> <span style="color: #666666">25</span>    <span style="color: #408080; font-style: italic"># initiliser par une liste de 25 valeurs = 0</span>
-        pData<span style="color: #666666">.</span>append(valeur) <span style="color: #408080; font-style: italic"># ajouter la valeur Ã  la fin de la liste</span>
-        <span style="color: #008000; font-weight: bold">del</span> pData[<span style="color: #666666">0</span>] <span style="color: #408080; font-style: italic"># effacer le premier Ã©liment de la liste </span>
+        pData<span style="color: #666666">.</span>append(valeur) <span style="color: #408080; font-style: italic"># ajouter la valeur à la fin de la liste</span>
+        <span style="color: #008000; font-weight: bold">del</span> pData[<span style="color: #666666">0</span>] <span style="color: #408080; font-style: italic"># effacer le premier éliment de la liste </span>
         xData <span style="color: #666666">=</span> [i <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">25</span>)]
         C<span style="color: #666666">=</span>pyqtgraph<span style="color: #666666">.</span>hsvColor(<span style="color: #666666">0.95</span>,alpha<span style="color: #666666">=.9</span>)
         pen<span style="color: #666666">=</span>pyqtgraph<span style="color: #666666">.</span>mkPen(color<span style="color: #666666">=</span>C,width<span style="color: #666666">=3</span>)

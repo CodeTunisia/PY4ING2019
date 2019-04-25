@@ -168,11 +168,7 @@ end of tocinfo -->
 <center><b>Facult&#233; des Sciences de Tunis, Universit&#233; de Tunis El Manar.</b></center>
 <br>
 <p>
-<<<<<<< HEAD
-<center><h4>Apr 10, 2019</h4></center> <!-- date -->
-=======
 <center><h4>Apr 25, 2019</h4></center> <!-- date -->
->>>>>>> 64d6542ea76ba7e3868c7d3e4d7f4298c6c90a19
 <br>
 
 <h1 id="table_of_contents">Table des matières</h2>
@@ -589,7 +585,7 @@ Le script pr&#233;sent&#233; ci-dessous utilise PyQt5, qui semble &#234;tre la s
     <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>):
         QMainWindow.<span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>)
         <span style="color: #658b00">self</span>.setupUi(<span style="color: #658b00">self</span>)
-        <span style="color: #658b00">self</span>.PIN = <span style="color: #B452CD">13</span> <span style="color: #228B22"># Pin 13 est utilisÃ©</span>
+        <span style="color: #658b00">self</span>.PIN = <span style="color: #B452CD">13</span> <span style="color: #228B22"># Pin 13 est utilisé</span>
         PORT = <span style="color: #CD5555">&#39;COM3&#39;</span>
         <span style="color: #658b00">self</span>.board = pyfirmata.Arduino(PORT)
     <span style="color: #228B22"># Ajouter des signaux</span>
@@ -699,14 +695,14 @@ port = <span style="color: #CD5555">&#39;COM3&#39;</span>            <span style
  
 board = pyfirmata.Arduino(port)
 
-LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22">## d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
+LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22">## d = digital, 11 = numéro de la pin, p = PWM</span>
 
 <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;-------------- CONTROLE DE LEDS ----------------&quot;</span>)
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;En tout temps, vous pouvez quitter le programme en rÃ©pondant par &#39;q&#39;.&quot;</span>)
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;En tout temps, vous pouvez quitter le programme en répondant par &#39;q&#39;.&quot;</span>)
 
 <span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #658b00">True</span>:  
-    <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;LuminositÃ© dÃ©sirÃ©e pour la LED:&quot;</span>)
-    luminosite = <span style="color: #658b00">input</span>(<span style="color: #CD5555">&quot;De 0 Ã  100 (ou q):  &quot;</span>)
+    <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Luminosité désirée pour la LED:&quot;</span>)
+    luminosite = <span style="color: #658b00">input</span>(<span style="color: #CD5555">&quot;De 0 à 100 (ou q):  &quot;</span>)
     <span style="color: #8B008B; font-weight: bold">if</span> (luminosite == <span style="color: #CD5555">&#39;q&#39;</span>):
         board.exit();
         <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Au revoir!&quot;</span>)
@@ -759,14 +755,14 @@ Le code python principal dans ce cas deviendra,
         PORT = <span style="color: #CD5555">&#39;COM3&#39;</span>
         <span style="color: #658b00">self</span>.board = pyfirmata.Arduino(PORT)
         <span style="color: #658b00">self</span>.LEDpin = <span style="color: #658b00">self</span>.board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) 
-        <span style="color: #228B22">## d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
+        <span style="color: #228B22">## d = digital, 11 = numéro de la pin, p = PWM</span>
 
         
     <span style="color: #228B22"># Ajouter des signaux</span>
     <span style="color: #707a7c">@pyqtSlot</span>(<span style="color: #658b00">int</span>)
     <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_pwm_valueChanged</span>(<span style="color: #658b00">self</span>, value):
         <span style="color: #CD5555">&#39;&#39;&#39;</span>
-<span style="color: #CD5555">        mettre Ã  jour la valeur</span>
+<span style="color: #CD5555">        mettre à jour la valeur</span>
 <span style="color: #CD5555">        &#39;&#39;&#39;</span>
         <span style="color: #658b00">self</span>.board.digital[<span style="color: #658b00">self</span>.LEDpin.pin_number].write(value/<span style="color: #B452CD">100.0</span>)
         <span style="color: #658b00">self</span>.lcd.display(value)
@@ -844,14 +840,14 @@ port = <span style="color: #CD5555">&#39;COM3&#39;</span> <span style="color: #2
 <span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
 board = pyfirmata.Arduino(port)
 
-it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itÃ©rateur permet de ne pas engorger </span>
-                                     <span style="color: #228B22"># la communication sÃ©rie</span>
+it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #228B22"># la communication série</span>
 it.start()
 
-pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
+pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numéro de la pin, i = input.</span>
 
 <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&#39;#-----------------------------&#39;</span>)
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;#  Lecture de l&#39;entrÃ©e analogique A0 de l&#39;Arduino &quot;</span>)
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;#  Lecture de l&#39;entrée analogique A0 de l&#39;Arduino &quot;</span>)
 <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&#39;#-----------------------------&#39;</span>)
 
 <span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #658b00">True</span>:
@@ -923,26 +919,26 @@ port = <span style="color: #CD5555">&#39;COM3&#39;</span> <span style="color: #2
 <span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
 board = pyfirmata.Arduino(port)
 
-it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itÃ©rateur permet de ne pas engorger </span>
-                                     <span style="color: #228B22"># la communication sÃ©rie</span>
+it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #228B22"># la communication série</span>
 it.start()
 
-pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
+pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numéro de la pin, i = input.</span>
 
-<span style="color: #228B22"># Nom du fichier Ã  Ã©crire</span>
+<span style="color: #228B22"># Nom du fichier à écrire</span>
 filename = <span style="color: #CD5555">&quot;Data.txt&quot;</span>
-<span style="color: #228B22"># Ouvrir le fichier avec une permission d&#39;Ã©criture</span>
+<span style="color: #228B22"># Ouvrir le fichier avec une permission d&#39;écriture</span>
 myfile = <span style="color: #658b00">open</span>(filename, <span style="color: #CD5555">&#39;w&#39;</span>)
 <span style="color: #228B22"># Ecrire une ligne dans le fichier</span>
-myfile.write(<span style="color: #CD5555">&quot;#  Lecture de l&#39;entrÃ©e analogique A0 de l&#39;Arduino \n&quot;</span>)
+myfile.write(<span style="color: #CD5555">&quot;#  Lecture de l&#39;entrée analogique A0 de l&#39;Arduino \n&quot;</span>)
              
 <span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #658b00">True</span>:
     <span style="color: #8B008B; font-weight: bold">try</span>:
         time.sleep(<span style="color: #B452CD">1</span>)  <span style="color: #228B22"># Pause d&#39;une seconde avant la prochaine mesure</span>
         valeur = pinA0.read()     <span style="color: #228B22"># la valeur varie entre 0 et 1.</span>
         <span style="color: #8B008B; font-weight: bold">print</span>(valeur)
-        myfile.write(<span style="color: #658b00">str</span>(valeur) + <span style="color: #CD5555">&quot;\n&quot;</span>) <span style="color: #228B22"># Ã©crire la valeur dans le fichier</span>
-                                         <span style="color: #228B22"># et retourner Ã  la nouvelle ligne</span>
+        myfile.write(<span style="color: #658b00">str</span>(valeur) + <span style="color: #CD5555">&quot;\n&quot;</span>) <span style="color: #228B22"># écrire la valeur dans le fichier</span>
+                                         <span style="color: #228B22"># et retourner à la nouvelle ligne</span>
     <span style="color: #8B008B; font-weight: bold">except</span> <span style="color: #008b45; font-weight: bold">KeyboardInterrupt</span>:
           board.exit()
           myfile.close()
@@ -965,7 +961,7 @@ pData = np.loadtxt(<span style="color: #CD5555">&quot;Data.txt&quot;</span>, com
 fig = plt.figure()
 plt.plot(pData, <span style="color: #CD5555">&quot;-r*&quot;</span>)
 plt.xlabel(<span style="color: #CD5555">&quot;Temps [s]&quot;</span>)
-plt.ylabel(<span style="color: #CD5555">&quot;Valeurs du potentiomÃ¨tre&quot;</span>)
+plt.ylabel(<span style="color: #CD5555">&quot;Valeurs du potentiomètre&quot;</span>)
 plt.grid()
 plt.show()
 </pre></div>
@@ -994,15 +990,15 @@ port = <span style="color: #CD5555">&#39;COM3&#39;</span> <span style="color: #2
 <span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
 board = pyfirmata.Arduino(port)
 
-it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itÃ©rateur permet de ne pas engorger </span>
-                                     <span style="color: #228B22"># la communication sÃ©rie</span>
+it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #228B22"># la communication série</span>
 it.start()
 
-pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
-LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22"># d = digital, 11 = numÃƒÂ©ro de la pin, p = PWM</span>
+pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numéro de la pin, i = input.</span>
+LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22"># d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
 
 <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&#39;#-----------------------------&#39;</span>)
-<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;#  Lecture de l&#39;entrÃ©e analogique A0 de l&#39;Arduino &quot;</span>)
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;#  Lecture de l&#39;entrée analogique A0 de l&#39;Arduino &quot;</span>)
 <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&#39;#-----------------------------&#39;</span>)
 
 <span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #658b00">True</span>:
@@ -1034,16 +1030,16 @@ port = <span style="color: #CD5555">&#39;COM3&#39;</span> <span style="color: #2
 <span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
 board = pyfirmata.Arduino(port)
 
-it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itÃ©rateur permet de ne pas engorger </span>
-                                     <span style="color: #228B22"># la communication sÃ©rie</span>
+it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #228B22"># la communication série</span>
 it.start()
 
-pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
-LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22"># d = digital, 11 = numÃƒÂ©ro de la pin, p = PWM</span>
+pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numéro de la pin, i = input.</span>
+LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22"># d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
 
-<span style="color: #228B22"># PrÃ©parer la figure (matplotlib)</span>
+<span style="color: #228B22"># Préparer la figure (matplotlib)</span>
 plt.ion() <span style="color: #228B22"># Activer le mode interactif</span>
-fig = plt.figure() <span style="color: #228B22"># crÃ©er une figure</span>
+fig = plt.figure() <span style="color: #228B22"># créer une figure</span>
 pData = [<span style="color: #B452CD">0</span>] * <span style="color: #B452CD">25</span>    <span style="color: #228B22"># initiliser par une liste de 25 valeurs = 0</span>
 l1, = plt.plot(pData, <span style="color: #CD5555">&quot;-r*&quot;</span>) <span style="color: #228B22"># tracer les pData initialement des 0</span>
 plt.ylim((-<span style="color: #B452CD">0.1</span>, <span style="color: #B452CD">1.1</span>))
@@ -1057,14 +1053,14 @@ i = <span style="color: #B452CD">0</span>
           i +=<span style="color: #B452CD">1</span>
           <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Temps = %s s; valeur = % s &quot;</span> %(i, valeur))
           
-          pData.append(valeur) <span style="color: #228B22"># ajouter la valeur Ã  la fin de la liste</span>
-          <span style="color: #8B008B; font-weight: bold">del</span> pData[<span style="color: #B452CD">0</span>] <span style="color: #228B22"># effacer le premier Ã©liment de la liste </span>
+          pData.append(valeur) <span style="color: #228B22"># ajouter la valeur à la fin de la liste</span>
+          <span style="color: #8B008B; font-weight: bold">del</span> pData[<span style="color: #B452CD">0</span>] <span style="color: #228B22"># effacer le premier éliment de la liste </span>
           <span style="color: #228B22"># update plot</span>
           l1.set_xdata([i <span style="color: #8B008B; font-weight: bold">for</span> i <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(<span style="color: #B452CD">25</span>)])
           plt.pause(<span style="color: #B452CD">0.0001</span>) <span style="color: #228B22"># assurez-vous de faire une pause sinon il va planter</span>
           l1.set_ydata(pData)
           plt.pause(<span style="color: #B452CD">0.0001</span>) <span style="color: #228B22"># assurez-vous de faire une pause sinon il va planter</span>
-          plt.title(<span style="color: #CD5555">&quot;PotentiomÃ¨tre en temps rÃ©el (t = %s s)&quot;</span>%i)
+          plt.title(<span style="color: #CD5555">&quot;Potentiomètre en temps réel (t = %s s)&quot;</span>%i)
           plt.draw()
           
           board.digital[LEDpin.pin_number].write(valeur)
@@ -1121,25 +1117,25 @@ Une interface graphique se lancera et vous guidera dans les diff&#233;rents exem
         port = <span style="color: #CD5555">&#39;COM3&#39;</span> <span style="color: #228B22">#windows</span>
         <span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
         board = pyfirmata.Arduino(port)
-        it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itÃ©rateur permet de ne pas engorger </span>
-                                     <span style="color: #228B22"># la communication sÃ©rie</span>
+        it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #228B22"># la communication série</span>
         it.start()
         
-        <span style="color: #658b00">self</span>.pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
-        LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22"># d = digital, 11 = numÃƒÂ©ro de la pin, p = PWM</span>
+        <span style="color: #658b00">self</span>.pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numéro de la pin, i = input.</span>
+        LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22"># d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
         <span style="color: #658b00">self</span>.pyqtgraph.plotItem.showGrid(<span style="color: #658b00">True</span>, <span style="color: #658b00">True</span>, <span style="color: #B452CD">0.7</span>)
         <span style="color: #658b00">self</span>.update()
         
     <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">update</span>(<span style="color: #658b00">self</span>):
         <span style="color: #CD5555">&#39;&#39;&#39;</span>
-<span style="color: #CD5555">        mettre Ã  jour la valeur</span>
+<span style="color: #CD5555">        mettre à jour la valeur</span>
 <span style="color: #CD5555">        &#39;&#39;&#39;</span>
         time.sleep(<span style="color: #B452CD">1</span>)
         valeur = <span style="color: #658b00">self</span>.pinA0.read()
         <span style="color: #658b00">self</span>.lcd.display(valeur)
         pData = [<span style="color: #B452CD">0</span>] * <span style="color: #B452CD">25</span>    <span style="color: #228B22"># initiliser par une liste de 25 valeurs = 0</span>
-        pData.append(valeur) <span style="color: #228B22"># ajouter la valeur Ã  la fin de la liste</span>
-        <span style="color: #8B008B; font-weight: bold">del</span> pData[<span style="color: #B452CD">0</span>] <span style="color: #228B22"># effacer le premier Ã©liment de la liste </span>
+        pData.append(valeur) <span style="color: #228B22"># ajouter la valeur à la fin de la liste</span>
+        <span style="color: #8B008B; font-weight: bold">del</span> pData[<span style="color: #B452CD">0</span>] <span style="color: #228B22"># effacer le premier éliment de la liste </span>
         xData = [i <span style="color: #8B008B; font-weight: bold">for</span> i <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(<span style="color: #B452CD">25</span>)]
         C=pyqtgraph.hsvColor(<span style="color: #B452CD">0.95</span>,alpha=.<span style="color: #B452CD">9</span>)
         pen=pyqtgraph.mkPen(color=C,width=<span style="color: #B452CD">3</span>)
