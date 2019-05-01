@@ -390,7 +390,8 @@ Tracer des données série depuis Arduino est un besoin courant. Dans le script 
 
 La sortie de ce code python sera une animation `matplotlib`.
 
-FIGURE: [imgs/RealTime, width=800 frac=0.8]
+#FIGURE: [imgs/RealTime, width=800 frac=0.8]
+MOVIE: [https://www.youtube.com/embed/-Uh4A_PexQk, width=600 height=315] Analog plot (matplotlib/pyfirmata).
 
 === Troisième exemple de script (tracer de données en temps réel avec PyQt5 et pyqtgraph) ===
 
@@ -406,6 +407,10 @@ Une interface graphique se lancera et vous guidera dans les différents exemples
 FIGURE: [imgs/pyqtgraph_ex, width=600 frac=0.8]
 !enotice
 
+MOVIE: [https://www.youtube.com/embed/IKmDEmanlMw, width=600 height=315] PyQt5-Demo #3 (pyqtgraph/PlotWidget)
+
 @@@CODE scripts/Exemple3_AnalogRead/Analog_RealTime/MainMyAppAnalog.py
 
-FIGURE: [imgs/Analog_app, width=600 frac=0.8]
+#FIGURE: [imgs/Analog_app, width=600 frac=0.8]
+
+MOVIE: [https://www.youtube.com/embed/aHDcN0qrHMU, width=600 height=315] Analog plot (PyQt5+pyqtgraph/pyfirmata)

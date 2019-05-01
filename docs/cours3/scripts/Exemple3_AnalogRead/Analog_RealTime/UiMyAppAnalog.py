@@ -24,7 +24,8 @@ class Ui_MainWindow(object):
         self.label.setObjectName("label")
         self.horizontalLayout.addWidget(self.label)
         self.lcd = QtWidgets.QLCDNumber(self.centralwidget)
-        self.lcd.setStyleSheet("background-color: rgb(0, 255, 0);")
+        self.lcd.setStyleSheet("color: rgb(255, 0, 0);\n"
+"background-color: rgb(0, 170, 0);")
         self.lcd.setObjectName("lcd")
         self.horizontalLayout.addWidget(self.lcd)
         self.verticalLayout.addLayout(self.horizontalLayout)
