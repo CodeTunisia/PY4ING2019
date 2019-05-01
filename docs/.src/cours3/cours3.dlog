@@ -3290,6 +3290,34 @@ open file with encoding utf-8
 __Depuis l’invite commande anaconda ou un terminal ubuntu__
 copy complete file scripts/LEDSerial.py (format: pypro)
 copy complete file scripts/LEDBlink.py (format: pypro)
+<<<<<<< HEAD
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+
+
+...doconce format used 15.3 s to translate the document (475 lines)
+
+=======
 copy complete file scripts/Exemple1_LEDBlink/MainMyAppLED.py (format: pypro)
 copy complete file scripts/Exemple2_LED_PWM/LED_PWM.py (format: pypro)
 copy complete file scripts/Exemple2_LED_PWM/LED_firmata_PMW/MainMyAppLED_PWM.py (format: pypro)
@@ -3343,6 +3371,7 @@ figure file imgs/Blink1_bb:
     can use imgs/Blink1_bb.png for format html
 figure file imgs/AnalogInputPot2_bb:
     can use imgs/AnalogInputPot2_bb.png for format html
+>>>>>>> 64d6542ea76ba7e3868c7d3e4d7f4298c6c90a19
 output in cours3-solarized.html
 translating doconce text in cours3.do.txt to html
 open file with encoding utf-8
@@ -3350,6 +3379,14 @@ open file with encoding utf-8
 __Depuis l’invite commande anaconda ou un terminal ubuntu__
 copy complete file scripts/LEDSerial.py (format: pypro)
 copy complete file scripts/LEDBlink.py (format: pypro)
+<<<<<<< HEAD
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+=======
 copy complete file scripts/Exemple1_LEDBlink/MainMyAppLED.py (format: pypro)
 copy complete file scripts/Exemple2_LED_PWM/LED_PWM.py (format: pypro)
 copy complete file scripts/Exemple2_LED_PWM/LED_firmata_PMW/MainMyAppLED_PWM.py (format: pypro)
@@ -3383,12 +3420,25 @@ figure file imgs/AnalogInputPot1_bb:
     can use imgs/AnalogInputPot1_bb.png for format html
 figure file imgs/pyqtgraph_ex:
     can use imgs/pyqtgraph_ex.png for format html
+>>>>>>> 64d6542ea76ba7e3868c7d3e4d7f4298c6c90a19
 figure file imgs/Firmata_Test:
     can use imgs/Firmata_Test.png for format html
 figure file imgs/WindowsRemoteArduinoExperience:
     can use imgs/WindowsRemoteArduinoExperience.png for format html
 figure file imgs/arduino_uno:
     can use imgs/arduino_uno.jpg for format html
+<<<<<<< HEAD
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+=======
 figure file imgs/anaconda_from_start_menu:
     can use imgs/anaconda_from_start_menu.png for format html
 figure file imgs/com_menu:
@@ -3403,12 +3453,37 @@ figure file imgs/pyserial_navigator:
     can use imgs/pyserial_navigator.png for format html
 figure file imgs/LED_PWM:
     can use imgs/LED_PWM.png for format html
+>>>>>>> 64d6542ea76ba7e3868c7d3e4d7f4298c6c90a19
 output in cours3-bs.html
 translating doconce text in cours3.do.txt to ipynb
 *** warning: missing . , : ) or ? after paragraph heading:
 __Depuis l’invite commande anaconda ou un terminal ubuntu__
 copy complete file scripts/LEDSerial.py (format: pypro)
 copy complete file scripts/LEDBlink.py (format: pypro)
+<<<<<<< HEAD
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+=======
 copy complete file scripts/Exemple1_LEDBlink/MainMyAppLED.py (format: pypro)
 copy complete file scripts/Exemple2_LED_PWM/LED_PWM.py (format: pypro)
 copy complete file scripts/Exemple2_LED_PWM/LED_firmata_PMW/MainMyAppLED_PWM.py (format: pypro)
@@ -3462,5 +3537,366 @@ figure file imgs/AnalogInputPot1_bb:
     can use imgs/AnalogInputPot1_bb.png for format ipynb
 figure file imgs/anaconda_from_start_menu:
     can use imgs/anaconda_from_start_menu.png for format ipynb
+>>>>>>> 64d6542ea76ba7e3868c7d3e4d7f4298c6c90a19
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+copy complete file scripts/Exemple1_LEDBlink/MainMyAppLED.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_PWM.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_firmata_PMW/MainMyAppLED_PWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogRead.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/PlotData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM_RealTimePlot.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/Analog_RealTime/MainMyAppAnalog.py (format: pypro)
+figure file imgs/Analog_app:
+    can use imgs/Analog_app.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/RealTime:
+    can use imgs/RealTime.png for format html
+figure file imgs/pyqtgraph_ex:
+    can use imgs/pyqtgraph_ex.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/AnalogInputPot2_bb:
+    can use imgs/AnalogInputPot2_bb.png for format html
+figure file imgs/AnalogInputPot1_bb:
+    can use imgs/AnalogInputPot1_bb.png for format html
+figure file imgs/StandardFirmata_Arduino:
+    can use imgs/StandardFirmata_Arduino.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/LEDPyqt1:
+    can use imgs/LEDPyqt1.png for format html
+figure file imgs/LED_PWM:
+    can use imgs/LED_PWM.png for format html
+figure file imgs/LED_PWM_bb:
+    can use imgs/LED_PWM_bb.png for format html
+figure file imgs/DataPlot:
+    can use imgs/DataPlot.png for format html
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/pwm:
+    can use imgs/pwm.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+copy complete file scripts/Exemple1_LEDBlink/MainMyAppLED.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_PWM.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_firmata_PMW/MainMyAppLED_PWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogRead.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/PlotData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM_RealTimePlot.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/Analog_RealTime/MainMyAppAnalog.py (format: pypro)
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/StandardFirmata_Arduino:
+    can use imgs/StandardFirmata_Arduino.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/pwm:
+    can use imgs/pwm.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/AnalogInputPot2_bb:
+    can use imgs/AnalogInputPot2_bb.png for format html
+figure file imgs/DataPlot:
+    can use imgs/DataPlot.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/LEDPyqt1:
+    can use imgs/LEDPyqt1.png for format html
+figure file imgs/AnalogInputPot1_bb:
+    can use imgs/AnalogInputPot1_bb.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/LED_PWM_bb:
+    can use imgs/LED_PWM_bb.png for format html
+figure file imgs/LED_PWM:
+    can use imgs/LED_PWM.png for format html
+figure file imgs/Analog_app:
+    can use imgs/Analog_app.png for format html
+figure file imgs/RealTime:
+    can use imgs/RealTime.png for format html
+figure file imgs/pyqtgraph_ex:
+    can use imgs/pyqtgraph_ex.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+copy complete file scripts/Exemple1_LEDBlink/MainMyAppLED.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_PWM.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_firmata_PMW/MainMyAppLED_PWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogRead.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/PlotData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM_RealTimePlot.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/Analog_RealTime/MainMyAppAnalog.py (format: pypro)
+figure file imgs/DataPlot:
+    can use imgs/DataPlot.png for format ipynb
+figure file imgs/Analog_app:
+    can use imgs/Analog_app.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/StandardFirmata_Arduino:
+    can use imgs/StandardFirmata_Arduino.png for format ipynb
+figure file imgs/pwm:
+    can use imgs/pwm.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/LED_PWM:
+    can use imgs/LED_PWM.png for format ipynb
+figure file imgs/LEDPyqt1:
+    can use imgs/LEDPyqt1.png for format ipynb
+figure file imgs/pyqtgraph_ex:
+    can use imgs/pyqtgraph_ex.png for format ipynb
+figure file imgs/AnalogInputPot2_bb:
+    can use imgs/AnalogInputPot2_bb.png for format ipynb
+figure file imgs/AnalogInputPot1_bb:
+    can use imgs/AnalogInputPot1_bb.png for format ipynb
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/LED_PWM_bb:
+    can use imgs/LED_PWM_bb.png for format ipynb
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
+figure file imgs/RealTime:
+    can use imgs/RealTime.png for format ipynb
+collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
+output in cours3.ipynb
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+copy complete file scripts/Exemple1_LEDBlink/MainMyAppLED.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_PWM.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_firmata_PMW/MainMyAppLED_PWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogRead.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/PlotData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM_RealTimePlot.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/Analog_RealTime/MainMyAppAnalog.py (format: pypro)
+figure file imgs/StandardFirmata_Arduino:
+    can use imgs/StandardFirmata_Arduino.png for format html
+figure file imgs/DataPlot:
+    can use imgs/DataPlot.png for format html
+figure file imgs/AnalogInputPot1_bb:
+    can use imgs/AnalogInputPot1_bb.png for format html
+figure file imgs/AnalogInputPot2_bb:
+    can use imgs/AnalogInputPot2_bb.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/LED_PWM_bb:
+    can use imgs/LED_PWM_bb.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/pwm:
+    can use imgs/pwm.png for format html
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/pyqtgraph_ex:
+    can use imgs/pyqtgraph_ex.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/LED_PWM:
+    can use imgs/LED_PWM.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/Analog_app:
+    can use imgs/Analog_app.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+figure file imgs/RealTime:
+    can use imgs/RealTime.png for format html
+figure file imgs/LEDPyqt1:
+    can use imgs/LEDPyqt1.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+output in cours3-solarized.html
+translating doconce text in cours3.do.txt to html
+open file with encoding utf-8
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+copy complete file scripts/Exemple1_LEDBlink/MainMyAppLED.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_PWM.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_firmata_PMW/MainMyAppLED_PWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogRead.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/PlotData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM_RealTimePlot.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/Analog_RealTime/MainMyAppAnalog.py (format: pypro)
+figure file imgs/LED_PWM:
+    can use imgs/LED_PWM.png for format html
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format html
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format html
+figure file imgs/StandardFirmata_Arduino:
+    can use imgs/StandardFirmata_Arduino.png for format html
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format html
+figure file imgs/Analog_app:
+    can use imgs/Analog_app.png for format html
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format html
+figure file imgs/pwm:
+    can use imgs/pwm.png for format html
+figure file imgs/pyqtgraph_ex:
+    can use imgs/pyqtgraph_ex.png for format html
+figure file imgs/AnalogInputPot2_bb:
+    can use imgs/AnalogInputPot2_bb.png for format html
+figure file imgs/LED_PWM_bb:
+    can use imgs/LED_PWM_bb.png for format html
+figure file imgs/AnalogInputPot1_bb:
+    can use imgs/AnalogInputPot1_bb.png for format html
+figure file imgs/DataPlot:
+    can use imgs/DataPlot.png for format html
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format html
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format html
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format html
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format html
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format html
+figure file imgs/RealTime:
+    can use imgs/RealTime.png for format html
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format html
+figure file imgs/LEDPyqt1:
+    can use imgs/LEDPyqt1.png for format html
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format html
+output in cours3-bs.html
+translating doconce text in cours3.do.txt to ipynb
+*** warning: missing . , : ) or ? after paragraph heading:
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+copy complete file scripts/LEDSerial.py (format: pypro)
+copy complete file scripts/LEDBlink.py (format: pypro)
+copy complete file scripts/Exemple1_LEDBlink/MainMyAppLED.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_PWM.py (format: pypro)
+copy complete file scripts/Exemple2_LED_PWM/LED_firmata_PMW/MainMyAppLED_PWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogRead.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/PlotData.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/AnalogReadPWM_RealTimePlot.py (format: pypro)
+copy complete file scripts/Exemple3_AnalogRead/Analog_RealTime/MainMyAppAnalog.py (format: pypro)
+figure file imgs/win_dev_mngr_port:
+    can use imgs/win_dev_mngr_port.png for format ipynb
+figure file imgs/AnalogInputPot2_bb:
+    can use imgs/AnalogInputPot2_bb.png for format ipynb
+figure file imgs/LEDON:
+    can use imgs/LEDON.jpg for format ipynb
+figure file imgs/pyqtgraph_ex:
+    can use imgs/pyqtgraph_ex.png for format ipynb
+figure file imgs/Blink1_bb:
+    can use imgs/Blink1_bb.png for format ipynb
+figure file imgs/AnalogInputPot1_bb:
+    can use imgs/AnalogInputPot1_bb.png for format ipynb
+figure file imgs/anaconda_from_start_menu:
+    can use imgs/anaconda_from_start_menu.png for format ipynb
+figure file imgs/downloadArd:
+    can use imgs/downloadArd.png for format ipynb
+figure file imgs/LEDPyqt1:
+    can use imgs/LEDPyqt1.png for format ipynb
+figure file imgs/Analog_app:
+    can use imgs/Analog_app.png for format ipynb
+figure file imgs/pwm:
+    can use imgs/pwm.png for format ipynb
+figure file imgs/pyserial_navigator:
+    can use imgs/pyserial_navigator.png for format ipynb
+figure file imgs/LED_PWM_bb:
+    can use imgs/LED_PWM_bb.png for format ipynb
+figure file imgs/LED_PWM:
+    can use imgs/LED_PWM.png for format ipynb
+figure file imgs/DataPlot:
+    can use imgs/DataPlot.png for format ipynb
+figure file imgs/RealTime:
+    can use imgs/RealTime.png for format ipynb
+figure file imgs/com_menu:
+    can use imgs/com_menu.png for format ipynb
+figure file imgs/arduino_uno:
+    can use imgs/arduino_uno.jpg for format ipynb
+figure file imgs/StandardFirmata_Arduino:
+    can use imgs/StandardFirmata_Arduino.png for format ipynb
+figure file imgs/COM_Linux:
+    can use imgs/COM_Linux.png for format ipynb
+figure file imgs/WindowsRemoteArduinoExperience:
+    can use imgs/WindowsRemoteArduinoExperience.png for format ipynb
+figure file imgs/Firmata_Test:
+    can use imgs/Firmata_Test.png for format ipynb
 collected all required additional files in ipynb-cours3-src.tar.gz which must be distributed with the notebook
 output in cours3.ipynb
