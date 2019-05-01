@@ -1134,7 +1134,7 @@ Une interface graphique se lancera et vous guidera dans les diff&#233;rents exem
         <span style="color: #658b00">self</span>.pinA0 = <span style="color: #658b00">self</span>.board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numÃ©ro de la pin, i = input.</span>
         <span style="color: #658b00">self</span>.LEDpin = <span style="color: #658b00">self</span>.board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22"># d = digital, 11 = numÃƒÂ©ro de la pin, p = PWM</span>
         <span style="color: #658b00">self</span>.pyqtgraph.plotItem.showGrid(<span style="color: #658b00">True</span>, <span style="color: #658b00">True</span>, <span style="color: #B452CD">0.7</span>)
-        <span style="color: #658b00">self</span>.pData = [<span style="color: #B452CD">0</span>]    <span style="color: #228B22"># initiliser par une liste de 25 valeurs = 0</span>
+        <span style="color: #658b00">self</span>.pData = [<span style="color: #B452CD">0</span>]  <span style="color: #228B22"># initiliser la valeur du potentiometre par 0</span>
         <span style="color: #658b00">self</span>.p1= <span style="color: #658b00">self</span>.pyqtgraph.plot(<span style="color: #658b00">self</span>.pData)
         <span style="color: #658b00">self</span>.update()
         
@@ -1146,8 +1146,7 @@ Une interface graphique se lancera et vous guidera dans les diff&#233;rents exem
         valeur = <span style="color: #658b00">self</span>.pinA0.read()
         <span style="color: #658b00">self</span>.lcd.display(valeur)
         <span style="color: #658b00">self</span>.board.digital[<span style="color: #658b00">self</span>.LEDpin.pin_number].write(valeur)
-        <span style="color: #658b00">self</span>.pData += [valeur]
-<span style="color: #228B22">#        C=pyqtgraph.hsvColor(0.95,alpha=.9)</span>
+        <span style="color: #658b00">self</span>.pData += [valeur] <span style="color: #228B22"># Ajouter la valeur du potentimetre Ã  chaque mis Ã  jour</span>
         pen=pyqtgraph.mkPen(color=<span style="color: #CD5555">&quot;r&quot;</span>,width=<span style="color: #B452CD">3</span>)
         <span style="color: #658b00">self</span>.p1.setData(<span style="color: #658b00">self</span>.pData, pen=pen)
         QTimer.singleShot(<span style="color: #B452CD">10</span>, <span style="color: #658b00">self</span>.update) <span style="color: #228B22"># QUICKLY repeat</span>
