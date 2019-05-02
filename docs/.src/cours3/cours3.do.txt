@@ -1,0 +1,416 @@
+TITLE: Prototypage de projets Arduino en utilisant Python et PyQt5
+AUTHOR: Ahmed Ammar {copyright|CC BY} Email:ahmed.ammar@fst.utm.tn at Faculté des Sciences de Tunis, Université de Tunis El Manar.
+DATE: today
+
+TOC: on
+======= Introduction =======
+Arduino (URL:"https://www.arduino.cc/") est un microcontrôleur monté avec ses circuits d’entrée/sortie sur une petite carte électronique très pratique. Il est capable de mesurer des tensions, et donc d’acquérir des grandeurs physiques qui auront été traduites en tension électrique, comme un courant électrique, une température, une pression, une accélération, etc.
+
+FIGURE: [imgs/arduino_uno, width=400 frac=0.4] Arduino Uno Rev3 (URL:"https://store.arduino.cc/arduino-uno-rev3").
+
+Il est capable de générer des tensions (avec les voies PWM qui peuvent être utilisées en conversion numérique analogique) et donc de produire une information analogique, qui pourra être exploitée par une interface (un moteur, une LED, un outil). Il peut commander en tout ou rien (ON/OFF) un moteur ou un actionneur une machine ou une LED, par exemple. Et bien sur, il peut effectuer des traitements informatiques et mémoriser des données. Il a le bon goût d’être programmable en C.
+Son utilisation est très simple : vous chargez sur votre PC (ou Mac) l’IDE gratuit (URL:"https://www.arduino.cc/en/Main/Software") qui permet de le programmer, vous branchez la carte Arduino sur l’interface USB de votre PC (ou Mac), vous écrivez votre programme, vous le chargez dans l’Arduino et vous le lancez.
+
+En bref, il permet d’opérer sur le monde physique selon un modèle qui aura été programmé. L’Arduino est petit et simple, mais c’est un modèle presque parfait des systèmes de contrôle/commande de l’industrie. Enfin, signalons que l’Arduino, son hardware et son software sont entièrement libres : vous pouvez le bidouiller ou le reproduire autant que vous voulez, ou même en construire un vous-même !
+
+Le prix : une carte Arduino Uno Rev3 vaut 20 à 25 euros TTC.
+
+L’une des principales limites de l’IDE Arduino est sa capacité limitée à interagir avec l’utilisateur. Vous pouvez imprimer du texte dans une simple zone de texte du moniteur série ou obtenir une saisie de texte de l'utilisateur. Vous pouvez ouvrir un nouveau monde de possibilités en utilisant le langage de programmation python pour interagir avec l'Arduino. Python combiné avec Arduino est une combinaison puissante qui augmentera considérablement le facteur _WOW!_ de vos projets.
+
+======= Python et Arduino =======
+Python, C ++ et Java sont les langages de programmation les plus couramment utilisés pour apporter une idée novatrice à la réalité. Ce sont tous des langages de programmation très puissants. Récemment, les développeurs d’applications et de logiciels ont libéré la puissance de Python, principalement pour les applications pilotées par les données. Arduino ne fait pas exception à la règle puisque ce microcontrôleur, petit mais puissant, est conçu pour traiter des données en temps réel.
+
+===== Installation des packages `pyserial` et `pyfirmata` =====
+Les versions récentes d’Anaconda ne contiennent pas forcement les packages `pyserial` et `pyfirmata` dont nous allons avoir besoin pour communiquer avec Arduino.
+
+=== Installation de package `pyserial` ===
+
+Ce module encapsule l'accès pour le port série. Vous pouvez l’installer de différentes manières:
+
+__Depuis l’interface Anaconda Navigator (recommandé)__
+
+* Cliquer dans la fenêtre d’accueil sur le menu :Environments
+* Un menu déroulant en haut de la fenêtre indique par défaut : *installed*
+* Choisir *Not installed*
+* Sélectionner dans la liste le module `pysérial`.
+* Valider pour l’installation.
+
+FIGURE: [imgs/pyserial_navigator, width=600 frac=0.8] Installation de package `pyserial` depuis l'interface Anaconda Navigator.
+
+__Depuis l’invite commande anaconda ou un terminal ubuntu__
+Utiliser _Anaconda Prompt_ sur Windows ou bien utiliser le _terminal_ sur un MacOS ou Linux. Pour démarrer Anaconda Prompt sous Windows 10, cliquer sur le bouton Démarrer Windows en bas à gauche et sélectionner _Anaconda Prompt_.
+
+FIGURE: [imgs/anaconda_from_start_menu, width=300 frac=0.8]. Lancement d'Anaconda Prompt sous Windows 10.
+
+Entrer l'un des deux commandes d'installation des packages Python:
+* commande `conda`
+!bc
+conda install pyserial
+!ec
+* ou bien la commande `pip`
+!bc
+pip install pyserial
+!ec
+
+=== Installation de package `pyfirmata` ===
+pyfirmata (URL:"https://pypi.org/project/pyFirmata/") est une interface Python pour le protocole Firmata (URL:"http://firmata.org/wiki/Main_Page").
+
+La méthode d'installation préférée est avec `pip`:
+!bc
+pip install pyfirmata
+!ec
+
+===== Téléchargez l'IDE Arduino =====
+L'étape suivante consiste à télécharger l'Arduino IDE. IDE signifie "Environnement de Développement Intégré". L'IDE Arduino est un programme qui s'exécute sur votre ordinateur et qui permet de modifier le code Arduino. L'IDE Arduino est également utilisé pour compiler et charger du code d'extension `.ino` sur un Arduino.
+
+Téléchargez l'IDE Arduino en utilisant le lien suivant: URL: "https://www.arduino.cc/en/Main/Software"
+
+Faites défiler la page jusqu'à la section _"Download the Arduino IDE"_. Choisissez le fichier d'installation correspondant au système d'exploitation que vous utilisez (Windows, Mac OS X ou Linux). Vous pouvez choisir _"JUST DOWNLOAD"_ dans l'écran des dons.
+
+FIGURE: [imgs/downloadArd, width=600 frac=0.8] Téléchargez l'IDE Arduino.
+
+======= Exemple 1: Connectez une LED sur un pin (1 à 13) =======
+Dans cette section, vous allez apprendre à configurer des communications série entre un Arduino UNO et Python. En utilisant Python, nous allons créer des boutons pour envoyer des commandes à Arduino UNO pour allumer ou éteindre une LED. En retour, l'Arduino répondra par un message de confirmation indiquant que la LED est allumée ou éteinte.
+
+===== Montage =====
+
+Prenez une LED (de n'importe quelle couleur), une résistance de 220 Ohm, trois câbles de pontage (rouge, jaune et noir), l'Arduino et une plaque de montage. Raccorder la LED, la résistance et les fils de liaison colorés comme indiqué ci-dessous. Notez que la LED a deux "pattes" de tailles différentes. Assurez-vous que la voyant est branchée dans le bon sens. Le courant ne peut circuler que dans un sens par une LED.
+
+FIGURE: [imgs/Blink1_bb, width=600 frac=0.8] Montage Arduino avec une LED et une résistance. label{figure:montage1}
+
+===== Trouver le numéro de port sous Windows =====
+
+o Ouvrez le _Gestionnaire de périphériques_ et développez la liste des ports (COM et LPT).
+o Notez le numéro sur le port série USB
+
+FIGURE: [imgs/win_dev_mngr_port, width=300 frac=0.8] Numéro de port Arduino sur Windows. Ici c'est `COM3`
+
+===== Trouver le numéro de port sur Linux =====
+
+o Ouvrez le terminal et tapez: `ls/dev/tty*`
+o Notez le numéro de port indiqué pour `/dev/ttyUSB*` ou `/dev/ttyACM*`. Le numéro de port est représenté avec `*` ici.
+
+FIGURE: [imgs/COM_Linux, width=500 frac=0.8] Numéro de port Arduino sur Linux. Ici c'est `/dev/ttyACM0`
+
+Une astuce pour récupérer votre chemin vers le port série est de regarder dans l’environnement Arduino dans le menu *Outils/Port*.
+
+FIGURE: [imgs/com_menu, width=500 frac=0.8] Chemin du port série sur une machine Linux dans le menu *Outils/Port*
+
+===== Le code Arduino =====
+Avant de charger le code, assurez-vous d’avoir sélectionné un port COM dans l’option. Ce port COM sélectionné sera utilisé dans le développement, en particulier avec le code python. De plus, nous devrons prendre en compte le débit en bauds (baud rate) utilisé dans le développement.
+
+Nous allons d’abord écrire un programme simple pour Arduino. L’idée du programme est la suivante: Arduino UNO, qui est connecté à un ordinateur, recherche les données série et, en fonction des données reçues du port série, allume ou éteint le voyant.
+
+Le programme Arduino pour l’interfaçage d’Arduino avec python est donné ci-dessous.
+!bc ccod
+const int led=13;
+int value=0;
+
+void setup()
+   {
+      Serial.begin(9600);
+      pinMode(led, OUTPUT);
+      digitalWrite (led, LOW);
+      Serial.println("Connection established...");
+   }
+
+void loop()
+   {
+     while (Serial.available())
+        {
+           value = Serial.read();
+        }
+
+     if (value == '1')
+        digitalWrite (led, HIGH);
+
+     else if (value == '0')
+        digitalWrite (led, LOW);
+   }
+!ec
+
+===== Le code python (avec le module `pyserial`) =====
+
+@@@CODE scripts/LEDSerial.py
+
+!bwarning
+Vous pouvez rencontrer l’erreur suivante lorsque vous exécutez le code python sur votre machine Linux (ou Raspberry) pour la première fois: `OSError: [Errno 13] Permission denied: '/dev/ttyACM0'`
+
+Pour résoudre ce problème
+o modifier les autorisations sur `/dev/ttyACM0` afin que "world" dispose des privilèges de lecture et d'écriture (ce que vous ne voudrez peut-être pas faire) - bien que vous puissiez constater qu'ils sont réinitialisés chaque fois que le périphérique est branché, tapez par exemple sur le terminal: `sudo chmod 666 /dev/ttyACM0`
+
+o Créez une règle dans `/etc/udev/rules.d` qui définira les autorisations du périphérique (un redémarrage sera requis):
+!bc shell
+# navigate to rules.d directory
+cd /etc/udev/rules.d
+#create a new rule file
+sudo touch my-newrule.rules
+# open the file
+sudo vim my-newrule.rules
+# add the following
+KERNEL=="ttyACM0", MODE="0666"
+!ec
+Cela définit également des autorisations pour le monde en lecture et en écriture, ce que vous ne voudrez peut-être pas faire.
+
+_Solution par:_ *user1063287* sur le site Stack Overflow: URL:"https://stackoverflow.com/questions/27858041/oserror-errno-13-permission-denied-dev-ttyacm0-using-pyserial-from-pyth"
+!ewarning
+
+Chargez le code Arduino sur l’Arduino UNO. Notez le port COM auquel il est connecté. Le même numéro de port COM doit être indiqué dans le code Python.
+
+Après avoir chargé le code sur Arduino, lancez le programme Python sur l'IDE Spyder. La console Ipython va afficher le message "Connexion établie" et "Entrez 1 pour allumée la LED et 0 pour l'éteindre".
+
+===== Firmata protocol =====
+Vous désirez contrôler des relais à partir d'un ordinateur?  Interroger des capteurs afin d'accumuler les données dans un ordinateur (datalogging)?  Dans ce genre d'application, où l'Arduino est utilisé comme un périphérique USB plutôt que comme un dispositif autonome, Firmata peut s'avérer très utile.
+
+Firmata est un protocole générique permettant la communication entre un microcontrôleur et un logiciel. Dans notre cas, Firmata nous permet de communiquer Arduino avec Python.
+
+===  Préparation de l'Arduino ===
+Sans grande surprise, votre Arduino doit être branché à l'ordinateur hôte, au moyen d'un câble USB.
+
+Nous n'avons pas à installer la bibliothèque Firmata, puisqu'elle est incluse dans l'IDE Arduino. Notre tâche consistera simplement à téléverser dans la carte Arduino l'exemple _"StandardFirmata"_ (Menu Fichier - Exemples - Firmata - StandardFirmata).
+
+FIGURE: [imgs/StandardFirmata_Arduino, width=600 frac=0.8]
+
+Votre Arduino est maintenant prêt à recevoir des messages en provenance de l'ordinateur, et à les interpréter correctement.
+
+=== Firmata Test ===
+Un moyen rapide et facile de tester le protocole Firmata immédiatement est de télécharger le programme _Firmata Test_ sur le site Web officiel: URL:"http://www.firmata.org/wiki/Main_Page"
+
+FIGURE: [imgs/Firmata_Test, width=300 frac=0.8]
+
+Pour Windows 10, vous pouvez installer _Windows Remote Arduino Experience_: URL:"https://www.microsoft.com/store/apps/9nblggh2041m"
+
+FIGURE: [imgs/WindowsRemoteArduinoExperience, width=500 frac=0.8]
+
+Ces outils nous permet de communiquer facilement et rapidement avec toutes les pins d’Arduino.
+
+Au démarrage, cette application vous demandera de sélectionner le port série correspondant à votre carte Arduino (menu "Port").  Une fois ce port sélectionné, la fenêtre affiche la liste des entrées/sorties de votre Arduino (sauf les pins 0 et 1, qui sont déjà  utilisées pour la communication série par USB entre l'ordinateur et la carte).
+
+À partir de ce logiciel, vous pouvez régler individuellement chaque pin de l'Arduino en entrée numérique (Input) ou en sortie (Output).  Lorsqu'elles en sont capables, certaines pins peuvent également être réglées en entrée analogique (Analog), pour émettre un signal en modulation de largeur d'impulsion (PWM) ou pour commander un servomoteur (Servo).
+
+* Si vous avez réglé la pin en entrée numérique (Input), son état logique (Low ou High) est affiché.
+* Si vous avez réglé la pin en sortie numérique (Output), un bouton vous permet de régler son état logique à Low ou High (par exemple, la LED de la carte Arduino s'allumera si vous réglez la pin 13 à High).
+* Si vous avez réglé la pin en entrée analogique (possible pour les pins 14 à 19, qui sont les entrées A0 à A5), leur valeur entre 0 et 1023 est affichée.
+* Si vous avez réglé la pin en mode "Servo", un curseur vous permet de régler la position du servomoteur.
+* Si vous avez réglé la pin en mode "PWM", un curseur vous permet de régler le rapport cyclique du signal émis.
+
+Admettez que ce petit programme peut se révéler très pratique, ne serait-ce que pour tester le bon fonctionnement de toutes les pins de votre Arduino, vérifier le fonctionnement correct d'un servomoteur, etc.
+
+Dans la prochaine section, nous verrons comment utiliser Firmata dans nos propres programme en Python, qui s'exécuteront sur l'ordinateur.
+
+=== Le code python (avec le module `pyfirmata`) ===
+À titre de démonstration, nous allons écrire un programme en Python qui contrôle l'état des sorties numériques de l'Arduino, ce qui aura pour effet d'allumer et d'éteindre une LED (bien entendu, rien ne vous empêche de remplacer les LEDs par autre chose comme, par exemple, des relais).
+
+Nous branchons donc une LED comme indiqué dans la figure ref{figure:montage1}.
+
+Voici un premier script en Python (`LEDBlink.py`) qui permet à l'utilisateur de contrôler l'état des LEDs à partir de l'ordinateur auquel est branché l'Arduino:
+
+@@@CODE scripts/LEDBlink.py
+
+!bnotice
+Notez que pour que ça fonctionne correctement, vous devez  assigner la valeur appropriée à la variable "port".  Sous Windows ce sera probablement quelque chose comme "COM3", sous Linux ce sera plutôt "/dev/ttyACM0".  Il se peut que vous deviez démarrer l'IDE Arduino pour connaître le nom du port série correspondant à votre Arduino.
+!enotice
+=== Application PyQt5 (avec le module `pyfirmata`) ===
+Le programme sera beaucoup plus convivial s'il comporte une interface graphique.
+
+FIGURE: [imgs/LEDON, width=600 frac=0.8]
+
+Le script présenté ci-dessous utilise PyQt5, qui semble être la solution la plus répandue pour produire des interfaces graphiques en Python. Nous avons adapté le code python construit dans le chapitre précédent ("MainMyApp.py ":"https://codetunisia.github.io/PY4ING2019/cours2/cours2-bs.html#___sec15") en gardant seulement deux boutons pour contrôler la LED via le protocole Firmata de l'Arduino et un widget "Label" pour afficher l'état de la LED.
+
+@@@CODE scripts/Exemple1_LEDBlink/MainMyAppLED.py
+
+Lors de l'exécution de ce script, nous aurons en sortie l'interface graphique suivante qui communiquera avec la LED branchée au pin 13 de notre arduino.
+
+FIGURE: [imgs/LEDPyqt1, width=300 frac=0.8]
+
+======= Exemple 2: Connectez une LED contrôlée par un signal modulé en largeur d'impulsion (PWM) =======
+Dans la partie précédente, nous avions vu comment régler l'état des sorties numériques de l'Arduino.  Dans cette partie, nous allons contrôler un signal modulé en largeur d'impulsion (PWM).
+
+===== Qu'est-ce que le PWM? =====
+La modulation par largeur d'impulsion (ou pulse Width Modulation, d'où l'acronyme PWM) est une succession de signaux logiques 0 ou 1 (donc 0 V et 5 V dans le cas de l'Arduino).  Lorsque le rapport cyclique (duty cycle) est de 0%, le signal est toujours à 0 V.  Lorsque le rapport cyclique est de 100%, le signal est toujours à 5 V.  Si le rapport cyclique est de 25%, le signal est haut pendant 25% du temps, et bas pendant les 75% restants...
+
+FIGURE: [imgs/pwm, width=500 frac=0.8]
+
+Au moyen d'un filtre passs-bas, un signal PWM peut être transformé en une tension analogique continue dont la valeur se situe entre 0 et 5 V.  On peut aussi utiliser un signal PWM pour contrôler la vitesse d'un moteur.  Dans cette partie du cours, nous utiliserons le signal PWM pour contrôler la luminosité d'une LED (plus le rapport cyclique sera élevé, plus la lumière émise par la LED sera intense).
+
+===== Montage =====
+
+Le circuit sera évidemment très simple:  une LED et une résistance de protection (220 ohms, par exemple), reliée à une des pins PWM de l'Arduino  (3, 5, 6, 9, 10, 11 sur l'Arduino Uno).  Les scripts présentés ci-dessous supposent que la LED est branchée à la pin 11.
+
+FIGURE: [imgs/LED_PWM_bb, width=500 frac=0.8]
+
+===== Le code python (avec le module `pyfirmata`) =====
+
+Nous supposons que le sketch "StandardFirmata" a été téléversé dans votre Arduino, et que la bibliothèque pyFirmata a déjà été installée sur votre ordinateur.
+
+L'utilisation du PWM avec `pyfirmata` nécessite deux étapes:
+* Le réglage d'une pin de l'Arduino en mode PWM, au début du programme, au moyen de la méthode `get_pin()`:
+!bc pycod-txt
+LEDpin = board.get_pin('d:11:p')
+!ec
+
+Nous créons un objet de type PIN nommé `LEDpin`.  Les arguments de `get_pin()` indiquent que la pin numérique  numéro 11 est en mode PWM (le "d" est pour "digital" et le "p" est pour "PWM").
+* Le réglage du rapport cyclique du signal PWM, chaque fois qu'on désire le modifier:
+!bc pycod-txt
+board.digital[LEDpin.pin_number].write(rapport_cyclique)
+!ec
+
+Le rapport cyclique doit être un nombre se situant entre 0 (rapport cyclique de 0%) et 1 (rapport cyclique de 100%).  Par exemple, pour émettre sur la pin numéro 5 un signal PWM dont le rapport cyclique sera de 30%, on pourrait écrire:
+!bc pycod-txt
+board.digital[5].write(0.3)
+!ec
+
+=== Premier exemple de script (interface en mode texte) ===
+
+Dans ce premier exemple, l'utilisateur doit écrire un nombre (entre 0 et 100) pour régler le rapport cyclique (et, par conséquent, la luminosité de la LED).
+
+@@@CODE scripts/Exemple2_LED_PWM/LED_PWM.py
+
+Lors de l'exécution de ce script, l'utilisateur peut saisir un texte pour contrôler la luminosité de la LED, comme suit:
+!bc
+-------------- CONTROLE DE LEDS ----------------
+En tout temps, vous pouvez quitter le programme en répondant par 'q'.
+Luminosité désirée pour la LED:
+
+De 0 à 100 (ou q):  100
+Luminosité désirée pour la LED:
+
+De 0 à 100 (ou q):  50
+Luminosité désirée pour la LED:
+
+De 0 à 100 (ou q):  q
+Au revoir!
+!ec
+
+=== Deuxième exemple de script (interface graphique PyQt5) ===
+
+Même principe que nous avons utilisé dans "Application PyQt5 (avec le module pyfirmata)":"https://codetunisia.github.io/PY4ING2019/cours3/cours3-bs.html#___sec16", nous allons adapté le code python construit dans le chapitre précédent ("MainMyApp.py":"https://codetunisia.github.io/PY4ING2019/cours2/cours2-bs.html#___sec15") mais en gardant le curseur ( le widget Slider) pour contrôler la luminosité de la LED via le protocole Firmata de l'Arduino et un widget "LCD display" pour afficher le pourcentage de luminosité désirée pour la LED.
+
+Le code python principal dans ce cas deviendra,
+
+@@@CODE scripts/Exemple2_LED_PWM/LED_firmata_PMW/MainMyAppLED_PWM.py
+
+Lors de l'exécution de ce script, nous aurons en sortie l'interface graphique suivante qui communiquera avec la LED branchée au pin 11 de notre arduino.
+
+FIGURE: [imgs/LED_PWM, width=300 frac=0.8]
+
+======= Exemple 3: Lecture d'une entrée analogique =======
+Dans cette partie  nous lisons les entrées analogiques de l'Arduino en utilisant `pyfirmata`.
+
+===== Montage 1 =====
+Pour tester le principe, le plus simple est de brancher un potentiomètre à l'entrée *A0* de l'Arduino.  Bien sûr, ce potentiomètre peut être remplacé par n'importe quel capteur analogique (photorésistance, thermistance, etc.).
+
+FIGURE: [imgs/AnalogInputPot1_bb, width=300 frac=0.8]
+
+Avec `pyfirmata`, la lecture d'une pin analogique est presque identique à la lecture d'une pin numérique.  La principale différence réside dans la définition de la pin:
+!bc pycod-txt
+pinA0 = board.get_pin('a:0:i')
+!ec
+!bnotice
+Nous utiliserions "i" à la place de "a" s'il s'agissait d'un signal numérique.
+!enotice
+Ensuite, on utilise la fonction `read()` pour lire la valeur.
+!bc pycod-txt
+pinA0.read()
+!ec
+
+!bwarning
+`read()` retourne une valeur décimale entre 0 et 1 (alors qu'en langage Arduino, `analogRead()` retourne un entier entre 0 et 1023).
+!ewarning
+Il faut également utiliser un itérateur afin d'éviter d'engorger la communication série entre l'Arduino et l'ordinateur:
+!bc pycod-txt
+it = pyfirmata.util.Iterator(board)
+it.start()
+!ec
+
+=== Premier exemple de script (interface en mode texte) ===
+Ce programme plutôt minimaliste se contente de lire la valeur de l'entrée A0 une fois par seconde et de l'afficher à l'écran.
+
+@@@CODE scripts/Exemple3_AnalogRead/AnalogRead.py
+!bnotice
+L'instruction "Exception" à l'intérieur de la boucle:
+!bc pycod
+try:
+    time.sleep(1)  # Pause d'une seconde avant la prochaine mesure
+    print(pinA0.read())     # la valeur varie entre 0 et 1.
+
+except KeyboardInterrupt:
+      board.exit()
+      break
+!ec
+est une astuce utilisée pour arrêter la communication avec Arduino (`board.exit()`) et pour éviter les erreurs lors de l'arrêt forcé du programme.
+!enotice
+
+Lors de l'exécution de ce script, l'utilisateur peut lire la valeur du potentiomètre (de 0 à 1) toutes les secondes et le modifier en tournant le potentiomètre branché sur l'Arduino.
+!bc
+#-----------------------------
+#  Lecture de l'entrée analogique A0 de l'Arduino
+#-----------------------------
+1.0
+1.0
+0.7478
+0.6989
+0.6393
+0.5806
+0.3822
+0.2219
+0.0929
+0.0
+0.0
+0.3324
+0.3324
+0.3324
+!ec
+=== Deuxième exemple de script (sauvegarder les données dans un fichier texte) ===
+Dans le script suivant, nous allons enregistrer les valeurs du potentiomètre dans un fichier texte (*Data.txt*) que nous créons dans le même répertoire que le script python:
+
+@@@CODE scripts/Exemple3_AnalogRead/AnalogReadData.py
+
+Ensuite, nous écrivons un autre script python pour tracer les données stockées dans le fichier *Data.txt* que nous avons créé précédemment:
+
+@@@CODE scripts/Exemple3_AnalogRead/PlotData.py
+
+Lors de l'exécution de ce script, nous aurons la figure suivante:
+
+FIGURE: [imgs/DataPlot, width=500 frac=0.8]
+
+===== Montage 2 =====
+Dans ce montage, nous allons contrôler par un potentiomètre (pin A0) la luminosité d'une LED branchée dans un pin PWM (pin 11).
+
+FIGURE: [imgs/AnalogInputPot2_bb, width=600 frac=0.8]
+
+=== Premier exemple de script (interface en mode texte) ===
+
+@@@CODE scripts/Exemple3_AnalogRead/AnalogReadPWM.py
+
+=== Deuxième exemple de script (tracer de données en temps réel) ===
+Tracer des données série depuis Arduino est un besoin courant. Dans le script suivant, nous allons vous montrer comment utiliser la bibliothèque python `matplotlib` pour effectuer cette tâche.
+
+@@@CODE scripts/Exemple3_AnalogRead/AnalogReadPWM_RealTimePlot.py
+
+La sortie de ce code python sera une animation `matplotlib`.
+
+#FIGURE: [imgs/RealTime, width=800 frac=0.8]
+MOVIE: [https://www.youtube.com/embed/-Uh4A_PexQk, width=600 height=315] Analog plot (matplotlib/pyfirmata).
+
+=== Troisième exemple de script (tracer de données en temps réel avec PyQt5 et pyqtgraph) ===
+
+!bnotice
+Pour lancer les exemples de la librairie pyqtgraph, exécuter le code suivant:
+!bc pycod
+import pyqtgraph.examples
+pyqtgraph.examples.run()
+!ec
+
+Une interface graphique se lancera et vous guidera dans les différents exemples de la bibliothèque:
+
+FIGURE: [imgs/pyqtgraph_ex, width=600 frac=0.8]
+!enotice
+
+MOVIE: [https://www.youtube.com/embed/IKmDEmanlMw, width=600 height=315] PyQt5-Demo #3 (pyqtgraph/PlotWidget)
+
+@@@CODE scripts/Exemple3_AnalogRead/Analog_RealTime/MainMyAppAnalog.py
+
+#FIGURE: [imgs/Analog_app, width=600 frac=0.8]
+
+MOVIE: [https://www.youtube.com/embed/aHDcN0qrHMU, width=600 height=315] Analog plot (PyQt5+pyqtgraph/pyfirmata)

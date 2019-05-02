@@ -1,0 +1,1185 @@
+<!--
+Automatically generated HTML file from DocOnce source
+(https://github.com/hplgit/doconce/)
+-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="DocOnce: https://github.com/hplgit/doconce/" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Prototypage de projets Arduino en utilisant Python et PyQt5">
+
+<title>Prototypage de projets Arduino en utilisant Python et PyQt5</title>
+
+
+<link href="https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_styles/style_solarized_box/css/solarized_light_code.css" rel="stylesheet" type="text/css" title="light"/>
+<script src="https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_styles/style_solarized_box/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<link href="https://thomasf.github.io/solarized-css/solarized-light.min.css" rel="stylesheet">
+<style type="text/css">
+h1 {color: #b58900;}  /* yellow */
+/* h1 {color: #cb4b16;}  orange */
+/* h1 {color: #d33682;}  magenta, the original choice of thomasf */
+code { padding: 0px; background-color: inherit; }
+pre {
+  border: 0pt solid #93a1a1;
+  box-shadow: none;
+}
+.alert-text-small   { font-size: 80%;  }
+.alert-text-large   { font-size: 130%; }
+.alert-text-normal  { font-size: 90%;  }
+.alert {
+  padding:8px 35px 8px 14px; margin-bottom:18px;
+  text-shadow:0 1px 0 rgba(255,255,255,0.5);
+  border:1px solid #93a1a1;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #555;
+  background-color: #eee8d5;
+  background-position: 10px 5px;
+  background-repeat: no-repeat;
+  background-size: 38px;
+  padding-left: 55px;
+  width: 75%;
+ }
+.alert-block {padding-top:14px; padding-bottom:14px}
+.alert-block > p, .alert-block > ul {margin-bottom:1em}
+.alert li {margin-top: 1em}
+.alert-block p+p {margin-top:5px}
+.alert-notice { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_notice.png); }
+.alert-summary  { background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_summary.png); }
+.alert-warning { background-image: url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_warning.png); }
+.alert-question {background-image:url(https://cdn.rawgit.com/hplgit/doconce/master/bundled/html_images/small_yellow_question.png); }
+
+div { text-align: justify; text-justify: inter-word; }
+</style>
+
+
+</head>
+
+<!-- tocinfo
+{'highest level': 1,
+ 'sections': [('Table des matières',
+               1,
+               'table_of_contents',
+               'table_of_contents'),
+              ('Introduction', 1, None, '___sec0'),
+              ('Python et Arduino', 1, None, '___sec1'),
+              ('Installation des packages `pyserial` et `pyfirmata`',
+               2,
+               None,
+               '___sec2'),
+              ('Installation de package `pyserial`', 3, None, '___sec3'),
+              ('Installation de package `pyfirmata`', 3, None, '___sec4'),
+              ("Téléchargez l'IDE Arduino", 2, None, '___sec5'),
+              ('Exemple 1: Connectez une LED sur un pin (1 à 13)',
+               1,
+               None,
+               '___sec6'),
+              ('Montage', 2, None, '___sec7'),
+              ('Trouver le numéro de port sous Windows', 2, None, '___sec8'),
+              ('Trouver le numéro de port sur Linux', 2, None, '___sec9'),
+              ('Le code Arduino', 2, None, '___sec10'),
+              ('Le code python (avec le module `pyserial`)',
+               2,
+               None,
+               '___sec11'),
+              ('Firmata protocol', 2, None, '___sec12'),
+              ("Préparation de l'Arduino", 3, None, '___sec13'),
+              ('Firmata Test', 3, None, '___sec14'),
+              ('Le code python (avec le module `pyfirmata`)',
+               3,
+               None,
+               '___sec15'),
+              ('Application PyQt5 (avec le module `pyfirmata`)',
+               3,
+               None,
+               '___sec16'),
+              ('Exemple 2: Connectez une LED contrôlée par un signal modulé en '
+               "largeur d'impulsion (PWM)",
+               1,
+               None,
+               '___sec17'),
+              ("Qu'est-ce que le PWM?", 2, None, '___sec18'),
+              ('Montage', 2, None, '___sec19'),
+              ('Le code python (avec le module `pyfirmata`)',
+               2,
+               None,
+               '___sec20'),
+              ('Premier exemple de script (interface en mode texte)',
+               3,
+               None,
+               '___sec21'),
+              ('Deuxième exemple de script (interface graphique PyQt5)',
+               3,
+               None,
+               '___sec22'),
+              ("Exemple 3: Lecture d'une entrée analogique",
+               1,
+               None,
+               '___sec23'),
+              ('Montage 1', 2, None, '___sec24'),
+              ('Premier exemple de script (interface en mode texte)',
+               3,
+               None,
+               '___sec25'),
+              ('Deuxième exemple de script (sauvegarder les données dans un '
+               'fichier texte)',
+               3,
+               None,
+               '___sec26'),
+              ('Montage 2', 2, None, '___sec27'),
+              ('Premier exemple de script (interface en mode texte)',
+               3,
+               None,
+               '___sec28'),
+              ('Deuxième exemple de script (tracer de données en temps réel)',
+               3,
+               None,
+               '___sec29'),
+              ('Troisième exemple de script (tracer de données en temps réel '
+               'avec PyQt5 et pyqtgraph)',
+               3,
+               None,
+               '___sec30')]}
+end of tocinfo -->
+
+<body>
+
+    
+<!-- ------------------- main content ---------------------- -->
+
+
+
+<center><h1>Prototypage de projets Arduino en utilisant Python et PyQt5</h1></center>  <!-- document title -->
+
+<p>
+<!-- author(s): Ahmed Ammar -->
+
+<center>
+<b>Ahmed Ammar</b>  (<tt>ahmed.ammar at fst.utm.tn</tt>)
+</center>
+
+<p>
+<!-- institution -->
+
+<center><b>Facult&#233; des Sciences de Tunis, Universit&#233; de Tunis El Manar.</b></center>
+<br>
+<p>
+<center><h4>May 2, 2019</h4></center> <!-- date -->
+<br>
+
+<h1 id="table_of_contents">Table des matières</h2>
+
+<p>
+<a href="#___sec0"> Introduction </a><br>
+<a href="#___sec1"> Python et Arduino </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec2"> Installation des packages <code>pyserial</code> et <code>pyfirmata</code> </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec5"> T&#233;l&#233;chargez l'IDE Arduino </a><br>
+<a href="#___sec6"> Exemple 1: Connectez une LED sur un pin (1 &#224; 13) </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec7"> Montage </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec8"> Trouver le num&#233;ro de port sous Windows </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec9"> Trouver le num&#233;ro de port sur Linux </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec10"> Le code Arduino </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec11"> Le code python (avec le module <code>pyserial</code>) </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec12"> Firmata protocol </a><br>
+<a href="#___sec17"> Exemple 2: Connectez une LED contr&#244;l&#233;e par un signal modul&#233; en largeur d'impulsion (PWM) </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec18"> Qu'est-ce que le PWM? </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec19"> Montage </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec20"> Le code python (avec le module <code>pyfirmata</code>) </a><br>
+<a href="#___sec23"> Exemple 3: Lecture d'une entr&#233;e analogique </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec24"> Montage 1 </a><br>
+&nbsp; &nbsp; &nbsp; <a href="#___sec27"> Montage 2 </a><br>
+</p>
+
+<h1 id="___sec0">Introduction </h1>
+Arduino (<a href="https://www.arduino.cc/" target="_blank"><tt>https://www.arduino.cc/</tt></a>) est un microcontr&#244;leur mont&#233; avec ses circuits d&#8217;entr&#233;e/sortie sur une petite carte &#233;lectronique tr&#232;s pratique. Il est capable de mesurer des tensions, et donc d&#8217;acqu&#233;rir des grandeurs physiques qui auront &#233;t&#233; traduites en tension &#233;lectrique, comme un courant &#233;lectrique, une temp&#233;rature, une pression, une acc&#233;l&#233;ration, etc.
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 1:  Arduino Uno Rev3 (<a href="https://store.arduino.cc/arduino-uno-rev3" target="_blank"><tt>https://store.arduino.cc/arduino-uno-rev3</tt></a>). </p></center>
+<p><img src="imgs/arduino_uno.jpg" align="bottom" width=400></p>
+</center>
+
+<p>
+Il est capable de g&#233;n&#233;rer des tensions (avec les voies PWM qui peuvent &#234;tre utilis&#233;es en conversion num&#233;rique analogique) et donc de produire une information analogique, qui pourra &#234;tre exploit&#233;e par une interface (un moteur, une LED, un outil). Il peut commander en tout ou rien (ON/OFF) un moteur ou un actionneur une machine ou une LED, par exemple. Et bien sur, il peut effectuer des traitements informatiques et m&#233;moriser des donn&#233;es. Il a le bon go&#251;t d&#8217;&#234;tre programmable en C.
+Son utilisation est tr&#232;s simple : vous chargez sur votre PC (ou Mac) l&#8217;IDE gratuit (<a href="https://www.arduino.cc/en/Main/Software" target="_blank"><tt>https://www.arduino.cc/en/Main/Software</tt></a>) qui permet de le programmer, vous branchez la carte Arduino sur l&#8217;interface USB de votre PC (ou Mac), vous &#233;crivez votre programme, vous le chargez dans l&#8217;Arduino et vous le lancez.
+
+<p>
+En bref, il permet d&#8217;op&#233;rer sur le monde physique selon un mod&#232;le qui aura &#233;t&#233; programm&#233;. L&#8217;Arduino est petit et simple, mais c&#8217;est un mod&#232;le presque parfait des syst&#232;mes de contr&#244;le/commande de l&#8217;industrie. Enfin, signalons que l&#8217;Arduino, son hardware et son software sont enti&#232;rement libres : vous pouvez le bidouiller ou le reproduire autant que vous voulez, ou m&#234;me en construire un vous-m&#234;me !
+
+<p>
+Le prix : une carte Arduino Uno Rev3 vaut 20 &#224; 25 euros TTC.
+
+<p>
+L&#8217;une des principales limites de l&#8217;IDE Arduino est sa capacit&#233; limit&#233;e &#224; interagir avec l&#8217;utilisateur. Vous pouvez imprimer du texte dans une simple zone de texte du moniteur s&#233;rie ou obtenir une saisie de texte de l'utilisateur. Vous pouvez ouvrir un nouveau monde de possibilit&#233;s en utilisant le langage de programmation python pour interagir avec l'Arduino. Python combin&#233; avec Arduino est une combinaison puissante qui augmentera consid&#233;rablement le facteur <b>WOW!</b> de vos projets.
+
+<h1 id="___sec1">Python et Arduino </h1>
+Python, C ++ et Java sont les langages de programmation les plus couramment utilis&#233;s pour apporter une id&#233;e novatrice &#224; la r&#233;alit&#233;. Ce sont tous des langages de programmation tr&#232;s puissants. R&#233;cemment, les d&#233;veloppeurs d&#8217;applications et de logiciels ont lib&#233;r&#233; la puissance de Python, principalement pour les applications pilot&#233;es par les donn&#233;es. Arduino ne fait pas exception &#224; la r&#232;gle puisque ce microcontr&#244;leur, petit mais puissant, est con&#231;u pour traiter des donn&#233;es en temps r&#233;el.
+
+<h2 id="___sec2">Installation des packages <code>pyserial</code> et <code>pyfirmata</code> </h2>
+Les versions r&#233;centes d&#8217;Anaconda ne contiennent pas forcement les packages <code>pyserial</code> et <code>pyfirmata</code> dont nous allons avoir besoin pour communiquer avec Arduino.
+
+<h3 id="___sec3">Installation de package <code>pyserial</code> </h3>
+
+<p>
+Ce module encapsule l'acc&#232;s pour le port s&#233;rie. Vous pouvez l&#8217;installer de diff&#233;rentes mani&#232;res:
+
+<p>
+<b>Depuis l&#8217;interface Anaconda Navigator (recommand&#233;)</b>
+
+<ul>
+<li> Cliquer dans la fen&#234;tre d&#8217;accueil sur le menu :Environments</li>
+<li> Un menu d&#233;roulant en haut de la fen&#234;tre indique par d&#233;faut : <em>installed</em></li>
+<li> Choisir <em>Not installed</em></li>
+<li> S&#233;lectionner dans la liste le module <code>pys&#233;rial</code>.</li>
+<li> Valider pour l&#8217;installation.</li>
+</ul>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 2:  Installation de package <code>pyserial</code> depuis l'interface Anaconda Navigator. </p></center>
+<p><img src="imgs/pyserial_navigator.png" align="bottom" width=600></p>
+</center>
+
+<p>
+<b>Depuis l&#8217;invite commande anaconda ou un terminal ubuntu</b>
+Utiliser <b>Anaconda Prompt</b> sur Windows ou bien utiliser le <b>terminal</b> sur un MacOS ou Linux. Pour d&#233;marrer Anaconda Prompt sous Windows 10, cliquer sur le bouton D&#233;marrer Windows en bas &#224; gauche et s&#233;lectionner <b>Anaconda Prompt</b>.
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 3:  . Lancement d'Anaconda Prompt sous Windows 10. </p></center>
+<p><img src="imgs/anaconda_from_start_menu.png" align="bottom" width=300></p>
+</center>
+
+<p>
+Entrer l'un des deux commandes d'installation des packages Python:
+
+<ul>
+<li> commande <code>conda</code></li>
+</ul>
+
+<p>
+
+<!-- code=text typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>conda install pyserial
+</pre></div>
+<ul>
+<li> ou bien la commande <code>pip</code></li>
+</ul>
+
+<p>
+
+<!-- code=text typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>pip install pyserial
+</pre></div>
+
+<h3 id="___sec4">Installation de package <code>pyfirmata</code> </h3>
+
+pyfirmata (<a href="https://pypi.org/project/pyFirmata/" target="_blank"><tt>https://pypi.org/project/pyFirmata/</tt></a>) est une interface Python pour le protocole Firmata (<a href="http://firmata.org/wiki/Main_Page" target="_blank"><tt>http://firmata.org/wiki/Main_Page</tt></a>).
+
+<p>
+La m&#233;thode d'installation pr&#233;f&#233;r&#233;e est avec <code>pip</code>:
+<p>
+
+<!-- code=text typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>pip install pyfirmata
+</pre></div>
+
+<h2 id="___sec5">T&#233;l&#233;chargez l'IDE Arduino </h2>
+L'&#233;tape suivante consiste &#224; t&#233;l&#233;charger l'Arduino IDE. IDE signifie "Environnement de D&#233;veloppement Int&#233;gr&#233;". L'IDE Arduino est un programme qui s'ex&#233;cute sur votre ordinateur et qui permet de modifier le code Arduino. L'IDE Arduino est &#233;galement utilis&#233; pour compiler et charger du code d'extension <code>.ino</code> sur un Arduino.
+
+<p>
+T&#233;l&#233;chargez l'IDE Arduino en utilisant le lien suivant: <a href="https://www.arduino.cc/en/Main/Software" target="_blank"><tt>https://www.arduino.cc/en/Main/Software</tt></a>
+
+<p>
+Faites d&#233;filer la page jusqu'&#224; la section <b>"Download the Arduino IDE"</b>. Choisissez le fichier d'installation correspondant au syst&#232;me d'exploitation que vous utilisez (Windows, Mac OS X ou Linux). Vous pouvez choisir <b>"JUST DOWNLOAD"</b> dans l'&#233;cran des dons.
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 4:  T&#233;l&#233;chargez l'IDE Arduino. </p></center>
+<p><img src="imgs/downloadArd.png" align="bottom" width=600></p>
+</center>
+
+<h1 id="___sec6">Exemple 1: Connectez une LED sur un pin (1 &#224; 13) </h1>
+Dans cette section, vous allez apprendre &#224; configurer des communications s&#233;rie entre un Arduino UNO et Python. En utilisant Python, nous allons cr&#233;er des boutons pour envoyer des commandes &#224; Arduino UNO pour allumer ou &#233;teindre une LED. En retour, l'Arduino r&#233;pondra par un message de confirmation indiquant que la LED est allum&#233;e ou &#233;teinte.
+
+<h2 id="___sec7">Montage </h2>
+
+<p>
+Prenez une LED (de n'importe quelle couleur), une r&#233;sistance de 220 Ohm, trois c&#226;bles de pontage (rouge, jaune et noir), l'Arduino et une plaque de montage. Raccorder la LED, la r&#233;sistance et les fils de liaison color&#233;s comme indiqu&#233; ci-dessous. Notez que la LED a deux "pattes" de tailles diff&#233;rentes. Assurez-vous que la voyant est branch&#233;e dans le bon sens. Le courant ne peut circuler que dans un sens par une LED.
+
+<p>
+<center> <!-- figure label: --> <div id="figure:montage1"></div> <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 5:  Montage Arduino avec une LED et une r&#233;sistance.  <!-- caption label: figure:montage1 --> </p></center>
+<p><img src="imgs/Blink1_bb.png" align="bottom" width=600></p>
+</center>
+
+<h2 id="___sec8">Trouver le num&#233;ro de port sous Windows </h2>
+
+<ol>
+<li> Ouvrez le <b>Gestionnaire de p&#233;riph&#233;riques</b> et d&#233;veloppez la liste des ports (COM et LPT).</li>
+<li> Notez le num&#233;ro sur le port s&#233;rie USB</li>
+</ol>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 6:  Num&#233;ro de port Arduino sur Windows. Ici c'est <code>COM3</code> </p></center>
+<p><img src="imgs/win_dev_mngr_port.png" align="bottom" width=300></p>
+</center>
+
+<h2 id="___sec9">Trouver le num&#233;ro de port sur Linux </h2>
+
+<ol>
+<li> Ouvrez le terminal et tapez: <code>ls/dev/tty*</code></li>
+<li> Notez le num&#233;ro de port indiqu&#233; pour <code>/dev/ttyUSB*</code> ou <code>/dev/ttyACM*</code>. Le num&#233;ro de port est repr&#233;sent&#233; avec <code>*</code> ici.</li>
+</ol>
+
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 7:  Num&#233;ro de port Arduino sur Linux. Ici c'est <code>/dev/ttyACM0</code> </p></center>
+<p><img src="imgs/COM_Linux.png" align="bottom" width=500></p>
+</center>
+
+<p>
+Une astuce pour r&#233;cup&#233;rer votre chemin vers le port s&#233;rie est de regarder dans l&#8217;environnement Arduino dans le menu <em>Outils/Port</em>.
+
+<p>
+<center>  <!-- FIGURE -->
+<hr class="figure">
+<center><p class="caption">Figure 8:  Chemin du port s&#233;rie sur une machine Linux dans le menu <em>Outils/Port</em> </p></center>
+<p><img src="imgs/com_menu.png" align="bottom" width=500></p>
+</center>
+
+<h2 id="___sec10">Le code Arduino </h2>
+Avant de charger le code, assurez-vous d&#8217;avoir s&#233;lectionn&#233; un port COM dans l&#8217;option. Ce port COM s&#233;lectionn&#233; sera utilis&#233; dans le d&#233;veloppement, en particulier avec le code python. De plus, nous devrons prendre en compte le d&#233;bit en bauds (baud rate) utilis&#233; dans le d&#233;veloppement.
+
+<p>
+Nous allons d&#8217;abord &#233;crire un programme simple pour Arduino. L&#8217;id&#233;e du programme est la suivante: Arduino UNO, qui est connect&#233; &#224; un ordinateur, recherche les donn&#233;es s&#233;rie et, en fonction des donn&#233;es re&#231;ues du port s&#233;rie, allume ou &#233;teint le voyant.
+
+<p>
+Le programme Arduino pour l&#8217;interfa&#231;age d&#8217;Arduino avec python est donn&#233; ci-dessous.
+<p>
+
+<!-- code=c (!bc ccod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">const</span> <span style="color: #00688B; font-weight: bold">int</span> led=<span style="color: #B452CD">13</span>;
+<span style="color: #00688B; font-weight: bold">int</span> value=<span style="color: #B452CD">0</span>;
+
+<span style="color: #00688B; font-weight: bold">void</span> <span style="color: #008b45">setup</span>()
+   {
+      Serial.begin(<span style="color: #B452CD">9600</span>);
+      pinMode(led, OUTPUT);
+      digitalWrite (led, LOW);
+      Serial.println(<span style="color: #CD5555">&quot;Connection established...&quot;</span>);
+   }
+
+<span style="color: #00688B; font-weight: bold">void</span> <span style="color: #008b45">loop</span>()
+   {
+     <span style="color: #8B008B; font-weight: bold">while</span> (Serial.available())
+        {
+           value = Serial.read();
+        }
+
+     <span style="color: #8B008B; font-weight: bold">if</span> (value == <span style="color: #CD5555">&#39;1&#39;</span>)
+        digitalWrite (led, HIGH);
+
+     <span style="color: #8B008B; font-weight: bold">else</span> <span style="color: #8B008B; font-weight: bold">if</span> (value == <span style="color: #CD5555">&#39;0&#39;</span>)
+        digitalWrite (led, LOW);
+   }
+</pre></div>
+
+<h2 id="___sec11">Le code python (avec le module <code>pyserial</code>) </h2>
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER:LEDSerial.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">serial</span>
+<span style="color: #228B22"># créer un objet de port série appelé Arduino_Serial</span>
+Arduino_Serial = serial.Serial(<span style="color: #CD5555">&#39;com12&#39;</span>,<span style="color: #B452CD">9600</span>)
+<span style="color: #228B22"># lire les données de série et l&#39;afficher en ligne</span>
+<span style="color: #8B008B; font-weight: bold">print</span>(Arduino_Serial.readline())
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Entrez 1 pour allumée la LED et 0 pour l&#39;éteindre&quot;</span>)
+
+<span style="color: #228B22"># boucle infinie</span>
+<span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #B452CD">1</span>:
+    <span style="color: #228B22"># attend que l&#39;utilisateur entre les données                                 </span>
+    input_data = <span style="color: #658b00">input</span>()
+    <span style="color: #228B22"># affiche les données pour confirmation</span>
+    <span style="color: #8B008B; font-weight: bold">print</span> (<span style="color: #CD5555">&quot;you entered&quot;</span>, input_data)
+    <span style="color: #228B22"># si la donnée entrée est 1</span>
+    <span style="color: #8B008B; font-weight: bold">if</span> (input_data == <span style="color: #CD5555">&#39;1&#39;</span>):
+        <span style="color: #228B22"># envoyer 1 à arduino               </span>
+        Arduino_Serial.write(<span style="color: #CD5555">&#39;1&#39;</span>)
+        <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;LED ON&quot;</span>)
+
+    <span style="color: #228B22"># si la donnée entrée est 0</span>
+    <span style="color: #8B008B; font-weight: bold">if</span> (input_data == <span style="color: #CD5555">&#39;0&#39;</span>):    
+        <span style="color: #228B22"># envoyer 0 à arduino                </span>
+        Arduino_Serial.write(<span style="color: #CD5555">&#39;0&#39;</span>)
+        <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;LED OFF&quot;</span>)
+</pre></div>
+<p>
+<div class="alert alert-block alert-warning alert-text-normal">
+<b>Avertissement.</b>
+<p>
+Vous pouvez rencontrer l&#8217;erreur suivante lorsque vous ex&#233;cutez le code python sur votre machine Linux (ou Raspberry) pour la premi&#232;re fois: <code>OSError: [Errno 13] Permission denied: '/dev/ttyACM0'</code>
+
+<p>
+Pour r&#233;soudre ce probl&#232;me
+
+<ol>
+<li> modifier les autorisations sur <code>/dev/ttyACM0</code> afin que "world" dispose des privil&#232;ges de lecture et d'&#233;criture (ce que vous ne voudrez peut-&#234;tre pas faire) - bien que vous puissiez constater qu'ils sont r&#233;initialis&#233;s chaque fois que le p&#233;riph&#233;rique est branch&#233;, tapez par exemple sur le terminal: <code>sudo chmod 666 /dev/ttyACM0</code></li>
+<li> Cr&#233;ez une r&#232;gle dans <code>/etc/udev/rules.d</code> qui d&#233;finira les autorisations du p&#233;riph&#233;rique (un red&#233;marrage sera requis):</li>
+</ol>
+
+<p>
+
+<!-- code=shell (!bc shell) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># navigate to rules.d directory</span>
+<span style="color: #658b00">cd</span> /etc/udev/rules.d
+<span style="color: #228B22">#create a new rule file</span>
+sudo touch my-newrule.rules
+<span style="color: #228B22"># open the file</span>
+sudo vim my-newrule.rules
+<span style="color: #228B22"># add the following</span>
+<span style="color: #00688B">KERNEL</span>==<span style="color: #CD5555">&quot;ttyACM0&quot;</span>, <span style="color: #00688B">MODE</span>=<span style="color: #CD5555">&quot;0666&quot;</span>
+</pre></div>
+<p>
+Cela d&#233;finit &#233;galement des autorisations pour le monde en lecture et en &#233;criture, ce que vous ne voudrez peut-&#234;tre pas faire.
+
+<p>
+<b>Solution par:</b> <em>user1063287</em> sur le site Stack Overflow: <a href="https://stackoverflow.com/questions/27858041/oserror-errno-13-permission-denied-dev-ttyacm0-using-pyserial-from-pyth" target="_blank"><tt>https://stackoverflow.com/questions/27858041/oserror-errno-13-permission-denied-dev-ttyacm0-using-pyserial-from-pyth</tt></a>
+</div>
+
+
+<p>
+Chargez le code Arduino sur l&#8217;Arduino UNO. Notez le port COM auquel il est connect&#233;. Le m&#234;me num&#233;ro de port COM doit &#234;tre indiqu&#233; dans le code Python.
+
+<p>
+Apr&#232;s avoir charg&#233; le code sur Arduino, lancez le programme Python sur l'IDE Spyder. La console Ipython va afficher le message "Connexion &#233;tablie" et "Entrez 1 pour allum&#233;e la LED et 0 pour l'&#233;teindre".
+
+<h2 id="___sec12">Firmata protocol </h2>
+Vous d&#233;sirez contr&#244;ler des relais &#224; partir d'un ordinateur?  Interroger des capteurs afin d'accumuler les donn&#233;es dans un ordinateur (datalogging)?  Dans ce genre d'application, o&#249; l'Arduino est utilis&#233; comme un p&#233;riph&#233;rique USB plut&#244;t que comme un dispositif autonome, Firmata peut s'av&#233;rer tr&#232;s utile.
+
+<p>
+Firmata est un protocole g&#233;n&#233;rique permettant la communication entre un microcontr&#244;leur et un logiciel. Dans notre cas, Firmata nous permet de communiquer Arduino avec Python.
+
+<h3 id="___sec13">Pr&#233;paration de l'Arduino </h3>
+
+Sans grande surprise, votre Arduino doit &#234;tre branch&#233; &#224; l'ordinateur h&#244;te, au moyen d'un c&#226;ble USB.
+
+<p>
+Nous n'avons pas &#224; installer la biblioth&#232;que Firmata, puisqu'elle est incluse dans l'IDE Arduino. Notre t&#226;che consistera simplement &#224; t&#233;l&#233;verser dans la carte Arduino l'exemple <b>"StandardFirmata"</b> (Menu Fichier - Exemples - Firmata - StandardFirmata).
+
+<p>
+<br /><br /><center><p><img src="imgs/StandardFirmata_Arduino.png" align="bottom" width=600></p></center><br /><br />
+
+<p>
+Votre Arduino est maintenant pr&#234;t &#224; recevoir des messages en provenance de l'ordinateur, et &#224; les interpr&#233;ter correctement.
+
+<h3 id="___sec14">Firmata Test </h3>
+
+Un moyen rapide et facile de tester le protocole Firmata imm&#233;diatement est de t&#233;l&#233;charger le programme <b>Firmata Test</b> sur le site Web officiel: <a href="http://www.firmata.org/wiki/Main_Page" target="_blank"><tt>http://www.firmata.org/wiki/Main_Page</tt></a>
+
+<p>
+<br /><br /><center><p><img src="imgs/Firmata_Test.png" align="bottom" width=300></p></center><br /><br />
+
+<p>
+Pour Windows 10, vous pouvez installer <b>Windows Remote Arduino Experience</b>: <a href="https://www.microsoft.com/store/apps/9nblggh2041m" target="_blank"><tt>https://www.microsoft.com/store/apps/9nblggh2041m</tt></a>
+
+<p>
+<br /><br /><center><p><img src="imgs/WindowsRemoteArduinoExperience.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+Ces outils nous permet de communiquer facilement et rapidement avec toutes les pins d&#8217;Arduino.
+
+<p>
+Au d&#233;marrage, cette application vous demandera de s&#233;lectionner le port s&#233;rie correspondant &#224; votre carte Arduino (menu "Port").  Une fois ce port s&#233;lectionn&#233;, la fen&#234;tre affiche la liste des entr&#233;es/sorties de votre Arduino (sauf les pins 0 et 1, qui sont d&#233;j&#224;  utilis&#233;es pour la communication s&#233;rie par USB entre l'ordinateur et la carte).
+
+<p>
+&#192; partir de ce logiciel, vous pouvez r&#233;gler individuellement chaque pin de l'Arduino en entr&#233;e num&#233;rique (Input) ou en sortie (Output).  Lorsqu'elles en sont capables, certaines pins peuvent &#233;galement &#234;tre r&#233;gl&#233;es en entr&#233;e analogique (Analog), pour &#233;mettre un signal en modulation de largeur d'impulsion (PWM) ou pour commander un servomoteur (Servo).
+
+<ul>
+<li> Si vous avez r&#233;gl&#233; la pin en entr&#233;e num&#233;rique (Input), son &#233;tat logique (Low ou High) est affich&#233;.</li>
+<li> Si vous avez r&#233;gl&#233; la pin en sortie num&#233;rique (Output), un bouton vous permet de r&#233;gler son &#233;tat logique &#224; Low ou High (par exemple, la LED de la carte Arduino s'allumera si vous r&#233;glez la pin 13 &#224; High).</li>
+<li> Si vous avez r&#233;gl&#233; la pin en entr&#233;e analogique (possible pour les pins 14 &#224; 19, qui sont les entr&#233;es A0 &#224; A5), leur valeur entre 0 et 1023 est affich&#233;e.</li>
+<li> Si vous avez r&#233;gl&#233; la pin en mode "Servo", un curseur vous permet de r&#233;gler la position du servomoteur.</li>
+<li> Si vous avez r&#233;gl&#233; la pin en mode "PWM", un curseur vous permet de r&#233;gler le rapport cyclique du signal &#233;mis.</li>
+</ul>
+
+Admettez que ce petit programme peut se r&#233;v&#233;ler tr&#232;s pratique, ne serait-ce que pour tester le bon fonctionnement de toutes les pins de votre Arduino, v&#233;rifier le fonctionnement correct d'un servomoteur, etc.
+
+<p>
+Dans la prochaine section, nous verrons comment utiliser Firmata dans nos propres programme en Python, qui s'ex&#233;cuteront sur l'ordinateur.
+
+<h3 id="___sec15">Le code python (avec le module <code>pyfirmata</code>) </h3>
+
+&#192; titre de d&#233;monstration, nous allons &#233;crire un programme en Python qui contr&#244;le l'&#233;tat des sorties num&#233;riques de l'Arduino, ce qui aura pour effet d'allumer et d'&#233;teindre une LED (bien entendu, rien ne vous emp&#234;che de remplacer les LEDs par autre chose comme, par exemple, des relais).
+
+<p>
+Nous branchons donc une LED comme indiqu&#233; dans la figure <a href="#figure:montage1">5</a>.
+
+<p>
+Voici un premier script en Python (<code>LEDBlink.py</code>) qui permet &#224; l'utilisateur de contr&#244;ler l'&#233;tat des LEDs &#224; partir de l'ordinateur auquel est branch&#233; l'Arduino:
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER: LEDBlink.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyfirmata</span>
+PIN = <span style="color: #B452CD">13</span> <span style="color: #228B22"># Pin 13 est utilisé</span>
+DELAY = <span style="color: #B452CD">2</span> <span style="color: #228B22"># Un délai de 2 secondes</span>
+<span style="color: #228B22"># Vérifiez que le port correspond à votre système, voir exemples ci-dessous:</span>
+<span style="color: #228B22"># Sur Linux: /dev/tty.usbserial-A6008rIF, /dev/ttyACM0, </span>
+<span style="color: #228B22"># Sous Windows: &#39;COM1&#39;, &#39;COM2&#39;, &#39;COM3&#39;</span>
+PORT = <span style="color: #CD5555">&#39;COM3&#39;</span>
+<span style="color: #228B22"># Creates a new board </span>
+board = pyfirmata.Arduino(PORT)
+<span style="color: #228B22"># Boucle pour clignoter la LED</span>
+<span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #658b00">True</span>:
+    board.digital[PIN].write(<span style="color: #B452CD">1</span>) <span style="color: #228B22"># Set the LED pin to 1 (HIGH)</span>
+    <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;LED ON&quot;</span>)
+    board.pass_time(DELAY)
+    board.digital[PIN].write(<span style="color: #B452CD">0</span>) <span style="color: #228B22"># Set the LED pin to 0 (LOW)</span>
+    <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;LED OFF&quot;</span>)
+    board.pass_time(DELAY)
+</pre></div>
+<p>
+<div class="alert alert-block alert-notice alert-text-normal">
+<b>Note.</b>
+<p>
+Notez que pour que &#231;a fonctionne correctement, vous devez  assigner la valeur appropri&#233;e &#224; la variable "port".  Sous Windows ce sera probablement quelque chose comme "COM3", sous Linux ce sera plut&#244;t "/dev/ttyACM0".  Il se peut que vous deviez d&#233;marrer l'IDE Arduino pour conna&#238;tre le nom du port s&#233;rie correspondant &#224; votre Arduino.
+</div>
+
+
+<h3 id="___sec16">Application PyQt5 (avec le module <code>pyfirmata</code>) </h3>
+
+Le programme sera beaucoup plus convivial s'il comporte une interface graphique.
+
+<p>
+<br /><br /><center><p><img src="imgs/LEDON.jpg" align="bottom" width=600></p></center><br /><br />
+
+<p>
+Le script pr&#233;sent&#233; ci-dessous utilise PyQt5, qui semble &#234;tre la solution la plus r&#233;pandue pour produire des interfaces graphiques en Python. Nous avons adapt&#233; le code python construit dans le chapitre pr&#233;c&#233;dent (<a href="https://codetunisia.github.io/PY4ING2019/cours2/cours2-bs.html#___sec15" target="_blank">MainMyApp.py </a>) en gardant seulement deux boutons pour contr&#244;ler la LED via le protocole Firmata de l'Arduino et un widget "Label" pour afficher l'&#233;tat de la LED.
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22">## NOM DU PROGRAMME: MainMyAppLED.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtWidgets</span> <span style="color: #8B008B; font-weight: bold">import</span> QMainWindow, QApplication
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">UiMyAppLED</span> <span style="color: #8B008B; font-weight: bold">import</span> Ui_MainWindow
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtCore</span> <span style="color: #8B008B; font-weight: bold">import</span> pyqtSlot
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyfirmata</span>
+
+<span style="color: #8B008B; font-weight: bold">class</span> <span style="color: #008b45; font-weight: bold">MainApp</span>(QMainWindow, Ui_MainWindow):
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>):
+        QMainWindow.<span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>)
+        <span style="color: #658b00">self</span>.setupUi(<span style="color: #658b00">self</span>)
+        <span style="color: #658b00">self</span>.PIN = <span style="color: #B452CD">13</span> <span style="color: #228B22"># Pin 13 est utilisé</span>
+        PORT = <span style="color: #CD5555">&#39;COM3&#39;</span>
+        <span style="color: #658b00">self</span>.board = pyfirmata.Arduino(PORT)
+    <span style="color: #228B22"># Ajouter des signaux</span>
+    <span style="color: #707a7c">@pyqtSlot</span>()
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_btn1_clicked</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        Allumer la LED et afficher: LED ON</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        <span style="color: #658b00">self</span>.board.digital[<span style="color: #658b00">self</span>.PIN].write(<span style="color: #B452CD">1</span>) <span style="color: #228B22"># Set the LED pin to 1 (HIGH)</span>
+        message= <span style="color: #CD5555">&quot;LED ON&quot;</span>
+        <span style="color: #658b00">self</span>.OnOffTxt.setText(message)
+    <span style="color: #707a7c">@pyqtSlot</span>()
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_btn2_clicked</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        Allumer la LED et afficher: LED OFF</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        <span style="color: #658b00">self</span>.board.digital[<span style="color: #658b00">self</span>.PIN].write(<span style="color: #B452CD">0</span>) <span style="color: #228B22"># Set the LED pin to 0 (LOW)</span>
+        message= <span style="color: #CD5555">&quot;LED OFF&quot;</span>
+        <span style="color: #658b00">self</span>.OnOffTxt.setText(message)
+        
+        
+    
+        
+<span style="color: #8B008B; font-weight: bold">if</span> <span style="color: #00688B">__name__</span> == <span style="color: #CD5555">&quot;__main__&quot;</span>:
+    <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
+    app = QApplication(sys.argv)
+    MainWindow = MainApp()
+    MainWindow.show()
+    sys.exit(app.exec_())
+</pre></div>
+<p>
+Lors de l'ex&#233;cution de ce script, nous aurons en sortie l'interface graphique suivante qui communiquera avec la LED branch&#233;e au pin 13 de notre arduino.
+
+<p>
+<br /><br /><center><p><img src="imgs/LEDPyqt1.png" align="bottom" width=300></p></center><br /><br />
+
+<h1 id="___sec17">Exemple 2: Connectez une LED contr&#244;l&#233;e par un signal modul&#233; en largeur d'impulsion (PWM) </h1>
+Dans la partie pr&#233;c&#233;dente, nous avions vu comment r&#233;gler l'&#233;tat des sorties num&#233;riques de l'Arduino.  Dans cette partie, nous allons contr&#244;ler un signal modul&#233; en largeur d'impulsion (PWM).
+
+<h2 id="___sec18">Qu'est-ce que le PWM? </h2>
+La modulation par largeur d'impulsion (ou pulse Width Modulation, d'o&#249; l'acronyme PWM) est une succession de signaux logiques 0 ou 1 (donc 0 V et 5 V dans le cas de l'Arduino).  Lorsque le rapport cyclique (duty cycle) est de 0%, le signal est toujours &#224; 0 V.  Lorsque le rapport cyclique est de 100%, le signal est toujours &#224; 5 V.  Si le rapport cyclique est de 25%, le signal est haut pendant 25% du temps, et bas pendant les 75% restants...
+
+<p>
+<br /><br /><center><p><img src="imgs/pwm.png" align="bottom" width=500></p></center><br /><br />
+
+<p>
+Au moyen d'un filtre passs-bas, un signal PWM peut &#234;tre transform&#233; en une tension analogique continue dont la valeur se situe entre 0 et 5 V.  On peut aussi utiliser un signal PWM pour contr&#244;ler la vitesse d'un moteur.  Dans cette partie du cours, nous utiliserons le signal PWM pour contr&#244;ler la luminosit&#233; d'une LED (plus le rapport cyclique sera &#233;lev&#233;, plus la lumi&#232;re &#233;mise par la LED sera intense).
+
+<h2 id="___sec19">Montage </h2>
+
+<p>
+Le circuit sera &#233;videmment tr&#232;s simple:  une LED et une r&#233;sistance de protection (220 ohms, par exemple), reli&#233;e &#224; une des pins PWM de l'Arduino  (3, 5, 6, 9, 10, 11 sur l'Arduino Uno).  Les scripts pr&#233;sent&#233;s ci-dessous supposent que la LED est branch&#233;e &#224; la pin 11.
+
+<p>
+<br /><br /><center><p><img src="imgs/LED_PWM_bb.png" align="bottom" width=500></p></center><br /><br />
+
+<h2 id="___sec20">Le code python (avec le module <code>pyfirmata</code>) </h2>
+
+<p>
+Nous supposons que le sketch "StandardFirmata" a &#233;t&#233; t&#233;l&#233;vers&#233; dans votre Arduino, et que la biblioth&#232;que pyFirmata a d&#233;j&#224; &#233;t&#233; install&#233;e sur votre ordinateur.
+
+<p>
+L'utilisation du PWM avec <code>pyfirmata</code> n&#233;cessite deux &#233;tapes:
+
+<ul>
+<li> Le r&#233;glage d'une pin de l'Arduino en mode PWM, au d&#233;but du programme, au moyen de la m&#233;thode <code>get_pin()</code>:</li>
+</ul>
+
+<p>
+
+<!-- code=text (!bc pycodxt) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>LEDpin = board.get_pin(&#39;d:11:p&#39;)
+</pre></div>
+<p>
+Nous cr&#233;ons un objet de type PIN nomm&#233; <code>LEDpin</code>.  Les arguments de <code>get_pin()</code> indiquent que la pin num&#233;rique  num&#233;ro 11 est en mode PWM (le "d" est pour "digital" et le "p" est pour "PWM").
+
+<ul>
+<li> Le r&#233;glage du rapport cyclique du signal PWM, chaque fois qu'on d&#233;sire le modifier:</li>
+</ul>
+
+<p>
+
+<!-- code=text (!bc pycodxt) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>board.digital[LEDpin.pin_number].write(rapport_cyclique)
+</pre></div>
+<p>
+Le rapport cyclique doit &#234;tre un nombre se situant entre 0 (rapport cyclique de 0%) et 1 (rapport cyclique de 100%).  Par exemple, pour &#233;mettre sur la pin num&#233;ro 5 un signal PWM dont le rapport cyclique sera de 30%, on pourrait &#233;crire:
+<p>
+
+<!-- code=text (!bc pycodxt) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>board.digital[5].write(0.3)
+</pre></div>
+
+<h3 id="___sec21">Premier exemple de script (interface en mode texte) </h3>
+
+<p>
+Dans ce premier exemple, l'utilisateur doit &#233;crire un nombre (entre 0 et 100) pour r&#233;gler le rapport cyclique (et, par cons&#233;quent, la luminosit&#233; de la LED).
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER:LED_PWM.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyfirmata</span>
+port = <span style="color: #CD5555">&#39;COM3&#39;</span>            <span style="color: #228B22">#windows</span>
+<span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
+ 
+board = pyfirmata.Arduino(port)
+
+LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22">## d = digital, 11 = numéro de la pin, p = PWM</span>
+
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;-------------- CONTROLE DE LEDS ----------------&quot;</span>)
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;En tout temps, vous pouvez quitter le programme en répondant par &#39;q&#39;.&quot;</span>)
+
+<span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #658b00">True</span>:  
+    <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Luminosité désirée pour la LED:&quot;</span>)
+    luminosite = <span style="color: #658b00">input</span>(<span style="color: #CD5555">&quot;De 0 à 100 (ou q):  &quot;</span>)
+    <span style="color: #8B008B; font-weight: bold">if</span> (luminosite == <span style="color: #CD5555">&#39;q&#39;</span>):
+        board.exit();
+        <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Au revoir!&quot;</span>)
+        <span style="color: #8B008B; font-weight: bold">break</span>;
+    
+    board.digital[LEDpin.pin_number].write(<span style="color: #658b00">float</span>(luminosite)/<span style="color: #B452CD">100.0</span>)
+</pre></div>
+<p>
+Lors de l'ex&#233;cution de ce script, l'utilisateur peut saisir un texte pour contr&#244;ler la luminosit&#233; de la LED, comme suit:
+<p>
+
+<!-- code=text typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>-------------- CONTROLE DE LEDS ----------------
+En tout temps, vous pouvez quitter le programme en répondant par &#39;q&#39;.
+Luminosité désirée pour la LED:
+
+De 0 à 100 (ou q):  100
+Luminosité désirée pour la LED:
+
+De 0 à 100 (ou q):  50
+Luminosité désirée pour la LED:
+
+De 0 à 100 (ou q):  q
+Au revoir!
+</pre></div>
+
+<h3 id="___sec22">Deuxi&#232;me exemple de script (interface graphique PyQt5) </h3>
+
+<p>
+M&#234;me principe que nous avons utilis&#233; dans <a href="https://codetunisia.github.io/PY4ING2019/cours3/cours3-bs.html#___sec16" target="_blank">Application PyQt5 (avec le module pyfirmata)</a>, nous allons adapt&#233; le code python construit dans le chapitre pr&#233;c&#233;dent (<a href="https://codetunisia.github.io/PY4ING2019/cours2/cours2-bs.html#___sec15" target="_blank">MainMyApp.py</a>) mais en gardant le curseur ( le widget Slider) pour contr&#244;ler la luminosit&#233; de la LED via le protocole Firmata de l'Arduino et un widget "LCD display" pour afficher le pourcentage de luminosit&#233; d&#233;sir&#233;e pour la LED.
+
+<p>
+Le code python principal dans ce cas deviendra,
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22">## NOM DU PROGRAMME: MainMyAppLED_PWM.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtWidgets</span> <span style="color: #8B008B; font-weight: bold">import</span> QMainWindow, QApplication
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">UiMyAppLED</span> <span style="color: #8B008B; font-weight: bold">import</span> Ui_MainWindow
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtCore</span> <span style="color: #8B008B; font-weight: bold">import</span> pyqtSlot
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyfirmata</span>
+
+<span style="color: #8B008B; font-weight: bold">class</span> <span style="color: #008b45; font-weight: bold">MainApp</span>(QMainWindow, Ui_MainWindow):
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>):
+        QMainWindow.<span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>)
+        <span style="color: #658b00">self</span>.setupUi(<span style="color: #658b00">self</span>)
+        
+        PORT = <span style="color: #CD5555">&#39;COM3&#39;</span>
+        <span style="color: #658b00">self</span>.board = pyfirmata.Arduino(PORT)
+        <span style="color: #658b00">self</span>.LEDpin = <span style="color: #658b00">self</span>.board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) 
+        <span style="color: #228B22">## d = digital, 11 = numéro de la pin, p = PWM</span>
+
+        
+    <span style="color: #228B22"># Ajouter des signaux</span>
+    <span style="color: #707a7c">@pyqtSlot</span>(<span style="color: #658b00">int</span>)
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">on_pwm_valueChanged</span>(<span style="color: #658b00">self</span>, value):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        mettre à jour la valeur</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        <span style="color: #658b00">self</span>.board.digital[<span style="color: #658b00">self</span>.LEDpin.pin_number].write(value/<span style="color: #B452CD">100.0</span>)
+        <span style="color: #658b00">self</span>.lcd.display(value)
+        
+        
+<span style="color: #8B008B; font-weight: bold">if</span> <span style="color: #00688B">__name__</span> == <span style="color: #CD5555">&quot;__main__&quot;</span>:
+    <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
+    app = QApplication(sys.argv)
+    MainWindow = MainApp()
+    MainWindow.show()
+    sys.exit(app.exec_())
+</pre></div>
+<p>
+Lors de l'ex&#233;cution de ce script, nous aurons en sortie l'interface graphique suivante qui communiquera avec la LED branch&#233;e au pin 11 de notre arduino.
+
+<p>
+<br /><br /><center><p><img src="imgs/LED_PWM.png" align="bottom" width=300></p></center><br /><br />
+
+<h1 id="___sec23">Exemple 3: Lecture d'une entr&#233;e analogique </h1>
+Dans cette partie  nous lisons les entr&#233;es analogiques de l'Arduino en utilisant <code>pyfirmata</code>.
+
+<h2 id="___sec24">Montage 1 </h2>
+Pour tester le principe, le plus simple est de brancher un potentiom&#232;tre &#224; l'entr&#233;e <em>A0</em> de l'Arduino.  Bien s&#251;r, ce potentiom&#232;tre peut &#234;tre remplac&#233; par n'importe quel capteur analogique (photor&#233;sistance, thermistance, etc.).
+
+<p>
+<br /><br /><center><p><img src="imgs/AnalogInputPot1_bb.png" align="bottom" width=300></p></center><br /><br />
+
+<p>
+Avec <code>pyfirmata</code>, la lecture d'une pin analogique est presque identique &#224; la lecture d'une pin num&#233;rique.  La principale diff&#233;rence r&#233;side dans la d&#233;finition de la pin:
+<p>
+
+<!-- code=text (!bc pycodxt) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>pinA0 = board.get_pin(&#39;a:0:i&#39;)
+</pre></div>
+<p>
+<div class="alert alert-block alert-notice alert-text-normal">
+<b>Note.</b>
+<p>
+Nous utiliserions "i" &#224; la place de "a" s'il s'agissait d'un signal num&#233;rique.
+</div>
+
+Ensuite, on utilise la fonction <code>read()</code> pour lire la valeur.
+<p>
+
+<!-- code=text (!bc pycodxt) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>pinA0.read()
+</pre></div>
+<p>
+<div class="alert alert-block alert-warning alert-text-normal">
+<b>Avertissement.</b>
+<p>
+<code>read()</code> retourne une valeur d&#233;cimale entre 0 et 1 (alors qu'en langage Arduino, <code>analogRead()</code> retourne un entier entre 0 et 1023).
+</div>
+
+Il faut &#233;galement utiliser un it&#233;rateur afin d'&#233;viter d'engorger la communication s&#233;rie entre l'Arduino et l'ordinateur:
+<p>
+
+<!-- code=text (!bc pycodxt) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>it = pyfirmata.util.Iterator(board)
+it.start()
+</pre></div>
+
+<h3 id="___sec25">Premier exemple de script (interface en mode texte) </h3>
+
+Ce programme plut&#244;t minimaliste se contente de lire la valeur de l'entr&#233;e A0 une fois par seconde et de l'afficher &#224; l'&#233;cran.
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER: AnalogRead.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyfirmata</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">time</span>
+port = <span style="color: #CD5555">&#39;COM3&#39;</span> <span style="color: #228B22">#windows</span>
+<span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
+board = pyfirmata.Arduino(port)
+
+it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #228B22"># la communication série</span>
+it.start()
+
+pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numéro de la pin, i = input.</span>
+
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&#39;#-----------------------------&#39;</span>)
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;#  Lecture de l&#39;entrée analogique A0 de l&#39;Arduino &quot;</span>)
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&#39;#-----------------------------&#39;</span>)
+
+<span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #658b00">True</span>:
+    <span style="color: #8B008B; font-weight: bold">try</span>:
+        time.sleep(<span style="color: #B452CD">1</span>)  <span style="color: #228B22"># Pause d&#39;une seconde avant la prochaine mesure</span>
+        <span style="color: #8B008B; font-weight: bold">print</span>(pinA0.read())     <span style="color: #228B22"># la valeur varie entre 0 et 1.    </span>
+        
+    <span style="color: #8B008B; font-weight: bold">except</span> <span style="color: #008b45; font-weight: bold">KeyboardInterrupt</span>:
+          board.exit()
+          <span style="color: #8B008B; font-weight: bold">break</span>
+</pre></div>
+<p>
+<div class="alert alert-block alert-notice alert-text-normal">
+<b>Note.</b>
+<p>
+L'instruction "Exception" &#224; l'int&#233;rieur de la boucle:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">try</span>:
+    time.sleep(<span style="color: #B452CD">1</span>)  <span style="color: #228B22"># Pause d&#39;une seconde avant la prochaine mesure</span>
+    <span style="color: #8B008B; font-weight: bold">print</span>(pinA0.read())     <span style="color: #228B22"># la valeur varie entre 0 et 1.</span>
+
+<span style="color: #8B008B; font-weight: bold">except</span> <span style="color: #008b45; font-weight: bold">KeyboardInterrupt</span>:
+      board.exit()
+      <span style="color: #8B008B; font-weight: bold">break</span>
+</pre></div>
+<p>
+est une astuce utilis&#233;e pour arr&#234;ter la communication avec Arduino (<code>board.exit()</code>) et pour &#233;viter les erreurs lors de l'arr&#234;t forc&#233; du programme.
+</div>
+
+
+<p>
+Lors de l'ex&#233;cution de ce script, l'utilisateur peut lire la valeur du potentiom&#232;tre (de 0 &#224; 1) toutes les secondes et le modifier en tournant le potentiom&#232;tre branch&#233; sur l'Arduino.
+<p>
+
+<!-- code=text typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span>#-----------------------------
+#  Lecture de l&#39;entrée analogique A0 de l&#39;Arduino
+#-----------------------------
+1.0
+1.0
+0.7478
+0.6989
+0.6393
+0.5806
+0.3822
+0.2219
+0.0929
+0.0
+0.0
+0.3324
+0.3324
+0.3324
+</pre></div>
+
+<h3 id="___sec26">Deuxi&#232;me exemple de script (sauvegarder les donn&#233;es dans un fichier texte) </h3>
+
+Dans le script suivant, nous allons enregistrer les valeurs du potentiom&#232;tre dans un fichier texte (<em>Data.txt</em>) que nous cr&#233;ons dans le m&#234;me r&#233;pertoire que le script python:
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER: AnalogReadData.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyfirmata</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">time</span>
+port = <span style="color: #CD5555">&#39;COM3&#39;</span> <span style="color: #228B22">#windows</span>
+<span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
+board = pyfirmata.Arduino(port)
+
+it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #228B22"># la communication série</span>
+it.start()
+
+pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numéro de la pin, i = input.</span>
+
+<span style="color: #228B22"># Nom du fichier à écrire</span>
+filename = <span style="color: #CD5555">&quot;Data.txt&quot;</span>
+<span style="color: #228B22"># Ouvrir le fichier avec une permission d&#39;écriture</span>
+myfile = <span style="color: #658b00">open</span>(filename, <span style="color: #CD5555">&#39;w&#39;</span>)
+<span style="color: #228B22"># Ecrire une ligne dans le fichier</span>
+myfile.write(<span style="color: #CD5555">&quot;#  Lecture de l&#39;entrée analogique A0 de l&#39;Arduino \n&quot;</span>)
+             
+<span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #658b00">True</span>:
+    <span style="color: #8B008B; font-weight: bold">try</span>:
+        time.sleep(<span style="color: #B452CD">1</span>)  <span style="color: #228B22"># Pause d&#39;une seconde avant la prochaine mesure</span>
+        valeur = pinA0.read()     <span style="color: #228B22"># la valeur varie entre 0 et 1.</span>
+        <span style="color: #8B008B; font-weight: bold">print</span>(valeur)
+        myfile.write(<span style="color: #658b00">str</span>(valeur) + <span style="color: #CD5555">&quot;\n&quot;</span>) <span style="color: #228B22"># écrire la valeur dans le fichier</span>
+                                         <span style="color: #228B22"># et retourner à la nouvelle ligne</span>
+    <span style="color: #8B008B; font-weight: bold">except</span> <span style="color: #008b45; font-weight: bold">KeyboardInterrupt</span>:
+          board.exit()
+          myfile.close()
+          
+          <span style="color: #8B008B; font-weight: bold">break</span>
+</pre></div>
+<p>
+Ensuite, nous &#233;crivons un autre script python pour tracer les donn&#233;es stock&#233;es dans le fichier <em>Data.txt</em> que nous avons cr&#233;&#233; pr&#233;c&#233;demment:
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER: PlotData.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">numpy</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">np</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">matplotlib.pyplot</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">plt</span>
+
+pData = np.loadtxt(<span style="color: #CD5555">&quot;Data.txt&quot;</span>, comments = <span style="color: #CD5555">&quot;#&quot;</span>)
+                   
+fig = plt.figure()
+plt.plot(pData, <span style="color: #CD5555">&quot;-r*&quot;</span>)
+plt.xlabel(<span style="color: #CD5555">&quot;Temps [s]&quot;</span>)
+plt.ylabel(<span style="color: #CD5555">&quot;Valeurs du potentiomètre&quot;</span>)
+plt.grid()
+plt.show()
+</pre></div>
+<p>
+Lors de l'ex&#233;cution de ce script, nous aurons la figure suivante:
+
+<p>
+<br /><br /><center><p><img src="imgs/DataPlot.png" align="bottom" width=500></p></center><br /><br />
+
+<h2 id="___sec27">Montage 2 </h2>
+Dans ce montage, nous allons contr&#244;ler par un potentiom&#232;tre (pin A0) la luminosit&#233; d'une LED branch&#233;e dans un pin PWM (pin 11).
+
+<p>
+<br /><br /><center><p><img src="imgs/AnalogInputPot2_bb.png" align="bottom" width=600></p></center><br /><br />
+
+<h3 id="___sec28">Premier exemple de script (interface en mode texte) </h3>
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER: AnalogReadPWM.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyfirmata</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">time</span>
+port = <span style="color: #CD5555">&#39;COM3&#39;</span> <span style="color: #228B22">#windows</span>
+<span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
+board = pyfirmata.Arduino(port)
+
+it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #228B22"># la communication série</span>
+it.start()
+
+pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numéro de la pin, i = input.</span>
+LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22"># d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
+
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&#39;#-----------------------------&#39;</span>)
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;#  Lecture de l&#39;entrée analogique A0 de l&#39;Arduino &quot;</span>)
+<span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&#39;#-----------------------------&#39;</span>)
+
+<span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #658b00">True</span>:
+    <span style="color: #8B008B; font-weight: bold">try</span>:
+        time.sleep(<span style="color: #B452CD">1</span>)  <span style="color: #228B22"># Pause d&#39;une seconde avant la prochaine mesure</span>
+        valeur = pinA0.read()     <span style="color: #228B22"># la valeur varie entre 0 et 1.</span>
+        <span style="color: #8B008B; font-weight: bold">print</span>(valeur)
+        board.digital[LEDpin.pin_number].write(valeur)
+        
+    <span style="color: #8B008B; font-weight: bold">except</span> <span style="color: #008b45; font-weight: bold">KeyboardInterrupt</span>:
+          board.exit()
+          <span style="color: #8B008B; font-weight: bold">break</span>
+</pre></div>
+
+<h3 id="___sec29">Deuxi&#232;me exemple de script (tracer de donn&#233;es en temps r&#233;el) </h3>
+
+Tracer des donn&#233;es s&#233;rie depuis Arduino est un besoin courant. Dans le script suivant, nous allons vous montrer comment utiliser la biblioth&#232;que python <code>matplotlib</code> pour effectuer cette t&#226;che.
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22"># NOM DU FICHIER: AnalogReadPWM_RealTimePlot.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyfirmata</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">time</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">matplotlib.pyplot</span> <span style="color: #8B008B; font-weight: bold">as</span> <span style="color: #008b45; text-decoration: underline">plt</span>
+
+port = <span style="color: #CD5555">&#39;COM3&#39;</span> <span style="color: #228B22">#windows</span>
+<span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
+board = pyfirmata.Arduino(port)
+
+it = pyfirmata.util.Iterator(board)  <span style="color: #228B22"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #228B22"># la communication série</span>
+it.start()
+
+pinA0 = board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numéro de la pin, i = input.</span>
+LEDpin = board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22"># d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
+
+<span style="color: #228B22"># Préparer la figure (matplotlib)</span>
+plt.ion() <span style="color: #228B22"># Activer le mode interactif</span>
+fig = plt.figure() <span style="color: #228B22"># créer une figure</span>
+pData = [<span style="color: #B452CD">0</span>] * <span style="color: #B452CD">25</span>    <span style="color: #228B22"># initiliser par une liste de 25 valeurs = 0</span>
+l1, = plt.plot(pData, <span style="color: #CD5555">&quot;-r*&quot;</span>) <span style="color: #228B22"># tracer les pData initialement des 0</span>
+plt.ylim((-<span style="color: #B452CD">0.1</span>, <span style="color: #B452CD">1.1</span>))
+plt.grid()
+
+i = <span style="color: #B452CD">0</span>
+<span style="color: #8B008B; font-weight: bold">while</span> <span style="color: #658b00">True</span>:
+      <span style="color: #8B008B; font-weight: bold">try</span>:
+          time.sleep(<span style="color: #B452CD">1</span>)
+          valeur = pinA0.read()
+          i +=<span style="color: #B452CD">1</span>
+          <span style="color: #8B008B; font-weight: bold">print</span>(<span style="color: #CD5555">&quot;Temps = %s s; valeur = % s &quot;</span> %(i, valeur))
+          
+          pData.append(valeur) <span style="color: #228B22"># ajouter la valeur à la fin de la liste</span>
+          <span style="color: #8B008B; font-weight: bold">del</span> pData[<span style="color: #B452CD">0</span>] <span style="color: #228B22"># effacer le premier éliment de la liste </span>
+          <span style="color: #228B22"># update plot</span>
+          l1.set_xdata([i <span style="color: #8B008B; font-weight: bold">for</span> i <span style="color: #8B008B">in</span> <span style="color: #658b00">range</span>(<span style="color: #B452CD">25</span>)])
+          plt.pause(<span style="color: #B452CD">0.0001</span>) <span style="color: #228B22"># assurez-vous de faire une pause sinon il va planter</span>
+          l1.set_ydata(pData)
+          plt.pause(<span style="color: #B452CD">0.0001</span>) <span style="color: #228B22"># assurez-vous de faire une pause sinon il va planter</span>
+          plt.title(<span style="color: #CD5555">&quot;Potentiomètre en temps réel (t = %s s)&quot;</span>%i)
+          plt.draw()
+          
+          board.digital[LEDpin.pin_number].write(valeur)
+          
+      <span style="color: #8B008B; font-weight: bold">except</span> <span style="color: #008b45; font-weight: bold">KeyboardInterrupt</span>:
+          board.exit()
+          <span style="color: #8B008B; font-weight: bold">break</span>
+</pre></div>
+<p>
+La sortie de ce code python sera une animation <code>matplotlib</code>.
+
+<p>
+<!-- FIGURE: [imgs/RealTime, width=800 frac=0.8] -->
+
+<iframe width="600" height="315" src="https://www.youtube.com/embed/-Uh4A_PexQk" frameborder="0" allowfullscreen></iframe>
+
+<p><em>Analog plot (matplotlib/pyfirmata).</em></p>
+
+<h3 id="___sec30">Troisi&#232;me exemple de script (tracer de donn&#233;es en temps r&#233;el avec PyQt5 et pyqtgraph) </h3>
+
+<p>
+<div class="alert alert-block alert-notice alert-text-normal">
+<b>Note.</b>
+<p>
+Pour lancer les exemples de la librairie pyqtgraph, ex&#233;cuter le code suivant:
+<p>
+
+<!-- code=python (!bc pycod) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eee8d5"><pre style="line-height: 125%"><span></span><span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyqtgraph.examples</span>
+pyqtgraph.examples.run()
+</pre></div>
+<p>
+Une interface graphique se lancera et vous guidera dans les diff&#233;rents exemples de la biblioth&#232;que:
+
+<p>
+<br /><br /><center><p><img src="imgs/pyqtgraph_ex.png" align="bottom" width=600></p></center><br /><br />
+</div>
+
+
+<p>
+
+<iframe width="600" height="315" src="https://www.youtube.com/embed/IKmDEmanlMw" frameborder="0" allowfullscreen></iframe>
+
+<p><em>PyQt5-Demo #3 (pyqtgraph/PlotWidget)</em></p>
+
+<p>
+
+<!-- code=python (!bc pypro) typeset with pygments style "perldoc" -->
+<div class="highlight" style="background: #eeeedd"><pre style="line-height: 125%"><span></span><span style="color: #228B22">## NOM DU PROGRAMME: MainMyAppAnalog.py</span>
+<span style="color: #228B22">#% IMPORTATION</span>
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtWidgets</span> <span style="color: #8B008B; font-weight: bold">import</span> QMainWindow, QApplication
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">UiMyAppAnalog</span> <span style="color: #8B008B; font-weight: bold">import</span> Ui_MainWindow
+<span style="color: #8B008B; font-weight: bold">from</span> <span style="color: #008b45; text-decoration: underline">PyQt5.QtCore</span> <span style="color: #8B008B; font-weight: bold">import</span> QTimer
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyfirmata</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">pyqtgraph</span>
+<span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">time</span>
+
+
+<span style="color: #8B008B; font-weight: bold">class</span> <span style="color: #008b45; font-weight: bold">MainApp</span>(QMainWindow, Ui_MainWindow):
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>):
+        QMainWindow.<span style="color: #008b45">__init__</span>(<span style="color: #658b00">self</span>)
+        <span style="color: #658b00">self</span>.setupUi(<span style="color: #658b00">self</span>)
+        
+        port = <span style="color: #CD5555">&#39;COM3&#39;</span> <span style="color: #228B22">#windows</span>
+        <span style="color: #228B22">#port = &#39;/dev/ttyACM0&#39;   #linux</span>
+        <span style="color: #658b00">self</span>.board = pyfirmata.Arduino(port)
+        it = pyfirmata.util.Iterator(<span style="color: #658b00">self</span>.board)  <span style="color: #228B22"># itérateur permet de ne pas engorger </span>
+                                     <span style="color: #228B22"># la communication série</span>
+        it.start()
+        
+        <span style="color: #658b00">self</span>.pinA0 = <span style="color: #658b00">self</span>.board.get_pin(<span style="color: #CD5555">&#39;a:0:i&#39;</span>)   <span style="color: #228B22"># a = analogique, 0 = numéro de la pin, i = input.</span>
+        <span style="color: #658b00">self</span>.LEDpin = <span style="color: #658b00">self</span>.board.get_pin(<span style="color: #CD5555">&#39;d:11:p&#39;</span>) <span style="color: #228B22"># d = digital, 11 = numÃ©ro de la pin, p = PWM</span>
+        <span style="color: #658b00">self</span>.pyqtgraph.plotItem.showGrid(<span style="color: #658b00">True</span>, <span style="color: #658b00">True</span>, <span style="color: #B452CD">0.7</span>)
+        <span style="color: #658b00">self</span>.pData = [<span style="color: #B452CD">0</span>]  <span style="color: #228B22"># initiliser la valeur du potentiometre par 0</span>
+        <span style="color: #658b00">self</span>.p1= <span style="color: #658b00">self</span>.pyqtgraph.plot(<span style="color: #658b00">self</span>.pData)
+        time.sleep(<span style="color: #B452CD">1</span>)
+        <span style="color: #658b00">self</span>.update()
+        
+    <span style="color: #8B008B; font-weight: bold">def</span> <span style="color: #008b45">update</span>(<span style="color: #658b00">self</span>):
+        <span style="color: #CD5555">&#39;&#39;&#39;</span>
+<span style="color: #CD5555">        mettre à jour la valeur</span>
+<span style="color: #CD5555">        &#39;&#39;&#39;</span>
+        time.sleep(<span style="color: #B452CD">1</span>)
+        valeur = <span style="color: #658b00">self</span>.pinA0.read()
+        <span style="color: #658b00">self</span>.lcd.display(valeur)
+        <span style="color: #658b00">self</span>.board.digital[<span style="color: #658b00">self</span>.LEDpin.pin_number].write(valeur)
+        <span style="color: #658b00">self</span>.pData += [valeur] <span style="color: #228B22"># Ajouter la valeur du potentimetre à chaque mis à jour</span>
+        pen=pyqtgraph.mkPen(color=<span style="color: #CD5555">&quot;r&quot;</span>,width=<span style="color: #B452CD">3</span>)
+        <span style="color: #658b00">self</span>.p1.setData(<span style="color: #658b00">self</span>.pData, pen=pen)
+        QTimer.singleShot(<span style="color: #B452CD">10</span>, <span style="color: #658b00">self</span>.update) <span style="color: #228B22"># QUICKLY repeat</span>
+        
+        
+<span style="color: #8B008B; font-weight: bold">if</span> <span style="color: #00688B">__name__</span> == <span style="color: #CD5555">&quot;__main__&quot;</span>:
+    <span style="color: #8B008B; font-weight: bold">import</span> <span style="color: #008b45; text-decoration: underline">sys</span>
+    app = QApplication(sys.argv)
+    MainWindow = MainApp()
+    MainWindow.show()
+    sys.exit(app.exec_())
+</pre></div>
+<p>
+<!-- FIGURE: [imgs/Analog_app, width=600 frac=0.8] -->
+
+<p>
+
+<iframe width="600" height="315" src="https://www.youtube.com/embed/aHDcN0qrHMU" frameborder="0" allowfullscreen></iframe>
+
+<p><em>Analog plot (PyQt5+pyqtgraph/pyfirmata)</em></p>
+
+
+
+<!-- ------------------- end of main content --------------- -->
+
+
+<center style="font-size:80%">
+<!-- copyright --> &copy; 2019, Ahmed Ammar. Released under CC Attribution 4.0 license
+</center>
+
+
+</body>
+</html>
+    
+

@@ -50,7 +50,11 @@ pre { color: inherit; background-color: transparent; }
               ('Développer des applications de bureau avec Python et Qt',
                2,
                None,
-               '___sec2')]}
+               '___sec2'),
+              ('Prototypage de projets Arduino en utilisant Python et PyQt5',
+               2,
+               None,
+               '___sec3')]}
 end of tocinfo -->
 
 <body>
@@ -75,6 +79,7 @@ end of tocinfo -->
      <!-- navigation toc: --> <li><a href="#___sec0" style="font-size: 14px; padding: 4px 15px;"><b>Documents</b></a></li>
      <!-- navigation toc: --> <li><a href="#___sec1" style="font-size: 14px; padding: 4px 15px;">&nbsp;&nbsp;&nbsp;Introduction à Python pour les ingénieurs</a></li>
      <!-- navigation toc: --> <li><a href="#___sec2" style="font-size: 14px; padding: 4px 15px;">&nbsp;&nbsp;&nbsp;Développer des applications de bureau avec Python et Qt</a></li>
+     <!-- navigation toc: --> <li><a href="#___sec3" style="font-size: 14px; padding: 4px 15px;">&nbsp;&nbsp;&nbsp;Prototypage de projets Arduino en utilisant Python et PyQt5</a></li>
 
         </ul>
       </li>
@@ -130,7 +135,7 @@ Si vous constatez des erreurs signalez-les simplement aux auteurs:
 </div>
 
 <p>
-<center><h4>Feb 21, 2019</h4></center> <!-- date -->
+<center><h4>Apr 9, 2019</h4></center> <!-- date -->
 <br>
 <p>
 <!-- potential-jumbotron-button -->
@@ -190,6 +195,18 @@ Si vous constatez des erreurs signalez-les simplement aux auteurs:
 <ul>
   <li> <a href="https://codetunisia.github.io/PY4ING2019/cours2/cours2-solarized.html" target="_blank">html simple</a></li>
   <li> <a href="https://codetunisia.github.io/PY4ING2019/cours2/cours2-bs.html" target="_blank">Style Bootstrap, facile &#224; lire sur les appareils mobiles</a></li>
+</ul>
+
+</ul>
+
+<h2 id="___sec3" class="anchor">Prototypage de projets Arduino en utilisant Python et PyQt5 </h2>
+
+<ul>
+<li> HTML:</li>
+
+<ul>
+  <li> <a href="https://codetunisia.github.io/PY4ING2019/cours3/cours3-solarized.html" target="_blank">html simple</a></li>
+  <li> <a href="https://codetunisia.github.io/PY4ING2019/cours3/cours3-bs.html" target="_blank">Style Bootstrap, facile &#224; lire sur les appareils mobiles</a></li>
 </ul>
 
 </ul>
